@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.Logging;
-
-namespace Voxerra
+﻿namespace Voxerra
 {
     public static class MauiProgram
     {

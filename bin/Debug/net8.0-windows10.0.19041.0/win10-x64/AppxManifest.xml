@@ -8,7 +8,7 @@
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
   <Identity Name="com.companyname.voxerra" Publisher="CN=User Name" Version="1.0.0.1" ProcessorArchitecture="x64" />
-  <mp:PhoneIdentity PhoneProductId="CFC348A4-FFAA-4F86-AA7F-C6AFC006AD04" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <mp:PhoneIdentity PhoneProductId="2B87E9AF-0B5C-4662-8B0B-B327AEC338D7" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Voxerra</DisplayName>
     <PublisherDisplayName>User Name</PublisherDisplayName>
@@ -17,7 +17,7 @@
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.19041.0" />
     <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17763.0" MaxVersionTested="10.0.19041.0" />
-    <PackageDependency Name="Microsoft.WindowsAppRuntime.1.5" MinVersion="5001.159.55.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+    <PackageDependency Name="Microsoft.WindowsAppRuntime.1.5" MinVersion="5001.214.1843.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
   </Dependencies>
   <Resources>
     <Resource Language="EN-US" />
@@ -39,7 +39,7 @@
     <rescap:Capability Name="runFullTrust" />
   </Capabilities>
   <build:Metadata>
-    <build:Item Name="Microsoft.UI.Xaml.Markup.Compiler.dll" Version="3.0.0.2406" />
+    <build:Item Name="Microsoft.UI.Xaml.Markup.Compiler.dll" Version="3.0.0.2408" />
     <build:Item Name="makepri.exe" Version="10.0.22621.755 (WinBuild.160101.0800)" />
   </build:Metadata>
 </Package>

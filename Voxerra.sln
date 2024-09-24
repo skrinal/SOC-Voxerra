@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.11.35222.181
+VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Voxerra", "Voxerra.csproj", "{3A9EBD15-B39A-4BAA-BB05-0EBE53EBD0FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voxerra", "Voxerra.csproj", "{88FC2E7F-13DC-4F73-B481-66C543C64CA8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,17 +11,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3A9EBD15-B39A-4BAA-BB05-0EBE53EBD0FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A9EBD15-B39A-4BAA-BB05-0EBE53EBD0FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A9EBD15-B39A-4BAA-BB05-0EBE53EBD0FD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{3A9EBD15-B39A-4BAA-BB05-0EBE53EBD0FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A9EBD15-B39A-4BAA-BB05-0EBE53EBD0FD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3A9EBD15-B39A-4BAA-BB05-0EBE53EBD0FD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{88FC2E7F-13DC-4F73-B481-66C543C64CA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88FC2E7F-13DC-4F73-B481-66C543C64CA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88FC2E7F-13DC-4F73-B481-66C543C64CA8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{88FC2E7F-13DC-4F73-B481-66C543C64CA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88FC2E7F-13DC-4F73-B481-66C543C64CA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88FC2E7F-13DC-4F73-B481-66C543C64CA8}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EF2AB3D2-1E76-4FB1-8B36-DBD01ED32F2A}
+		SolutionGuid = {F9B45080-E85B-4EF4-B4AA-B757F0A93745}
 	EndGlobalSection
 EndGlobal

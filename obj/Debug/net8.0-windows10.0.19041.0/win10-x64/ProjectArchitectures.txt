@@ -1,1 +1,1 @@
-C:\SOC-Voxerra\Voxerra\Voxerra.csproj;x64
+C:\SOC\Voxerra.csproj;x64

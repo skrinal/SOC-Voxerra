@@ -1,30 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\SOC-Voxerra\\Voxerra\\",
+  "WorkspaceRootPath": "C:\\SOC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3A9EBD15-B39A-4BAA-BB05-0EBE53EBD0FD}|Voxerra.csproj|c:\\soc-voxerra\\voxerra\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3A9EBD15-B39A-4BAA-BB05-0EBE53EBD0FD}|Voxerra.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc\\services\\serviceprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:services\\serviceprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A9EBD15-B39A-4BAA-BB05-0EBE53EBD0FD}|Voxerra.csproj|c:\\soc-voxerra\\voxerra\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3A9EBD15-B39A-4BAA-BB05-0EBE53EBD0FD}|Voxerra.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A9EBD15-B39A-4BAA-BB05-0EBE53EBD0FD}|Voxerra.csproj|c:\\soc-voxerra\\voxerra\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3A9EBD15-B39A-4BAA-BB05-0EBE53EBD0FD}|Voxerra.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc\\pages\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:pages\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A9EBD15-B39A-4BAA-BB05-0EBE53EBD0FD}|Voxerra.csproj|c:\\soc-voxerra\\voxerra\\platforms\\windows\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{3A9EBD15-B39A-4BAA-BB05-0EBE53EBD0FD}|Voxerra.csproj|solutionrelative:platforms\\windows\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc\\viewmodels\\loginpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:viewmodels\\loginpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A9EBD15-B39A-4BAA-BB05-0EBE53EBD0FD}|Voxerra.csproj|c:\\soc-voxerra\\voxerra\\platforms\\windows\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3A9EBD15-B39A-4BAA-BB05-0EBE53EBD0FD}|Voxerra.csproj|solutionrelative:platforms\\windows\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A9EBD15-B39A-4BAA-BB05-0EBE53EBD0FD}|Voxerra.csproj|c:\\soc-voxerra\\voxerra\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A9EBD15-B39A-4BAA-BB05-0EBE53EBD0FD}|Voxerra.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 127,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,81 +42,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\Voxerra\\MainPage.xaml",
-              "RelativeDocumentMoniker": "MainPage.xaml",
-              "ToolTip": "C:\\SOC-Voxerra\\Voxerra\\MainPage.xaml",
-              "RelativeToolTip": "MainPage.xaml",
+              "DocumentIndex": 2,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\SOC\\Pages\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\LoginPage.xaml.cs",
+              "ToolTip": "C:\\SOC\\Pages\\LoginPage.xaml.cs",
+              "RelativeToolTip": "Pages\\LoginPage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-10T20:33:35.552Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T17:27:35.007Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AppShell.xaml",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\Voxerra\\AppShell.xaml",
-              "RelativeDocumentMoniker": "AppShell.xaml",
-              "ToolTip": "C:\\SOC-Voxerra\\Voxerra\\AppShell.xaml",
-              "RelativeToolTip": "AppShell.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\SOC\\Pages\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\LoginPage.xaml",
+              "ToolTip": "C:\\SOC\\Pages\\LoginPage.xaml",
+              "RelativeToolTip": "Pages\\LoginPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-10T20:33:32.463Z",
+              "WhenOpened": "2024-09-22T17:25:44.857Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\Voxerra\\App.xaml",
-              "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\SOC-Voxerra\\Voxerra\\App.xaml",
-              "RelativeToolTip": "App.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-10T20:33:26.715Z",
+              "DocumentIndex": 0,
+              "Title": "ServiceProvider.cs",
+              "DocumentMoniker": "C:\\SOC\\Services\\ServiceProvider.cs",
+              "RelativeDocumentMoniker": "Services\\ServiceProvider.cs",
+              "ToolTip": "C:\\SOC\\Services\\ServiceProvider.cs",
+              "RelativeToolTip": "Services\\ServiceProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T08:33:07.612Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "app.manifest",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\Voxerra\\Platforms\\Windows\\app.manifest",
-              "RelativeDocumentMoniker": "Platforms\\Windows\\app.manifest",
-              "ToolTip": "C:\\SOC-Voxerra\\Voxerra\\Platforms\\Windows\\app.manifest",
-              "RelativeToolTip": "Platforms\\Windows\\app.manifest",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
-              "WhenOpened": "2024-09-10T20:32:56.198Z",
+              "Title": "LoginPageViewModel.cs",
+              "DocumentMoniker": "C:\\SOC\\ViewModels\\LoginPageViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\LoginPageViewModel.cs",
+              "ToolTip": "C:\\SOC\\ViewModels\\LoginPageViewModel.cs",
+              "RelativeToolTip": "ViewModels\\LoginPageViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T09:36:47.902Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\Voxerra\\Platforms\\Windows\\App.xaml",
-              "RelativeDocumentMoniker": "Platforms\\Windows\\App.xaml",
-              "ToolTip": "C:\\SOC-Voxerra\\Voxerra\\Platforms\\Windows\\App.xaml",
-              "RelativeToolTip": "Platforms\\Windows\\App.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-10T20:32:51.685Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MauiProgram.cs",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\Voxerra\\MauiProgram.cs",
-              "RelativeDocumentMoniker": "MauiProgram.cs",
-              "ToolTip": "C:\\SOC-Voxerra\\Voxerra\\MauiProgram.cs",
-              "RelativeToolTip": "MauiProgram.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Title": "global.cs",
+              "DocumentMoniker": "C:\\SOC\\global.cs",
+              "RelativeDocumentMoniker": "global.cs",
+              "ToolTip": "C:\\SOC\\global.cs",
+              "RelativeToolTip": "global.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T14:32:35.449Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T17:03:24.34Z"
             }
           ]
         },
@@ -128,6 +110,10 @@
           "DockedWidth": 139,
           "SelectedChildIndex": -1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"

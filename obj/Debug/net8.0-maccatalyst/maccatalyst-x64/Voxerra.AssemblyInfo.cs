@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Voxerra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+99b2b4ed5a52429de240072dca1abb10b986fbd5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Voxerra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Voxerra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
