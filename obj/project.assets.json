@@ -39152,11 +39152,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\SOC\\Voxerra.csproj",
+      "projectUniqueName": "C:\\SOC-Voxerra\\Voxerra.csproj",
       "projectName": "Voxerra",
-      "projectPath": "C:\\SOC\\Voxerra.csproj",
+      "projectPath": "C:\\SOC-Voxerra\\Voxerra.csproj",
       "packagesPath": "C:\\Users\\Skrinal\\.nuget\\packages\\",
-      "outputPath": "C:\\SOC\\obj\\",
+      "outputPath": "C:\\SOC-Voxerra\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

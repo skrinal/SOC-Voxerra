@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\SOC\\",
+  "WorkspaceRootPath": "C:\\SOC-Voxerra\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc\\services\\serviceprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\services\\serviceprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:services\\serviceprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc\\pages\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\pages\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:pages\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc\\viewmodels\\loginpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\viewmodels\\loginpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:viewmodels\\loginpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -44,37 +44,35 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "LoginPage.xaml.cs",
-              "DocumentMoniker": "C:\\SOC\\Pages\\LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\SOC-Voxerra\\Pages\\LoginPage.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\LoginPage.xaml.cs",
-              "ToolTip": "C:\\SOC\\Pages\\LoginPage.xaml.cs",
+              "ToolTip": "C:\\SOC-Voxerra\\Pages\\LoginPage.xaml.cs",
               "RelativeToolTip": "Pages\\LoginPage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T17:27:35.007Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T17:27:35.007Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "LoginPage.xaml",
-              "DocumentMoniker": "C:\\SOC\\Pages\\LoginPage.xaml",
+              "DocumentMoniker": "C:\\SOC-Voxerra\\Pages\\LoginPage.xaml",
               "RelativeDocumentMoniker": "Pages\\LoginPage.xaml",
-              "ToolTip": "C:\\SOC\\Pages\\LoginPage.xaml",
+              "ToolTip": "C:\\SOC-Voxerra\\Pages\\LoginPage.xaml",
               "RelativeToolTip": "Pages\\LoginPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-22T17:25:44.857Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T17:25:44.857Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ServiceProvider.cs",
-              "DocumentMoniker": "C:\\SOC\\Services\\ServiceProvider.cs",
+              "DocumentMoniker": "C:\\SOC-Voxerra\\Services\\ServiceProvider.cs",
               "RelativeDocumentMoniker": "Services\\ServiceProvider.cs",
-              "ToolTip": "C:\\SOC\\Services\\ServiceProvider.cs",
-              "RelativeToolTip": "Services\\ServiceProvider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA/AAAAAAAAAA==",
+              "ToolTip": "C:\\SOC-Voxerra\\Services\\ServiceProvider.cs*",
+              "RelativeToolTip": "Services\\ServiceProvider.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T08:33:07.612Z",
               "EditorCaption": ""
@@ -83,22 +81,21 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "LoginPageViewModel.cs",
-              "DocumentMoniker": "C:\\SOC\\ViewModels\\LoginPageViewModel.cs",
+              "DocumentMoniker": "C:\\SOC-Voxerra\\ViewModels\\LoginPageViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\LoginPageViewModel.cs",
-              "ToolTip": "C:\\SOC\\ViewModels\\LoginPageViewModel.cs",
+              "ToolTip": "C:\\SOC-Voxerra\\ViewModels\\LoginPageViewModel.cs",
               "RelativeToolTip": "ViewModels\\LoginPageViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T09:36:47.902Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T09:36:47.902Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "global.cs",
-              "DocumentMoniker": "C:\\SOC\\global.cs",
+              "DocumentMoniker": "C:\\SOC-Voxerra\\global.cs",
               "RelativeDocumentMoniker": "global.cs",
-              "ToolTip": "C:\\SOC\\global.cs",
+              "ToolTip": "C:\\SOC-Voxerra\\global.cs",
               "RelativeToolTip": "global.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

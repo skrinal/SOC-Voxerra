@@ -19,6 +19,7 @@
         {
             using (HttpClient client = new HttpClient())
             {
+                client.Timeout = TimeSpan.FromSeconds(10);
                 var httpRequestMessage = new HttpRequestMessage();
                 httpRequestMessage.Method = HttpMethod.Post;
                 httpRequestMessage.RequestUri = new Uri(_serverRootUrl + "/Authenticate/Authenticate");
