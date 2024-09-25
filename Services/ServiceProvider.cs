@@ -3,7 +3,7 @@
     public class ServiceProvider
     {
         private static ServiceProvider _instance;
-        private string _serverRootUrl = "https://localhost:7264";
+        private string _serverRootUrl = "https://192.168.0.114:7264";
         public string _accesToken = "";
         private ServiceProvider() { }
 

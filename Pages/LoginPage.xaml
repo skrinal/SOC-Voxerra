@@ -28,7 +28,6 @@
                 StrokeThickness="2.5"
                 StrokeShape="RoundRectangle 20">
                 <Entry
-                    Focused="Entry_Focused"
                     x:Name="UserNameEntry"
                     Margin="-1" 
                     ReturnType="Go"
