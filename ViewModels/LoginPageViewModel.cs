@@ -4,6 +4,7 @@ namespace Voxerra.ViewModels
     public class LoginPageViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
+       
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
@@ -46,19 +47,19 @@ namespace Voxerra.ViewModels
                 var response = await ServiceProvider.GetInstance().Authenticate(request);
                 if (response.StatusCode == 200)
                 {
-                    await AppShell.Current.DisplayAlert("ChatApp",
+                    await AppShell.Current.DisplayAlert("Voxerra",
                         "Login sucessful! \n" +
                         $"Username: {response.UserName} \n" +
-                        $"Token: {response.Token}", "OR");
+                        $"Token: {response.Token}", "OK");
                 }
                 else
                 {
-                    await AppShell.Current.DisplayAlert("ChatApp", response.StatusMessage, "OK");
+                    await AppShell.Current.DisplayAlert("Voxerra", response.StatusMessage, "OK");
                 }
             }
             catch (Exception ex)
             {
-                await AppShell.Current.DisplayAlert("ChatApp", ex.Message, "OK");
+                await AppShell.Current.DisplayAlert("Voxerra", ex.Message, "OK");
             }
         }
 

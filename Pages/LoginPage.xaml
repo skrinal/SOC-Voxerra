@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Voxerra.Pages.LoginPage"
              xmlns:viewModel="clr-namespace:Voxerra.ViewModels"
              Title="LoginPage"
-             Background="#0f0f0f">
+             Background="{StaticResource PrimaryColor}">
+    
     <ContentPage.BindingContext>
         <viewModel:LoginPageViewModel/>
     </ContentPage.BindingContext>
@@ -17,56 +18,60 @@
                 WidthRequest="300" />
 
             <Label
+                TextColor="{StaticResource TextColor}"
                 Text="Username"
                 Margin="5,0,0,0"
                 Padding="0,10,0,5" />
-            <Frame
-                Margin="0,0,0,0"
-                Padding="10,0,10,0"
-                BorderColor="Purple">
-                    <Entry
-                        ReturnType="Go"
-                        TextColor="White"
-                        ClearButtonVisibility="WhileEditing"
-                        Text="{Binding UserName}"/> 
-            </Frame>
+            <Border 
+                x:Name="UserNameBorder"
+                Stroke="{StaticResource SecondaryColor}"  
+                StrokeThickness="2.5"
+                StrokeShape="RoundRectangle 20">
+                <Entry
+                    Focused="Entry_Focused"
+                    x:Name="UserNameEntry"
+                    Margin="-1" 
+                    ReturnType="Go"
+                    TextColor="{StaticResource TextColor}"
+                    Text="{Binding UserName}"/>
+            </Border>
 
             <Label
+                TextColor="{StaticResource TextColor}"
                 Text="Password"
                 Margin="5,0,0,0"
                 Padding="0,10,0,5"/>
-            <Frame
-                Margin="0,0,0,0"
-                Padding="10,0,10,0"
-                BorderColor="Purple"
-                BackgroundColor="#191919">
-                    <Entry
-                        IsPassword="True"
-                        ReturnType="Go"
-                        TextColor="White"
-                        ClearButtonVisibility="WhileEditing"
-                        Text="{Binding Password}" />
-            </Frame>
-         
+            <Border 
+                 Stroke="{StaticResource SecondaryColor}"  
+                 StrokeThickness="2.5"
+                 StrokeShape="RoundRectangle 20">
+                <Entry
+                     Margin="-1"
+                     IsPassword="True"
+                     ReturnType="Go"
+                     TextColor="{StaticResource TextColor}"
+                     Text="{Binding Password}"/>
+            </Border>
+
             <Label
                 Margin="0,10,0,0"
                 Text="Forgot password"
-                TextColor="MediumPurple"/>
+                TextColor="{StaticResource TextColor}"/>
 
             <Button
                 Margin="0,30,0,0"
-                Background="Purple"
+                Background="{StaticResource TertiaryColor}"
                 Text="Log in"
-                TextColor="White"
+                TextColor="{StaticResource TextColor}"
                 Command="{Binding LoginCommand}"/>
 
             <HorizontalStackLayout Margin="0,25,0,0" HorizontalOptions="Center">
                 <Label Text="Dont have an account?"
-                       TextColor="#58515e"/>
+                       TextColor="{StaticResource SmallerTextColor}"/>
                 <Label
                      Margin="5,0,0,0"
                      Text="Sign up"
-                     TextColor="White"/>
+                     TextColor="{StaticResource TextColor}"/>
 
             </HorizontalStackLayout>
         </VerticalStackLayout>

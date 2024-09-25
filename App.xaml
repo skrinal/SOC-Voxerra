@@ -6,9 +6,20 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
+                
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+                
             </ResourceDictionary.MergedDictionaries>
+            <!-- <Color x:Key="PrimaryColor">#0f0f0f</Color> -->
+            <Color x:Key="PrimaryColor">#0f0f0f</Color>
+            <Color x:Key="SecondaryColor">#433D8B</Color>
+            <Color x:Key="TertiaryColor">#5a4fe0</Color>
+
+            <Color x:Key="TextColor">White</Color>
+            <Color x:Key="SmallerTextColor">#5a5a5a</Color>
+            
+            
         </ResourceDictionary>
     </Application.Resources>
 </Application>
