@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\SOC-Voxerra\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-09-30T19:11:33.175</Modified>
+      <Modified>2024-09-30T19:25:05.542</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Voxerra.dll">
       <PackagePath>Voxerra.dll</PackagePath>
-      <Modified>2024-09-30T19:11:32.914</Modified>
+      <Modified>2024-09-30T19:25:05.305</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Voxerra.exe</PackagePath>
-      <Modified>2024-09-30T19:11:32.919</Modified>
+      <Modified>2024-09-30T19:25:05.310</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
