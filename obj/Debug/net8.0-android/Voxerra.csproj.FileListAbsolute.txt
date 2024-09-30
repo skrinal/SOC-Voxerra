@@ -526,7 +526,6 @@ C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\zh-Hans\Microsoft.Maui.Co
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\zh-Hant\Microsoft.Maui.Controls.resources.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\zh-HK\Microsoft.Maui.Controls.resources.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\_Microsoft.Android.Resource.Designer.dll
-C:\SOC-Voxerra\obj\Debug\net8.0-android\android\typemaps.arm64-v8a.ll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\AndroidManifest.xml
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\AndroidManifest.xml
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\src\mono\MonoRuntimeProvider.java
@@ -536,7 +535,6 @@ C:\SOC-Voxerra\obj\Debug\net8.0-android\android\bin\mono.android.jar
 C:\SOC-Voxerra\obj\Debug\net8.0-android\static.flag
 C:\SOC-Voxerra\obj\Debug\net8.0-android\__environment__.txt
 C:\SOC-Voxerra\obj\Debug\net8.0-android\buildid.txt
-C:\SOC-Voxerra\obj\Debug\net8.0-android\android\environment.arm64-v8a.ll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\src\androidx\activity\ktx\R.java
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\src\androidx\activity\R.java
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\src\androidx\annotation\experimental\R.java
@@ -1035,13 +1033,6 @@ C:\SOC-Voxerra\obj\Debug\net8.0-android\android\src\mono\MonoPackageManager_Reso
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\bin\packaged_resources
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\src\com\companyname\voxerra\R.java
 C:\SOC-Voxerra\obj\Debug\net8.0-android\_CompileJava.FileList.txt
-C:\SOC-Voxerra\obj\Debug\net8.0-android\android\compressed_assemblies.arm64-v8a.ll
-C:\SOC-Voxerra\obj\Debug\net8.0-android\android\typemaps.arm64-v8a.o
-C:\SOC-Voxerra\obj\Debug\net8.0-android\android\environment.arm64-v8a.o
-C:\SOC-Voxerra\obj\Debug\net8.0-android\android\compressed_assemblies.arm64-v8a.o
-C:\SOC-Voxerra\obj\Debug\net8.0-android\android\marshal_methods.arm64-v8a.o
-C:\SOC-Voxerra\obj\Debug\net8.0-android\android\jni_remap.arm64-v8a.o
-C:\SOC-Voxerra\obj\Debug\net8.0-android\app_shared_libraries\arm64-v8a\libxamarin-app.so
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\bin\classes.dex
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\bin\classes2.dex
 C:\SOC-Voxerra\obj\Debug\net8.0-android\stamp\_CleanIntermediateIfNeeded.stamp
@@ -1052,3 +1043,13 @@ C:\SOC-Voxerra\obj\Debug\net8.0-android\stamp\_ConvertResourcesCases.stamp
 C:\SOC-Voxerra\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 C:\SOC-Voxerra\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\SOC-Voxerra\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\src\crc64dff8ed377220bd47\DevHttpsConnectionHelper_CustomAndroidMessageHandler_CustomHostnameVerifier.java
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\typemaps.x86_64.ll
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\environment.x86_64.ll
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\compressed_assemblies.x86_64.ll
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\typemaps.x86_64.o
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\environment.x86_64.o
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\compressed_assemblies.x86_64.o
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\marshal_methods.x86_64.o
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\jni_remap.x86_64.o
+C:\SOC-Voxerra\obj\Debug\net8.0-android\app_shared_libraries\x86_64\libxamarin-app.so

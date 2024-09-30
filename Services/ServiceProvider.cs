@@ -17,12 +17,13 @@
 
         public async Task <AuthenticateResponse> Authenticate ( AuthenticateRequest request)
         {
-            using (HttpClient client = new HttpClient())
+            var devSslHelper = new DevHttpsConnectionHelper(sslPort: 7264);
+            using (HttpClient client = devSslHelper.HttpClient)
             {
                 client.Timeout = TimeSpan.FromSeconds(10);
                 var httpRequestMessage = new HttpRequestMessage();
                 httpRequestMessage.Method = HttpMethod.Post;
-                httpRequestMessage.RequestUri = new Uri(_serverRootUrl + "/Authenticate/Authenticate");
+                httpRequestMessage.RequestUri = new Uri(devSslHelper.DevServerRootUrl + "/Authenticate/Authenticate");
 
                 if (request != null)
                 {
@@ -35,9 +36,9 @@
                     var response = await client.SendAsync(httpRequestMessage);
                     var responseContent = await response.Content.ReadAsStringAsync();
 
-                    var result = JsonConvert.DeserializeObject<AuthenticateResponse>(responseContent);  
+                    var result = JsonConvert.DeserializeObject<AuthenticateResponse>(responseContent);
                     result.StatusCode = (int)response.StatusCode;
-                    
+
                     if (result.StatusCode == 200)
                     {
                         _accesToken = result.Token;

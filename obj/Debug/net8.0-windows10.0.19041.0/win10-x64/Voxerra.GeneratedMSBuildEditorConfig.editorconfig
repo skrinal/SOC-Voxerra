@@ -24,17 +24,17 @@ build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/SOC-Voxerra/MainPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.MainPage.xaml
-build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
-build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
-
 [C:/SOC-Voxerra/Pages/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.LoginPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\LoginPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\LoginPage.xaml
+
+[C:/SOC-Voxerra/Pages/MessageCenterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.MessageCenterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\MessageCenterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\MessageCenterPage.xaml
 
 [C:/SOC-Voxerra/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
