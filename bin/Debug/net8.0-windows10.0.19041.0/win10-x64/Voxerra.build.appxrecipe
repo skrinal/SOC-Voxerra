@@ -55,6 +55,9 @@
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\MaterialIcons-Regular.ttf">
+      <PackagePath>MaterialIcons-Regular.ttf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
     </AppxPackagedFile>
@@ -199,6 +202,21 @@
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrow_back_ios_new.scale-100.png">
+      <PackagePath>arrow_back_ios_new.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrow_back_ios_new.scale-125.png">
+      <PackagePath>arrow_back_ios_new.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrow_back_ios_new.scale-150.png">
+      <PackagePath>arrow_back_ios_new.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrow_back_ios_new.scale-200.png">
+      <PackagePath>arrow_back_ios_new.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrow_back_ios_new.scale-400.png">
+      <PackagePath>arrow_back_ios_new.scale-400.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_voxerra.scale-100.png">
       <PackagePath>logo_voxerra.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -211,31 +229,31 @@
     <AppxPackagedFile Include="C:\SOC-Voxerra\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Voxerra.deps.json">
       <PackagePath>Voxerra.deps.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.34\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.44\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.34\lib\net6.0\WinRT.Runtime.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.44\lib\net8.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.connections.abstractions\8.0.8\lib\net8.0\Microsoft.AspNetCore.Connections.Abstractions.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.connections.abstractions\8.0.10\lib\net8.0\Microsoft.AspNetCore.Connections.Abstractions.dll">
       <PackagePath>Microsoft.AspNetCore.Connections.Abstractions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.http.connections.client\8.0.8\lib\net8.0\Microsoft.AspNetCore.Http.Connections.Client.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.http.connections.client\8.0.10\lib\net8.0\Microsoft.AspNetCore.Http.Connections.Client.dll">
       <PackagePath>Microsoft.AspNetCore.Http.Connections.Client.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.http.connections.common\8.0.8\lib\net8.0\Microsoft.AspNetCore.Http.Connections.Common.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.http.connections.common\8.0.10\lib\net8.0\Microsoft.AspNetCore.Http.Connections.Common.dll">
       <PackagePath>Microsoft.AspNetCore.Http.Connections.Common.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.signalr.client\8.0.8\lib\net8.0\Microsoft.AspNetCore.SignalR.Client.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.signalr.client\8.0.10\lib\net8.0\Microsoft.AspNetCore.SignalR.Client.dll">
       <PackagePath>Microsoft.AspNetCore.SignalR.Client.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.signalr.client.core\8.0.8\lib\net8.0\Microsoft.AspNetCore.SignalR.Client.Core.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.signalr.client.core\8.0.10\lib\net8.0\Microsoft.AspNetCore.SignalR.Client.Core.dll">
       <PackagePath>Microsoft.AspNetCore.SignalR.Client.Core.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.signalr.common\8.0.8\lib\net8.0\Microsoft.AspNetCore.SignalR.Common.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.signalr.common\8.0.10\lib\net8.0\Microsoft.AspNetCore.SignalR.Common.dll">
       <PackagePath>Microsoft.AspNetCore.SignalR.Common.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.signalr.protocols.json\8.0.8\lib\net8.0\Microsoft.AspNetCore.SignalR.Protocols.Json.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.signalr.protocols.json\8.0.10\lib\net8.0\Microsoft.AspNetCore.SignalR.Protocols.Json.dll">
       <PackagePath>Microsoft.AspNetCore.SignalR.Protocols.Json.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.extensions.configuration\8.0.0\lib\net8.0\Microsoft.Extensions.Configuration.dll">
@@ -244,22 +262,22 @@
     <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.extensions.configuration.abstractions\8.0.0\lib\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll">
       <PackagePath>Microsoft.Extensions.Configuration.Abstractions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.extensions.dependencyinjection\8.0.0\lib\net8.0\Microsoft.Extensions.DependencyInjection.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.extensions.dependencyinjection\8.0.1\lib\net8.0\Microsoft.Extensions.DependencyInjection.dll">
       <PackagePath>Microsoft.Extensions.DependencyInjection.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\8.0.1\lib\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\8.0.2\lib\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll">
       <PackagePath>Microsoft.Extensions.DependencyInjection.Abstractions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.extensions.features\8.0.8\lib\net8.0\Microsoft.Extensions.Features.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.extensions.features\8.0.10\lib\net8.0\Microsoft.Extensions.Features.dll">
       <PackagePath>Microsoft.Extensions.Features.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.extensions.logging\8.0.0\lib\net8.0\Microsoft.Extensions.Logging.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.extensions.logging\8.0.1\lib\net8.0\Microsoft.Extensions.Logging.dll">
       <PackagePath>Microsoft.Extensions.Logging.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.extensions.logging.abstractions\8.0.1\lib\net8.0\Microsoft.Extensions.Logging.Abstractions.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.extensions.logging.abstractions\8.0.2\lib\net8.0\Microsoft.Extensions.Logging.Abstractions.dll">
       <PackagePath>Microsoft.Extensions.Logging.Abstractions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.extensions.logging.debug\8.0.0\lib\net8.0\Microsoft.Extensions.Logging.Debug.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.extensions.logging.debug\8.0.1\lib\net8.0\Microsoft.Extensions.Logging.Debug.dll">
       <PackagePath>Microsoft.Extensions.Logging.Debug.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.extensions.options\8.0.2\lib\net8.0\Microsoft.Extensions.Options.dll">

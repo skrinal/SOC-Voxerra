@@ -1,6 +1,11 @@
 ﻿obj\Debug\net8.0-android\resizetizer\r\drawable\logo_voxerra.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\logo_voxerra_white.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\logo_voxerra_whitev2.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\arrow_back_ios_new.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\arrow_back_ios_new.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\arrow_back_ios_new.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\arrow_back_ios_new.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\arrow_back_ios_new.png
 obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
 obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\appicon_round.xml
 obj\Debug\net8.0-android\resizetizer\r\mipmap-hdpi\appicon.png

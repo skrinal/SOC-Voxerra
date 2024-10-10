@@ -1,1 +1,1 @@
-<resources><color name="colorPrimary">#512BD4</color><color name="colorPrimaryDark">#2B0B98</color><color name="colorAccent">#2B0B98</color></resources>
+<resources><color name="colorPrimary">@android:color/holo_purple</color><!--color of the nav bar--><color name="colorPrimaryDark">@android:color/holo_purple</color><!--color of the moving thing when typing--><color name="colorAccent">@android:color/holo_blue_bright</color></resources>
