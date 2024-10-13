@@ -3,7 +3,7 @@
 	<color name="colorPrimary">@android:color/holo_purple</color>
 	
 	<!--color of the nav bar-->
-	<color name="colorPrimaryDark">@android:color/holo_purple</color>
+	<color name="colorPrimaryDark">#0f0f0f</color>
 	
 	<!--color of the moving thing when typing-->
 	<color name="colorAccent">@android:color/holo_blue_bright</color>

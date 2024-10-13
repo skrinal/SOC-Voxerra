@@ -226,6 +226,9 @@
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_voxerra_whitev2.scale-100.png">
       <PackagePath>logo_voxerra_whitev2.scale-100.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\unnamed.scale-100.jpg">
+      <PackagePath>unnamed.scale-100.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Voxerra.deps.json">
       <PackagePath>Voxerra.deps.json</PackagePath>
     </AppxPackagedFile>

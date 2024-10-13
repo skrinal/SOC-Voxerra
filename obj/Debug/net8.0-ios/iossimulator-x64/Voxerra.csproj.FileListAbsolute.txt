@@ -323,3 +323,8 @@ C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\refint\Voxerra.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\Voxerra.pdb
 C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\Voxerra.genruntimeconfig.cache
 C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\ref\Voxerra.dll
+C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\unnamed.jpg
+C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\arrow_back_ios_new@3x.png
+C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\arrow_back_ios_new@2x.png
+C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\arrow_back_ios_new.png
+C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\f\MaterialIcons-Regular.ttf

@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\SOC-Voxerra\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\pages\\messagecenterpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:pages\\messagecenterpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\platforms\\android\\resources\\values\\colors.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:platforms\\android\\resources\\values\\colors.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -15,8 +19,8 @@
       "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\pages\\messagecenterpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:pages\\messagecenterpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 847,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,53 +42,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "colors.xml",
+              "DocumentMoniker": "C:\\SOC-Voxerra\\Platforms\\Android\\Resources\\values\\colors.xml",
+              "RelativeDocumentMoniker": "Platforms\\Android\\Resources\\values\\colors.xml",
+              "ToolTip": "C:\\SOC-Voxerra\\Platforms\\Android\\Resources\\values\\colors.xml",
+              "RelativeToolTip": "Platforms\\Android\\Resources\\values\\colors.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-10-13T20:07:05.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MessageCenterPage.xaml",
+              "DocumentMoniker": "C:\\SOC-Voxerra\\Pages\\MessageCenterPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\MessageCenterPage.xaml",
+              "ToolTip": "C:\\SOC-Voxerra\\Pages\\MessageCenterPage.xaml",
+              "RelativeToolTip": "Pages\\MessageCenterPage.xaml",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAcwFsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-30T18:37:22.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "C:\\SOC-Voxerra\\AppShell.xaml",
               "RelativeDocumentMoniker": "AppShell.xaml",
               "ToolTip": "C:\\SOC-Voxerra\\AppShell.xaml",
               "RelativeToolTip": "AppShell.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-10T21:55:40.406Z"
+              "WhenOpened": "2024-10-10T21:55:40.406Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Colors.xaml",
               "DocumentMoniker": "C:\\SOC-Voxerra\\Resources\\Styles\\Colors.xaml",
               "RelativeDocumentMoniker": "Resources\\Styles\\Colors.xaml",
               "ToolTip": "C:\\SOC-Voxerra\\Resources\\Styles\\Colors.xaml",
               "RelativeToolTip": "Resources\\Styles\\Colors.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-10-10T21:49:57.151Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "LoginPage.xaml",
               "DocumentMoniker": "C:\\SOC-Voxerra\\Pages\\LoginPage.xaml",
               "RelativeDocumentMoniker": "Pages\\LoginPage.xaml",
               "ToolTip": "C:\\SOC-Voxerra\\Pages\\LoginPage.xaml",
               "RelativeToolTip": "Pages\\LoginPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACEAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-09-30T18:29:22.201Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MessageCenterPage.xaml",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\Pages\\MessageCenterPage.xaml",
-              "RelativeDocumentMoniker": "Pages\\MessageCenterPage.xaml",
-              "ToolTip": "C:\\SOC-Voxerra\\Pages\\MessageCenterPage.xaml",
-              "RelativeToolTip": "Pages\\MessageCenterPage.xaml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-30T18:37:22.53Z"
             }
           ]
         },

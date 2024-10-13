@@ -6,12 +6,13 @@
              xmlns:viewModel="clr-namespace:Voxerra.ViewModels"
              Title="MessageCenterPage"
              Background="{StaticResource Background}">
-    
-    <Grid>
+
+    <Grid Margin="0,15,0,0">
         <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="85"/>
+            <RowDefinition Height="100"/>
             <RowDefinition Height="45"/>
-            <RowDefinition Height="45"/>
-            <RowDefinition Height="95"/>
             <RowDefinition />
         </Grid.RowDefinitions>
 
@@ -26,28 +27,300 @@
             </StackLayout>
 
 
-            <StackLayout  HorizontalOptions="Start" Orientation="Horizontal" Margin="70,0,0,0">
-               
-                <Label Text="Name" TextColor="White" FontFamily="Default" FontSize="24" VerticalOptions="Center" Margin="0,4,0,0"/>
-                <Button Text="keyboard_arrow_down" FontFamily="GoogleFont" FontSize="24" VerticalOptions="Center" 
-                        WidthRequest="100"
-                        Margin="-70,0,0,0"
-                        Padding="70,0,0,0"
+            <StackLayout HorizontalOptions="Start" Orientation="Horizontal" Margin="70,0,0,0">
+
+                <Label Text="skrinal.jpg" TextColor="White" FontFamily="OpenSansSemibold" FontSize="18" 
+                       VerticalOptions="Center" 
+                       Margin="0,6,0,0"
+                       Padding="0,0,0,5"/>
+
+                <Button Text="keyboard_arrow_down" FontFamily="GoogleFont" FontSize="24"
+                        WidthRequest="130"
                         BackgroundColor="Transparent"
-                        TextColor="White"/> 
+                        TextColor="White"
+                        HorizontalOptions="End"
+                        Padding="100,0,0,0"
+                        Margin="-100,0,0,0"/>
 
             </StackLayout>
 
-
             <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="End">
 
-                <Button Text="&#xe5c4;" FontFamily="GoogleFont" FontSize="24" VerticalOptions="Center" 
+                <Button Text="dehaze" FontFamily="GoogleFont" FontSize="24" VerticalOptions="Center" 
                         BackgroundColor="Transparent"
                         TextColor="White"/> 
                 
             </StackLayout>
-
         </Grid>
+
+        <Grid Grid.Row="1">
+            <Border Margin="15,0,15,0"
+                    Stroke="{StaticResource SecondaryColor}"  
+                    StrokeThickness="2"
+                    StrokeShape="RoundRectangle 10"
+                    HeightRequest="40"
+                    BackgroundColor="#1D1D1D">
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" >
+
+                    <Label Text="search" TextColor="gray" FontFamily="GoogleFont" FontSize="18" Margin="10,0,0,0" VerticalOptions="Center"/>
+
+                    <Label Text="Search" TextColor="Gray" FontFamily="OpenSansSemibold" Margin="10,0,0,0" VerticalOptions="Center"/>
+
+                </StackLayout>
+
+            </Border>
+        </Grid>
+
+        <ScrollView Grid.Row="2" Orientation="Horizontal" VerticalOptions="Center" HorizontalScrollBarVisibility="Never">
+            <StackLayout Orientation="Horizontal">
+
+
+                <StackLayout WidthRequest="100" Margin="10,0,0,0">
+                    <Grid HeightRequest="100">
+                        
+                        <Frame VerticalOptions="Center" HeightRequest="65" WidthRequest="65" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                            <Image Source="unnamed.jpg" Aspect="AspectFill"/>
+
+                        </Frame>
+
+                        <Label Text="Your note" FontSize="12" 
+                               Margin="0,3,0,0"
+                               HorizontalOptions="Center"
+                               VerticalOptions="End"/>
+
+                        <Border Margin="12,0,35,0"
+                                Stroke="Black"  
+                                StrokeThickness="0"
+                                StrokeShape="RoundRectangle 12"
+                                BackgroundColor="LightSlateGray"
+                                VerticalOptions="Start">
+
+                            <StackLayout HeightRequest="30" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+
+                                <Label Text="Note..." TextColor="White" FontFamily="OpenSansSemibold" FontSize="13" 
+                                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                                       Padding="0"/>
+                                
+
+                            </StackLayout>
+
+                        </Border>
+                        
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout WidthRequest="100" >
+
+                    <Grid HeightRequest="100">
+
+                        <Frame VerticalOptions="Center" HeightRequest="65" WidthRequest="65" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                            <Image Source="unnamed.jpg" Aspect="AspectFill"/>
+
+                        </Frame>
+
+                        <Label Text="Your note" FontSize="12" 
+                               Margin="0,3,0,0"
+                               HorizontalOptions="Center"
+                               VerticalOptions="End"/>
+
+                        <Border Margin="12,0,12,0"
+                                Stroke="Black"  
+                                StrokeThickness="0"
+                                StrokeShape="RoundRectangle 12"
+                                BackgroundColor="LightSlateGray"
+                                VerticalOptions="Start">    
+
+                            <StackLayout Padding="0,0,0,4" HorizontalOptions="Start" VerticalOptions="Start" >
+
+                                <Label Text="Your note" TextColor="White" FontFamily="OpenSansSemibold" FontSize="10" 
+                                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                                       Padding="8,4,0,0"/>
+                                <Label Text="Future,Seper" FontSize="9" FontFamily="OpenSansSemibold"
+                                       Padding="8,0,5,0" LineBreakMode="NoWrap"/>
+
+                            </StackLayout>
+
+                        </Border>
+
+                    </Grid>
+
+                </StackLayout>
+
+                <StackLayout WidthRequest="100">
+
+                    <Frame HeightRequest="65" WidthRequest="65" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                        <Image Source="unnamed.jpg" Aspect="AspectFill"/>
+                    </Frame>
+
+                    <Label Text="Your note" FontSize="12" 
+                           Margin="0,3,0,0"
+                           HorizontalOptions="Center"/>
+                    
+                </StackLayout>
+
+                <StackLayout WidthRequest="100">
+
+                    <Frame HeightRequest="65" WidthRequest="65" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                        <Image Source="unnamed.jpg" Aspect="AspectFill"/>
+                    </Frame>
+
+                    <Label Text="Your note" FontSize="12" 
+                           Margin="0,3,0,0"
+                           HorizontalOptions="Center"/>
+
+                </StackLayout>
+
+                <StackLayout WidthRequest="100">
+
+                    <Frame HeightRequest="65" WidthRequest="65" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                        <Image Source="unnamed.jpg" Aspect="AspectFill"/>
+                    </Frame>
+
+                    <Label Text="Your note" FontSize="12" 
+                           Margin="0,3,0,0"
+                           HorizontalOptions="Center"/>
+                    
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+        
+        <Grid Grid.Row="3">
+            <StackLayout Orientation="Horizontal" Padding="20,0,0,0">
+
+                <Label Text="Messages" TextColor="White" FontFamily="OpenSansSemibold" FontSize="18" 
+                       VerticalOptions="Center"/>
+                
+            </StackLayout>
+
+            <StackLayout VerticalOptions="Center" HorizontalOptions="End">
+                
+                <Button Text="Requested" FontFamily="OpenSansSemibold" FontSize="18" 
+                        BackgroundColor="Transparent"
+                        TextColor="Cyan"
+                        Margin="0,0,20,0" Padding="10,0,10,0"/>  
+
+            </StackLayout>
+        </Grid>
+        
+        <ScrollView Grid.Row="4">
+            <StackLayout>
+                <StackLayout Orientation="Horizontal" Padding="25,10,0,10">
+
+                    <Frame HeightRequest="54" WidthRequest="54" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                        <Image Source="unnamed.jpg" Aspect="AspectFill"/>
+                    </Frame>
+
+                    <StackLayout Margin="20,5,0,0" HorizontalOptions="Start">
+
+                        <Label Text="Name" FontSize="15"/>
+                        <Label Text="last msgggggggggggggggggg"/>
+
+                   </StackLayout>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="25,10,0,10">
+
+                    <Frame HeightRequest="54" WidthRequest="54" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                        <Image Source="unnamed.jpg" Aspect="AspectFill"/>
+                    </Frame>
+
+                    <StackLayout Margin="20,5,0,0" HorizontalOptions="Start">
+
+                        <Label Text="Name" FontSize="15"/>
+                        <Label Text="last msgggggggggggggggggg"/>
+
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="25,10,0,10">
+
+                    <Frame HeightRequest="54" WidthRequest="54" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                        <Image Source="unnamed.jpg" Aspect="AspectFill"/>
+                    </Frame>
+
+                    <StackLayout Margin="20,5,0,0" HorizontalOptions="Start">
+
+                        <Label Text="Name" FontSize="15"/>
+                        <Label Text="last msgggggggggggggggggg"/>
+
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="25,10,0,10">
+
+                    <Frame HeightRequest="54" WidthRequest="54" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                        <Image Source="unnamed.jpg" Aspect="AspectFill"/>
+                    </Frame>
+
+                    <StackLayout Margin="20,5,0,0" HorizontalOptions="Start">
+
+                        <Label Text="Name" FontSize="15"/>
+                        <Label Text="last msgggggggggggggggggg"/>
+
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="25,10,0,10">
+
+                    <Frame HeightRequest="54" WidthRequest="54" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                        <Image Source="unnamed.jpg" Aspect="AspectFill"/>
+                    </Frame>
+
+                    <StackLayout Margin="20,5,0,0" HorizontalOptions="Start">
+
+                        <Label Text="Name" FontSize="15"/>
+                        <Label Text="last msgggggggggggggggggg"/>
+
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="25,10,0,10">
+
+                    <Frame HeightRequest="54" WidthRequest="54" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                        <Image Source="unnamed.jpg" Aspect="AspectFill"/>
+                    </Frame>
+
+                    <StackLayout Margin="20,5,0,0" HorizontalOptions="Start">
+
+                        <Label Text="Name" FontSize="15"/>
+                        <Label Text="last msgggggggggggggggggg"/>
+
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="25,10,0,10">
+
+                    <Frame HeightRequest="54" WidthRequest="54" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                        <Image Source="unnamed.jpg" Aspect="AspectFill"/>
+                    </Frame>
+
+                    <StackLayout Margin="20,5,0,0" HorizontalOptions="Start">
+
+                        <Label Text="Name" FontSize="15"/>
+                        <Label Text="last msgggggggggggggggggg"/>
+
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="25,10,0,10">
+
+                    <Frame HeightRequest="54" WidthRequest="54" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                        <Image Source="unnamed.jpg" Aspect="AspectFill"/>
+                    </Frame>
+
+                    <StackLayout Margin="20,5,0,0" HorizontalOptions="Start">
+
+                        <Label Text="Name" FontSize="15"/>
+                        <Label Text="last msgggggggggggggggggg"/>
+
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+            
+        </ScrollView>
+        
     </Grid>
     
 </ContentPage>

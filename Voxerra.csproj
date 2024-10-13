@@ -61,6 +61,7 @@
 	  <None Remove="Resources\Images\logo_Voxerra.png" />
 	  <None Remove="Resources\Images\logo_Voxerra_white.png" />
 	  <None Remove="Resources\Images\logo_voxerra_whitev2.png" />
+	  <None Remove="Resources\Images\unnamed.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>

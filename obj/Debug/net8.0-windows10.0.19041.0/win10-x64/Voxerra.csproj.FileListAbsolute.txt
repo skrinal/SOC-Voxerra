@@ -565,3 +565,4 @@ C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arro
 C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrow_back_ios_new.scale-200.png
 C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrow_back_ios_new.scale-400.png
 C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\MaterialIcons-Regular.ttf
+C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\unnamed.scale-100.jpg
