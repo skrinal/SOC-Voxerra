@@ -47,10 +47,13 @@ namespace Voxerra.ViewModels
                 var response = await ServiceProvider.GetInstance().Authenticate(request);
                 if (response.StatusCode == 200)
                 {
-                    await AppShell.Current.DisplayAlert("Voxerra",
-                        "Login sucessful! \n" +
-                        $"Username: {response.UserName} \n" +
-                        $"Token: {response.Token}", "OK");
+                    //    await AppShell.Current.DisplayAlert("Voxerra",
+                    //        "Login sucessful! \n" +
+                    //        $"Username: {response.UserName} \n" +
+                    //        $"Token: {response.Token}", "OK");
+                    //
+
+                    await Shell.Current.GoToAsync($"MessageCenterPage?userId={response.Id}");
                 }
                 else
                 {

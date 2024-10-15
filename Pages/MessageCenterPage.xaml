@@ -6,7 +6,10 @@
              xmlns:viewModel="clr-namespace:Voxerra.ViewModels"
              Title="MessageCenterPage"
              Background="{StaticResource Background}">
-
+    <ContentPage.BindingContext>
+        <viewModel:MessageCenterPageViewModel/>
+    </ContentPage.BindingContext>
+    
     <Grid Margin="0,15,0,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
@@ -44,13 +47,27 @@
 
             </StackLayout>
 
-            <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="End">
+            <AbsoluteLayout>
+                <!-- Button aligned to the right side -->
+                <Button Text="dehaze" FontFamily="GoogleFont" FontSize="24"
+            BackgroundColor="Transparent" TextColor="White"
+            AbsoluteLayout.LayoutBounds="1, 0.5, AutoSize, AutoSize"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            Clicked="OnMenuButtonClicked" />
 
-                <Button Text="dehaze" FontFamily="GoogleFont" FontSize="24" VerticalOptions="Center" 
-                        BackgroundColor="Transparent"
-                        TextColor="White"/> 
-                
-            </StackLayout>
+                <!-- Profile View (Initially hidden) -->
+                <ContentView x:Name="ProfileView" IsVisible="False" BackgroundColor="LightGray"
+                 AbsoluteLayout.LayoutBounds="1, 0, 0.5, 1"
+                 AbsoluteLayout.LayoutFlags="PositionProportional, HeightProportional">
+                    <StackLayout Padding="20">
+                        <Label Text="User Profile" FontSize="20" TextColor="Black"/>
+                        <Button Text="Close" Clicked="OnCloseProfileClicked"/>
+                        <!-- Add other profile content here -->
+                    </StackLayout>
+                </ContentView>
+            </AbsoluteLayout>
+
+
         </Grid>
 
         <Grid Grid.Row="1">
@@ -72,7 +89,93 @@
             </Border>
         </Grid>
 
-        <ScrollView Grid.Row="2" Orientation="Horizontal" VerticalOptions="Center" HorizontalScrollBarVisibility="Never">
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <StackLayout WidthRequest="100" Margin="10,0,0,0">
+                <Grid HeightRequest="100">
+
+                    <Frame VerticalOptions="Center" HeightRequest="65" WidthRequest="65" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                        <Image Source="unnamed.jpg" Aspect="AspectFill"/>
+
+                    </Frame>
+
+                    <Label Text="Your note" FontSize="12" 
+                           Margin="0,3,0,0"
+                           HorizontalOptions="Center"
+                           VerticalOptions="End"/>
+
+                    <Border Margin="12,0,35,0"
+                            Stroke="Black"  
+                            StrokeThickness="0"
+                            StrokeShape="RoundRectangle 12"
+                            BackgroundColor="LightSlateGray"
+                            VerticalOptions="Start">
+
+                        <StackLayout HeightRequest="30" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+
+                            <Label Text="Note..." TextColor="White" FontFamily="OpenSansSemibold" FontSize="13" 
+                                    HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                                    Padding="0"/>
+
+                        </StackLayout>
+                    </Border>
+                </Grid>
+            </StackLayout>
+
+            <CollectionView Grid.Column="1" ItemsSource="{Binding UserFriends}">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal" />
+                </CollectionView.ItemsLayout>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout WidthRequest="100" >
+                            <Grid HeightRequest="100">
+
+                                <Frame VerticalOptions="Center" HeightRequest="65" WidthRequest="65" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                                    <Image Source="unnamed.jpg" Aspect="AspectFill"/>
+                                </Frame>
+
+                                <Label Text="Your note" FontSize="12" 
+                            Margin="0,3,0,0"
+                            HorizontalOptions="Center"
+                            VerticalOptions="End"/>
+
+                                <Border Margin="12,0,12,0"
+                             Stroke="Black"  
+                             StrokeThickness="0"
+                             StrokeShape="RoundRectangle 12"
+                             BackgroundColor="LightSlateGray"
+                             VerticalOptions="Start">
+
+                                    <StackLayout Padding="0,0,0,4" HorizontalOptions="Start" VerticalOptions="Start" >
+
+                                        <Label Text="Your note" TextColor="White" FontFamily="OpenSansSemibold" FontSize="10" 
+                                   HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                                   Padding="8,4,0,0"/>
+                                        <Label Text="Future,Seper" FontSize="9" FontFamily="OpenSansSemibold"
+                                   Padding="8,0,5,0" LineBreakMode="NoWrap"/>
+
+                                    </StackLayout>
+
+                                </Border>
+
+                            </Grid>
+
+                        </StackLayout>
+
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+
+        </Grid>
+        
+        <!--<ScrollView Grid.Row="2" Orientation="Horizontal" VerticalOptions="Center" HorizontalScrollBarVisibility="Never">
             <StackLayout Orientation="Horizontal">
 
 
@@ -184,7 +287,7 @@
                 </StackLayout>
 
             </StackLayout>
-        </ScrollView>
+        </ScrollView>-->
         
         <Grid Grid.Row="3">
             <StackLayout Orientation="Horizontal" Padding="20,0,0,0">
@@ -203,8 +306,37 @@
 
             </StackLayout>
         </Grid>
+
+
+        <ListView Grid.Row="4" ItemsSource="{Binding LastestMessages}" 
+                  RowHeight="70"
+                  SeparatorVisibility="None"
+                  VerticalScrollBarVisibility="Never">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+
+                        <HorizontalStackLayout Padding="25,10,0,10">
+
+                            <Frame HeightRequest="54" WidthRequest="54" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                                <Image Source="unnamed.jpg" Aspect="AspectFill"/>
+                            </Frame>
+
+                            <StackLayout Margin="20,5,0,0" HorizontalOptions="Start">
+
+                                <Label Text="Name" FontSize="15"/>
+                                <Label Text="last msgggggggggggggggggg"/>
+
+                            </StackLayout>
+                        </HorizontalStackLayout>
+
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            
+        </ListView>
         
-        <ScrollView Grid.Row="4">
+        <!--<ScrollView Grid.Row="4">
             <StackLayout>
                 <StackLayout Orientation="Horizontal" Padding="25,10,0,10">
 
@@ -319,7 +451,7 @@
                 </StackLayout>
             </StackLayout>
             
-        </ScrollView>
+        </ScrollView>-->
         
     </Grid>
     
