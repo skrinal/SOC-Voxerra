@@ -15,8 +15,8 @@ namespace Voxerra.ViewModels
 
         public LoginPageViewModel()
         {
-            UserName = "";
-            Password = "";
+            UserName = "wanda";
+            Password = "Abc12345";
             isProcessing = false;
 
             LoginCommand = new Command(() =>
@@ -30,9 +30,8 @@ namespace Voxerra.ViewModels
                 {
                     isProcessing = false;
                 });
-            
-
             });
+
         }
         
         async Task Login()

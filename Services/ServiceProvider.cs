@@ -2,17 +2,26 @@
 {
     public class ServiceProvider
     {
-        private static ServiceProvider _instance;
+        //private static ServiceProvider _instance;
         //private string _serverRootUrl = "https://192.168.0.114:7264";
+        
+        
         public string _accesToken = "";
-        private ServiceProvider() { }
+        private DevHttpsConnectionHelper _devSslHelper;
+        
+        
+        //private ServiceProvider() { }
+        //public static ServiceProvider GetInstance()
+        //{
+        //    if (_instance == null)
+        //        _instance = new ServiceProvider();
 
-        public static ServiceProvider GetInstance()
+        //    return _instance;
+        //}
+
+        public ServiceProvider()
         {
-            if (_instance == null)
-                _instance = new ServiceProvider();
-
-            return _instance;
+            _devSslHelper = new DevHttpsConnectionHelper(sslPort: 7093);
         }
 
         public async Task <AuthenticateResponse> Authenticate ( AuthenticateRequest request)
@@ -65,7 +74,7 @@
             {
                 client.Timeout = TimeSpan.FromSeconds(10);
                 var httpRequestMessage = new HttpRequestMessage();
-                httpRequestMessage.Method = HttpMethod.Post;
+                httpRequestMessage.Method = httpMethod;
                 httpRequestMessage.RequestUri = new Uri(devSslHelper.DevServerRootUrl + apiUrl);
                 httpRequestMessage.Headers.Authorization =
                     new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer" + _accesToken);
@@ -84,14 +93,13 @@
                     var result = JsonConvert.DeserializeObject<TResponse>(responseContent);
                     result.StatusCode = (int)response.StatusCode;
 
-                  
                     return result;
                 }
                 catch (Exception ex)
                 {
                     var result = Activator.CreateInstance<TResponse>();
                     result.StatusCode = 500;
-                    result.StatusMessage = ex.Message;
+                    result.StatusMessage = $"Unexpected error: {ex.Message}";
                     return result;
                 }
             }

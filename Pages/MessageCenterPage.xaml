@@ -9,7 +9,7 @@
     <ContentPage.BindingContext>
         <viewModel:MessageCenterPageViewModel/>
     </ContentPage.BindingContext>
-    
+
     <Grid Margin="0,15,0,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
@@ -32,7 +32,7 @@
 
             <StackLayout HorizontalOptions="Start" Orientation="Horizontal" Margin="70,0,0,0">
 
-                <Label Text="skrinal.jpg" TextColor="White" FontFamily="OpenSansSemibold" FontSize="18" 
+                <Label Text="{Binding UserInfo.UserName}" TextColor="White" FontFamily="OpenSansSemibold" FontSize="18" 
                        VerticalOptions="Center" 
                        Margin="0,6,0,0"
                        Padding="0,0,0,5"/>
@@ -52,8 +52,7 @@
                 <Button Text="dehaze" FontFamily="GoogleFont" FontSize="24"
             BackgroundColor="Transparent" TextColor="White"
             AbsoluteLayout.LayoutBounds="1, 0.5, AutoSize, AutoSize"
-            AbsoluteLayout.LayoutFlags="PositionProportional"
-            Clicked="OnMenuButtonClicked" />
+            AbsoluteLayout.LayoutFlags="PositionProportional" />
 
                 <!-- Profile View (Initially hidden) -->
                 <ContentView x:Name="ProfileView" IsVisible="False" BackgroundColor="LightGray"
@@ -61,7 +60,7 @@
                  AbsoluteLayout.LayoutFlags="PositionProportional, HeightProportional">
                     <StackLayout Padding="20">
                         <Label Text="User Profile" FontSize="20" TextColor="Black"/>
-                        <Button Text="Close" Clicked="OnCloseProfileClicked"/>
+                        <Button Text="Close"/>
                         <!-- Add other profile content here -->
                     </StackLayout>
                 </ContentView>
@@ -319,13 +318,13 @@
                         <HorizontalStackLayout Padding="25,10,0,10">
 
                             <Frame HeightRequest="54" WidthRequest="54" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
-                                <Image Source="unnamed.jpg" Aspect="AspectFill"/>
+                                <Image Source="{Binding UserFiendInfo.AvatarSourceName}" Aspect="AspectFill"/>
                             </Frame>
 
                             <StackLayout Margin="20,5,0,0" HorizontalOptions="Start">
 
-                                <Label Text="Name" FontSize="15"/>
-                                <Label Text="last msgggggggggggggggggg"/>
+                                <Label Text="{Binding UserFiendInfo.UserName}" FontSize="15"/>
+                                <Label Text="{Binding Content}"/>
 
                             </StackLayout>
                         </HorizontalStackLayout>
