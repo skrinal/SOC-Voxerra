@@ -12,23 +12,39 @@ namespace Voxerra.ViewModels
         private User userInfo;
         private ObservableCollection<User> userFriends;
         private ObservableCollection<LastestMessage> lastestMessage;
+        private bool isRefreshing;
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        public MessageCenterPageViewModel() 
+        private ServiceProvider _serviceProvider;
+
+        public MessageCenterPageViewModel(ServiceProvider serviceProvider) 
         {
             UserInfo = new User();
             UserFriends = new ObservableCollection<User>();
             LastestMessages = new ObservableCollection<LastestMessage>();
 
+            RefreshCommand = new Command(() =>
+            {
+                Task.Run(async () =>
+                {
+                    IsRefreshing = true;
+                    await GetListFriends();
+                }).GetAwaiter().OnCompleted(() =>
+                {
+                    IsRefreshing = false;
+                });
+            });
+
+            _serviceProvider = serviceProvider;
         }
 
         async Task GetListFriends()
         {
-            var response = await ServiceProvider.GetInstance().CallWebApi<int, MessageCenterInitializeResponse>
+            var response = await _serviceProvider.CallWebApi<int, MessageCenterInitializeResponse>
                 ("/MessageCenter/Initialize", HttpMethod.Post, UserInfo.Id);
            
             if (response.StatusCode == 200)
@@ -48,11 +64,19 @@ namespace Voxerra.ViewModels
             if (query == null || query.Count == 0) return;
 
             UserInfo.Id = int.Parse(HttpUtility.UrlDecode(query["userId"].ToString()));
+          
+        }
+
+        internal void Initialize()
+        {
             Task.Run(async () =>
             {
+                IsRefreshing = true;
                 await GetListFriends();
+            }).GetAwaiter().OnCompleted(() =>
+            {
+                IsRefreshing = false;
             });
-
         }
 
         //public async void ApplyQueryAttributes(IDictionary<string, object> query)
@@ -95,5 +119,12 @@ namespace Voxerra.ViewModels
             set { lastestMessage = value; OnPropertyChanged(); }
         }
 
+        public bool IsRefreshing
+        {
+            get { return isRefreshing; }
+            set { isRefreshing = value; OnPropertyChanged(); }
+        }
+
+        public ICommand RefreshCommand { get; set; }
     }
 }

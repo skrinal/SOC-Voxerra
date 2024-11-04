@@ -1,4 +1,6 @@
-﻿namespace Voxerra
+﻿using Voxerra.Pages;
+
+namespace Voxerra
 {
     public static class MauiProgram
     {
@@ -17,6 +19,14 @@
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
+
+            
+            builder.Services.AddSingleton<AppShell>();
+            builder.Services.AddSingleton<LoginPage>();
+            builder.Services.AddSingleton<MessageCenterPage>();
+            builder.Services.AddSingleton<LoginPageViewModel>();
+            builder.Services.AddSingleton<MessageCenterPageViewModel>();
+            builder.Services.AddSingleton<ServiceProvider>();
 
             return builder.Build();
         }

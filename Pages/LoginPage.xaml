@@ -6,9 +6,9 @@
              Title="LoginPage"
              Background="{StaticResource Background}">
     
-    <ContentPage.BindingContext>
+    <!--<ContentPage.BindingContext>
         <viewModel:LoginPageViewModel/>
-    </ContentPage.BindingContext>
+    </ContentPage.BindingContext>-->
     
     <Grid>
         <VerticalStackLayout Margin="30" VerticalOptions="Center">

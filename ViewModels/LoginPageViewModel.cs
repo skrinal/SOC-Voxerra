@@ -9,12 +9,12 @@ namespace Voxerra.ViewModels
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-        private string userName;
-        private string password;
-        private bool isProcessing;
+        
+        private ServiceProvider _serviceProvider;
 
-        public LoginPageViewModel()
+        public LoginPageViewModel(ServiceProvider serviceProvider)
         {
+            
             UserName = "wanda";
             Password = "Abc12345";
             isProcessing = false;
@@ -31,7 +31,7 @@ namespace Voxerra.ViewModels
                     isProcessing = false;
                 });
             });
-
+            this._serviceProvider = serviceProvider;
         }
         
         async Task Login()
@@ -43,7 +43,7 @@ namespace Voxerra.ViewModels
                     LoginId = UserName,
                     Password = Password,
                 };
-                var response = await ServiceProvider.GetInstance().Authenticate(request);
+                var response = await _serviceProvider.Authenticate(request);
                 if (response.StatusCode == 200)
                 {
                     //    await AppShell.Current.DisplayAlert("Voxerra",
@@ -64,6 +64,10 @@ namespace Voxerra.ViewModels
                 await AppShell.Current.DisplayAlert("Voxerra", ex.Message, "OK");
             }
         }
+
+        private string userName;
+        private string password;
+        private bool isProcessing;
 
         public string UserName
         {
