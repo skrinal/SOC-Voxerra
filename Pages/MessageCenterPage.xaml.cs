@@ -11,6 +11,6 @@ public partial class MessageCenterPage : ContentPage
 
     private void ContentPage_NavigatedTo(object sender, NavigatedToEventArgs e)
     {
-        (this.BindingContext as MessageCenterPageViewModel).Initialize();
+        (BindingContext as MessageCenterPageViewModel).Initialize();
     }
 }

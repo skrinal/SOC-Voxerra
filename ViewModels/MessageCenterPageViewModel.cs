@@ -1,6 +1,6 @@
 ﻿using System.Collections.ObjectModel;
+using System.Net.Http;
 using System.Web;
-using Voxerra.Models;
 using Voxerra.Services.MessageCenter;
 
 namespace Voxerra.ViewModels
@@ -8,11 +8,6 @@ namespace Voxerra.ViewModels
     public class MessageCenterPageViewModel : INotifyPropertyChanged, IQueryAttributable
     {
         public event PropertyChangedEventHandler PropertyChanged;
-
-        private User userInfo;
-        private ObservableCollection<User> userFriends;
-        private ObservableCollection<LastestMessage> lastestMessage;
-        private bool isRefreshing;
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
@@ -39,6 +34,11 @@ namespace Voxerra.ViewModels
                 });
             });
 
+            OpenChatPageCommand = new Command<int>(async (param) =>
+            {
+                await Shell.Current.GoToAsync($"ChatPage?fromUserId={UserInfo.Id}&toUserId={param}");
+            });
+
             _serviceProvider = serviceProvider;
         }
 
@@ -52,6 +52,7 @@ namespace Voxerra.ViewModels
                 UserInfo = response.User;
                 UserFriends = new ObservableCollection<User>(response.UserFriends);
                 LastestMessages = new ObservableCollection<LastestMessage>(response.LastestMessages);
+
             }
             else
             {
@@ -79,28 +80,10 @@ namespace Voxerra.ViewModels
             });
         }
 
-        //public async void ApplyQueryAttributes(IDictionary<string, object> query)
-        //{
-        //    try
-        //    {
-        //        // Check if query or userId is missing or empty
-        //        if (query == null || query.Count == 0 || !query.ContainsKey("userId")) return;
-
-
-        //        // Check for null or empty value for userId
-        //        var userIdValue = query["userId"]?.ToString();
-        //        if (string.IsNullOrWhiteSpace(userIdValue)) return;
-
-        //        // Parse and assign the userId
-        //        UserInfo.Id = int.Parse(HttpUtility.UrlDecode(userIdValue));
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        // Display the error message
-        //        await AppShell.Current.DisplayAlert("Voxerra", ex.Message, "OK");
-        //    }
-        //}
-
+        private User userInfo;
+        private ObservableCollection<User> userFriends;
+        private ObservableCollection<LastestMessage> latestMessages;
+        private bool isRefreshing;
 
         public User UserInfo
         {
@@ -115,8 +98,8 @@ namespace Voxerra.ViewModels
 
         public ObservableCollection<LastestMessage> LastestMessages
         {
-            get { return lastestMessage; }
-            set { lastestMessage = value; OnPropertyChanged(); }
+            get { return latestMessages; }
+            set { latestMessages = value; OnPropertyChanged(); }
         }
 
         public bool IsRefreshing
@@ -126,5 +109,7 @@ namespace Voxerra.ViewModels
         }
 
         public ICommand RefreshCommand { get; set; }
+
+        public ICommand OpenChatPageCommand { get; set; }
     }
 }

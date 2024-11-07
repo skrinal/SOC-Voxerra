@@ -6,4 +6,6 @@ global using System.Text;
 global using Newtonsoft.Json;
 global using Voxerra.Services.Authenticate;
 global using Voxerra.ViewModels;
+global using Voxerra.Models;
+global using System.Web;
 global using ServiceProvider = Voxerra.Services.ServiceProvider;

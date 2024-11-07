@@ -10,9 +10,9 @@
     Shell.TabBarIsVisible="False"
     Title="Voxerra">
 
-    <ShellContent
+    <!--<ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate pages:LoginPage}"
-        Route="MainPage" />
+        Route="MainPage" />-->
 
 </Shell>

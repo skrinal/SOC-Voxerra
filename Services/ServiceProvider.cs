@@ -149,7 +149,7 @@
             httpRequestMessage.Method = httpMethod;
             httpRequestMessage.RequestUri = new Uri(_devSslHelper.DevServerRootUrl + apiUrl);
             httpRequestMessage.Headers.Authorization =
-                new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer" + _accesToken);
+                new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", _accesToken);
 
             if (request != null)
             {
@@ -171,7 +171,7 @@
             {
                 var result = Activator.CreateInstance<TResponse>();
                 result.StatusCode = 500;
-                result.StatusMessage = $"Unexpected error: {ex.Message}";
+                result.StatusMessage = ex.Message;
                 return result;
             }
         }

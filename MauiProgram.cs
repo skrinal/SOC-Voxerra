@@ -24,8 +24,10 @@ namespace Voxerra
             builder.Services.AddSingleton<AppShell>();
             builder.Services.AddSingleton<LoginPage>();
             builder.Services.AddSingleton<MessageCenterPage>();
+            builder.Services.AddSingleton<ChatPage>();
             builder.Services.AddSingleton<LoginPageViewModel>();
             builder.Services.AddSingleton<MessageCenterPageViewModel>();
+            builder.Services.AddSingleton<ChatPageViewModel>();
             builder.Services.AddSingleton<ServiceProvider>();
 
             return builder.Build();

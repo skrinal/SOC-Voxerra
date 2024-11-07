@@ -4,11 +4,7 @@
              x:Class="Voxerra.Pages.LoginPage"
              xmlns:viewModel="clr-namespace:Voxerra.ViewModels"
              Title="LoginPage"
-             Background="{StaticResource Background}">
-    
-    <!--<ContentPage.BindingContext>
-        <viewModel:LoginPageViewModel/>
-    </ContentPage.BindingContext>-->
+             Background="#0f0f0f">
     
     <Grid>
         <VerticalStackLayout Margin="30" VerticalOptions="Center">
@@ -18,63 +14,125 @@
                 WidthRequest="300" />
 
             <Label
-                TextColor="{StaticResource PrimaryText}"
                 Text="Username"
                 Margin="5,0,0,0"
                 Padding="0,10,0,5" />
             <Border 
                 x:Name="UserNameBorder"
-                Stroke="{StaticResource SecondaryColor}"  
+                Stroke="#5a4fe0"  
                 StrokeThickness="2.5"
                 StrokeShape="RoundRectangle 20">
                 <Entry
                     x:Name="UserNameEntry"
                     Margin="8,0,8,0" 
                     ReturnType="Go"
-                    TextColor="{StaticResource PrimaryText}"
                     Text="{Binding UserName}"/>
             </Border>
 
             <Label
-                TextColor="{StaticResource PrimaryText}"
                 Text="Password"
                 Margin="5,0,0,0"
                 Padding="0,10,0,5"/>
             <Border 
-                 Stroke="{StaticResource SecondaryColor}"  
+                 Stroke="#5a4fe0"  
                  StrokeThickness="2.5"
                  StrokeShape="RoundRectangle 20">
                 <Entry
                      Margin="8,-1,8,-1" 
                      IsPassword="True"
                      ReturnType="Go"
-                     TextColor="{StaticResource PrimaryText}"
                      Text="{Binding Password}"/>
             </Border>
 
             <Label
                 Margin="0,10,0,0"
-                Text="Forgot password"
-                TextColor="{StaticResource PrimaryText}"/>
+                Text="Forgot password"/>
 
             <Button
                 Margin="0,30,0,0"
-                Background="{StaticResource SecondaryColor}"
+                Background="#5a4fe0"
                 Text="Log in"
-                TextColor="{StaticResource PrimaryText}"
+                TextColor="White"
                 Command="{Binding LoginCommand}"/>
 
             <HorizontalStackLayout Margin="0,25,0,0" HorizontalOptions="Center">
                 <Label Text="Dont have an account?"
-                       TextColor="{StaticResource SmallerText}"/>
+                       TextColor="#5a5a5a"/>
                 <Label
                      Margin="5,0,0,0"
-                     Text="Sign up"
-                     TextColor="{StaticResource PrimaryText}"/>
+                     Text="Sign up"/>
 
             </HorizontalStackLayout>
         </VerticalStackLayout>
 
        
     </Grid>
+
+    <!--<Grid>
+        <VerticalStackLayout Margin="30" VerticalOptions="Center">
+            <Image 
+            HeightRequest="150"
+            Source="logo_voxerra_whitev2.png"
+            WidthRequest="300" />
+
+            <Label
+            TextColor="{StaticResource PrimaryText}"
+            Text="Username"
+            Margin="5,0,0,0"
+            Padding="0,10,0,5" />
+            <Border 
+            x:Name="UserNameBorder"
+            Stroke="{StaticResource SecondaryColor}"  
+            StrokeThickness="2.5"
+            StrokeShape="RoundRectangle 20">
+                <Entry
+                x:Name="UserNameEntry"
+                Margin="8,0,8,0" 
+                ReturnType="Go"
+                TextColor="{StaticResource PrimaryText}"
+                Text="{Binding UserName}"/>
+            </Border>
+
+            <Label
+            TextColor="{StaticResource PrimaryText}"
+            Text="Password"
+            Margin="5,0,0,0"
+            Padding="0,10,0,5"/>
+            <Border 
+             Stroke="{StaticResource SecondaryColor}"  
+             StrokeThickness="2.5"
+             StrokeShape="RoundRectangle 20">
+                <Entry
+                 Margin="8,-1,8,-1" 
+                 IsPassword="True"
+                 ReturnType="Go"
+                 TextColor="{StaticResource PrimaryText}"
+                 Text="{Binding Password}"/>
+            </Border>
+
+            <Label
+            Margin="0,10,0,0"
+            Text="Forgot password"
+            TextColor="{StaticResource PrimaryText}"/>
+
+            <Button
+            Margin="0,30,0,0"
+            Background="{StaticResource SecondaryColor}"
+            Text="Log in"
+            TextColor="{StaticResource PrimaryText}"
+            Command="{Binding LoginCommand}"/>
+
+            <HorizontalStackLayout Margin="0,25,0,0" HorizontalOptions="Center">
+                <Label Text="Dont have an account?"
+                   TextColor="{StaticResource SmallerText}"/>
+                <Label
+                 Margin="5,0,0,0"
+                 Text="Sign up"
+                 TextColor="{StaticResource PrimaryText}"/>
+
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+
+    </Grid>-->
 </ContentPage>

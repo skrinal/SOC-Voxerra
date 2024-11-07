@@ -14,3 +14,4 @@ namespace Voxerra.Services.MessageCenter
         public IEnumerable<LastestMessage> LastestMessages { get; set; }
     }
 }
+

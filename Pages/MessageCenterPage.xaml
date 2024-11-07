@@ -3,13 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Voxerra.Pages.MessageCenterPage"
              xmlns:icon="clr-namespace:Voxerra.Helpers"
-             xmlns:viewModel="clr-namespace:Voxerra.ViewModels"
+             xmlns:viewModels="clr-namespace:Voxerra.ViewModels"
              Title="MessageCenterPage"
              Background="{StaticResource Background}"
              NavigatedTo="ContentPage_NavigatedTo">
-    <!--<ContentPage.BindingContext>
-        <viewModel:MessageCenterPageViewModel/>
-    </ContentPage.BindingContext>-->
 
     <RefreshView Margin="10" IsRefreshing="{Binding IsRefreshing}">
         <Grid Margin="0,15,0,0">
@@ -20,6 +17,13 @@
                 <RowDefinition Height="45"/>
                 <RowDefinition />
             </Grid.RowDefinitions>
+
+
+
+            <!--ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT
+            ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT
+            ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT
+            ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT-->
 
             <Grid>
                 <StackLayout Orientation="Horizontal">
@@ -73,7 +77,7 @@
 
             <Grid Grid.Row="1">
                 <Border Margin="15,0,15,0"
-                Stroke="{StaticResource SecondaryColor}"  
+                Stroke="#5a4fe0"  
                 StrokeThickness="2"
                 StrokeShape="RoundRectangle 10"
                 HeightRequest="40"
@@ -138,10 +142,10 @@
                                 <Grid HeightRequest="100">
 
                                     <Frame VerticalOptions="Center" HeightRequest="65" WidthRequest="65" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
-                                        <Image Source="unnamed.jpg" Aspect="AspectFill"/>
+                                        <Image Source="{Binding AvatarSourceName}" Aspect="AspectFill"/>
                                     </Frame>
 
-                                    <Label Text="Your note" FontSize="12" 
+                                    <Label Text="{Binding UserName}" FontSize="12" 
                         Margin="0,3,0,0"
                         HorizontalOptions="Center"
                         VerticalOptions="End"/>
@@ -155,7 +159,7 @@
 
                                         <StackLayout Padding="0,0,0,4" HorizontalOptions="Start" VerticalOptions="Start" >
 
-                                            <Label Text="Your note" TextColor="White" FontFamily="OpenSansSemibold" FontSize="10" 
+                                            <Label Text="Something" TextColor="White" FontFamily="OpenSansSemibold" FontSize="10" 
                                HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
                                Padding="8,4,0,0"/>
                                             <Label Text="Future,Seper" FontSize="9" FontFamily="OpenSansSemibold"
@@ -300,7 +304,7 @@
 
                 <StackLayout VerticalOptions="Center" HorizontalOptions="End">
 
-                    <Button Text="Requested" FontFamily="OpenSansSemibold" FontSize="18" 
+                    <Button Text="Requests" FontFamily="OpenSansSemibold" FontSize="18" 
                     BackgroundColor="Transparent"
                     TextColor="Cyan"
                     Margin="0,0,20,0" Padding="10,0,10,0"/>
@@ -314,10 +318,13 @@
               SeparatorVisibility="None"
               VerticalScrollBarVisibility="Never">
                 <ListView.ItemTemplate>
-                    <DataTemplate>
+                    <DataTemplate >
                         <ViewCell>
-
-                            <HorizontalStackLayout Padding="25,10,0,10">
+                            <HorizontalStackLayout  Padding="25,10,0,10">
+                                <HorizontalStackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Path=OpenChatPageCommand, Source={RelativeSource AncestorType={x:Type viewModels:MessageCenterPageViewModel}}}"
+                                                          CommandParameter="{Binding UserFriendInfo.Id}"/>
+                                </HorizontalStackLayout.GestureRecognizers>
 
                                 <Frame HeightRequest="54" WidthRequest="54" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
                                     <Image Source="{Binding UserFiendInfo.AvatarSourceName}" Aspect="AspectFill"/>
@@ -325,16 +332,16 @@
 
                                 <StackLayout Margin="20,5,0,0" HorizontalOptions="Start">
 
-                                    <Label Text="{Binding UserFiendInfo.UserName}" FontSize="15"/>
+                                    <Label Text="{Binding UserFiendInfo.UserName}" FontFamily="OpenSansSemibold" FontSize="15"/>
                                     <Label Text="{Binding Content}"/>
 
                                 </StackLayout>
+
                             </HorizontalStackLayout>
 
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-
             </ListView>
 
             <!--<ScrollView Grid.Row="4">
