@@ -4,125 +4,195 @@
              x:Class="Voxerra.Pages.ChatPage"
              xmlns:viewModel="clr-namespace:Voxerra.ViewModels"
              Title="ChatPage"
-             Background="#0f0f0f">
+             Background="#0f0f0f"
+             NavigatedTo="ContentPage_NavigatedTo">
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="40" />
-            <RowDefinition/>
-            <RowDefinition Height="55" />
-
-        </Grid.RowDefinitions>
-
-
+    <RefreshView Margin="10" IsRefreshing="{Binding IsRefreshing}">
         <Grid>
-            <StackLayout Orientation="Horizontal" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition/>
+                <RowDefinition Height="55" />
 
-                <Button Text="&#xe5c4;" FontFamily="GoogleFont" FontSize="24" VerticalOptions="Center" 
-                        BackgroundColor="Transparent"
-                        TextColor="White"
-                        CornerRadius="45"
-                        Padding="0" Margin="10,0,0,0"/>
-
-            </StackLayout>
+            </Grid.RowDefinitions>
 
 
-            <StackLayout Orientation="Horizontal" Margin="70,0,0,0">
+            <Grid>
+                <StackLayout Orientation="Horizontal" >
 
-                <Frame VerticalOptions="Center" HeightRequest="30" WidthRequest="30" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
-                    <Image Source="{Binding FriendInfo.AvatarSourceName}" Aspect="AspectFill"/>
+                    <Button Text="&#xe5c4;" FontFamily="GoogleFont" FontSize="24" VerticalOptions="Center" 
+                    BackgroundColor="Transparent"
+                    TextColor="White"
+                    CornerRadius="45"
+                    Padding="0" Margin="10,0,0,0"/>
 
-                </Frame>
+                </StackLayout>
 
-                <Label Text="{Binding FriendInfo.UserName}" TextColor="White" FontFamily="OpenSansSemibold" FontSize="18" 
-                       Margin="10,0,0,0" VerticalOptions="Center"/>
 
-                <Button Text="keyboard_arrow_down" FontFamily="GoogleFont" FontSize="24" Padding="0"
-                BackgroundColor="Transparent"
-                TextColor="White"
-                HorizontalOptions="End"/>
+                <StackLayout Orientation="Horizontal" Margin="70,0,0,0">
 
-            </StackLayout>
+                    <Frame VerticalOptions="Center" HeightRequest="30" WidthRequest="30" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                        <Image Source="{Binding FriendInfo.AvatarSourceName}" Aspect="AspectFill"/>
 
-            <StackLayout Orientation="Horizontal" HorizontalOptions="End" >
+                    </Frame>
 
-                <Button Text="dehaze" FontFamily="GoogleFont" FontSize="24" Padding="0" Margin="0,0,10,0"
-                BackgroundColor="Transparent" TextColor="White"/>
+                    <Label Text="{Binding FriendInfo.UserName}" TextColor="White" FontFamily="OpenSansSemibold" FontSize="18" 
+                   Margin="10,0,0,0" VerticalOptions="Center"/>
 
-            </StackLayout>
+                    <Button Text="keyboard_arrow_down" FontFamily="GoogleFont" FontSize="24" Padding="0"
+            BackgroundColor="Transparent"
+            TextColor="White"
+            HorizontalOptions="End"/>
 
-        </Grid>
+                </StackLayout>
 
-        <CollectionView
-            Grid.Row="1" 
-            ItemsSource="{Binding Messages}"
-            Margin="0,10,0,10">
-            <CollectionView.ItemsLayout>
-                <LinearItemsLayout ItemSpacing="10" Orientation="Vertical" />
-            </CollectionView.ItemsLayout>
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <VerticalStackLayout>
-                        <VerticalStackLayout.HorizontalOptions>
-                            <MultiBinding Converter="{StaticResource FromUserIdToHorizontalOptionConverter}">
-                                <Binding Path="FromUserId" />
-                                <Binding Path="ToUserId" Source="{RelativeSource AncestorType={x:Type viewModel:ChatPageViewModel}}" />
-                            </MultiBinding>
-                        </VerticalStackLayout.HorizontalOptions>
-                        <Label 
-                               Margin="5,0,5,0"
-                               Text="{Binding SendDateTime, StringFormat='{0:HH:mm}'}"
-                               FontSize="11"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="End" >
 
-                        <Frame Padding="10,6,10,6" CornerRadius="10">
+                    <Button Text="dehaze" FontFamily="GoogleFont" FontSize="24" Padding="0" Margin="0,0,10,0"
+            BackgroundColor="Transparent" TextColor="White"/>
+
+                </StackLayout>
+
+            </Grid>
+
+            <CollectionView
+        Grid.Row="1" 
+        ItemsSource="{Binding Messages}"
+        Margin="0,10,0,10">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout ItemSpacing="10" Orientation="Vertical" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <VerticalStackLayout>
+                            <VerticalStackLayout.HorizontalOptions>
+                                <MultiBinding Converter="{StaticResource FromUserIdToHorizontalOptionConverter}">
+                                    <Binding Path="FromUserId" />
+                                    <Binding Path="ToUserId" Source="{RelativeSource AncestorType={x:Type viewModel:ChatPageViewModel}}" />
+                                </MultiBinding>
+                            </VerticalStackLayout.HorizontalOptions>
+
+
+                            <!--<StackLayout Orientation="Horizontal" >
+
+                        <Frame VerticalOptions="Center" HeightRequest="30" WidthRequest="30" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                            <Image Source="{Binding Source={RelativeSource AncestorType={x:Type viewModel:ChatPageViewModel}}, Path=FriendInfo.AvatarSourceName}" Aspect="AspectFill"/>
+                        </Frame>
+                        
+                    </StackLayout>-->
+
+
                             <Label 
-                                FontSize="12"
-                                Text="{Binding Content}" 
-                                TextColor="White"/>
+                           Margin="5,0,5,0"
+                           FontSize="11"
+                           Text="{Binding SendDateTime, StringFormat='{0:HH:mm}'}"
+                            HorizontalOptions="{Binding HorizontalOptions, Source={RelativeSource AncestorType={x:Type VerticalStackLayout}}}"/>
+
+                            <Frame Padding="10,6,10,6" CornerRadius="10">
+                                <Frame.BackgroundColor>
+                                    <MultiBinding Converter="{StaticResource FromUserIdToBackgroundColorConverter}">
+                                        <Binding Path="FromUserId" />
+                                        <Binding Path="ToUserId" Source="{RelativeSource AncestorType={x:Type viewModel:ChatPageViewModel}}" />
+                                    </MultiBinding>
+                                </Frame.BackgroundColor>
+                                <Label 
+                                    FontSize="12"
+                                    Text="{Binding Content}" 
+                                    TextColor="Black"/> 
+                            </Frame>
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <!--<CollectionView
+Grid.Row="1" 
+ItemsSource="{Binding Messages}"
+Margin="5,10,5,10">
+        <CollectionView.ItemsLayout>
+            <LinearItemsLayout ItemSpacing="10" Orientation="Vertical" />
+        </CollectionView.ItemsLayout>
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <HorizontalStackLayout>
+                    -->
+            <!-- Image on the left -->
+            <!--
+                    <Frame VerticalOptions="Center" HeightRequest="30" WidthRequest="30" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                        <Image Source="{Binding Source={RelativeSource AncestorType={x:Type viewModel:ChatPageViewModel}}, Path=FriendInfo.AvatarSourceName}" Aspect="AspectFill"/>
+                    </Frame>
+
+                    -->
+            <!-- Vertical stack for date and text -->
+            <!--
+                    <VerticalStackLayout HorizontalOptions="FillAndExpand" Margin="10,0,0,0">
+                        <Label 
+                    Text="{Binding SendDateTime, StringFormat='{0:HH:mm}'}"
+                    FontSize="11"
+                    HorizontalOptions="End" />
+                        -->
+            <!-- Align date to the right -->
+            <!--
+
+                        <Frame Padding="10,6,10,6" CornerRadius="10" BackgroundColor="#1D1D1D">
+                            <Label 
+                        FontSize="12"
+                        Text="{Binding Content}" 
+                        TextColor="White"
+                        HorizontalOptions="End" />
+                            -->
+            <!-- Align text to the right -->
+            <!--
                         </Frame>
                     </VerticalStackLayout>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+                </HorizontalStackLayout>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>-->
 
-        <Grid Grid.Row="2" >
-            <Border Margin="10,0,10,0"
-                        Stroke="#5a4fe0"  
-                        StrokeThickness="2"
-                        StrokeShape="RoundRectangle 20"
-                        BackgroundColor="#1D1D1D"
-                        HeightRequest="45">
 
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="45"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="60"/>
-                    </Grid.ColumnDefinitions>
+            <Grid Grid.Row="2" >
+                <Border Margin="10,0,10,0"
+                    Stroke="#5a4fe0"  
+                    StrokeThickness="2"
+                    StrokeShape="RoundRectangle 20"
+                    BackgroundColor="#1D1D1D"
+                    HeightRequest="45">
 
-                    <Button Grid.Column="0"
-                            Margin="5,0,0,0" Padding="0" VerticalOptions="Center"
-                            Text="search" TextColor="White" FontFamily="GoogleFont" FontSize="22" 
-                            HeightRequest="32"
-                            WidthRequest="35"
-                            BackgroundColor="gray"
-                            CornerRadius="40"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="45"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="60"/>
+                        </Grid.ColumnDefinitions>
 
-                    <Entry Grid.Column="1" Placeholder="Message..." />
+                        <Button Grid.Column="0"
+                        Margin="5,0,0,0" Padding="0" VerticalOptions="Center"
+                        Text="search" TextColor="White" FontFamily="GoogleFont" FontSize="22" 
+                        HeightRequest="32"
+                        WidthRequest="35"
+                        BackgroundColor="gray"
+                        CornerRadius="40"/>
 
-                    <Button Grid.Column="2"
-                            Padding="0" Margin="0,0,10,0" VerticalOptions="Center" HorizontalOptions="End"
-                            Text="send" TextColor="White" FontFamily="GoogleFont" FontSize="22" 
-                            HeightRequest="30"
-                            WidthRequest="45"
-                            BackgroundColor="gray"
-                            CornerRadius="40"/>
+                        <Entry Grid.Column="1" Placeholder="Message..." Text="{Binding Message}" />
 
-                </Grid>
-            </Border>
+                        <Button Grid.Column="2"
+                                Padding="0" Margin="0,0,10,0" VerticalOptions="Center" HorizontalOptions="End"
+                                Text="send" TextColor="White" FontFamily="GoogleFont" FontSize="22" 
+                                HeightRequest="30"
+                                WidthRequest="45"
+                                BackgroundColor="gray"
+                                CornerRadius="40"
+                                Command="{Binding SendMessageCommand}" />
 
+                    </Grid>
+                </Border>
+
+
+            </Grid>
 
         </Grid>
-        
-    </Grid>
+    </RefreshView>
+    
+    
 </ContentPage>

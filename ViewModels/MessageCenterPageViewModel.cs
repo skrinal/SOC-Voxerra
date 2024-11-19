@@ -16,7 +16,7 @@ namespace Voxerra.ViewModels
 
         private ServiceProvider _serviceProvider;
 
-        public MessageCenterPageViewModel(ServiceProvider serviceProvider) 
+        public MessageCenterPageViewModel(ServiceProvider serviceProvider, ChatHub chatHub) 
         {
             UserInfo = new User();
             UserFriends = new ObservableCollection<User>();
@@ -56,8 +56,10 @@ namespace Voxerra.ViewModels
             else
             {
                 await AppShell.Current.DisplayAlert("Voxerra", response.StatusMessage, "OK");
+         
             }
         }
+
 
         public void ApplyQueryAttributes(IDictionary<string, object> query)
         {

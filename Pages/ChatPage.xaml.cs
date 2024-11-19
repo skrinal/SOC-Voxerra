@@ -8,4 +8,8 @@ public partial class ChatPage : ContentPage
 		this.BindingContext = viewModel;
 	}
 
+    private void ContentPage_NavigatedTo(object sender, NavigatedToEventArgs e)
+    {
+        (BindingContext as ChatPageViewModel).Initialize();
+    }
 }

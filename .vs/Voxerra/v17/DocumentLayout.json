@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\SOC-Voxerra\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\services\\chathub\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:services\\chathub\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\viewmodels\\chatpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:viewmodels\\chatpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\converters\\fromuseridtohorizontaloptionconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:converters\\fromuseridtohorizontaloptionconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\pages\\chatpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:pages\\chatpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\viewmodels\\messagecenterpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:viewmodels\\messagecenterpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 847,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -37,57 +33,40 @@
               "Name": "ST:0:0:{25f7e850-ffa1-11d0-b63f-00a0c922e851}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Message.cs",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\Models\\Message.cs",
-              "RelativeDocumentMoniker": "Models\\Message.cs",
-              "ToolTip": "C:\\SOC-Voxerra\\Models\\Message.cs",
-              "RelativeToolTip": "Models\\Message.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T19:49:42.819Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ChatPage.xaml",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\Pages\\ChatPage.xaml",
-              "RelativeDocumentMoniker": "Pages\\ChatPage.xaml",
-              "ToolTip": "C:\\SOC-Voxerra\\Pages\\ChatPage.xaml",
-              "RelativeToolTip": "Pages\\ChatPage.xaml",
-              "ViewState": "AgIAAC4AAAAAAAAAAAApwAEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-12T18:39:37.892Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FromUserIdToHorizontalOptionConverter.cs",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\Converters\\FromUserIdToHorizontalOptionConverter.cs",
-              "RelativeDocumentMoniker": "Converters\\FromUserIdToHorizontalOptionConverter.cs",
-              "ToolTip": "C:\\SOC-Voxerra\\Converters\\FromUserIdToHorizontalOptionConverter.cs",
-              "RelativeToolTip": "Converters\\FromUserIdToHorizontalOptionConverter.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAQwBYAAAAJAAAAAAAAAA==",
+              "Title": "MessageCenterPageViewModel.cs",
+              "DocumentMoniker": "C:\\SOC-Voxerra\\ViewModels\\MessageCenterPageViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\MessageCenterPageViewModel.cs",
+              "ToolTip": "C:\\SOC-Voxerra\\ViewModels\\MessageCenterPageViewModel.cs",
+              "RelativeToolTip": "ViewModels\\MessageCenterPageViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T18:42:42.381Z",
+              "WhenOpened": "2024-11-19T22:44:24.017Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "C:\\SOC-Voxerra\\Services\\ChatHub\\ChatHub.cs",
+              "RelativeDocumentMoniker": "Services\\ChatHub\\ChatHub.cs",
+              "ToolTip": "C:\\SOC-Voxerra\\Services\\ChatHub\\ChatHub.cs",
+              "RelativeToolTip": "Services\\ChatHub\\ChatHub.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAUwDIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T22:04:12.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ChatPageViewModel.cs",
               "DocumentMoniker": "C:\\SOC-Voxerra\\ViewModels\\ChatPageViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\ChatPageViewModel.cs",
               "ToolTip": "C:\\SOC-Voxerra\\ViewModels\\ChatPageViewModel.cs",
               "RelativeToolTip": "ViewModels\\ChatPageViewModel.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAswD4AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAASwB8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T19:08:41.969Z",
               "EditorCaption": ""

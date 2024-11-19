@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\SOC-Voxerra\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-11-04T22:18:11.390</Modified>
+      <Modified>2024-11-19T23:23:45.512</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\SOC-Voxerra\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-11-04T22:18:11.180</Modified>
+      <Modified>2024-11-19T23:23:45.292</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Voxerra.runtimeconfig.json">
       <PackagePath>Voxerra.runtimeconfig.json</PackagePath>
-      <Modified>2024-11-04T22:18:10.913</Modified>
+      <Modified>2024-11-19T23:23:44.993</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Voxerra.dll">
       <PackagePath>Voxerra.dll</PackagePath>
-      <Modified>2024-11-04T22:18:09.820</Modified>
+      <Modified>2024-11-19T23:23:43.751</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Voxerra.exe</PackagePath>
-      <Modified>2024-11-04T22:18:09.828</Modified>
+      <Modified>2024-11-19T23:23:43.791</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -55,23 +55,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:05.134</Modified>
+      <Modified>2024-11-18T17:53:50.945</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-11-04T21:50:05.148</Modified>
+      <Modified>2024-11-18T17:53:50.959</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-11-04T21:50:05.171</Modified>
+      <Modified>2024-11-18T17:53:50.975</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-11-04T21:50:05.210</Modified>
+      <Modified>2024-11-18T17:53:51.004</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-11-04T21:50:05.325</Modified>
+      <Modified>2024-11-18T17:53:51.097</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\MaterialIcons-Regular.ttf">
       <PackagePath>MaterialIcons-Regular.ttf</PackagePath>
@@ -87,343 +87,343 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ant_man.scale-100.png">
       <PackagePath>ant_man.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.238</Modified>
+      <Modified>2024-11-18T17:53:51.754</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-11-04T21:50:06.236</Modified>
+      <Modified>2024-11-18T17:53:51.765</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.225</Modified>
+      <Modified>2024-11-18T17:53:51.757</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.224</Modified>
+      <Modified>2024-11-18T17:53:51.757</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.224</Modified>
+      <Modified>2024-11-18T17:53:51.757</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.224</Modified>
+      <Modified>2024-11-18T17:53:51.757</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.224</Modified>
+      <Modified>2024-11-18T17:53:51.757</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.232</Modified>
+      <Modified>2024-11-18T17:53:51.762</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.231</Modified>
+      <Modified>2024-11-18T17:53:51.762</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.231</Modified>
+      <Modified>2024-11-18T17:53:51.761</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.231</Modified>
+      <Modified>2024-11-18T17:53:51.762</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.231</Modified>
+      <Modified>2024-11-18T17:53:51.761</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.233</Modified>
+      <Modified>2024-11-18T17:53:51.763</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.233</Modified>
+      <Modified>2024-11-18T17:53:51.763</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.232</Modified>
+      <Modified>2024-11-18T17:53:51.762</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.232</Modified>
+      <Modified>2024-11-18T17:53:51.762</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.232</Modified>
+      <Modified>2024-11-18T17:53:51.762</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.235</Modified>
+      <Modified>2024-11-18T17:53:51.764</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.235</Modified>
+      <Modified>2024-11-18T17:53:51.764</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.235</Modified>
+      <Modified>2024-11-18T17:53:51.764</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.235</Modified>
+      <Modified>2024-11-18T17:53:51.764</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.234</Modified>
+      <Modified>2024-11-18T17:53:51.764</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.234</Modified>
+      <Modified>2024-11-18T17:53:51.764</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.234</Modified>
+      <Modified>2024-11-18T17:53:51.763</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.233</Modified>
+      <Modified>2024-11-18T17:53:51.763</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.234</Modified>
+      <Modified>2024-11-18T17:53:51.763</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.233</Modified>
+      <Modified>2024-11-18T17:53:51.763</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.228</Modified>
+      <Modified>2024-11-18T17:53:51.759</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.228</Modified>
+      <Modified>2024-11-18T17:53:51.759</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.228</Modified>
+      <Modified>2024-11-18T17:53:51.759</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.227</Modified>
+      <Modified>2024-11-18T17:53:51.759</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.227</Modified>
+      <Modified>2024-11-18T17:53:51.759</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.229</Modified>
+      <Modified>2024-11-18T17:53:51.760</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.229</Modified>
+      <Modified>2024-11-18T17:53:51.760</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.229</Modified>
+      <Modified>2024-11-18T17:53:51.760</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.229</Modified>
+      <Modified>2024-11-18T17:53:51.760</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.228</Modified>
+      <Modified>2024-11-18T17:53:51.759</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.230</Modified>
+      <Modified>2024-11-18T17:53:51.761</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.230</Modified>
+      <Modified>2024-11-18T17:53:51.761</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.230</Modified>
+      <Modified>2024-11-18T17:53:51.761</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.230</Modified>
+      <Modified>2024-11-18T17:53:51.760</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.230</Modified>
+      <Modified>2024-11-18T17:53:51.760</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.227</Modified>
+      <Modified>2024-11-18T17:53:51.758</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.227</Modified>
+      <Modified>2024-11-18T17:53:51.758</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.225</Modified>
+      <Modified>2024-11-18T17:53:51.758</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.225</Modified>
+      <Modified>2024-11-18T17:53:51.758</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.225</Modified>
+      <Modified>2024-11-18T17:53:51.758</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\apple_logo.scale-100.png">
       <PackagePath>apple_logo.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.236</Modified>
+      <Modified>2024-11-18T17:53:51.755</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrow_back_ios_new.scale-100.png">
       <PackagePath>arrow_back_ios_new.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.239</Modified>
+      <Modified>2024-11-18T17:53:51.766</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrow_back_ios_new.scale-125.png">
       <PackagePath>arrow_back_ios_new.scale-125.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.239</Modified>
+      <Modified>2024-11-18T17:53:51.766</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrow_back_ios_new.scale-150.png">
       <PackagePath>arrow_back_ios_new.scale-150.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.239</Modified>
+      <Modified>2024-11-18T17:53:51.765</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrow_back_ios_new.scale-200.png">
       <PackagePath>arrow_back_ios_new.scale-200.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.238</Modified>
+      <Modified>2024-11-18T17:53:51.765</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrow_back_ios_new.scale-400.png">
       <PackagePath>arrow_back_ios_new.scale-400.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.238</Modified>
+      <Modified>2024-11-18T17:53:51.765</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\black_panther.scale-100.png">
       <PackagePath>black_panther.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.237</Modified>
+      <Modified>2024-11-18T17:53:51.756</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\black_widow.scale-100.png">
       <PackagePath>black_widow.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.223</Modified>
+      <Modified>2024-11-18T17:53:51.756</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.240</Modified>
+      <Modified>2024-11-18T17:53:51.767</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.240</Modified>
+      <Modified>2024-11-18T17:53:51.766</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.240</Modified>
+      <Modified>2024-11-18T17:53:51.766</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.240</Modified>
+      <Modified>2024-11-18T17:53:51.766</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.239</Modified>
+      <Modified>2024-11-18T17:53:51.766</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\falcon.scale-100.png">
       <PackagePath>falcon.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.222</Modified>
+      <Modified>2024-11-18T17:53:51.755</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\google_logo.scale-100.png">
       <PackagePath>google_logo.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.223</Modified>
+      <Modified>2024-11-18T17:53:51.757</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\hulk.scale-100.png">
       <PackagePath>hulk.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.222</Modified>
+      <Modified>2024-11-18T17:53:51.754</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_voxerra.scale-100.png">
       <PackagePath>logo_voxerra.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.237</Modified>
+      <Modified>2024-11-18T17:53:51.754</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_voxerra_white.scale-100.png">
       <PackagePath>logo_voxerra_white.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.237</Modified>
+      <Modified>2024-11-18T17:53:51.756</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_voxerra_whitev2.scale-100.png">
       <PackagePath>logo_voxerra_whitev2.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.221</Modified>
+      <Modified>2024-11-18T17:53:51.765</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\loki.scale-100.png">
       <PackagePath>loki.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.222</Modified>
+      <Modified>2024-11-18T17:53:51.753</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\rocket.scale-100.png">
       <PackagePath>rocket.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.223</Modified>
+      <Modified>2024-11-18T17:53:51.754</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\root.scale-100.png">
       <PackagePath>root.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.223</Modified>
+      <Modified>2024-11-18T17:53:51.754</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\spider_man.scale-100.png">
       <PackagePath>spider_man.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.236</Modified>
+      <Modified>2024-11-18T17:53:51.755</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\thanos.scale-100.png">
       <PackagePath>thanos.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.236</Modified>
+      <Modified>2024-11-18T17:53:51.755</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tony_stark.scale-100.png">
       <PackagePath>tony_stark.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.237</Modified>
+      <Modified>2024-11-18T17:53:51.755</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\unnamed.scale-100.jpg">
       <PackagePath>unnamed.scale-100.jpg</PackagePath>
-      <Modified>2024-11-04T21:50:06.237</Modified>
+      <Modified>2024-11-18T17:53:51.756</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\vision.scale-100.png">
       <PackagePath>vision.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.238</Modified>
+      <Modified>2024-11-18T17:53:51.756</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\wanda.scale-100.png">
       <PackagePath>wanda.scale-100.png</PackagePath>
-      <Modified>2024-11-04T21:50:06.222</Modified>
+      <Modified>2024-11-18T17:53:51.756</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Voxerra.deps.json">
       <PackagePath>Voxerra.deps.json</PackagePath>
-      <Modified>2024-11-04T22:18:10.786</Modified>
+      <Modified>2024-11-19T23:23:44.880</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.44\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.54\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
-      <Modified>2024-09-09T00:48:42.000</Modified>
+      <Modified>2024-10-14T22:26:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.44\lib\net8.0\WinRT.Runtime.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.54\lib\net8.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
-      <Modified>2024-09-09T00:48:40.000</Modified>
+      <Modified>2024-10-14T22:26:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.connections.abstractions\8.0.10\lib\net8.0\Microsoft.AspNetCore.Connections.Abstractions.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.connections.abstractions\8.0.11\lib\net8.0\Microsoft.AspNetCore.Connections.Abstractions.dll">
       <PackagePath>Microsoft.AspNetCore.Connections.Abstractions.dll</PackagePath>
-      <Modified>2024-09-18T18:38:04.000</Modified>
+      <Modified>2024-10-21T23:55:18.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.http.connections.client\8.0.10\lib\net8.0\Microsoft.AspNetCore.Http.Connections.Client.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.http.connections.client\8.0.11\lib\net8.0\Microsoft.AspNetCore.Http.Connections.Client.dll">
       <PackagePath>Microsoft.AspNetCore.Http.Connections.Client.dll</PackagePath>
-      <Modified>2024-09-18T18:39:32.000</Modified>
+      <Modified>2024-10-21T23:57:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.http.connections.common\8.0.10\lib\net8.0\Microsoft.AspNetCore.Http.Connections.Common.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.http.connections.common\8.0.11\lib\net8.0\Microsoft.AspNetCore.Http.Connections.Common.dll">
       <PackagePath>Microsoft.AspNetCore.Http.Connections.Common.dll</PackagePath>
-      <Modified>2024-09-18T18:39:28.000</Modified>
+      <Modified>2024-10-21T23:57:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.signalr.client\8.0.10\lib\net8.0\Microsoft.AspNetCore.SignalR.Client.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.signalr.client\8.0.11\lib\net8.0\Microsoft.AspNetCore.SignalR.Client.dll">
       <PackagePath>Microsoft.AspNetCore.SignalR.Client.dll</PackagePath>
-      <Modified>2024-09-18T18:40:22.000</Modified>
+      <Modified>2024-10-21T23:57:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.signalr.client.core\8.0.10\lib\net8.0\Microsoft.AspNetCore.SignalR.Client.Core.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.signalr.client.core\8.0.11\lib\net8.0\Microsoft.AspNetCore.SignalR.Client.Core.dll">
       <PackagePath>Microsoft.AspNetCore.SignalR.Client.Core.dll</PackagePath>
-      <Modified>2024-09-18T18:39:34.000</Modified>
+      <Modified>2024-10-21T23:57:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.signalr.common\8.0.10\lib\net8.0\Microsoft.AspNetCore.SignalR.Common.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.signalr.common\8.0.11\lib\net8.0\Microsoft.AspNetCore.SignalR.Common.dll">
       <PackagePath>Microsoft.AspNetCore.SignalR.Common.dll</PackagePath>
-      <Modified>2024-09-18T18:39:22.000</Modified>
+      <Modified>2024-10-21T23:57:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.signalr.protocols.json\8.0.10\lib\net8.0\Microsoft.AspNetCore.SignalR.Protocols.Json.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.aspnetcore.signalr.protocols.json\8.0.11\lib\net8.0\Microsoft.AspNetCore.SignalR.Protocols.Json.dll">
       <PackagePath>Microsoft.AspNetCore.SignalR.Protocols.Json.dll</PackagePath>
-      <Modified>2024-09-18T18:39:32.000</Modified>
+      <Modified>2024-10-21T23:57:12.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.extensions.configuration\8.0.0\lib\net8.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
@@ -441,9 +441,9 @@
       <PackagePath>Microsoft.Extensions.DependencyInjection.Abstractions.dll</PackagePath>
       <Modified>2024-09-16T23:09:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.extensions.features\8.0.10\lib\net8.0\Microsoft.Extensions.Features.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.extensions.features\8.0.11\lib\net8.0\Microsoft.Extensions.Features.dll">
       <PackagePath>Microsoft.Extensions.Features.dll</PackagePath>
-      <Modified>2024-09-18T18:38:02.000</Modified>
+      <Modified>2024-10-21T23:55:08.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.extensions.logging\8.0.1\lib\net8.0\Microsoft.Extensions.Logging.dll">
       <PackagePath>Microsoft.Extensions.Logging.dll</PackagePath>
@@ -473,33 +473,33 @@
       <PackagePath>Microsoft.IO.RecyclableMemoryStream.dll</PackagePath>
       <Modified>2024-06-11T20:23:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.compatibility\8.0.91\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.compatibility\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.dll">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.dll</PackagePath>
-      <Modified>2024-09-24T23:45:12.000</Modified>
+      <Modified>2024-11-07T17:33:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.dll">
       <PackagePath>Microsoft.Maui.Controls.dll</PackagePath>
-      <Modified>2024-09-24T23:42:54.000</Modified>
+      <Modified>2024-11-07T17:31:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.xaml\8.0.91\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Xaml.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.xaml\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Xaml.dll">
       <PackagePath>Microsoft.Maui.Controls.Xaml.dll</PackagePath>
-      <Modified>2024-09-24T23:43:08.000</Modified>
+      <Modified>2024-11-07T17:31:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.core\8.0.91\lib\net8.0-windows10.0.19041\Microsoft.Maui.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.core\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.dll">
       <PackagePath>Microsoft.Maui.dll</PackagePath>
-      <Modified>2024-09-24T23:42:50.000</Modified>
+      <Modified>2024-11-07T17:30:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.essentials\8.0.91\lib\net8.0-windows10.0.19041\Microsoft.Maui.Essentials.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.essentials\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Essentials.dll">
       <PackagePath>Microsoft.Maui.Essentials.dll</PackagePath>
-      <Modified>2024-09-24T23:44:44.000</Modified>
+      <Modified>2024-11-07T17:33:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.graphics\8.0.91\lib\net8.0-windows10.0.19041\Microsoft.Maui.Graphics.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.graphics\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Graphics.dll">
       <PackagePath>Microsoft.Maui.Graphics.dll</PackagePath>
-      <Modified>2024-09-24T23:43:08.000</Modified>
+      <Modified>2024-11-07T17:33:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.graphics.win2d.winui.desktop\8.0.91\lib\net8.0-windows10.0.19041\Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.graphics.win2d.winui.desktop\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll">
       <PackagePath>Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll</PackagePath>
-      <Modified>2024-09-24T23:45:06.000</Modified>
+      <Modified>2024-11-07T17:33:04.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
       <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
@@ -569,141 +569,141 @@
       <PackagePath>System.IO.Pipelines.dll</PackagePath>
       <Modified>2023-10-31T14:59:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ar\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:43:28.000</Modified>
+      <Modified>2024-11-07T17:31:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\ca\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\ca\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ca\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:42:52.000</Modified>
+      <Modified>2024-11-07T17:31:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\cs\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\cs\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>cs\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:43:30.000</Modified>
+      <Modified>2024-11-07T17:31:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\da\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\da\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>da\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:42:48.000</Modified>
+      <Modified>2024-11-07T17:31:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\de\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\de\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>de\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:42:48.000</Modified>
+      <Modified>2024-11-07T17:31:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\el\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\el\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>el\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:43:28.000</Modified>
+      <Modified>2024-11-07T17:31:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\es\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\es\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>es\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:42:50.000</Modified>
+      <Modified>2024-11-07T17:31:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\fi\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\fi\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>fi\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:42:54.000</Modified>
+      <Modified>2024-11-07T17:31:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\fr\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\fr\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>fr\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:43:06.000</Modified>
+      <Modified>2024-11-07T17:31:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\he\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\he\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>he\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:42:50.000</Modified>
+      <Modified>2024-11-07T17:31:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\hi\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\hi\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>hi\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:42:54.000</Modified>
+      <Modified>2024-11-07T17:31:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\hr\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\hr\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>hr\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:42:52.000</Modified>
+      <Modified>2024-11-07T17:31:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\hu\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\hu\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>hu\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:43:02.000</Modified>
+      <Modified>2024-11-07T17:31:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\id\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\id\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>id\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:43:02.000</Modified>
+      <Modified>2024-11-07T17:31:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\it\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\it\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>it\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:43:04.000</Modified>
+      <Modified>2024-11-07T17:30:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\ja\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\ja\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ja\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:43:04.000</Modified>
+      <Modified>2024-11-07T17:31:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\ko\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\ko\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ko\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:43:02.000</Modified>
+      <Modified>2024-11-07T17:31:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\ms\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\ms\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ms\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:43:24.000</Modified>
+      <Modified>2024-11-07T17:30:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\nb\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\nb\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>nb\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:43:02.000</Modified>
+      <Modified>2024-11-07T17:31:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\nl\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\nl\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>nl\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:42:32.000</Modified>
+      <Modified>2024-11-07T17:31:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\pl\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\pl\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>pl\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:43:04.000</Modified>
+      <Modified>2024-11-07T17:31:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\pt-BR\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\pt-BR\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>pt-BR\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:43:02.000</Modified>
+      <Modified>2024-11-07T17:30:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\pt\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\pt\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>pt\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:43:02.000</Modified>
+      <Modified>2024-11-07T17:31:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\ro\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\ro\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ro\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:43:02.000</Modified>
+      <Modified>2024-11-07T17:30:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\ru\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\ru\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ru\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:43:02.000</Modified>
+      <Modified>2024-11-07T17:30:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\sk\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\sk\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>sk\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:43:00.000</Modified>
+      <Modified>2024-11-07T17:30:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\sv\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\sv\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>sv\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:43:24.000</Modified>
+      <Modified>2024-11-07T17:31:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\th\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\th\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>th\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:43:02.000</Modified>
+      <Modified>2024-11-07T17:30:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\tr\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\tr\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>tr\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:43:26.000</Modified>
+      <Modified>2024-11-07T17:31:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\uk\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\uk\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>uk\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:42:56.000</Modified>
+      <Modified>2024-11-07T17:31:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\vi\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\vi\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>vi\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:42:58.000</Modified>
+      <Modified>2024-11-07T17:31:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\zh-HK\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\zh-HK\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>zh-HK\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:43:00.000</Modified>
+      <Modified>2024-11-07T17:31:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\zh-Hans\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\zh-Hans\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>zh-Hans\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:43:00.000</Modified>
+      <Modified>2024-11-07T17:31:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\zh-Hant\Microsoft.Maui.Controls.resources.dll">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\zh-Hant\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>zh-Hant\Microsoft.Maui.Controls.resources.dll</PackagePath>
-      <Modified>2024-09-24T23:42:58.000</Modified>
+      <Modified>2024-11-07T17:31:30.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.graphics.win2d\1.2.0\runtimes\win-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
@@ -713,17 +713,17 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2024-06-25T19:48:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.compatibility\8.0.91\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.compatibility\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
-      <Modified>2024-09-24T23:24:48.000</Modified>
+      <Modified>2024-11-07T17:09:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.91\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.pri">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.pri">
       <PackagePath>Microsoft.Maui.Controls.pri</PackagePath>
-      <Modified>2024-09-24T23:24:24.000</Modified>
+      <Modified>2024-11-07T17:08:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.core\8.0.91\lib\net8.0-windows10.0.19041\Microsoft.Maui.pri">
+    <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.maui.core\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.pri">
       <PackagePath>Microsoft.Maui.pri</PackagePath>
-      <Modified>2024-09-24T23:23:40.000</Modified>
+      <Modified>2024-11-07T17:07:42.000</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

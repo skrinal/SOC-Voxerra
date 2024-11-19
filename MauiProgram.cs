@@ -20,7 +20,7 @@ namespace Voxerra
     		builder.Logging.AddDebug();
 #endif
 
-            
+            builder.Services.AddSingleton<ChatHub>();
             builder.Services.AddSingleton<AppShell>();
             builder.Services.AddSingleton<LoginPage>();
             builder.Services.AddSingleton<MessageCenterPage>();

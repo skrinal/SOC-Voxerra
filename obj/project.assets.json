@@ -39116,6 +39116,7 @@
     "net8.0-android34.0": [
       "Microsoft.AspNetCore.Http.Connections.Client >= 8.0.11",
       "Microsoft.AspNetCore.SignalR.Client >= 8.0.11",
+      "Microsoft.AspNetCore.SignalR.Client.Core >= 8.0.11",
       "Microsoft.Extensions.Logging.Debug >= 8.0.1",
       "Microsoft.Maui.Controls >= 8.0.100",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.100",
@@ -39125,6 +39126,7 @@
     "net8.0-ios18.0": [
       "Microsoft.AspNetCore.Http.Connections.Client >= 8.0.11",
       "Microsoft.AspNetCore.SignalR.Client >= 8.0.11",
+      "Microsoft.AspNetCore.SignalR.Client.Core >= 8.0.11",
       "Microsoft.Extensions.Logging.Debug >= 8.0.1",
       "Microsoft.Maui.Controls >= 8.0.100",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.100",
@@ -39134,6 +39136,7 @@
     "net8.0-maccatalyst18.0": [
       "Microsoft.AspNetCore.Http.Connections.Client >= 8.0.11",
       "Microsoft.AspNetCore.SignalR.Client >= 8.0.11",
+      "Microsoft.AspNetCore.SignalR.Client.Core >= 8.0.11",
       "Microsoft.Extensions.Logging.Debug >= 8.0.1",
       "Microsoft.Maui.Controls >= 8.0.100",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.100",
@@ -39143,6 +39146,7 @@
     "net8.0-windows10.0.19041": [
       "Microsoft.AspNetCore.Http.Connections.Client >= 8.0.11",
       "Microsoft.AspNetCore.SignalR.Client >= 8.0.11",
+      "Microsoft.AspNetCore.SignalR.Client.Core >= 8.0.11",
       "Microsoft.Extensions.Logging.Debug >= 8.0.1",
       "Microsoft.Maui.Controls >= 8.0.100",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.100",
@@ -39224,6 +39228,10 @@
             "target": "Package",
             "version": "[8.0.11, )"
           },
+          "Microsoft.AspNetCore.SignalR.Client.Core": {
+            "target": "Package",
+            "version": "[8.0.11, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[8.0.1, )"
@@ -39301,6 +39309,10 @@
             "target": "Package",
             "version": "[8.0.11, )"
           },
+          "Microsoft.AspNetCore.SignalR.Client.Core": {
+            "target": "Package",
+            "version": "[8.0.11, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[8.0.1, )"
@@ -39363,6 +39375,10 @@
             "version": "[8.0.11, )"
           },
           "Microsoft.AspNetCore.SignalR.Client": {
+            "target": "Package",
+            "version": "[8.0.11, )"
+          },
+          "Microsoft.AspNetCore.SignalR.Client.Core": {
             "target": "Package",
             "version": "[8.0.11, )"
           },
@@ -39429,6 +39445,10 @@
             "version": "[8.0.11, )"
           },
           "Microsoft.AspNetCore.SignalR.Client": {
+            "target": "Package",
+            "version": "[8.0.11, )"
+          },
+          "Microsoft.AspNetCore.SignalR.Client.Core": {
             "target": "Package",
             "version": "[8.0.11, )"
           },

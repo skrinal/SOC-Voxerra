@@ -13,6 +13,7 @@
 
             </ResourceDictionary.MergedDictionaries>
             <converters:FromUserIdToHorizontalOptionConverter x:Key="FromUserIdToHorizontalOptionConverter" />
+            <converters:FromUserIdToBackgroundColorConverter x:Key="FromUserIdToBackgroundColorConverter" />
         </ResourceDictionary>
     </Application.Resources>
 </Application>
