@@ -51,8 +51,7 @@ namespace Voxerra.ViewModels
             {
                 UserInfo = response.User;
                 UserFriends = new ObservableCollection<User>(response.UserFriends);
-                LastestMessages = new ObservableCollection<LastestMessage>(response.LastestMessages);
-
+                LastestMessages =  new ObservableCollection<LastestMessage>(response.LastestMessages);
             }
             else
             {

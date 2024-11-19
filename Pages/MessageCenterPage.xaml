@@ -323,7 +323,7 @@
                             <HorizontalStackLayout  Padding="25,10,0,10">
                                 <HorizontalStackLayout.GestureRecognizers>
                                     <TapGestureRecognizer Command="{Binding Path=OpenChatPageCommand, Source={RelativeSource AncestorType={x:Type viewModels:MessageCenterPageViewModel}}}"
-                                                          CommandParameter="{Binding UserFriendInfo.Id}"/>
+                                                          CommandParameter="{Binding UserFiendInfo.Id}"/>
                                 </HorizontalStackLayout.GestureRecognizers>
 
                                 <Frame HeightRequest="54" WidthRequest="54" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">

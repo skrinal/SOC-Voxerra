@@ -1080,3 +1080,10 @@ C:\SOC-Voxerra\obj\Debug\net8.0-android\android\compressed_assemblies.x86_64.o
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\marshal_methods.x86_64.o
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\jni_remap.x86_64.o
 C:\SOC-Voxerra\obj\Debug\net8.0-android\app_shared_libraries\x86_64\libxamarin-app.so
+C:\SOC-Voxerra\bin\Debug\net8.0-android\Microsoft.Maui.Controls.HotReload.Forms.dll
+C:\SOC-Voxerra\bin\Debug\net8.0-android\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
+C:\SOC-Voxerra\bin\Debug\net8.0-android\Microsoft.VisualStudio.DesignTools.TapContract.dll
+C:\SOC-Voxerra\obj\Debug\net8.0-android\Voxerra.csproj.Up2Date
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.HotReload.Forms.dll
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Microsoft.VisualStudio.DesignTools.TapContract.dll

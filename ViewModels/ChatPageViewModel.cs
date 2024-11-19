@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using System.Diagnostics;
 using Voxerra.Services.Message;
 
 namespace Voxerra.ViewModels
@@ -13,6 +14,10 @@ namespace Voxerra.ViewModels
 
             FromUserId = int.Parse(HttpUtility.UrlDecode(query["fromUserId"].ToString()));
             ToUserId = int.Parse(HttpUtility.UrlDecode(query["toUserId"].ToString()));
+
+            Debug.WriteLine($"Query Parameters - FromUserId: {FromUserId}, ToUserId: {ToUserId}");
+
+
             Task.Run(async () =>
             {
                 await GetMessages();
@@ -34,6 +39,7 @@ namespace Voxerra.ViewModels
             _serviceProvider = serviceProvider;
         }
 
+        [Obsolete]
         async Task GetMessages()
         {
             var request = new MessageInitializeRequest
@@ -48,6 +54,12 @@ namespace Voxerra.ViewModels
             {
                 FriendInfo = response.FriendInfo;
                 Messages = new ObservableCollection<Message>(response.Messages);
+
+                //Device.BeginInvokeOnMainThread(() =>
+                //{
+                //    FriendInfo = response.FriendInfo;
+                //    Messages = new ObservableCollection<Message>(response.Messages);
+                //});
             }
             else
             {

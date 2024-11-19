@@ -5,6 +5,7 @@
              xmlns:viewModel="clr-namespace:Voxerra.ViewModels"
              Title="ChatPage"
              Background="#0f0f0f">
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="40" />
@@ -52,26 +53,31 @@
 
         </Grid>
 
-        <CollectionView 
+        <CollectionView
             Grid.Row="1" 
             ItemsSource="{Binding Messages}"
             Margin="0,10,0,10">
             <CollectionView.ItemsLayout>
-                <LinearItemsLayout ItemSpacing="10" Orientation="Vertical"/>
+                <LinearItemsLayout ItemSpacing="10" Orientation="Vertical" />
             </CollectionView.ItemsLayout>
-
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <VerticalStackLayout HorizontalOptions="End">
+                    <VerticalStackLayout>
+                        <VerticalStackLayout.HorizontalOptions>
+                            <MultiBinding Converter="{StaticResource FromUserIdToHorizontalOptionConverter}">
+                                <Binding Path="FromUserId" />
+                                <Binding Path="ToUserId" Source="{RelativeSource AncestorType={x:Type viewModel:ChatPageViewModel}}" />
+                            </MultiBinding>
+                        </VerticalStackLayout.HorizontalOptions>
                         <Label 
                                Margin="5,0,5,0"
-                               Text="{Binding SendDateTime, StringFormat='0:HH:mm'}" 
+                               Text="{Binding SendDateTime, StringFormat='{0:HH:mm}'}"
                                FontSize="11"/>
 
                         <Frame Padding="10,6,10,6" CornerRadius="10">
                             <Label 
                                 FontSize="12"
-                                Text="{Binding}" 
+                                Text="{Binding Content}" 
                                 TextColor="White"/>
                         </Frame>
                     </VerticalStackLayout>
@@ -79,7 +85,6 @@
             </CollectionView.ItemTemplate>
         </CollectionView>
 
-        
         <Grid Grid.Row="2" >
             <Border Margin="10,0,10,0"
                         Stroke="#5a4fe0"  

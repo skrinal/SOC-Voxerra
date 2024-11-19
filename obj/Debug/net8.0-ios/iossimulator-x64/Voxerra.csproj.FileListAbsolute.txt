@@ -269,7 +269,6 @@ C:\SOC-Voxerra\bin\Debug\net8.0-ios\iossimulator-x64\libxamarin-dotnet-nativeaot
 C:\SOC-Voxerra\bin\Debug\net8.0-ios\iossimulator-x64\libxamarin-dotnet-nativeaot.a
 C:\SOC-Voxerra\bin\Debug\net8.0-ios\iossimulator-x64\libxamarin-dotnet.a
 C:\SOC-Voxerra\bin\Debug\net8.0-ios\iossimulator-x64\libxamarin-dotnet.dylib
-C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\build-signature\signature
 C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\mauiimage.inputs
 C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\mauifont.inputs
 C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\mauisplash.inputs
@@ -346,3 +345,4 @@ C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\tha
 C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot@3x.png
 C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot@2x.png
 C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot.png
+C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\build-signature\signature
