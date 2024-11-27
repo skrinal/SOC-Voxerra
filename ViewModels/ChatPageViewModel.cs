@@ -72,12 +72,6 @@ namespace Voxerra.ViewModels
             {
                 FriendInfo = response.FriendInfo;
                 Messages = new ObservableCollection<Message>(response.Messages);
-
-                //Device.BeginInvokeOnMainThread(() =>
-                //{
-                //    FriendInfo = response.FriendInfo;
-                //    Messages = new ObservableCollection<Message>(response.Messages);
-                //});
             }
             else
             {
@@ -101,7 +95,7 @@ namespace Voxerra.ViewModels
         {
             Messages.Add(new Models.Message
             {
-                Content = Message,
+                Content = message,
                 FromUserId = ToUserId,
                 ToUserId = FromUserId,
                 SendDateTime = DateTime.Now,

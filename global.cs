@@ -12,3 +12,4 @@ global using ServiceProvider = Voxerra.Services.ServiceProvider;
 global using Microsoft.AspNetCore.SignalR;
 global using Microsoft.AspNetCore.SignalR.Client;
 global using Voxerra.Services.ChatHub;
+global using Voxerra.Services.Notification;

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Voxerra.Pages.RegisterPage"
+             xmlns:viewModel="clr-namespace:Voxerra.ViewModels"
+             Title="RegisterPage"
+             Background="#0f0f0f">
+
+    <Grid>
+        <VerticalStackLayout Margin="30" VerticalOptions="Center">
+            <Image 
+            HeightRequest="150"
+            Source="logo_voxerra_whitev2.png"
+            WidthRequest="300" />
+
+            <Label
+            Text="Username"
+            Margin="5,0,0,0"
+            Padding="0,10,0,5" />
+            <Border 
+            x:Name="UserNameBorder"
+            Stroke="#5a4fe0"  
+            StrokeThickness="2.5"
+            StrokeShape="RoundRectangle 20">
+                <Entry
+                x:Name="UserNameEntry"
+                Margin="8,0,8,0" 
+                ReturnType="Go"
+                Text="{Binding UserName}"/>
+            </Border>
+
+            <Label
+            Text="Email"
+            Margin="5,0,0,0"
+            Padding="0,10,0,5"/>
+            <Border 
+             Stroke="#5a4fe0"  
+             StrokeThickness="2.5"
+             StrokeShape="RoundRectangle 20">
+                <Entry
+                 Margin="8,-1,8,-1" 
+                 ReturnType="Go"
+                 Text="{Binding Email}"/>
+            </Border>
+
+            <Label
+                Text="Create a password"
+                Margin="5,0,0,0"
+                Padding="0,10,0,5"/>
+            <Border 
+                 Stroke="#5a4fe0"  
+                 StrokeThickness="2.5"
+                 StrokeShape="RoundRectangle 20">   
+                <Entry
+                 Margin="8,-1,8,-1" 
+                 ReturnType="Go"
+                 Text="{Binding Password}"/>
+            </Border>
+
+            <Label
+                Text="Confirm password"
+                Margin="5,0,0,0"
+                Padding="0,10,0,5"/>
+            <Border 
+                 Stroke="#5a4fe0"  
+                 StrokeThickness="2.5"
+                 StrokeShape="RoundRectangle 20">
+                <Entry
+                 Margin="8,-1,8,-1" 
+                 ReturnType="Go"
+                 Text="{Binding Password}"/>    
+            </Border>
+
+
+            <Label
+            Margin="0,10,0,0"
+            Text="Forgot password"/>
+
+            <Button
+            Margin="0,30,0,0"
+            Background="#5a4fe0"
+            Text="Log in"
+            TextColor="White"
+            Command="{Binding LoginCommand}"/>
+
+            <HorizontalStackLayout Margin="0,25,0,0" HorizontalOptions="Center">
+                <Label Text="Dont have an account?"
+                   TextColor="#5a5a5a"/>
+                <Label
+                 Margin="5,0,0,0"
+                 Text="Sign up"/>
+
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+
+    </Grid>
+
+</ContentPage>

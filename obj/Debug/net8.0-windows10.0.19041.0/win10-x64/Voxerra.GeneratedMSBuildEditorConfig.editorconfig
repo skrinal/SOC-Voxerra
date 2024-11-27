@@ -52,6 +52,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.MessageCente
 build_metadata.AdditionalFiles.TargetPath = Pages\MessageCenterPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\MessageCenterPage.xaml
 
+[C:/SOC-Voxerra/Pages/RegisterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.RegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\RegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\RegisterPage.xaml
+
 [C:/SOC-Voxerra/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Resources.Styles.Colors.xaml

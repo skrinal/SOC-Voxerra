@@ -1087,3 +1087,8 @@ C:\SOC-Voxerra\obj\Debug\net8.0-android\Voxerra.csproj.Up2Date
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.HotReload.Forms.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Microsoft.VisualStudio.DesignTools.TapContract.dll
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\src\crc641e9043ac1a718797\MessageNotificationService.java
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\src\crc641e9043ac1a718797\AlarmHandler.java
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\src\crc641e9043ac1a718797\MainActivity.java
+C:\SOC-Voxerra\obj\Debug\net8.0-android\res\drawable\androidlargeicon.png
+C:\SOC-Voxerra\obj\Debug\net8.0-android\res\drawable\androidsmallicon.png

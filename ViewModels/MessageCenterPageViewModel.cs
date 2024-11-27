@@ -15,8 +15,10 @@ namespace Voxerra.ViewModels
         }
 
         private ServiceProvider _serviceProvider;
+        private ChatHub _chatHub;
+        private INotificationManagerService? notificationManager;
 
-        public MessageCenterPageViewModel(ServiceProvider serviceProvider, ChatHub chatHub) 
+        public MessageCenterPageViewModel(ServiceProvider serviceProvider, ChatHub chatHub, INotificationManagerService? _notificationManager) 
         {
             UserInfo = new User();
             UserFriends = new ObservableCollection<User>();
@@ -40,6 +42,15 @@ namespace Voxerra.ViewModels
             });
 
             _serviceProvider = serviceProvider;
+            _chatHub = chatHub;
+            _chatHub.Connect();
+            _chatHub.AddReceivedMessageHandler(OnReceivedMessage);
+
+            //MessagingCenter.Send<string, string[]>("StartService", "MessageNotificationService", new string[] { });
+
+            // Assume the app uses a single window.
+            _notificationManager =
+                Application.Current?.Windows[0].Page?.Handler?.MauiContext?.Services.GetService<INotificationManagerService>();
         }
 
         async Task GetListFriends()
@@ -69,7 +80,7 @@ namespace Voxerra.ViewModels
           
         }
 
-        internal void Initialize()
+        public void Initialize()
         {
             Task.Run(async () =>
             {
@@ -79,6 +90,28 @@ namespace Voxerra.ViewModels
             {
                 IsRefreshing = false;
             });
+        }
+
+        void OnReceivedMessage(int fromUserId, string message)
+        {
+            var lastestMessage = LastestMessages.Where(x => x.Id == fromUserId).FirstOrDefault();
+            if (lastestMessage != null) 
+                LastestMessages.Remove(lastestMessage);
+
+            var newLastestMessage = new LastestMessage
+            {
+                UserId = userInfo.Id,
+                Content = message,
+                UserFiendInfo = UserFriends.Where(x => x.Id == fromUserId).FirstOrDefault()
+            };
+
+            LastestMessages.Insert(0, newLastestMessage);
+            OnPropertyChanged("LastestMessages");
+
+            notificationManager.SendNotification(newLastestMessage.UserFiendInfo.UserName, newLastestMessage.Content);
+
+            //MessagingCenter.Send<string, string[]>("Notify", "MessageNotificationService",
+            //  new string[] { newLastestMessage.UserFiendInfo.UserName, newLastestMessage.Content });
         }
 
         private User userInfo;

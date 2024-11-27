@@ -11,7 +11,7 @@ namespace Voxerra.Services.ChatHub
     public class ChatHub
     {
         private readonly HubConnection hubConnection;
-        private List<Action<int, string>> OnReceiveMessageHandler;
+        private List<Action<int, string>> onReceiveMessageHandler;
         private ServiceProvider _serviceProvider;
 
         public ChatHub(ServiceProvider serviceProvider)
@@ -27,7 +27,7 @@ namespace Voxerra.Services.ChatHub
 #endif
                 }).Build();
 
-            OnReceiveMessageHandler = new List<Action<int, string>>();
+            onReceiveMessageHandler = new List<Action<int, string>>();
             hubConnection.On<int, string>("ReceiveMessage", OnReceiveMessage);
         }
 
@@ -46,14 +46,14 @@ namespace Voxerra.Services.ChatHub
             await hubConnection.InvokeAsync("SendMessageToUser", fromUserId, toUserId, message);
         }
 
-        public void AddReceivedMessageHandler(Action<int, string> handler)
+        public void AddReceivedMessageHandler(Action <int, string> handler)
         {
-            OnReceiveMessageHandler.Add(handler);
+            onReceiveMessageHandler.Add(handler);
         }
 
         void OnReceiveMessage(int userId, string message)
         {
-            foreach ( var handler in OnReceiveMessageHandler)
+            foreach ( var handler in onReceiveMessageHandler)
             {
                 handler(userId, message);
             }

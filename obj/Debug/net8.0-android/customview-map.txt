@@ -2,6 +2,8 @@
 @string/appbar_scrolling_view_behavior;C:\SOC-Voxerra\obj\Debug\net8.0-android\lp\156\jl\res\layout\navigationlayout.xml
 adaptive-icon;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
 adaptive-icon;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\appicon_round.xml
+adaptive-icon;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\dotnet_logo.xml
+adaptive-icon;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\dotnet_logo_round.xml
 alpha;C:\SOC-Voxerra\obj\Debug\net8.0-android\lp\154\jl\res\anim\enterfromleft.xml
 alpha;C:\SOC-Voxerra\obj\Debug\net8.0-android\lp\154\jl\res\anim\exittoleft.xml
 alpha;C:\SOC-Voxerra\obj\Debug\net8.0-android\lp\156\jl\res\anim\nav_default_enter_anim.xml
@@ -17,6 +19,8 @@ attr;C:\SOC-Voxerra\obj\Debug\net8.0-android\lp\153\jl\res\values\attrs.xml
 attr;C:\SOC-Voxerra\obj\Debug\net8.0-android\lp\156\jl\res\values\attr.xml
 background;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
 background;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\appicon_round.xml
+background;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\dotnet_logo.xml
+background;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\dotnet_logo_round.xml
 bitmap;obj\Debug\net8.0-android\resizetizer\sp\drawable\maui_splash_image.xml
 bitmap;obj\Debug\net8.0-android\resizetizer\sp\drawable-v31\maui_splash_image.xml
 cache-path;C:\SOC-Voxerra\obj\Debug\net8.0-android\lp\157\jl\res\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
@@ -34,6 +38,8 @@ external-cache-path;C:\SOC-Voxerra\obj\Debug\net8.0-android\lp\157\jl\res\xml\mi
 external-path;C:\SOC-Voxerra\obj\Debug\net8.0-android\lp\157\jl\res\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
 foreground;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
 foreground;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\appicon_round.xml
+foreground;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\dotnet_logo.xml
+foreground;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\dotnet_logo_round.xml
 item;C:\SOC-Voxerra\obj\Debug\net8.0-android\lp\153\jl\res\values\styles.xml
 item;C:\SOC-Voxerra\obj\Debug\net8.0-android\lp\156\jl\res\drawable\maui_splash.xml
 item;C:\SOC-Voxerra\obj\Debug\net8.0-android\lp\156\jl\res\values\styles.xml
@@ -46,6 +52,8 @@ layer-list;obj\Debug\net8.0-android\resizetizer\sp\drawable-v31\maui_splash_imag
 microsoft.maui.controls.platform.compatibility.ShellFlyoutLayout;C:\SOC-Voxerra\obj\Debug\net8.0-android\lp\154\jl\res\layout\flyoutcontent.xml
 monochrome;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
 monochrome;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\appicon_round.xml
+monochrome;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\dotnet_logo.xml
+monochrome;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\dotnet_logo_round.xml
 paths;C:\SOC-Voxerra\obj\Debug\net8.0-android\lp\157\jl\res\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
 resources;C:\SOC-Voxerra\obj\Debug\net8.0-android\lp\153\jl\res\values\attrs.xml
 resources;C:\SOC-Voxerra\obj\Debug\net8.0-android\lp\153\jl\res\values\styles.xml
