@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Voxerra.Services.Registration
 {
-    public class RegistrationRequest
+    public class RegistrationInitializeRequest
     {
         public string Username { get; set; } = null!;
         public string Password { get; set; } = null!;
