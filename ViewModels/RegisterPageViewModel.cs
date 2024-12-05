@@ -26,7 +26,7 @@ namespace Voxerra.ViewModels
                 if (isProcessing) return;
 
                 if (string.IsNullOrWhiteSpace(UserName) || string.IsNullOrWhiteSpace(Email) 
-                 || string.IsNullOrWhiteSpace(Password) || string.IsNullOrWhiteSpace(UserName)) return;
+                 || string.IsNullOrWhiteSpace(Password) || string.IsNullOrWhiteSpace(RePassword)) return;
 
                 isProcessing = true;
                 Register().GetAwaiter().OnCompleted(() =>
