@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\SOC-Voxerra\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\viewmodels\\loginpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:viewmodels\\loginpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\pages\\messagecenterpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:pages\\messagecenterpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\services\\registration\\registrationinitializerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:services\\registration\\registrationinitializerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\viewmodels\\registerpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:viewmodels\\registerpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\pages\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:pages\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,8 +17,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 847,
-          "SelectedChildIndex": 5,
+          "DockedWidth": 1588,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,60 +30,34 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AppShell.xaml.cs",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\AppShell.xaml.cs",
-              "RelativeDocumentMoniker": "AppShell.xaml.cs",
-              "ToolTip": "C:\\SOC-Voxerra\\AppShell.xaml.cs",
-              "RelativeToolTip": "AppShell.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T23:05:43.112Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RegisterPageViewModel.cs",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\ViewModels\\RegisterPageViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\RegisterPageViewModel.cs",
-              "ToolTip": "C:\\SOC-Voxerra\\ViewModels\\RegisterPageViewModel.cs",
-              "RelativeToolTip": "ViewModels\\RegisterPageViewModel.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAowFEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T21:35:19.316Z",
+              "DocumentIndex": 0,
+              "Title": "MessageCenterPage.xaml",
+              "DocumentMoniker": "C:\\SOC-Voxerra\\Pages\\MessageCenterPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\MessageCenterPage.xaml",
+              "ToolTip": "C:\\SOC-Voxerra\\Pages\\MessageCenterPage.xaml",
+              "RelativeToolTip": "Pages\\MessageCenterPage.xaml",
+              "ViewState": "AgIAALIAAAAAAAAAAAAAwEgBAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-09T00:18:10.817Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RegistrationInitializeRequest.cs",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\Services\\Registration\\RegistrationInitializeRequest.cs",
-              "RelativeDocumentMoniker": "Services\\Registration\\RegistrationInitializeRequest.cs",
-              "ToolTip": "C:\\SOC-Voxerra\\Services\\Registration\\RegistrationInitializeRequest.cs",
-              "RelativeToolTip": "Services\\Registration\\RegistrationInitializeRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T22:42:09.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginPageViewModel.cs",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\ViewModels\\LoginPageViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\LoginPageViewModel.cs",
-              "ToolTip": "C:\\SOC-Voxerra\\ViewModels\\LoginPageViewModel.cs",
-              "RelativeToolTip": "ViewModels\\LoginPageViewModel.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T21:00:09.925Z",
+              "Title": "RegisterPage.xaml",
+              "DocumentMoniker": "C:\\SOC-Voxerra\\Pages\\RegisterPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\RegisterPage.xaml",
+              "ToolTip": "C:\\SOC-Voxerra\\Pages\\RegisterPage.xaml",
+              "RelativeToolTip": "Pages\\RegisterPage.xaml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-08T22:27:04.852Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 423,
+          "DockedWidth": 844,
           "SelectedChildIndex": -1,
           "Children": [
             {
@@ -113,7 +79,7 @@
           ]
         },
         {
-          "DockedWidth": 139,
+          "DockedWidth": 423,
           "SelectedChildIndex": -1,
           "Children": [
             {

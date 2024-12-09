@@ -10,10 +10,10 @@ namespace Voxerra
 
             Routing.RegisterRoute("MessageCenterPage", typeof(MessageCenterPage));
             Routing.RegisterRoute("ChatPage", typeof(ChatPage));
+            Routing.RegisterRoute("LoginPage", typeof(LoginPage));
 
-
-            //this.CurrentItem = loginPage;
-            this.CurrentItem = registerPage;
+            this.CurrentItem = loginPage;
+            //this.CurrentItem = registerPage;
         }
 
         //public AppShell(ChatPage chatPage)
