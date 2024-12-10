@@ -8,6 +8,7 @@ namespace Voxerra.ViewModels
     public class MessageCenterPageViewModel : INotifyPropertyChanged, IQueryAttributable
     {
         public event PropertyChangedEventHandler PropertyChanged;
+        //private readonly ILoginStateService _loginStateService;
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
@@ -16,10 +17,12 @@ namespace Voxerra.ViewModels
 
         private ServiceProvider _serviceProvider;
         private ChatHub _chatHub;
-        private INotificationManagerService? notificationManager;
+        //private INotificationManagerService? notificationManager;
 
-        public MessageCenterPageViewModel(ServiceProvider serviceProvider, ChatHub chatHub, INotificationManagerService? _notificationManager) 
+        public MessageCenterPageViewModel(/*ILoginStateService loginStateService,*/ ServiceProvider serviceProvider, ChatHub chatHub) 
         {
+            //_loginStateService = loginStateService;
+
             UserInfo = new User();
             UserFriends = new ObservableCollection<User>();
             LastestMessages = new ObservableCollection<LastestMessage>();
@@ -42,15 +45,17 @@ namespace Voxerra.ViewModels
             });
 
             _serviceProvider = serviceProvider;
+            
+            
             _chatHub = chatHub;
-            _chatHub.Connect();
+            _ = _chatHub.Connect();
             _chatHub.AddReceivedMessageHandler(OnReceivedMessage);
-
+            
+            
             //MessagingCenter.Send<string, string[]>("StartService", "MessageNotificationService", new string[] { });
 
             // Assume the app uses a single window.
-            _notificationManager =
-                Application.Current?.Windows[0].Page?.Handler?.MauiContext?.Services.GetService<INotificationManagerService>();
+            //_notificationManager = Application.Current?.Windows[0].Page?.Handler?.MauiContext?.Services.GetService<INotificationManagerService>();
         }
 
         async Task GetListFriends()
@@ -108,7 +113,7 @@ namespace Voxerra.ViewModels
             LastestMessages.Insert(0, newLastestMessage);
             OnPropertyChanged("LastestMessages");
 
-            notificationManager.SendNotification(newLastestMessage.UserFiendInfo.UserName, newLastestMessage.Content);
+            //notificationManager.SendNotification(newLastestMessage.UserFiendInfo.UserName, newLastestMessage.Content);
 
             //MessagingCenter.Send<string, string[]>("Notify", "MessageNotificationService",
             //  new string[] { newLastestMessage.UserFiendInfo.UserName, newLastestMessage.Content });

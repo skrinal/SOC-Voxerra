@@ -5,7 +5,7 @@
              xmlns:icon="clr-namespace:Voxerra.Helpers"
              xmlns:viewModels="clr-namespace:Voxerra.ViewModels"
              Title="MessageCenterPage"
-             Background="{StaticResource Background}"
+             Background="#0f0f0f"
              NavigatedTo="ContentPage_NavigatedTo">
 
     <RefreshView Margin="10" IsRefreshing="{Binding IsRefreshing}">

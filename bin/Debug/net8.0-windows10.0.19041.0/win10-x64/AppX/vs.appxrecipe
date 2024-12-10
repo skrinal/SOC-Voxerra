@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\SOC-Voxerra\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-11-19T23:23:45.512</Modified>
+      <Modified>2024-12-10T21:39:44.670</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\SOC-Voxerra\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-11-19T23:23:45.292</Modified>
+      <Modified>2024-12-10T21:04:45.406</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Voxerra.runtimeconfig.json">
       <PackagePath>Voxerra.runtimeconfig.json</PackagePath>
-      <Modified>2024-11-19T23:23:44.993</Modified>
+      <Modified>2024-12-10T21:04:45.057</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Voxerra.dll">
       <PackagePath>Voxerra.dll</PackagePath>
-      <Modified>2024-11-19T23:23:43.751</Modified>
+      <Modified>2024-12-10T21:39:44.305</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Voxerra.exe</PackagePath>
-      <Modified>2024-11-19T23:23:43.791</Modified>
+      <Modified>2024-12-10T21:39:44.310</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -87,307 +87,307 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ant_man.scale-100.png">
       <PackagePath>ant_man.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.754</Modified>
+      <Modified>2024-11-26T22:51:58.110</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-11-18T17:53:51.765</Modified>
+      <Modified>2024-11-26T22:51:58.109</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.757</Modified>
+      <Modified>2024-11-26T22:51:58.102</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.757</Modified>
+      <Modified>2024-11-26T22:51:58.102</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.757</Modified>
+      <Modified>2024-11-26T22:51:58.102</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.757</Modified>
+      <Modified>2024-11-26T22:51:58.102</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.757</Modified>
+      <Modified>2024-11-26T22:51:58.101</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.762</Modified>
+      <Modified>2024-11-26T22:51:58.107</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.762</Modified>
+      <Modified>2024-11-26T22:51:58.107</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.761</Modified>
+      <Modified>2024-11-26T22:51:58.106</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.762</Modified>
+      <Modified>2024-11-26T22:51:58.106</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.761</Modified>
+      <Modified>2024-11-26T22:51:58.106</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.763</Modified>
+      <Modified>2024-11-26T22:51:58.108</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.763</Modified>
+      <Modified>2024-11-26T22:51:58.107</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.762</Modified>
+      <Modified>2024-11-26T22:51:58.107</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.762</Modified>
+      <Modified>2024-11-26T22:51:58.107</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.762</Modified>
+      <Modified>2024-11-26T22:51:58.107</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.764</Modified>
+      <Modified>2024-11-26T22:51:58.109</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.764</Modified>
+      <Modified>2024-11-26T22:51:58.109</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.764</Modified>
+      <Modified>2024-11-26T22:51:58.109</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.764</Modified>
+      <Modified>2024-11-26T22:51:58.109</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.764</Modified>
+      <Modified>2024-11-26T22:51:58.109</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.764</Modified>
+      <Modified>2024-11-26T22:51:58.108</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.763</Modified>
+      <Modified>2024-11-26T22:51:58.108</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.763</Modified>
+      <Modified>2024-11-26T22:51:58.108</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.763</Modified>
+      <Modified>2024-11-26T22:51:58.108</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.763</Modified>
+      <Modified>2024-11-26T22:51:58.108</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.759</Modified>
+      <Modified>2024-11-26T22:51:58.104</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.759</Modified>
+      <Modified>2024-11-26T22:51:58.104</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.759</Modified>
+      <Modified>2024-11-26T22:51:58.104</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.759</Modified>
+      <Modified>2024-11-26T22:51:58.103</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.759</Modified>
+      <Modified>2024-11-26T22:51:58.103</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.760</Modified>
+      <Modified>2024-11-26T22:51:58.105</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.760</Modified>
+      <Modified>2024-11-26T22:51:58.105</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.760</Modified>
+      <Modified>2024-11-26T22:51:58.105</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.760</Modified>
+      <Modified>2024-11-26T22:51:58.104</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.759</Modified>
+      <Modified>2024-11-26T22:51:58.104</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.761</Modified>
+      <Modified>2024-11-26T22:51:58.106</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.761</Modified>
+      <Modified>2024-11-26T22:51:58.106</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.761</Modified>
+      <Modified>2024-11-26T22:51:58.105</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.760</Modified>
+      <Modified>2024-11-26T22:51:58.105</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.760</Modified>
+      <Modified>2024-11-26T22:51:58.105</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.758</Modified>
+      <Modified>2024-11-26T22:51:58.103</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.758</Modified>
+      <Modified>2024-11-26T22:51:58.103</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.758</Modified>
+      <Modified>2024-11-26T22:51:58.103</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.758</Modified>
+      <Modified>2024-11-26T22:51:58.103</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.758</Modified>
+      <Modified>2024-11-26T22:51:58.102</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\apple_logo.scale-100.png">
       <PackagePath>apple_logo.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.755</Modified>
+      <Modified>2024-11-26T22:51:58.101</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrow_back_ios_new.scale-100.png">
       <PackagePath>arrow_back_ios_new.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.766</Modified>
+      <Modified>2024-11-26T22:51:58.113</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrow_back_ios_new.scale-125.png">
       <PackagePath>arrow_back_ios_new.scale-125.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.766</Modified>
+      <Modified>2024-11-26T22:51:58.113</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrow_back_ios_new.scale-150.png">
       <PackagePath>arrow_back_ios_new.scale-150.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.765</Modified>
+      <Modified>2024-11-26T22:51:58.113</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrow_back_ios_new.scale-200.png">
       <PackagePath>arrow_back_ios_new.scale-200.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.765</Modified>
+      <Modified>2024-11-26T22:51:58.113</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrow_back_ios_new.scale-400.png">
       <PackagePath>arrow_back_ios_new.scale-400.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.765</Modified>
+      <Modified>2024-11-26T22:51:58.112</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\black_panther.scale-100.png">
       <PackagePath>black_panther.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.756</Modified>
+      <Modified>2024-11-26T22:51:58.112</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\black_widow.scale-100.png">
       <PackagePath>black_widow.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.756</Modified>
+      <Modified>2024-11-26T22:51:58.110</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.767</Modified>
+      <Modified>2024-11-26T22:51:58.114</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.766</Modified>
+      <Modified>2024-11-26T22:51:58.114</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.766</Modified>
+      <Modified>2024-11-26T22:51:58.114</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.766</Modified>
+      <Modified>2024-11-26T22:51:58.114</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.766</Modified>
+      <Modified>2024-11-26T22:51:58.113</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\falcon.scale-100.png">
       <PackagePath>falcon.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.755</Modified>
+      <Modified>2024-11-26T22:51:58.112</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\google_logo.scale-100.png">
       <PackagePath>google_logo.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.757</Modified>
+      <Modified>2024-11-26T22:51:58.111</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\hulk.scale-100.png">
       <PackagePath>hulk.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.754</Modified>
+      <Modified>2024-11-26T22:51:58.111</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_voxerra.scale-100.png">
       <PackagePath>logo_voxerra.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.754</Modified>
+      <Modified>2024-11-26T22:51:58.110</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_voxerra_white.scale-100.png">
       <PackagePath>logo_voxerra_white.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.756</Modified>
+      <Modified>2024-11-26T22:51:58.112</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_voxerra_whitev2.scale-100.png">
       <PackagePath>logo_voxerra_whitev2.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.765</Modified>
+      <Modified>2024-11-26T22:51:58.101</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\loki.scale-100.png">
       <PackagePath>loki.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.753</Modified>
+      <Modified>2024-11-26T22:51:58.110</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\rocket.scale-100.png">
       <PackagePath>rocket.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.754</Modified>
+      <Modified>2024-11-26T22:51:58.110</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\root.scale-100.png">
       <PackagePath>root.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.754</Modified>
+      <Modified>2024-11-26T22:51:58.110</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\spider_man.scale-100.png">
       <PackagePath>spider_man.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.755</Modified>
+      <Modified>2024-11-26T22:51:58.111</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\thanos.scale-100.png">
       <PackagePath>thanos.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.755</Modified>
+      <Modified>2024-11-26T22:51:58.111</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tony_stark.scale-100.png">
       <PackagePath>tony_stark.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.755</Modified>
+      <Modified>2024-11-26T22:51:58.111</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\unnamed.scale-100.jpg">
       <PackagePath>unnamed.scale-100.jpg</PackagePath>
-      <Modified>2024-11-18T17:53:51.756</Modified>
+      <Modified>2024-11-26T22:51:58.112</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\vision.scale-100.png">
       <PackagePath>vision.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.756</Modified>
+      <Modified>2024-11-26T22:51:58.112</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\wanda.scale-100.png">
       <PackagePath>wanda.scale-100.png</PackagePath>
-      <Modified>2024-11-18T17:53:51.756</Modified>
+      <Modified>2024-11-26T22:51:58.101</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\SOC-Voxerra\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Voxerra.deps.json">
       <PackagePath>Voxerra.deps.json</PackagePath>
-      <Modified>2024-11-19T23:23:44.880</Modified>
+      <Modified>2024-12-10T21:04:44.926</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Skrinal\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.54\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

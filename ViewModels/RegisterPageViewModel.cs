@@ -11,7 +11,7 @@ namespace Voxerra.ViewModels
     public class RegisterPageViewModel
     {
         public event PropertyChangedEventHandler PropertyChanged;
-
+        private CancellationTokenSource _debounceTokenSource;
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
@@ -21,17 +21,17 @@ namespace Voxerra.ViewModels
 
         public RegisterPageViewModel(ServiceProvider serviceProvider)
         {
-            LoginId = "SkrinalLogin";
-            UserName = "Skirnal";
-            Password = "Richard123";
-            RePassword = "Richard123";
+            LoginId = "SkrinalLoginx";
+            //UserName = "Skirnal";
+            //Password = "Richard123";
+            //RePassword = "Richard123";
 
             RegisterCommand = new Command(() =>
             {
                 if (isProcessing) return;
 
-                if (string.IsNullOrWhiteSpace(UserName) || string.IsNullOrWhiteSpace(Email) 
-                 || string.IsNullOrWhiteSpace(Password) || string.IsNullOrWhiteSpace(RePassword)) return;
+                if (!IsUserNameUnique || !IsEmailUnique
+                    || string.IsNullOrWhiteSpace(Password) || string.IsNullOrWhiteSpace(RePassword)) return;
 
                 isProcessing = true;
                 Register().GetAwaiter().OnCompleted(() =>
@@ -39,9 +39,16 @@ namespace Voxerra.ViewModels
                     isProcessing = false;
                 });
             });
+
+            GoBackCommand = new Command(OnGoBack);
+
             _serviceProvider = serviceProvider;
         }
 
+        private async void OnGoBack()
+        {
+            await Shell.Current.GoToAsync("LoginPage");
+        }
         async Task Register()
         {
             try
@@ -86,6 +93,10 @@ namespace Voxerra.ViewModels
             return Regex.IsMatch(email,
                 @"^[^@\s]+@[^@\s]+\.[^@\s]+$", RegexOptions.IgnoreCase);
         }
+        private bool IsValidUsername(string username)
+        {
+            return !string.IsNullOrWhiteSpace(username) && username.Length >= 3;
+        }
 
         private async Task IsEmailUniqueCall(string email)
         {
@@ -99,7 +110,6 @@ namespace Voxerra.ViewModels
                 var response = await _serviceProvider.CallWebApi<IsEmailUniqueRequest, IsEmailUniqueResponse>(
                     "/Registration/IsEmailUnique", HttpMethod.Post, request);
 
-                //IsEmailUnique = response.StatusCode == 200;
 
                 if (response.StatusCode == 200)
                 {
@@ -117,6 +127,53 @@ namespace Voxerra.ViewModels
             }
         }
 
+        private async Task IsUserNameUniqueCall(string userName)
+        {
+            try
+            {
+                var request = new IsUserNameUniqueRequest
+                {
+                    UserName = userName
+                };
+
+                var response = await _serviceProvider.CallWebApi<IsUserNameUniqueRequest, IsUserNameUniqueResponse>(
+                    "/Registration/IsUserNameUnique", HttpMethod.Post, request);
+
+
+                if (response.StatusCode == 200)
+                {
+                    IsUserNameUnique = response.IsUserNameUnique;
+                }
+                else
+                {
+                    //await AppShell.Current.DisplayAlert("Voxerra", "Email is already in use.", "OK");
+                }
+            }
+            catch (Exception ex)
+            {
+                IsEmailUnique = false;
+                await AppShell.Current.DisplayAlert("Voxerra", ex.Message, "OK");
+            }
+        }
+
+
+        private async void DebounceValidation(string input, Func<string, Task> validationFunc)
+        {
+            _debounceTokenSource?.Cancel();
+            _debounceTokenSource = new CancellationTokenSource();
+            var token = _debounceTokenSource.Token;
+
+            try
+            {
+                await Task.Delay(1000, token); // Wait 500ms before proceeding
+                await validationFunc(input);
+            }
+            catch (TaskCanceledException)
+            {
+                // Task was canceled, no need to handle it
+            }
+        }
+
         private string loginId;
         private string userName;
         private string email;
@@ -124,7 +181,7 @@ namespace Voxerra.ViewModels
         private string repassword;
         private bool isProcessing;
         private bool isEmailUnique;
-
+        private bool isUserNameUnique;
         public string LoginId
         {
             get { return loginId; }
@@ -133,7 +190,19 @@ namespace Voxerra.ViewModels
         public string UserName
         {
             get { return userName; }
-            set { userName = value; OnPropertyChanged(); }
+            set 
+            { 
+                userName = value; 
+                OnPropertyChanged();
+                if (IsValidUsername(value))
+                {
+                    DebounceValidation(value, IsUserNameUniqueCall);
+                }
+                else
+                {
+                    IsUserNameUnique = false;
+                }
+            }
         }
         public string Email
         {
@@ -145,7 +214,7 @@ namespace Voxerra.ViewModels
 
                 if (IsValidEmail(value))
                 {
-                    Task task = IsEmailUniqueCall(Email);
+                    DebounceValidation(value, IsEmailUniqueCall);
                 }
                 else
                 {
@@ -173,7 +242,13 @@ namespace Voxerra.ViewModels
             get { return isEmailUnique; }
             set { isEmailUnique = value; OnPropertyChanged(); }
         }
+        public bool IsUserNameUnique
+        {
+            get { return isUserNameUnique; }
+            set { isUserNameUnique = value; OnPropertyChanged(); }
+        }
         public ICommand RegisterCommand { get; set; }
+        public ICommand GoBackCommand { get; set; }
 
     }
 }

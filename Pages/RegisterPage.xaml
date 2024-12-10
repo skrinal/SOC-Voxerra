@@ -75,10 +75,6 @@
                 </Border>
 
 
-                <Label
-        Margin="0,10,0,0"
-        Text="Forgot password"/>
-
                 <Button
         Margin="0,30,0,0"
         Background="#5a4fe0"
@@ -87,12 +83,11 @@
         Command="{Binding RegisterCommand}"/>
 
                 <HorizontalStackLayout Margin="0,25,0,0" HorizontalOptions="Center">
-                    <Label Text="Dont have an account?"
-               TextColor="#5a5a5a"/>
-                    <Label
-             Margin="5,0,0,0"
-             Text="Sign up"/>
-
+                    <Label Text="Already have account.">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding GoBackCommand}" />
+                        </Label.GestureRecognizers>
+                    </Label>
                 </HorizontalStackLayout>
             </VerticalStackLayout>
 

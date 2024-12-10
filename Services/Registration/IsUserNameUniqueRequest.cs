@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Voxerra.Services.Registration
 {
-    public class IsEmailUniqueRequest
+    public class IsUserNameUniqueRequest
     {
-        public string Email { get; set; } = null!;
+        public string UserName { get; set; } = null!;
     }
 }

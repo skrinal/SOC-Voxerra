@@ -60,7 +60,11 @@
                        TextColor="#5a5a5a"/>
                 <Label
                      Margin="5,0,0,0"
-                     Text="Sign up"/>
+                     Text="Sign up" >
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding RegisterCommand}" />
+                    </Label.GestureRecognizers>
+                </Label>
 
             </HorizontalStackLayout>
         </VerticalStackLayout>

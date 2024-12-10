@@ -1,28 +1,25 @@
-﻿using Voxerra.Pages;
-
-namespace Voxerra
+﻿namespace Voxerra
 {
     public partial class AppShell : Shell
     {
-        public AppShell(LoginPage loginPage, RegisterPage registerPage)
+        private readonly ILoginStateService _loginStateService;
+        public AppShell(ILoginStateService loginStateService, LoginPage loginPage, MessageCenterPage messageCenterPage)
         {
             InitializeComponent();
 
             Routing.RegisterRoute("MessageCenterPage", typeof(MessageCenterPage));
             Routing.RegisterRoute("ChatPage", typeof(ChatPage));
             Routing.RegisterRoute("LoginPage", typeof(LoginPage));
+            Routing.RegisterRoute("RegisterPage", typeof(RegisterPage));
+
+            _loginStateService = loginStateService;
+
+
+            //this.CurrentItem = loginStateService.IsLoggedIn ? messageCenterPage : loginPage;
 
             this.CurrentItem = loginPage;
             //this.CurrentItem = registerPage;
         }
 
-        //public AppShell(ChatPage chatPage)
-        //{
-        //    InitializeComponent();
-
-        //    Routing.RegisterRoute("MessageCenterPage", typeof(MessageCenterPage));
-
-        //    this.CurrentItem = chatPage;
-        //}
     }
 }

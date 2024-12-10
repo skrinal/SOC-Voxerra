@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Voxerra.Services.Registration
+namespace Voxerra.Helpers
 {
-    public class IsEmailUniqueRequest
+    public interface ILoginStateService
     {
-        public string Email { get; set; } = null!;
+        bool IsLoggedIn { get; set; }
+        void Logout();
     }
 }

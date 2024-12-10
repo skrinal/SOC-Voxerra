@@ -30,9 +30,19 @@ namespace Voxerra
         public HttpMessageHandler? GetPlatformMessageHandler()
         {
 #if WINDOWS
-            return null;
+            return new HttpClientHandler
+            {
+                ServerCertificateCustomValidationCallback = (message, cert, chain, errors) =>
+                {
+                    // Accept self-signed certificates issued to "CN=localhost"
+                    if (cert != null && cert.Issuer.Equals("CN=localhost"))
+                        return true;
+
+                    return errors == SslPolicyErrors.None;
+                }
+            };
 #elif ANDROID
-        var handler = new CustomAndroidMessageHandler();
+            var handler = new CustomAndroidMessageHandler();
         handler.ServerCertificateCustomValidationCallback = (message, cert, chain, errors) =>
         {
             if (cert != null && cert.Issuer.Equals("CN=localhost"))
