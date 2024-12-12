@@ -7,6 +7,8 @@
         
         
         public string _accesToken = "";
+        public string _refreshToken = "";
+        public const string RefreshTokenKey = "refresh_token";
         private DevHttpsConnectionHelper _devSslHelper;
         
         
@@ -89,6 +91,12 @@
                 if (result.StatusCode == 200)
                 {
                     _accesToken = result.Token;
+                    _refreshToken = result.RefreshToken;
+
+                    Task.Run(async () =>
+                    {
+                        await SaveRefreshToken(_refreshToken)
+                    });
                 }
                 return result;
             }
@@ -101,6 +109,15 @@
                 };
                 return result;
             }
+        }
+
+        public async Task SaveRefreshToken(string refreshToken) {
+            try 
+           {
+                await SecureStorage.SetAsync(RefreshTokenKey, refreshToken);
+           }
+           catch { }
+            
         }
 
         //public async Task<TResponse> CallWebApi<TRequest, TResponse>(

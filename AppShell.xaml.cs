@@ -3,7 +3,7 @@
     public partial class AppShell : Shell
     {
         private readonly ILoginStateService _loginStateService;
-        public AppShell(ILoginStateService loginStateService, LoginPage loginPage/*, MessageCenterPage messageCenterPage*/)
+        public AppShell(ILoginStateService loginStateService, LoginPage loginPage)
         {
             InitializeComponent();
 
@@ -14,11 +14,21 @@
 
             _loginStateService = loginStateService;
 
+            /* pozriet ci SecureStorage ma RefreshToken(dlhodoby)
 
-            //this.CurrentItem = loginStateService.IsLoggedIn ? messageCenterPage : loginPage;
+                (rozhodnut ci spravit navyse ze TokenExpiracia bude zapisana pri nom
+                alebo aj kvazi "Exipered" token skusit zavolat na authV2)
 
-            this.CurrentItem = loginPage;
-            //this.CurrentItem = registerPage;
+
+             if (true) - call authV2 controller ktory vrati AccesToken(kratkodoby)
+             - normalne otvori messageCenterPage
+                -- pokial nevrati AccesToken lebo RefreshToken je prepadnuty tak otvori LoginPage
+
+             if (false) - normalne otvori loginPage
+
+            */
+            this.CurrentItem = loginStateService.IsLoggedIn ? new MessageCenterPage() : loginPage;
+            //this.CurrentItem = loginPage;
         }
 
     }
