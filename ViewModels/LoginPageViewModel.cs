@@ -5,7 +5,7 @@ namespace Voxerra.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private readonly ServiceProvider _serviceProvider;
+        private ServiceProvider _serviceProvider;
         //private readonly ILoginStateService _loginStateService;
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -20,8 +20,12 @@ namespace Voxerra.ViewModels
             _serviceProvider = serviceProvider;
             //_loginStateService = loginStateService;
 
-            UserName = "wanda";
-            Password = "Abc12345";
+            //UserName = "wanda";
+            //Password = "Abc12345";
+
+            UserName = "skrinal";
+            Password = "lucka123";
+
             isProcessing = false;
 
             LoginCommand = new Command(() =>
@@ -63,7 +67,7 @@ namespace Voxerra.ViewModels
             {
                 var request = new AuthenticateRequest
                 {
-                    LoginId = UserName,
+                    UserName = UserName,
                     Password = Password,
                 };
                 var response = await _serviceProvider.Authenticate(request);

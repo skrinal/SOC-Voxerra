@@ -48,7 +48,7 @@ namespace Voxerra.ViewModels
             
             
             _chatHub = chatHub;
-            _ = _chatHub.Connect();
+            _chatHub.Connect();
             _chatHub.AddReceivedMessageHandler(OnReceivedMessage);
             
             

@@ -3,7 +3,7 @@
     public partial class AppShell : Shell
     {
         private readonly ILoginStateService _loginStateService;
-        public AppShell(ILoginStateService loginStateService, LoginPage loginPage, MessageCenterPage messageCenterPage)
+        public AppShell(ILoginStateService loginStateService, LoginPage loginPage/*, MessageCenterPage messageCenterPage*/)
         {
             InitializeComponent();
 

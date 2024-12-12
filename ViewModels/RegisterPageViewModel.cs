@@ -21,7 +21,6 @@ namespace Voxerra.ViewModels
 
         public RegisterPageViewModel(ServiceProvider serviceProvider)
         {
-            LoginId = "SkrinalLoginx";
             //UserName = "Skirnal";
             //Password = "Richard123";
             //RePassword = "Richard123";
@@ -55,7 +54,6 @@ namespace Voxerra.ViewModels
             {
                 var request = new RegistrationInitializeRequest
                 {
-                    LoginId = loginId,
                     Username = UserName,
                     Password = Password,
                     Email = Email
@@ -174,7 +172,6 @@ namespace Voxerra.ViewModels
             }
         }
 
-        private string loginId;
         private string userName;
         private string email;
         private string password;
@@ -182,11 +179,7 @@ namespace Voxerra.ViewModels
         private bool isProcessing;
         private bool isEmailUnique;
         private bool isUserNameUnique;
-        public string LoginId
-        {
-            get { return loginId; }
-            set { loginId = value; OnPropertyChanged(); }
-        }
+
         public string UserName
         {
             get { return userName; }
