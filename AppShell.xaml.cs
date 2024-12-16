@@ -2,8 +2,13 @@
 {
     public partial class AppShell : Shell
     {
+<<<<<<< Updated upstream
         private readonly ILoginStateService _loginStateService;
         public AppShell(ILoginStateService loginStateService, LoginPage loginPage)
+=======
+        //private readonly ILoginStateService _loginStateService;
+        public AppShell(LoginPage loginPage/*, MessageCenterPage messageCenterPage*/)
+>>>>>>> Stashed changes
         {
             InitializeComponent();
 
@@ -12,7 +17,7 @@
             Routing.RegisterRoute("LoginPage", typeof(LoginPage));
             Routing.RegisterRoute("RegisterPage", typeof(RegisterPage));
 
-            _loginStateService = loginStateService;
+           // _loginStateService = loginStateService;
 
             /* pozriet ci SecureStorage ma RefreshToken(dlhodoby)
 

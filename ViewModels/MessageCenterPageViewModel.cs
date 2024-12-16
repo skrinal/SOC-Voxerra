@@ -8,7 +8,6 @@ namespace Voxerra.ViewModels
     public class MessageCenterPageViewModel : INotifyPropertyChanged, IQueryAttributable
     {
         public event PropertyChangedEventHandler PropertyChanged;
-        //private readonly ILoginStateService _loginStateService;
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
@@ -17,11 +16,9 @@ namespace Voxerra.ViewModels
 
         private ServiceProvider _serviceProvider;
         private ChatHub _chatHub;
-        //private INotificationManagerService? notificationManager;
 
-        public MessageCenterPageViewModel(/*ILoginStateService loginStateService,*/ ServiceProvider serviceProvider, ChatHub chatHub) 
+        public MessageCenterPageViewModel(ServiceProvider serviceProvider, ChatHub chatHub) 
         {
-            //_loginStateService = loginStateService;
 
             UserInfo = new User();
             UserFriends = new ObservableCollection<User>();
@@ -45,17 +42,10 @@ namespace Voxerra.ViewModels
             });
 
             _serviceProvider = serviceProvider;
-            
-            
             _chatHub = chatHub;
             _chatHub.Connect();
             _chatHub.AddReceivedMessageHandler(OnReceivedMessage);
-            
-            
-            //MessagingCenter.Send<string, string[]>("StartService", "MessageNotificationService", new string[] { });
-
-            // Assume the app uses a single window.
-            //_notificationManager = Application.Current?.Windows[0].Page?.Handler?.MauiContext?.Services.GetService<INotificationManagerService>();
+           
         }
 
         async Task GetListFriends()

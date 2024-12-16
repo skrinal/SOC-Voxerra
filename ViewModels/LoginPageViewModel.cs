@@ -5,7 +5,6 @@ namespace Voxerra.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private ServiceProvider _serviceProvider;
         //private readonly ILoginStateService _loginStateService;
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -13,18 +12,20 @@ namespace Voxerra.ViewModels
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
         
-        //private ServiceProvider _serviceProvider;
+        private ServiceProvider _serviceProvider;
 
-        public LoginPageViewModel(ServiceProvider serviceProvider/*, ILoginStateService loginStateService*/)
+        public LoginPageViewModel(ServiceProvider serviceProvider)
         {
-            _serviceProvider = serviceProvider;
-            //_loginStateService = loginStateService;
+
 
             //UserName = "wanda";
             //Password = "Abc12345";
 
-            UserName = "skrinal";
-            Password = "lucka123";
+            //UserName = "skrinal";
+            //Password = "lucka123";
+
+            UserName = "test1";
+            Password = "test123";
 
             isProcessing = false;
 
@@ -40,6 +41,7 @@ namespace Voxerra.ViewModels
                     isProcessing = false;
                 });
             });
+            this._serviceProvider = serviceProvider;
 
             RegisterCommand = new Command(() =>
             {
@@ -79,9 +81,6 @@ namespace Voxerra.ViewModels
                     //        $"Username: {response.UserName} \n" +
                     //        $"Token: {response.Token}", "OK");
                     //
-
-
-                    //_loginStateService.IsLoggedIn = true;
 
                     await Shell.Current.GoToAsync($"MessageCenterPage?userId={response.Id}");
  

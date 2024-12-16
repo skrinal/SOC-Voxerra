@@ -22,10 +22,10 @@ namespace Voxerra
 #endif
 #if ANDROID
 
-            builder.Services.AddTransient<INotificationManagerService, Voxerra.Platforms.Android.NotificationManagerService>();
+            // builder.Services.AddTransient<INotificationManagerService, Voxerra.Platforms.Android.NotificationManagerService>();
 #endif
 
-            builder.Services.AddSingleton<ILoginStateService, LoginStateService>();
+            //builder.Services.AddSingleton<ILoginStateService, LoginStateService>();
             builder.Services.AddSingleton<ChatHub>();
             builder.Services.AddSingleton<AppShell>();
             builder.Services.AddSingleton<LoginPage>();

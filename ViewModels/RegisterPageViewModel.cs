@@ -21,9 +21,6 @@ namespace Voxerra.ViewModels
 
         public RegisterPageViewModel(ServiceProvider serviceProvider)
         {
-            //UserName = "Skirnal";
-            //Password = "Richard123";
-            //RePassword = "Richard123";
 
             RegisterCommand = new Command(() =>
             {

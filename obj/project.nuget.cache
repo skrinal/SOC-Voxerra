@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4jCErEHFTk0=",
+  "dgSpecHash": "hlGKAc7tB1U=",
   "success": true,
   "projectFilePath": "C:\\SOC-Voxerra\\Voxerra.csproj",
   "expectedPackageFiles": [
@@ -128,10 +128,10 @@
     "C:\\Users\\Skrinal\\.nuget\\packages\\microsoft.android.ref.34\\34.0.145\\microsoft.android.ref.34.34.0.145.nupkg.sha512",
     "C:\\Users\\Skrinal\\.nuget\\packages\\microsoft.android.runtime.34.android-arm\\34.0.145\\microsoft.android.runtime.34.android-arm.34.0.145.nupkg.sha512",
     "C:\\Users\\Skrinal\\.nuget\\packages\\microsoft.android.runtime.34.android-x86\\34.0.145\\microsoft.android.runtime.34.android-x86.34.0.145.nupkg.sha512",
-    "C:\\Users\\Skrinal\\.nuget\\packages\\microsoft.ios.ref.net8.0_18.0\\18.0.8314\\microsoft.ios.ref.net8.0_18.0.18.0.8314.nupkg.sha512",
-    "C:\\Users\\Skrinal\\.nuget\\packages\\microsoft.ios.runtime.iossimulator-x64.net8.0_18.0\\18.0.8314\\microsoft.ios.runtime.iossimulator-x64.net8.0_18.0.18.0.8314.nupkg.sha512",
-    "C:\\Users\\Skrinal\\.nuget\\packages\\microsoft.maccatalyst.runtime.maccatalyst-x64.net8.0_18.0\\18.0.8314\\microsoft.maccatalyst.runtime.maccatalyst-x64.net8.0_18.0.18.0.8314.nupkg.sha512",
-    "C:\\Users\\Skrinal\\.nuget\\packages\\microsoft.maccatalyst.ref.net8.0_18.0\\18.0.8314\\microsoft.maccatalyst.ref.net8.0_18.0.18.0.8314.nupkg.sha512",
+    "C:\\Users\\Skrinal\\.nuget\\packages\\microsoft.ios.ref.net8.0_18.0\\18.0.8316\\microsoft.ios.ref.net8.0_18.0.18.0.8316.nupkg.sha512",
+    "C:\\Users\\Skrinal\\.nuget\\packages\\microsoft.ios.runtime.iossimulator-x64.net8.0_18.0\\18.0.8316\\microsoft.ios.runtime.iossimulator-x64.net8.0_18.0.18.0.8316.nupkg.sha512",
+    "C:\\Users\\Skrinal\\.nuget\\packages\\microsoft.maccatalyst.runtime.maccatalyst-x64.net8.0_18.0\\18.0.8316\\microsoft.maccatalyst.runtime.maccatalyst-x64.net8.0_18.0.18.0.8316.nupkg.sha512",
+    "C:\\Users\\Skrinal\\.nuget\\packages\\microsoft.maccatalyst.ref.net8.0_18.0\\18.0.8316\\microsoft.maccatalyst.ref.net8.0_18.0.18.0.8316.nupkg.sha512",
     "C:\\Users\\Skrinal\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.54\\microsoft.windows.sdk.net.ref.10.0.19041.54.nupkg.sha512"
   ],
   "logs": []

@@ -346,3 +346,6 @@ C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot@3x
 C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot@2x.png
 C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot.png
 C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\build-signature\signature
+C:\SOC-Voxerra\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.Maui.Controls.HotReload.Forms.dll
+C:\SOC-Voxerra\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
+C:\SOC-Voxerra\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.VisualStudio.DesignTools.TapContract.dll
