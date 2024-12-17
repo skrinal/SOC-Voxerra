@@ -20,6 +20,9 @@
     <MauiXaml Update="Pages\MessageCenterPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Pages\ProfilePage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Pages\RegisterPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

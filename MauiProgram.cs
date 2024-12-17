@@ -15,7 +15,10 @@ namespace Voxerra
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                     fonts.AddFont("OpenSans-Bold.ttf", "OpenSansBold");
-                    fonts.AddFont("MaterialIcons-Regular.ttf", "GoogleFont");
+                    fonts.AddFont("MaterialSymbolsRounded-Thin.ttf", "GoogleFontThin");
+                    fonts.AddFont("MaterialSymbolsRounded-Regular.ttf", "GoogleFont");
+                    fonts.AddFont("MaterialSymbolsRounded_Filled-Regular.ttf", "GoogleFontFilled");
+
                 });
 
             

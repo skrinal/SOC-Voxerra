@@ -3,16 +3,24 @@
     x:Class="Voxerra.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Voxerra"
+    xmlns:local="clr-namespace:Voxerra.Pages"
     xmlns:pages="clr-namespace:Voxerra.Pages"
-    Shell.FlyoutBehavior="Disabled"
-    Shell.NavBarIsVisible="False"
-    Shell.TabBarIsVisible="False"
+    
     Title="Voxerra">
 
-    <!--<ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate pages:LoginPage}"
-        Route="MainPage" />-->
+    
+
+    <TabBar>
+        <Tab Title="Home">
+            <ShellContent ContentTemplate="{DataTemplate local:LoginPage}" />
+        </Tab>
+        <Tab Title="Profile">
+            <ShellContent ContentTemplate="{DataTemplate local:ProfilePage}" />
+        </Tab>
+    </TabBar>
+    
+    <!--Shell.FlyoutBehavior="Disabled"
+    Shell.NavBarIsVisible="False"
+    Shell.TabBarIsVisible="False"-->
 
 </Shell>

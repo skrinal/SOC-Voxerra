@@ -1091,3 +1091,7 @@ C:\SOC-Voxerra\obj\Debug\net8.0-android\android\src\crc641e9043ac1a718797\MainAc
 C:\SOC-Voxerra\obj\Debug\net8.0-android\res\drawable\androidlargeicon.png
 C:\SOC-Voxerra\obj\Debug\net8.0-android\res\drawable\androidsmallicon.png
 C:\SOC-Voxerra\obj\Debug\net8.0-android\resizetizer\f\OpenSans-Bold.ttf
+C:\SOC-Voxerra\obj\Debug\net8.0-android\resizetizer\f\MaterialSymbolsRounded-SemiBold.ttf
+C:\SOC-Voxerra\obj\Debug\net8.0-android\resizetizer\f\MaterialSymbolsRounded-Regular.ttf
+C:\SOC-Voxerra\obj\Debug\net8.0-android\resizetizer\f\MaterialSymbolsRounded-Thin.ttf
+C:\SOC-Voxerra\obj\Debug\net8.0-android\resizetizer\f\MaterialSymbolsRounded_Filled-Regular.ttf

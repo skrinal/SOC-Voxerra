@@ -16,22 +16,20 @@
                 <RowDefinition Height="100"/>
                 <RowDefinition Height="45"/>
                 <RowDefinition />
+                <RowDefinition Height="40"/>
             </Grid.RowDefinitions>
 
 
 
-            <!--ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT
-            ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT
-            ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT
-            ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT ZMENIT-->
 
             <Grid>
                 <StackLayout Orientation="Horizontal">
 
                     <Button Text="&#xe5c4;" FontFamily="GoogleFont" FontSize="24" VerticalOptions="Center" 
-                    BackgroundColor="Transparent"
-                    TextColor="White"
-                    CornerRadius="45"/>
+                            BackgroundColor="Transparent"
+                            TextColor="White"
+                            CornerRadius="45"
+                            Padding="0"/>
 
                 </StackLayout>
 
@@ -464,6 +462,29 @@
         
     </ScrollView>-->
 
+            <Grid Grid.Row="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0">
+                    <Button Text="home" FontFamily="GoogleFontFilled" FontSize="32" Padding="0" 
+                            BackgroundColor="Transparent" TextColor="White"/>
+                </Grid>
+
+                <Grid Grid.Column="1">
+                    <Frame VerticalOptions="Center" HeightRequest="35" WidthRequest="35" CornerRadius="50" IsClippedToBounds="True" BorderColor="White" Padding="-1">
+                        <Image Source="unnamed.jpg" Aspect="AspectFill">
+                            <!--<Image.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding FrameButtonCommand}" />
+                            </Image.GestureRecognizers>-->
+                        </Image>
+                    </Frame>
+                </Grid>
+                
+            </Grid>
+            
         </Grid>
     </RefreshView>
     

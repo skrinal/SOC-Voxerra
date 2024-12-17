@@ -8,11 +8,20 @@
     <!--Custom Google font-->
     <Style TargetType="Label" x:Key="GoogleFont">
         <Setter Property="FontFamily" Value="GoogleFont"/>
-        <Setter Property="FontSize" Value="24"/>
+        <Setter Property="FontSize" Value="32"/>
     </Style>
 
+    <Style TargetType="Label" x:Key="GoogleFontThin">
+        <Setter Property="FontFamily" Value="GoogleFontThin"/>
+        <Setter Property="FontSize" Value="32"/>
+    </Style>
 
+    <Style TargetType="Label" x:Key="GoogleFontFilled">
+        <Setter Property="FontFamily" Value="GoogleFontFilled"/>
+        <Setter Property="FontSize" Value="32"/>
+    </Style>
 
+    
     <Style TargetType="ActivityIndicator">
         <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
     </Style>
