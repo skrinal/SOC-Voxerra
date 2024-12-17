@@ -9,4 +9,5 @@
 	<color name="colorAccent">@android:color/holo_blue_bright</color>
 	
 	<color name="Background">#0f0f0f</color>
+	
 </resources>

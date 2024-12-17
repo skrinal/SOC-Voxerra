@@ -14,18 +14,16 @@ namespace Voxerra
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("OpenSans-Bold.ttf", "OpenSansBold");
                     fonts.AddFont("MaterialIcons-Regular.ttf", "GoogleFont");
                 });
 
+            
+
 #if DEBUG
-    		builder.Logging.AddDebug();
-#endif
-#if ANDROID
-
-            // builder.Services.AddTransient<INotificationManagerService, Voxerra.Platforms.Android.NotificationManagerService>();
+            builder.Logging.AddDebug();
 #endif
 
-            //builder.Services.AddSingleton<ILoginStateService, LoginStateService>();
             builder.Services.AddSingleton<ChatHub>();
             builder.Services.AddSingleton<AppShell>();
             builder.Services.AddSingleton<LoginPage>();

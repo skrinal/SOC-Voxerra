@@ -1090,3 +1090,4 @@ C:\SOC-Voxerra\obj\Debug\net8.0-android\android\src\crc641e9043ac1a718797\AlarmH
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\src\crc641e9043ac1a718797\MainActivity.java
 C:\SOC-Voxerra\obj\Debug\net8.0-android\res\drawable\androidlargeicon.png
 C:\SOC-Voxerra\obj\Debug\net8.0-android\res\drawable\androidsmallicon.png
+C:\SOC-Voxerra\obj\Debug\net8.0-android\resizetizer\f\OpenSans-Bold.ttf

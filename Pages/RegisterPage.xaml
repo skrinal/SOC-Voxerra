@@ -1,86 +1,161 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Voxerra.Pages.RegisterPage"
-             xmlns:viewModel="clr-namespace:Voxerra.ViewModels"
-             Title="RegisterPage"
-             Background="#0f0f0f">
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Voxerra.Pages.RegisterPage"
+    xmlns:viewModel="clr-namespace:Voxerra.ViewModels"
+    Title="RegisterPage"
+    Background="#0f0f0f">
+
+    <!--<ContentPage.Resources>
+        <Style x:Key="FocusedBorderStyle" TargetType="Border">
+            <Style.Triggers>
+                <DataTrigger TargetType="Border" Binding="{Binding IsFocused, Source={x:Reference UserNameEntry}}" Value="True">
+                    <Setter Property="Stroke">
+                        <Setter.Value>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#b414de" Offset="0.0" />
+                                <GradientStop Color="#d127a5" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                </DataTrigger>
+                <DataTrigger TargetType="Border" Binding="{Binding IsFocused, Source={x:Reference UserNameEntry}}" Value="False">
+                    <Setter Property="Stroke">
+                        <Setter.Value>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#212121" Offset="0.0" />
+                                <GradientStop Color="#212121" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </ContentPage.Resources>-->
 
     <RefreshView Margin="10" IsRefreshing="{Binding IsRefreshing}">
         <Grid>
             <VerticalStackLayout Margin="30" VerticalOptions="Center">
                 <Image 
-        HeightRequest="150"
-        Source="logo_voxerra_whitev2.png"
-        WidthRequest="300" />
+                    HeightRequest="150"
+                    Source="logo_voxerra_whitev2.png"
+                    WidthRequest="300" />
 
                 <Label
-        Text="Username"
-        Margin="5,0,0,0"
-        Padding="0,10,0,5" />
-                <Border 
-        x:Name="UserNameBorder"
-        Stroke="#5a4fe0"  
-        StrokeThickness="2.5"
-        StrokeShape="RoundRectangle 20">
+                    Text="Username"
+                    Margin="5,0,0,0"
+                    Padding="0,10,0,5" />
+
+                <Border
+                    x:Name="UserNameBorder"
+                    StrokeThickness="2.5"
+                    StrokeShape="RoundRectangle 20">
+                    <Border.Stroke>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#b414de" Offset="0.0" />
+                            <GradientStop Color="#d127a5" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Border.Stroke>
+
+
                     <Entry
-            x:Name="UserNameEntry"
-            Margin="8,0,8,0" 
-            ReturnType="Go"
-            Text="{Binding UserName}"/>
+                        x:Name="UserNameEntry"
+                        Margin="8,0,8,0"
+                        ReturnType="Go"
+                        Text="{Binding UserName}"/>
                 </Border>
 
                 <Label
-        Text="Email"
-        Margin="5,0,0,0"
-        Padding="0,10,0,5"/>
-                <Border 
-         Stroke="#5a4fe0"  
-         StrokeThickness="2.5"
-         StrokeShape="RoundRectangle 20">
+                    Text="Email"
+                    Margin="5,0,0,0"
+                    Padding="0,10,0,5" />
+                <Border
+                    x:Name="EmailBorder"
+                    StrokeThickness="2.5"
+                    StrokeShape="RoundRectangle 20">
+                    <Border.Stroke>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#b414de" Offset="0.0" />
+                            <GradientStop Color="#d127a5" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Border.Stroke>
+
                     <Entry
-             Margin="8,-1,8,-1" 
-             ReturnType="Go"
-             Text="{Binding Email}"/>
+                        x:Name="EmailEntry"
+                        Margin="8,-1,8,-1" 
+                        ReturnType="Go"
+                        Text="{Binding Email}"
+                        Style="{StaticResource FocusedEntryStyle}" />
                 </Border>
 
                 <Label
-            Text="Create a password"
-            Margin="5,0,0,0"
-            Padding="0,10,0,5"/>
-                <Border 
-             Stroke="#5a4fe0"  
-             StrokeThickness="2.5"
-             StrokeShape="RoundRectangle 20">
+                    Text="Create a password"
+                    Margin="5,0,0,0"
+                    Padding="0,10,0,5" />
+                <Border
+                    x:Name="PasswordBorder"
+                    StrokeThickness="2.5"
+                    StrokeShape="RoundRectangle 20">
+                    <Border.Stroke>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#b414de" Offset="0.0" />
+                            <GradientStop Color="#d127a5" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Border.Stroke>
+
                     <Entry
-             Margin="8,-1,8,-1" 
-             ReturnType="Go"
+                        x:Name="PasswordEntry"
+                        Margin="8,-1,8,-1" 
+                        ReturnType="Go"
                         IsPassword="True"
-             Text="{Binding Password}"/>
+                        Text="{Binding Password}"
+                        Style="{StaticResource FocusedEntryStyle}" />
                 </Border>
-
                 <Label
-            Text="Confirm password"
-            Margin="5,0,0,0"
-            Padding="0,10,0,5"/>
-                <Border 
-             Stroke="#5a4fe0"  
-             StrokeThickness="2.5"
-             StrokeShape="RoundRectangle 20">
+                    Text="Confirm password"
+                    Margin="5,0,0,0"
+                    Padding="0,10,0,5" />
+                <Border
+                    x:Name="RePasswordBorder"
+                    StrokeThickness="2.5"
+                    StrokeShape="RoundRectangle 20">
+                    <Border.Stroke>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#b414de" Offset="0.0" />
+                            <GradientStop Color="#d127a5" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Border.Stroke>
+
                     <Entry
-             Margin="8,-1,8,-1" 
+                        x:Name="RePasswordEntry"
+                        Margin="8,-1,8,-1" 
                         IsPassword="True"
-             ReturnType="Go"
-             Text="{Binding RePassword}"/>
+                        ReturnType="Go"
+                        Text="{Binding RePassword}"
+                        Style="{StaticResource FocusedEntryStyle}" />
                 </Border>
 
-
-                <Button
-        Margin="0,30,0,0"
-        Background="#5a4fe0"
-        Text="Register"
-        TextColor="White"
-        Command="{Binding RegisterCommand}"/>
+                <Frame
+                    CornerRadius="20"
+                    Padding="0"
+                    Margin="0,20,0,0"
+                    IsClippedToBounds="True"
+                    HasShadow="False">
+                    <Frame.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#b414de" Offset="0.0" />
+                            <GradientStop Color="#d127a5" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Frame.Background>
+                    <Button
+                        HeightRequest="55"
+                        Text="Register"
+                        TextColor="White"
+                        BackgroundColor="Transparent"
+                        Command="{Binding RegisterCommand}"
+                        CornerRadius="25" />
+                </Frame>
 
                 <HorizontalStackLayout Margin="0,25,0,0" HorizontalOptions="Center">
                     <Label Text="Already have account.">
@@ -90,10 +165,160 @@
                     </Label>
                 </HorizontalStackLayout>
             </VerticalStackLayout>
-
-
         </Grid>
     </RefreshView>
-    
-
 </ContentPage>
+    
+    
+<!--<ContentPage
+	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Voxerra.Pages.RegisterPage"
+	xmlns:viewModel="clr-namespace:Voxerra.ViewModels"
+             Title="RegisterPage"
+             Background="#0f0f0f">
+
+    <ContentPage.Resources>
+        <Style x:Key="FocusedEntryStyle" TargetType="Entry">
+            <Style.Triggers>
+                <DataTrigger TargetType="Entry" Binding="{Binding IsFocused, Source={x:Reference Entry1}}" Value="True">
+                    <Setter Property="BackgroundColor" Value="Black" />
+                    <Setter Property="TextColor" Value="White" />
+                </DataTrigger>
+                <DataTrigger TargetType="Entry" Binding="{Binding IsFocused, Source={x:Reference Entry1}}" Value="False">
+                    <Setter Property="BackgroundColor" Value="Transparent" />
+                    <Setter Property="TextColor" Value="Black" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </ContentPage.Resources>
+
+    <RefreshView Margin="10" IsRefreshing="{Binding IsRefreshing}">
+        <Grid>
+            <VerticalStackLayout Margin="30" VerticalOptions="Center">
+                <Image 
+        HeightRequest="150"
+        Source="logo_voxerra_whitev2.png"
+        WidthRequest="300" />
+                <Label
+        Text="Username"
+        Margin="5,0,0,0"
+        Padding="0,10,0,5" />
+                <Border 
+                StrokeThickness="2.5"
+                StrokeShape="RoundRectangle 20">
+                    <Border.Stroke>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#b414de" Offset="0.0" />
+                            <GradientStop Color="#d127a5" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Border.Stroke>
+                    <Entry
+            x:Name="UserNameEntry"
+            Margin="8,0,8,0" 
+            ReturnType="Go"
+            Text="{Binding UserName}"/>
+                </Border>
+                <Label
+        Text="Email"
+        Margin="5,0,0,0"
+        Padding="0,10,0,5"/>
+                <Border  
+         StrokeThickness="2.5"
+         StrokeShape="RoundRectangle 20">
+                    <Border.Stroke>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#b414de" Offset="0.0" />
+                            <GradientStop Color="#d127a5" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Border.Stroke>
+                    <Entry
+             Margin="8,-1,8,-1" 
+             ReturnType="Go"
+             Text="{Binding Email}"/>
+                </Border>
+                <Label
+            Text="Create a password"
+            Margin="5,0,0,0"
+            Padding="0,10,0,5"/>
+                <Border  
+             StrokeThickness="2.5"
+             StrokeShape="RoundRectangle 20">
+                    <Border.Stroke>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#b414de" Offset="0.0" />
+                            <GradientStop Color="#d127a5" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Border.Stroke>
+                    <Entry
+             Margin="8,-1,8,-1" 
+             ReturnType="Go"
+                        IsPassword="True"
+             Text="{Binding Password}"/>
+                </Border>
+                <Label
+            Text="Confirm password"
+            Margin="5,0,0,0"
+            Padding="0,10,0,5"/>
+                <Border 
+             StrokeThickness="2.5"
+             StrokeShape="RoundRectangle 20">
+                    <Border.Stroke>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#b414de" Offset="0.0" />
+                            <GradientStop Color="#d127a5" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Border.Stroke>
+                    <Entry
+             Margin="8,-1,8,-1" 
+                        IsPassword="True"
+             ReturnType="Go"
+             Text="{Binding RePassword}"/>
+                </Border>
+                
+                --><!--<Button
+        Margin="0,30,0,0"
+        Background="#5a4fe0"
+        Text="Register"
+        TextColor="White"
+        Command="{Binding RegisterCommand}"/>--><!--
+
+                <Frame
+                CornerRadius="20"
+                Padding="0"
+                Margin="0,20,0,0"
+                IsClippedToBounds="True"
+                HasShadow="False">
+                    <Frame.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#b414de" Offset="0.0" />
+                            <GradientStop Color="#d127a5" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Frame.Background>
+                    <Button
+                    HeightRequest="55"
+                    Text="Register"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    Command="{Binding RegisterCommand}"
+                    CornerRadius="25" />
+                </Frame>
+
+
+
+                <HorizontalStackLayout Margin="0,25,0,0" HorizontalOptions="Center">
+                    <Label Text="Already have account.">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding GoBackCommand}" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </Grid>
+    </RefreshView>
+</ContentPage>-->
+
+
+
+
+

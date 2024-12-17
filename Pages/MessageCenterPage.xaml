@@ -54,20 +54,18 @@
                 </StackLayout>
 
                 <AbsoluteLayout>
-                    <!-- Button aligned to the right side -->
                     <Button Text="dehaze" FontFamily="GoogleFont" FontSize="24"
         BackgroundColor="Transparent" TextColor="White"
         AbsoluteLayout.LayoutBounds="1, 0.5, AutoSize, AutoSize"
         AbsoluteLayout.LayoutFlags="PositionProportional" />
 
-                    <!-- Profile View (Initially hidden) -->
                     <ContentView x:Name="ProfileView" IsVisible="False" BackgroundColor="LightGray"
              AbsoluteLayout.LayoutBounds="1, 0, 0.5, 1"
              AbsoluteLayout.LayoutFlags="PositionProportional, HeightProportional">
                         <StackLayout Padding="20">
                             <Label Text="User Profile" FontSize="20" TextColor="Black"/>
                             <Button Text="Close"/>
-                            <!-- Add other profile content here -->
+
                         </StackLayout>
                     </ContentView>
                 </AbsoluteLayout>
@@ -76,12 +74,17 @@
             </Grid>
 
             <Grid Grid.Row="1">
-                <Border Margin="15,0,15,0"
-                Stroke="#5a4fe0"  
+                <Border Margin="15,0,15,0" 
                 StrokeThickness="2"
                 StrokeShape="RoundRectangle 10"
                 HeightRequest="40"
                 BackgroundColor="#1D1D1D">
+                    <Border.Stroke>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#b414de" Offset="0.0" />
+                            <GradientStop Color="#d127a5" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Border.Stroke>
 
                     <StackLayout Orientation="Horizontal" VerticalOptions="Center" >
 
@@ -304,9 +307,9 @@
 
                 <StackLayout VerticalOptions="Center" HorizontalOptions="End">
 
-                    <Button Text="Requests" FontFamily="OpenSansSemibold" FontSize="18" 
+                    <Button Text="Requests" FontFamily="OpenSansBold" FontSize="18" 
                     BackgroundColor="Transparent"
-                    TextColor="Cyan"
+                    TextColor="#b414de"
                     Margin="0,0,20,0" Padding="10,0,10,0"/>
 
                 </StackLayout>
