@@ -1,7 +1,4 @@
-﻿using Voxerra.Helpers;
-using Voxerra.Pages;
-
-namespace Voxerra
+﻿namespace Voxerra
 {
     public static class MauiProgram
     {

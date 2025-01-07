@@ -14,6 +14,8 @@ namespace Voxerra.ViewModels
 
             FromUserId = int.Parse(HttpUtility.UrlDecode(query["fromUserId"].ToString()));
             ToUserId = int.Parse(HttpUtility.UrlDecode(query["toUserId"].ToString()));
+
+            Initialize();
         }
 
         private ServiceProvider _serviceProvider;
@@ -31,6 +33,11 @@ namespace Voxerra.ViewModels
             _chatHub = chatHub;
             _chatHub.AddReceivedMessageHandler(OnReceiveMessage);
             _chatHub.Connect();
+
+            BackToHome = new Command(async () =>
+            {
+                await Shell.Current.GoToAsync($"//MainPage");
+            });
 
             SendMessageCommand = new Command(async () =>
             {
@@ -143,6 +150,7 @@ namespace Voxerra.ViewModels
         }
 
         public ICommand SendMessageCommand {  get; set; }
+        public ICommand BackToHome { get; set; }
     }
     
 }

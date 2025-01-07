@@ -16,8 +16,6 @@ namespace Voxerra.ViewModels
 
         public LoginPageViewModel(ServiceProvider serviceProvider)
         {
-
-
             //UserName = "wanda";
             //Password = "Abc12345";
 
@@ -54,14 +52,8 @@ namespace Voxerra.ViewModels
                 });
             });
 
-            //LogoutCommand = new Command(Logout);
         }
 
-        //void Logout()
-        //{
-        //    _loginStateService.Logout(); // Update login state
-        //    Shell.Current.GoToAsync("//LoginPage");
-        //}
 
         async Task Login()
         {
@@ -82,8 +74,9 @@ namespace Voxerra.ViewModels
                     //        $"Token: {response.Token}", "OK");
                     //
 
-                    await Shell.Current.GoToAsync($"MessageCenterPage?userId={response.Id}");
- 
+                    //await Shell.Current.GoToAsync($"MessageCenterPage?userId={response.Id}");
+                    await Shell.Current.GoToAsync($"//MainPage?userId={response.Id}");
+
                 }
                 else
                 {
@@ -129,6 +122,5 @@ namespace Voxerra.ViewModels
         }
         public ICommand LoginCommand { get; set; }
         public ICommand RegisterCommand { get; set; }
-        //public ICommand LogoutCommand { get; set; }
     }
 }

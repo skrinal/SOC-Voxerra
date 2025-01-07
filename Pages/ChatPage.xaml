@@ -5,7 +5,9 @@
              xmlns:viewModel="clr-namespace:Voxerra.ViewModels"
              Title="ChatPage"
              Background="#0f0f0f"
-             NavigatedTo="ContentPage_NavigatedTo">
+             >
+
+    <!--NavigatedTo="ContentPage_NavigatedTo"-->
 
     <RefreshView Margin="10" IsRefreshing="{Binding IsRefreshing}">
         <Grid>
@@ -21,10 +23,12 @@
                 <StackLayout Orientation="Horizontal" >
 
                     <Button Text="&#xe5c4;" FontFamily="GoogleFont" FontSize="24" VerticalOptions="Center" 
-                    BackgroundColor="Transparent"
-                    TextColor="White"
-                    CornerRadius="45"
-                    Padding="0" Margin="10,0,0,0"/>
+                            BackgroundColor="Transparent"
+                            TextColor="White"
+                            CornerRadius="45"
+                            Padding="0" Margin="10,0,0,0"
+                            Command="{Binding BackToHome}"
+                            />
 
                 </StackLayout>
 

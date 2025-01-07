@@ -6,8 +6,10 @@
              xmlns:viewModels="clr-namespace:Voxerra.ViewModels"
              Title="MessageCenterPage"
              Background="#0f0f0f"
-             NavigatedTo="ContentPage_NavigatedTo">
-
+             >
+    
+    <!--NavigatedTo="ContentPage_NavigatedTo"-->
+    
     <RefreshView Margin="10" IsRefreshing="{Binding IsRefreshing}">
         <Grid Margin="0,15,0,0">
             <Grid.RowDefinitions>
@@ -105,7 +107,7 @@
                     <Grid HeightRequest="100">
 
                         <Frame VerticalOptions="Center" HeightRequest="65" WidthRequest="65" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
-                            <Image Source="unnamed.jpg" Aspect="AspectFill"/>
+                            <Image Source="defaulticon.png" Aspect="AspectFill"/>
 
                         </Frame>
 
@@ -462,7 +464,7 @@
         
     </ScrollView>-->
 
-            <Grid Grid.Row="5">
+            <!--<Grid Grid.Row="5">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition />
@@ -476,14 +478,14 @@
                 <Grid Grid.Column="1">
                     <Frame VerticalOptions="Center" HeightRequest="35" WidthRequest="35" CornerRadius="50" IsClippedToBounds="True" BorderColor="White" Padding="-1">
                         <Image Source="unnamed.jpg" Aspect="AspectFill">
-                            <!--<Image.GestureRecognizers>
+                            --><!--<Image.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding FrameButtonCommand}" />
-                            </Image.GestureRecognizers>-->
+                            </Image.GestureRecognizers>--><!--
                         </Image>
                     </Frame>
                 </Grid>
                 
-            </Grid>
+            </Grid>-->
             
         </Grid>
     </RefreshView>

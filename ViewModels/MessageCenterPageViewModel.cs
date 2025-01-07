@@ -38,7 +38,7 @@ namespace Voxerra.ViewModels
 
             OpenChatPageCommand = new Command<int>(async (param) =>
             {
-                await Shell.Current.GoToAsync($"ChatPage?fromUserId={UserInfo.Id}&toUserId={param}");
+                await Shell.Current.GoToAsync($"//ChatPage?fromUserId={UserInfo.Id}&toUserId={param}");
             });
 
             _serviceProvider = serviceProvider;
@@ -72,7 +72,8 @@ namespace Voxerra.ViewModels
             if (query == null || query.Count == 0) return;
 
             UserInfo.Id = int.Parse(HttpUtility.UrlDecode(query["userId"].ToString()));
-          
+
+            Initialize();
         }
 
         public void Initialize()
@@ -87,27 +88,76 @@ namespace Voxerra.ViewModels
             });
         }
 
+        //void OnReceivedMessage(int fromUserId, string message)
+        //{
+        //    var lastestMessage = LastestMessages.Where(x => x.Id == fromUserId).FirstOrDefault();
+        //    if (lastestMessage != null)
+        //        LastestMessages.Remove(lastestMessage);
+
+        //    var newLastestMessage = new LastestMessage
+        //    {
+        //        UserId = userInfo.Id,
+        //        Content = message,
+        //        UserFiendInfo = UserFriends.Where(x => x.Id == fromUserId).FirstOrDefault()
+        //    };
+
+        //    LastestMessages.Insert(0, newLastestMessage);
+        //    OnPropertyChanged("LastestMessages");
+        //}
+
         void OnReceivedMessage(int fromUserId, string message)
         {
-            var lastestMessage = LastestMessages.Where(x => x.Id == fromUserId).FirstOrDefault();
-            if (lastestMessage != null) 
-                LastestMessages.Remove(lastestMessage);
-
-            var newLastestMessage = new LastestMessage
+            MainThread.BeginInvokeOnMainThread(() =>
             {
-                UserId = userInfo.Id,
-                Content = message,
-                UserFiendInfo = UserFriends.Where(x => x.Id == fromUserId).FirstOrDefault()
-            };
+                var lastestMessage = LastestMessages.FirstOrDefault(x => x.UserFiendInfo.Id == fromUserId);
+                if (lastestMessage != null)
+                {
+                    //LastestMessages.Remove(lastestMessage);
+                    lastestMessage.Content = message;
+                    OnPropertyChanged("LastestMessages");
+                }
+                else
+                {
+                    var newLastestMessage = new LastestMessage
+                    {
+                        UserId = userInfo.Id,
+                        Content = message,
+                        UserFiendInfo = UserFriends.Where(x => x.Id == fromUserId).FirstOrDefault()
+                    };
 
-            LastestMessages.Insert(0, newLastestMessage);
-            OnPropertyChanged("LastestMessages");
-
-            //notificationManager.SendNotification(newLastestMessage.UserFiendInfo.UserName, newLastestMessage.Content);
-
-            //MessagingCenter.Send<string, string[]>("Notify", "MessageNotificationService",
-            //  new string[] { newLastestMessage.UserFiendInfo.UserName, newLastestMessage.Content });
+                    LastestMessages.Insert(0, newLastestMessage);
+                    OnPropertyChanged(nameof(LastestMessages));
+                }
+            });
+            
         }
+
+        //void OnReceivedMessage(int fromUserId, string message)
+        //{
+        //    MainThread.BeginInvokeOnMainThread(() =>
+        //    {
+        //        var lastestMessage = LastestMessages.FirstOrDefault(x => x.UserId == fromUserId);
+
+        //        if (lastestMessage != null)
+        //        {
+        //            lastestMessage.Content = message;
+        //            OnPropertyChanged(nameof(LastestMessages));
+        //        }
+        //        else
+        //        {
+        //            var newLastestMessage = new LastestMessage
+        //            {
+        //                UserId = fromUserId,
+        //                Content = message,
+        //                UserFiendInfo = UserFriends.FirstOrDefault(x => x.Id == fromUserId)
+        //            };
+
+        //            LastestMessages.Insert(0, newLastestMessage);
+        //            OnPropertyChanged(nameof(LastestMessages));
+        //        }
+        //    });
+        //}
+
 
         private User userInfo;
         private ObservableCollection<User> userFriends;

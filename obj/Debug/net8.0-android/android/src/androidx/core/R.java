@@ -59,12 +59,12 @@ public final class R {
 		public static final int notification_top_pad_large_text = 0x7f060300;
 	}
 	public static final class drawable {
-		public static final int ic_call_answer = 0x7f070092;
-		public static final int ic_call_answer_low = 0x7f070093;
-		public static final int ic_call_answer_video = 0x7f070094;
-		public static final int ic_call_answer_video_low = 0x7f070095;
-		public static final int ic_call_decline = 0x7f070096;
-		public static final int ic_call_decline_low = 0x7f070097;
+		public static final int ic_call_answer = 0x7f070093;
+		public static final int ic_call_answer_low = 0x7f070094;
+		public static final int ic_call_answer_video = 0x7f070095;
+		public static final int ic_call_answer_video_low = 0x7f070096;
+		public static final int ic_call_decline = 0x7f070097;
+		public static final int ic_call_decline_low = 0x7f070098;
 		public static final int notification_action_background = 0x7f0700e4;
 		public static final int notification_bg = 0x7f0700e5;
 		public static final int notification_bg_low = 0x7f0700e6;

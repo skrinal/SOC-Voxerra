@@ -2,7 +2,7 @@
 {
     public partial class AppShell : Shell
     {
-        public AppShell(LoginPage loginPage/*, MessageCenterPage messageCenterPage*/)
+        public AppShell()
         {
             InitializeComponent();
 
@@ -10,8 +10,12 @@
             Routing.RegisterRoute("ChatPage", typeof(ChatPage));
             Routing.RegisterRoute("LoginPage", typeof(LoginPage));
             Routing.RegisterRoute("RegisterPage", typeof(RegisterPage));
+            Routing.RegisterRoute("ProfilePage", typeof(ProfilePage));
 
-           // _loginStateService = loginStateService;
+
+            //this.CurrentItem = loginPage;
+
+            // _loginStateService = loginStateService;
 
             /* pozriet ci SecureStorage ma RefreshToken(dlhodoby)
 
@@ -26,8 +30,11 @@
              if (false) - normalne otvori loginPage
 
             */
-            this.CurrentItem = loginPage;
+
+
+
         }
+        
 
     }
 }

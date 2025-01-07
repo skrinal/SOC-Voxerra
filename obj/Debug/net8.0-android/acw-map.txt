@@ -4,9 +4,6 @@ voxerra.DevHttpsConnectionHelper_CustomAndroidMessageHandler_CustomHostnameVerif
 Voxerra.MainApplication, Voxerra;crc64dff8ed377220bd47.MainApplication
 Voxerra.MainApplication;crc64dff8ed377220bd47.MainApplication
 voxerra.MainApplication;crc64dff8ed377220bd47.MainApplication
-Voxerra.Platforms.Android.AlarmHandler, Voxerra;crc641e9043ac1a718797.AlarmHandler
-Voxerra.Platforms.Android.AlarmHandler;crc641e9043ac1a718797.AlarmHandler
-voxerra.platforms.android.AlarmHandler;crc641e9043ac1a718797.AlarmHandler
 Voxerra.Platforms.Android.MainActivity, Voxerra;crc641e9043ac1a718797.MainActivity
 Voxerra.Platforms.Android.MainActivity;crc641e9043ac1a718797.MainActivity
 voxerra.platforms.android.MainActivity;crc641e9043ac1a718797.MainActivity

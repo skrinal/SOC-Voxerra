@@ -5,6 +5,9 @@
   <key>UIAppFonts</key>
   <array>
 	<string>MaterialIcons-Regular.ttf</string>
+	<string>MaterialSymbolsRounded-Regular.ttf</string>
+	<string>MaterialSymbolsRounded-Thin.ttf</string>
+	<string>MaterialSymbolsRounded_Filled-Regular.ttf</string>
 	<string>OpenSans-Bold.ttf</string>
 	<string>OpenSans-Regular.ttf</string>
 	<string>OpenSans-Semibold.ttf</string>

@@ -11,7 +11,6 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
   <application android:allowBackup="true" android:icon="@mipmap/appicon" android:supportsRtl="true" android:name="crc64dff8ed377220bd47.MainApplication" android:label="Voxerra" android:debuggable="true" android:extractNativeLibs="true">
-    <receiver android:enabled="true" android:label="Local Notifications Broadcast Receiver" android:name="crc641e9043ac1a718797.AlarmHandler" />
     <activity android:configChanges="density|orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:launchMode="singleTop" android:theme="@style/Maui.SplashTheme" android:name="crc641e9043ac1a718797.MainActivity" android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

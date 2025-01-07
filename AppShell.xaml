@@ -3,24 +3,49 @@
     x:Class="Voxerra.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Voxerra.Pages"
     xmlns:pages="clr-namespace:Voxerra.Pages"
-    
     Title="Voxerra">
 
-    
+    <!--<Shell.Resources>
+        <Style TargetType="TabBar">
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="HeightRequest" Value="50"/>
+        </Style>
+    </Shell.Resources>-->
+
+    <ShellContent 
+        Title="Login"
+        ContentTemplate="{DataTemplate pages:LoginPage}"
+        Route="LoginPage"
+        Shell.NavBarIsVisible="False"
+        Shell.TabBarIsVisible="False"/>
+
+    <ShellContent 
+        Title="Login"
+        ContentTemplate="{DataTemplate pages:ChatPage}"
+        Route="ChatPage"
+        Shell.NavBarIsVisible="False"
+        Shell.TabBarIsVisible="False"/>
+
+
 
     <TabBar>
-        <Tab Title="Home">
-            <ShellContent ContentTemplate="{DataTemplate local:LoginPage}" />
-        </Tab>
-        <Tab Title="Profile">
-            <ShellContent ContentTemplate="{DataTemplate local:ProfilePage}" />
-        </Tab>
+
+        <ShellContent 
+            Icon="AppIcon/homeicon.svg"
+            ContentTemplate="{DataTemplate pages:MessageCenterPage}"
+            Route="MainPage"
+            Shell.NavBarIsVisible="False"
+            Shell.TabBarIsVisible="True">
+            
+        </ShellContent>
+
+        <ShellContent 
+            ContentTemplate="{DataTemplate pages:ProfilePage}"
+            Route="ProfilePage"
+            Shell.NavBarIsVisible="False"
+            Shell.TabBarIsVisible="True"/>
+
     </TabBar>
     
-    <!--Shell.FlyoutBehavior="Disabled"
-    Shell.NavBarIsVisible="False"
-    Shell.TabBarIsVisible="False"-->
-
 </Shell>
