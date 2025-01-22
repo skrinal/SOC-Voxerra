@@ -22,8 +22,6 @@
             </Grid.RowDefinitions>
 
 
-
-
             <Grid>
                 <StackLayout Orientation="Horizontal">
 
@@ -31,7 +29,8 @@
                             BackgroundColor="Transparent"
                             TextColor="White"
                             CornerRadius="45"
-                            Padding="0"/>
+                            Padding="0"
+                            Command="{Binding ResetPassword}" />
 
                 </StackLayout>
 
@@ -138,7 +137,6 @@
                     <CollectionView.ItemsLayout>
                         <LinearItemsLayout Orientation="Horizontal" />
                     </CollectionView.ItemsLayout>
-
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <StackLayout WidthRequest="100" >
@@ -179,9 +177,10 @@
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
-
-
             </Grid>
+
+            
+
 
             <!--<ScrollView Grid.Row="2" Orientation="Horizontal" VerticalOptions="Center" HorizontalScrollBarVisibility="Never">
         <StackLayout Orientation="Horizontal">

@@ -99,9 +99,11 @@ namespace Voxerra
 
         public string DevServerName =>
 #if WINDOWS
-            "voxerra.tplinkdns.com"; // Use your router's domain
+            //"voxerra.tplinkdns.com"; // Use your router's domain
+            "localhost";
 #elif ANDROID
-            "voxerra.tplinkdns.com"; // Use your router's domain
+            //"voxerra.tplinkdns.com"; // Use your router's domain
+            "10.0.2.2";
 #else
         throw new PlatformNotSupportedException("Only Windows and Android currently supported.");
 #endif
@@ -121,7 +123,7 @@ namespace Voxerra
                     // Accept self-signed certificates issued to "CN=voxerra.tplinkdns.com"
                     if (cert != null)
                     {
-                        if (cert.Issuer.Equals("CN=voxerra.tplinkdns.com") || cert.Subject.Equals("CN=voxerra.tplinkdns.com"))
+                        if (cert.Issuer.Equals("CN=localhost") || cert.Subject.Equals("CN=localhost"))
                             return true;
                     }
 
@@ -134,7 +136,7 @@ namespace Voxerra
             {
                 if (cert != null)
                 {
-                    if (cert.Issuer.Equals("CN=voxerra.tplinkdns.com") || cert.Subject.Equals("CN=voxerra.tplinkdns.com"))
+                    if (cert.Issuer.Equals("CN=localhost") || cert.Subject.Equals("CN=localhost"))
                         return true;
                 }
                 return errors == SslPolicyErrors.None;

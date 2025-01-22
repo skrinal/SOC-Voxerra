@@ -10,9 +10,12 @@
             Routing.RegisterRoute("ChatPage", typeof(ChatPage));
             Routing.RegisterRoute("LoginPage", typeof(LoginPage));
             Routing.RegisterRoute("RegisterPage", typeof(RegisterPage));
+            Routing.RegisterRoute("RegisterConfirmationPage", typeof(RegisterConfirmationPage));
             Routing.RegisterRoute("ProfilePage", typeof(ProfilePage));
+            Routing.RegisterRoute("ForgotPassword", typeof(ForgotPasswordPage));
 
 
+            GoToLoginPage();
             //this.CurrentItem = loginPage;
 
             // _loginStateService = loginStateService;
@@ -34,7 +37,11 @@
 
 
         }
-        
+
+        private async void GoToLoginPage()
+        {
+            await GoToAsync("//LoginPage");
+        }
 
     }
 }

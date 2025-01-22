@@ -1,8 +1,4 @@
 ﻿using System.Collections.ObjectModel;
-using System.Net.Http;
-using System.Web;
-using Voxerra.Services.MessageCenter;
-
 namespace Voxerra.ViewModels
 {
     public class MessageCenterPageViewModel : INotifyPropertyChanged, IQueryAttributable

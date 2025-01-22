@@ -1,5 +1,4 @@
 ﻿using System.Collections.ObjectModel;
-using System.Diagnostics;
 using Voxerra.Services.Message;
 
 namespace Voxerra.ViewModels
@@ -47,7 +46,7 @@ namespace Voxerra.ViewModels
                     {
                         await _chatHub.SendMessageToUser(FromUserId, ToUserId, Message);
 
-                        Messages.Add(new Models.Message
+                        Messages.Add(new Message
                         {
                             Content = Message,
                             FromUserId = fromUserId,
@@ -63,7 +62,10 @@ namespace Voxerra.ViewModels
                     await AppShell.Current.DisplayAlert("Voxerra", ex.Message, "OK");
                 }
             });
+
         }
+
+        
 
         async Task GetMessages()
         {
@@ -95,9 +97,15 @@ namespace Voxerra.ViewModels
             }).GetAwaiter().OnCompleted(() =>
             {
                 IsRefreshing = false;
+
             });
         }
-        
+
+        public async Task LoadMessagesAsync()
+        {
+            await GetMessages();
+        }
+
         private void OnReceiveMessage(int fromUserId, string message)
         {
             Messages.Add(new Models.Message

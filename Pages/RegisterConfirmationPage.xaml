@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Voxerra.Pages.RegisterConfirmationPage"
+             xmlns:viewModel="clr-namespace:Voxerra.ViewModels"
+             Title="RegisterConfirmationPage"
+             Background="#0f0f0f">
+    <RefreshView Margin="10" IsRefreshing="{Binding isProcessing}">
+        <Grid>
+            <VerticalStackLayout Margin="30" VerticalOptions="Center">
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Border StrokeThickness="4" StrokeShape="RoundRectangle 10">
+                        <Border.Stroke>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#b414de" Offset="0.0" />
+                                <GradientStop Color="#d127a5" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Border.Stroke>
+                        <Entry Text="{Binding Entry1}" WidthRequest="50" MaxLength="1" Keyboard="Numeric" />
+                    </Border>
+
+                    <Border StrokeThickness="4" StrokeShape="RoundRectangle 10">
+                        <Border.Stroke>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#b414de" Offset="0.0" />
+                                <GradientStop Color="#d127a5" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Border.Stroke>
+                        <Entry Text="{Binding Entry2}" WidthRequest="50" MaxLength="1" Keyboard="Numeric" />
+                    </Border>
+
+                    <Border StrokeThickness="4" StrokeShape="RoundRectangle 10">
+                        <Border.Stroke>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#b414de" Offset="0.0" />
+                                <GradientStop Color="#d127a5" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Border.Stroke>
+                        <Entry Text="{Binding Entry3}" WidthRequest="50" HeightRequest="55" MaxLength="1" Keyboard="Numeric" />
+                    </Border>
+
+                    <Border StrokeThickness="4" StrokeShape="RoundRectangle 10">
+                        <Border.Stroke>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#b414de" Offset="0.0" />
+                                <GradientStop Color="#d127a5" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Border.Stroke>
+                        <Entry Text="{Binding Entry4}" WidthRequest="50" MaxLength="1" Keyboard="Numeric" />
+                    </Border>
+
+                    <Border StrokeThickness="4" StrokeShape="RoundRectangle 10">
+                        <Border.Stroke>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#b414de" Offset="0.0" />
+                                <GradientStop Color="#d127a5" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Border.Stroke>
+                        <Entry Text="{Binding Entry5}" WidthRequest="50" MaxLength="1" Keyboard="Numeric" />
+                    </Border>
+
+                </StackLayout>
+
+                <Button Text="Confirm" Command="{Binding ConfirmRegistrationCommand}" />
+                <Button Text="Go Back" Command="{Binding GoBackCommand}" />
+
+            </VerticalStackLayout>
+        </Grid>
+    </RefreshView>
+</ContentPage>

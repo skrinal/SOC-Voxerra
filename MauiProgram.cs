@@ -30,11 +30,18 @@
             builder.Services.AddSingleton<MessageCenterPage>();
             builder.Services.AddSingleton<ChatPage>();
             builder.Services.AddSingleton<RegisterPage>();
+            builder.Services.AddSingleton<RegisterConfirmationPage>();
+            builder.Services.AddSingleton<ForgotPasswordPage>();
+            builder.Services.AddSingleton<ProfilePage>();
+
             builder.Services.AddSingleton<LoginPageViewModel>();
             builder.Services.AddSingleton<MessageCenterPageViewModel>();
             builder.Services.AddSingleton<ChatPageViewModel>();
             builder.Services.AddSingleton<ServiceProvider>();
             builder.Services.AddSingleton<RegisterPageViewModel>();
+            builder.Services.AddSingleton<RegisterConfirmationViewModel>();
+            builder.Services.AddSingleton<ForgotPasswordViewModel>();
+            builder.Services.AddSingleton<ProfilePageViewModel>();
 
             return builder.Build();
         }

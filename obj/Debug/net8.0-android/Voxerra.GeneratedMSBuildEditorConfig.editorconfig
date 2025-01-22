@@ -36,6 +36,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.ChatPage.xam
 build_metadata.AdditionalFiles.TargetPath = Pages\ChatPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\ChatPage.xaml
 
+[C:/SOC-Voxerra/Pages/ForgotPasswordPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.ForgotPasswordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\ForgotPasswordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\ForgotPasswordPage.xaml
+
 [C:/SOC-Voxerra/Pages/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.LoginPage.xaml
@@ -53,6 +59,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.ProfilePage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\ProfilePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\ProfilePage.xaml
+
+[C:/SOC-Voxerra/Pages/RegisterConfirmationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.RegisterConfirmationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\RegisterConfirmationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\RegisterConfirmationPage.xaml
 
 [C:/SOC-Voxerra/Pages/RegisterPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

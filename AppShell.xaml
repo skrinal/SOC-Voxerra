@@ -13,39 +13,48 @@
         </Style>
     </Shell.Resources>-->
 
-    <ShellContent 
-        Title="Login"
-        ContentTemplate="{DataTemplate pages:LoginPage}"
-        Route="LoginPage"
-        Shell.NavBarIsVisible="False"
-        Shell.TabBarIsVisible="False"/>
-
-    <ShellContent 
-        Title="Login"
-        ContentTemplate="{DataTemplate pages:ChatPage}"
-        Route="ChatPage"
-        Shell.NavBarIsVisible="False"
-        Shell.TabBarIsVisible="False"/>
-
-
-
+    
     <TabBar>
 
-        <ShellContent 
-            Icon="AppIcon/homeicon.svg"
-            ContentTemplate="{DataTemplate pages:MessageCenterPage}"
-            Route="MainPage"
-            Shell.NavBarIsVisible="False"
-            Shell.TabBarIsVisible="True">
-            
-        </ShellContent>
 
-        <ShellContent 
-            ContentTemplate="{DataTemplate pages:ProfilePage}"
-            Route="ProfilePage"
-            Shell.NavBarIsVisible="False"
-            Shell.TabBarIsVisible="True"/>
+        
+            <ShellContent 
+Icon="AppIcon/homeicon.svg"
+Title="Home"
+ContentTemplate="{DataTemplate pages:MessageCenterPage}"
+Route="MainPage"
+Shell.NavBarIsVisible="False"
+Shell.TabBarIsVisible="{OnPlatform Android=True, WinUI=True, Default=True}">
+            </ShellContent>
+        
 
+
+        
+            <ShellContent 
+Title="Profile"
+ContentTemplate="{DataTemplate pages:ProfilePage}"
+Route="ProfilePage"
+Shell.NavBarIsVisible="False"
+Shell.TabBarIsVisible="{OnPlatform Android=True, WinUI=True, Default=True}" />
+        
+        
+
+        
     </TabBar>
-    
+
+
+    <ShellContent 
+Title="Login"
+ContentTemplate="{DataTemplate pages:LoginPage}"
+Route="LoginPage"
+Shell.NavBarIsVisible="False"
+Shell.TabBarIsVisible="False"/>
+
+    <ShellContent 
+Title="ChatPage"
+ContentTemplate="{DataTemplate pages:ChatPage}"
+Route="ChatPage"
+Shell.NavBarIsVisible="False"
+Shell.TabBarIsVisible="False" />
+
 </Shell>

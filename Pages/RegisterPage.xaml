@@ -34,7 +34,7 @@
         </Style>
     </ContentPage.Resources>-->
 
-    <RefreshView Margin="10" IsRefreshing="{Binding IsRefreshing}">
+    <RefreshView Margin="10" IsRefreshing="{Binding isProcessing}">
         <Grid>
             <VerticalStackLayout Margin="30" VerticalOptions="Center">
                 <Image 

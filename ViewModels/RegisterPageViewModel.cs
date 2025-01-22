@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using Voxerra.Services.Registration;
+﻿using System.Text.RegularExpressions;
 
 namespace Voxerra.ViewModels
 {
@@ -24,15 +18,15 @@ namespace Voxerra.ViewModels
 
             RegisterCommand = new Command(() =>
             {
-                if (isProcessing) return;
+                if (IsProcessing) return;
 
                 if (!IsUserNameUnique || !IsEmailUnique
                     || string.IsNullOrWhiteSpace(Password) || string.IsNullOrWhiteSpace(RePassword)) return;
 
-                isProcessing = true;
+                IsProcessing = true;
                 Register().GetAwaiter().OnCompleted(() =>
                 {
-                    isProcessing = false;
+                    IsProcessing = false;
                 });
             });
 
@@ -43,7 +37,8 @@ namespace Voxerra.ViewModels
 
         private async void OnGoBack()
         {
-            await Shell.Current.GoToAsync("//LoginPage");
+            await Shell.Current.Navigation.PopAsync();
+            //await Shell.Current.GoToAsync("//LoginPage");
         }
         async Task Register()
         {
@@ -55,20 +50,15 @@ namespace Voxerra.ViewModels
                     Password = Password,
                     Email = Email
                 };
-                var response = await _serviceProvider.CallWebApi<RegistrationInitializeRequest, RegistrationInitializeResponse>
+                var response = await _serviceProvider.CallWebApi<RegistrationInitializeRequest, BaseResponse>
                 ("/Registration/RegisterUser", HttpMethod.Post, request);
 
 
                 if (response.StatusCode == 200)
                 {
-                    if (response.Successful == true)
-                    {
-                        await Shell.Current.GoToAsync("LoginPage");
-                    }
-                    else
-                    {
-                        // error vuejbat
-                    }
+                    await Shell.Current.GoToAsync($"RegisterConfirmationPage?email={Email}");
+
+                    //OnGoBack();
                 }
                 else
                 {
@@ -102,16 +92,17 @@ namespace Voxerra.ViewModels
                     Email = email
                 };
 
-                var response = await _serviceProvider.CallWebApi<IsEmailUniqueRequest, IsEmailUniqueResponse>(
+                var response = await _serviceProvider.CallWebApi<IsEmailUniqueRequest, BaseResponse>(
                     "/Registration/IsEmailUnique", HttpMethod.Post, request);
 
 
                 if (response.StatusCode == 200)
                 {
-                    IsEmailUnique = response.IsEmailUnique;
+                    IsEmailUnique = true;
                 }
                 else 
                 {
+                    IsEmailUnique = false;
                     //await AppShell.Current.DisplayAlert("Voxerra", "Email is already in use.", "OK");
                 }
             }
@@ -131,16 +122,17 @@ namespace Voxerra.ViewModels
                     UserName = userName
                 };
 
-                var response = await _serviceProvider.CallWebApi<IsUserNameUniqueRequest, IsUserNameUniqueResponse>(
+                var response = await _serviceProvider.CallWebApi<IsUserNameUniqueRequest, BaseResponse>(
                     "/Registration/IsUserNameUnique", HttpMethod.Post, request);
 
 
                 if (response.StatusCode == 200)
                 {
-                    IsUserNameUnique = response.IsUserNameUnique;
+                    IsUserNameUnique = true;
                 }
                 else
                 {
+                    IsUserNameUnique = false;
                     //await AppShell.Current.DisplayAlert("Voxerra", "Email is already in use.", "OK");
                 }
             }
@@ -160,12 +152,12 @@ namespace Voxerra.ViewModels
 
             try
             {
-                await Task.Delay(1000, token); // Wait 500ms before proceeding
+                await Task.Delay(1000, token);
                 await validationFunc(input);
             }
             catch (TaskCanceledException)
             {
-                // Task was canceled, no need to handle it
+                // netreba nic lebo task bol cancelnuty
             }
         }
 

@@ -25,30 +25,41 @@ namespace Voxerra.ViewModels
             UserName = "test1";
             Password = "test123";
 
-            isProcessing = false;
+            IsProcessing = false;
 
             LoginCommand = new Command(() =>
             {
-                if (isProcessing) return;
+                if (IsProcessing) return;
 
                 if (UserName.Trim() == "" || Password.Trim() == "") return;
 
-                isProcessing = true;
+                IsProcessing = true;
                 Login().GetAwaiter().OnCompleted(() =>
                 {
-                    isProcessing = false;
+                    IsProcessing = false;
                 });
             });
             this._serviceProvider = serviceProvider;
 
             RegisterCommand = new Command(() =>
             {
-                if (isProcessing) return;
+                if (IsProcessing) return;
 
-                isProcessing = true;
+                IsProcessing = true;
                 RegisterPage().GetAwaiter().OnCompleted(() =>
                 {
-                    isProcessing = false;
+                    IsProcessing = false;
+                });
+            });
+
+            ForgotPassword = new Command(() =>
+            {
+                if (IsProcessing) return;
+
+                IsProcessing = true;
+                PasswordPage().GetAwaiter().OnCompleted(() =>
+                {
+                    IsProcessing = false;
                 });
             });
 
@@ -100,6 +111,17 @@ namespace Voxerra.ViewModels
                 await AppShell.Current.DisplayAlert("Voxerra", ex.Message, "OK");
             }
         }
+        async Task PasswordPage()
+        {
+            try
+            {
+                await Shell.Current.GoToAsync($"ForgotPassword");
+            }
+            catch (Exception ex)
+            {
+                await AppShell.Current.DisplayAlert("Voxerra", ex.Message, "OK");
+            }
+        }
 
         private string userName;
         private string password;
@@ -122,5 +144,6 @@ namespace Voxerra.ViewModels
         }
         public ICommand LoginCommand { get; set; }
         public ICommand RegisterCommand { get; set; }
+        public ICommand ForgotPassword { get; set; }
     }
 }
