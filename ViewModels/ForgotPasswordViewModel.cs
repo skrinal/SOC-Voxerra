@@ -9,10 +9,62 @@ namespace Voxerra.ViewModels
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        ForgotPasswordViewModel()
+        private ServiceProvider _serviceProvider;
+        ForgotPasswordViewModel(ServiceProvider serviceProvider)
         {
+            _serviceProvider = serviceProvider;
+
+            ResetPasswordCommand = new Command(() =>
+            {
+                if (IsProcessing) return;
+
+                if (string.IsNullOrWhiteSpace(Email) ) return;
+
+                IsProcessing = true;
+                ResetPassword().GetAwaiter().OnCompleted(() =>
+                {
+                    IsProcessing = false;
+                });
+            });
+
+            GoBackCommand = new Command(OnGoBack);
+
 
         }
+
+        public async Task ResetPassword() 
+        {
+            try
+            {
+                var request = new PasswordResetRequest
+                {
+                    Email = Email
+                };
+                var response = await _serviceProvider.CallWebApi<PasswordResetRequest, BaseResponse>
+                ("/Password/ResetPassword", HttpMethod.Post, request);
+
+
+                if (response.StatusCode == 200)
+                {
+                    await Shell.Current.GoToAsync($"PasswordConfirmationPage?email={Email}");
+
+                    //OnGoBack();
+                }
+                else
+                {
+                    await AppShell.Current.DisplayAlert("Voxerra", response.StatusMessage, "OK");
+                }
+            }
+            catch (Exception ex)
+            {
+                await AppShell.Current.DisplayAlert("Voxerra", ex.Message, "OK");
+            }
+        }
+        private async void OnGoBack()
+        {
+            await Shell.Current.Navigation.PopAsync();
+        }
+
 
         bool isProcessing;
         string email;
@@ -26,7 +78,8 @@ namespace Voxerra.ViewModels
             get { return email; }
             set { email = value; OnPropertyChanged(); }
         }
-        public ICommand RegisterCommand { get; set; }
-        public ICommand ResetPassword { get; set; }
+        
+        public ICommand ResetPasswordCommand { get; set; }
+        public ICommand GoBackCommand { get; set; }
     }
 }
