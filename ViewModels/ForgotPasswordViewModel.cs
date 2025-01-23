@@ -1,7 +1,9 @@
 ﻿
+using Voxerra.Services.Password;
+
 namespace Voxerra.ViewModels
 {
-    public class ForgotPasswordViewModel
+    public class ForgotPasswordViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -10,7 +12,7 @@ namespace Voxerra.ViewModels
         }
 
         private ServiceProvider _serviceProvider;
-        ForgotPasswordViewModel(ServiceProvider serviceProvider)
+        public ForgotPasswordViewModel(ServiceProvider serviceProvider)
         {
             _serviceProvider = serviceProvider;
 

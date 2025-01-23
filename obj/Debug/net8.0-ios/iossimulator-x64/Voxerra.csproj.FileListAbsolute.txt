@@ -269,10 +269,6 @@ C:\SOC-Voxerra\bin\Debug\net8.0-ios\iossimulator-x64\libxamarin-dotnet-nativeaot
 C:\SOC-Voxerra\bin\Debug\net8.0-ios\iossimulator-x64\libxamarin-dotnet-nativeaot.a
 C:\SOC-Voxerra\bin\Debug\net8.0-ios\iossimulator-x64\libxamarin-dotnet.a
 C:\SOC-Voxerra\bin\Debug\net8.0-ios\iossimulator-x64\libxamarin-dotnet.dylib
-C:\SOC-Voxerra\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.Maui.Controls.HotReload.Forms.dll
-C:\SOC-Voxerra\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
-C:\SOC-Voxerra\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.VisualStudio.DesignTools.TapContract.dll
-C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\build-signature\signature
 C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\mauiimage.inputs
 C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\mauifont.inputs
 C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\mauisplash.inputs
@@ -342,3 +338,6 @@ C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\refint\Voxerra.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\Voxerra.pdb
 C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\Voxerra.genruntimeconfig.cache
 C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\ref\Voxerra.dll
+C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\homeicon@3x.png
+C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\homeicon@2x.png
+C:\SOC-Voxerra\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\homeicon.png
