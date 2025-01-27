@@ -1,4 +1,5 @@
-﻿namespace Voxerra
+﻿
+namespace Voxerra
 {
     public static class MauiProgram
     {
@@ -33,7 +34,9 @@
             builder.Services.AddSingleton<RegisterConfirmationPage>();
             builder.Services.AddSingleton<ForgotPasswordPage>();
             builder.Services.AddSingleton<ProfilePage>();
-
+            builder.Services.AddSingleton<AddFriendPage>();
+            builder.Services.AddSingleton<PublicProfilePage>();
+            
             builder.Services.AddSingleton<LoginPageViewModel>();
             builder.Services.AddSingleton<MessageCenterPageViewModel>();
             builder.Services.AddSingleton<ChatPageViewModel>();
@@ -42,7 +45,9 @@
             builder.Services.AddSingleton<RegisterConfirmationViewModel>();
             builder.Services.AddSingleton<ForgotPasswordViewModel>();
             builder.Services.AddSingleton<ProfilePageViewModel>();
-
+            builder.Services.AddSingleton<AddFriendViewModel>();
+            builder.Services.AddSingleton<PublicProfileViewModel>();
+            
             return builder.Build();
         }
     }

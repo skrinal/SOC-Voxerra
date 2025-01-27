@@ -13,7 +13,8 @@
             Routing.RegisterRoute("RegisterConfirmationPage", typeof(RegisterConfirmationPage));
             Routing.RegisterRoute("ProfilePage", typeof(ProfilePage));
             Routing.RegisterRoute("ForgotPassword", typeof(ForgotPasswordPage));
-
+            Routing.RegisterRoute("AddFriend", typeof(AddFriendPage));  
+            Routing.RegisterRoute("PublicProfile", typeof(PublicProfilePage));
 
             GoToLoginPage();
             //this.CurrentItem = loginPage;

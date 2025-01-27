@@ -8,6 +8,9 @@ namespace Voxerra.ViewModels
 {
     public class ProfilePageViewModel
     {
+        public ProfilePageViewModel()
+        {
 
+        }
     }
 }

@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Voxerra.Pages.ProfilePage"
@@ -9,56 +10,57 @@
 
             <!-- Profile Section -->
 
-                <Frame BackgroundColor="#1E1E1E" CornerRadius="10" Padding="15">
+            <Frame BackgroundColor="#1E1E1E" CornerRadius="10" Padding="15">
                 <HorizontalStackLayout VerticalOptions="Center">
-                    <ImageButton 
-                        Source="profile_placeholder.jpg" 
-                        WidthRequest="60" 
-                        HeightRequest="60" 
+                    <ImageButton
+                        Source="profile_placeholder.jpg"
+                        WidthRequest="60"
+                        HeightRequest="60"
                         CornerRadius="30"
-                        BackgroundColor="Transparent"/>
+                        BackgroundColor="Transparent" />
 
                     <VerticalStackLayout Spacing="5" Margin="15,0,0,0">
-                        <Label Text="Profiles" TextColor="White" FontAttributes="Bold" FontSize="18"/>
-                        <Label Text="skrinjal.jpg" TextColor="#A9A9A9" FontSize="14"/>
+                        <Label Text="Profiles" TextColor="White" FontAttributes="Bold" FontSize="18" />
+                        <Label Text="skrinjal.jpg" TextColor="#A9A9A9" FontSize="14" />
                     </VerticalStackLayout>
                 </HorizontalStackLayout>
             </Frame>
 
 
-
-            <Label Text="Connected experiences" TextColor="White" FontSize="16" FontAttributes="Bold"/>
+            <Label Text="Connected experiences" TextColor="White" FontSize="16" FontAttributes="Bold" />
             <Border
-StrokeThickness="2.5"
-StrokeShape="RoundRectangle 20">
+                StrokeThickness="2.5"
+                StrokeShape="RoundRectangle 20">
                 <Border.Stroke>
                     <LinearGradientBrush>
                         <GradientStop Color="#b414de" Offset="0.0" />
                         <GradientStop Color="#d127a5" Offset="1.0" />
                     </LinearGradientBrush>
                 </Border.Stroke>
-                <Frame BackgroundColor="#1E1E1E" CornerRadius="10" Padding="15" >
+                <Frame BackgroundColor="#1E1E1E" CornerRadius="10" Padding="15">
                     <VerticalStackLayout Spacing="10">
 
 
                         <HorizontalStackLayout VerticalOptions="Center">
-                            <Label Text="Sharing across profiles" TextColor="White" FontSize="14"/>
-                            <ImageButton Source="chevron_right.png" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand"/>
+                            <Label Text="Sharing across profiles" TextColor="White" FontSize="14" />
+                            <ImageButton Source="chevron_right.png" BackgroundColor="Transparent"
+                                         HorizontalOptions="EndAndExpand" />
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout VerticalOptions="Center">
-                            <Label Text="Logging in with accounts" TextColor="White" FontSize="14"/>
-                            <ImageButton Source="chevron_right.png" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand"/>
+                            <Label Text="Logging in with accounts" TextColor="White" FontSize="14" />
+                            <ImageButton Source="chevron_right.png" BackgroundColor="Transparent"
+                                         HorizontalOptions="EndAndExpand" />
                         </HorizontalStackLayout>
                     </VerticalStackLayout>
                 </Frame>
             </Border>
 
 
-            <Label Text="Account settings" TextColor="White" FontSize="16" FontAttributes="Bold"/>
+            <Label Text="Account settings" TextColor="White" FontSize="16" FontAttributes="Bold" />
             <Border
-StrokeThickness="2.5"
-StrokeShape="RoundRectangle 20">
+                StrokeThickness="2.5"
+                StrokeShape="RoundRectangle 20">
                 <Border.Stroke>
                     <LinearGradientBrush>
                         <GradientStop Color="#b414de" Offset="0.0" />
@@ -71,40 +73,43 @@ StrokeShape="RoundRectangle 20">
 
 
                         <HorizontalStackLayout VerticalOptions="Center">
-                            <Label Text="Password and security" TextColor="White" FontSize="14"/>
-                            <ImageButton Source="chevron_right.png" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand"/>
+                            <Label Text="Password and security" TextColor="White" FontSize="14" />
+                            <ImageButton Source="chevron_right.png" BackgroundColor="Transparent"
+                                         HorizontalOptions="EndAndExpand" />
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout VerticalOptions="Center">
-                            <Label Text="Personal details" TextColor="White" FontSize="14"/>
-                            <ImageButton Source="chevron_right.png" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand"/>
+                            <Label Text="Personal details" TextColor="White" FontSize="14" />
+                            <ImageButton Source="chevron_right.png" BackgroundColor="Transparent"
+                                         HorizontalOptions="EndAndExpand" />
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout VerticalOptions="Center">
-                            <Label Text="Your information and permissions" TextColor="White" FontSize="14"/>
-                            <ImageButton Source="chevron_right.png" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand"/>
+                            <Label Text="Your information and permissions" TextColor="White" FontSize="14" />
+                            <ImageButton Source="chevron_right.png" BackgroundColor="Transparent"
+                                         HorizontalOptions="EndAndExpand" />
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout VerticalOptions="Center">
-                            <Label Text="Ad preferences" TextColor="White" FontSize="14"/>
-                            <ImageButton Source="chevron_right.png" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand"/>
+                            <Label Text="Ad preferences" TextColor="White" FontSize="14" />
+                            <ImageButton Source="chevron_right.png" BackgroundColor="Transparent"
+                                         HorizontalOptions="EndAndExpand" />
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout VerticalOptions="Center">
-                            <Label Text="Meta Pay" TextColor="White" FontSize="14"/>
-                            <ImageButton Source="chevron_right.png" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand"/>
+                            <Label Text="Meta Pay" TextColor="White" FontSize="14" />
+                            <ImageButton Source="chevron_right.png" BackgroundColor="Transparent"
+                                         HorizontalOptions="EndAndExpand" />
                         </HorizontalStackLayout>
                     </VerticalStackLayout>
                 </Frame>
             </Border>
-                
-            
 
-            
-            <Label Text="Login settings" TextColor="White" FontSize="16" FontAttributes="Bold"/>
+
+            <Label Text="Login settings" TextColor="White" FontSize="16" FontAttributes="Bold" />
             <Border
-StrokeThickness="2.5"
-StrokeShape="RoundRectangle 20">
+                StrokeThickness="2.5"
+                StrokeShape="RoundRectangle 20">
                 <Border.Stroke>
                     <LinearGradientBrush>
                         <GradientStop Color="#b414de" Offset="0.0" />
@@ -116,8 +121,9 @@ StrokeShape="RoundRectangle 20">
 
 
                         <HorizontalStackLayout VerticalOptions="Center">
-                            <Label Text="Log out" TextColor="Red" FontSize="14"/>
-                            <ImageButton Source="chevron_right.png" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand"/>
+                            <Label Text="Log out" TextColor="Red" FontSize="14" />
+                            <ImageButton Source="chevron_right.png" BackgroundColor="Transparent"
+                                         HorizontalOptions="EndAndExpand" />
                         </HorizontalStackLayout>
 
                     </VerticalStackLayout>

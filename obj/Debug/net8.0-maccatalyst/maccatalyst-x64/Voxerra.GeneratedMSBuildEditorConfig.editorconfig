@@ -30,6 +30,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
+[C:/SOC-Voxerra/Pages/AddFriendPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.AddFriendPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AddFriendPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AddFriendPage.xaml
+
 [C:/SOC-Voxerra/Pages/ChatPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.ChatPage.xaml
@@ -60,6 +66,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.ProfilePage.
 build_metadata.AdditionalFiles.TargetPath = Pages\ProfilePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\ProfilePage.xaml
 
+[C:/SOC-Voxerra/Pages/PublicProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.PublicProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\PublicProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\PublicProfilePage.xaml
+
 [C:/SOC-Voxerra/Pages/RegisterConfirmationPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.RegisterConfirmationPage.xaml
@@ -71,6 +83,24 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.RegisterPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\RegisterPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\RegisterPage.xaml
+
+[C:/SOC-Voxerra/Pages/Settings/NotificationsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.Settings.NotificationsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Settings\NotificationsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Settings\NotificationsPage.xaml
+
+[C:/SOC-Voxerra/Pages/Settings/PasswordSecurityPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.Settings.PasswordSecurityPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Settings\PasswordSecurityPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Settings\PasswordSecurityPage.xaml
+
+[C:/SOC-Voxerra/Pages/Settings/PersonalDetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.Settings.PersonalDetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Settings\PersonalDetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Settings\PersonalDetailsPage.xaml
 
 [C:/SOC-Voxerra/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

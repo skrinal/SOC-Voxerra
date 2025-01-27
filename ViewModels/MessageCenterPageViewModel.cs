@@ -24,11 +24,11 @@ namespace Voxerra.ViewModels
             {
                 Task.Run(async () =>
                 {
-                    IsRefreshing = true;
+                    IsProcessing = true;
                     await GetListFriends();
                 }).GetAwaiter().OnCompleted(() =>
                 {
-                    IsRefreshing = false;
+                    IsProcessing = false;
                 });
             });
 
@@ -37,6 +37,17 @@ namespace Voxerra.ViewModels
                 await Shell.Current.GoToAsync($"//ChatPage?fromUserId={UserInfo.Id}&toUserId={param}");
             });
 
+            AddFriendPageCommand = new Command(() =>
+            {
+                if (IsProcessing) return;
+
+                IsProcessing = true;
+                AddFriendPageGTA().GetAwaiter().OnCompleted(() =>
+                {
+                    IsProcessing = false;
+                });
+            });
+            
             _serviceProvider = serviceProvider;
             _chatHub = chatHub;
             _chatHub.Connect();
@@ -44,6 +55,17 @@ namespace Voxerra.ViewModels
            
         }
 
+        async Task AddFriendPageGTA()
+        {
+            try
+            {
+                await Shell.Current.GoToAsync("//AddFriendPage");
+            }
+            catch (Exception ex)
+            {
+                await AppShell.Current.DisplayAlert("Voxerra", ex.Message, "OK");
+            }
+        }
         async Task GetListFriends()
         {
             var response = await _serviceProvider.CallWebApi<int, MessageCenterInitializeResponse>
@@ -76,11 +98,11 @@ namespace Voxerra.ViewModels
         {
             Task.Run(async () =>
             {
-                IsRefreshing = true;
+                IsProcessing = true;
                 await GetListFriends();
             }).GetAwaiter().OnCompleted(() =>
             {
-                IsRefreshing = false;
+                IsProcessing = false;
             });
         }
 
@@ -158,7 +180,7 @@ namespace Voxerra.ViewModels
         private User userInfo;
         private ObservableCollection<User> userFriends;
         private ObservableCollection<LastestMessage> latestMessages;
-        private bool isRefreshing;
+        private bool isProcessing;
 
         public User UserInfo
         {
@@ -177,14 +199,14 @@ namespace Voxerra.ViewModels
             set { latestMessages = value; OnPropertyChanged(); }
         }
 
-        public bool IsRefreshing
+        public bool IsProcessing
         {
-            get { return isRefreshing; }
-            set { isRefreshing = value; OnPropertyChanged(); }
+            get { return isProcessing; }
+            set { isProcessing = value; OnPropertyChanged(); }
         }
 
         public ICommand RefreshCommand { get; set; }
-
         public ICommand OpenChatPageCommand { get; set; }
+        public ICommand AddFriendPageCommand { get; set; }
     }
 }

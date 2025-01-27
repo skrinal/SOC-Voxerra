@@ -101,11 +101,21 @@
 	  <MauiXaml Update="Pages\RegisterPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Pages\AddFriendPage.xaml">
+	    <SubType>Designer</SubType>
+	  </MauiXaml>
 	</ItemGroup>
 
 	<ItemGroup>
 	  <Folder Include="Services\Background\" />
 	  <Folder Include="Services\Password\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Pages\AddFriendPage.xaml.cs">
+	    <DependentUpon>AddFriendPage.xaml</DependentUpon>
+	    <SubType>Code</SubType>
+	  </Compile>
 	</ItemGroup>
 
 </Project>

@@ -15,3 +15,6 @@ global using Voxerra.Pages;
 global using Voxerra.Services.MessageCenter;
 global using Voxerra.Services;
 global using Voxerra.Services.Registration;
+global using Voxerra.ViewModels.Settings;
+global using Voxerra.Pages.Settings;
+global using Voxerra.Services.FriendAdd;

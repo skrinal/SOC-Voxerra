@@ -1,9 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
+
 <Shell
     x:Class="Voxerra.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:pages="clr-namespace:Voxerra.Pages"
+    xmlns:settings="clr-namespace:Voxerra.Pages.Settings"
     Title="Voxerra">
 
     <!--<Shell.Resources>
@@ -13,48 +15,54 @@
         </Style>
     </Shell.Resources>-->
 
-    
+
     <TabBar>
 
+        <ShellContent
+            Icon="AppIcon/homeicon.svg"
+            Title="Home"
+            ContentTemplate="{DataTemplate pages:MessageCenterPage}"
+            Route="MainPage"
+            Shell.NavBarIsVisible="False"
+            Shell.TabBarIsVisible="{OnPlatform Android=True, WinUI=True, Default=True}">
+        </ShellContent>
 
-        
-            <ShellContent 
-Icon="AppIcon/homeicon.svg"
-Title="Home"
-ContentTemplate="{DataTemplate pages:MessageCenterPage}"
-Route="MainPage"
-Shell.NavBarIsVisible="False"
-Shell.TabBarIsVisible="{OnPlatform Android=True, WinUI=True, Default=True}">
-            </ShellContent>
-        
+        <ShellContent
+            Title="Profile"
+            ContentTemplate="{DataTemplate pages:ProfilePage}"
+            Route="ProfilePage"
+            Shell.NavBarIsVisible="False"
+            Shell.TabBarIsVisible="{OnPlatform Android=True, WinUI=True, Default=True}" />
 
-
-        
-            <ShellContent 
-Title="Profile"
-ContentTemplate="{DataTemplate pages:ProfilePage}"
-Route="ProfilePage"
-Shell.NavBarIsVisible="False"
-Shell.TabBarIsVisible="{OnPlatform Android=True, WinUI=True, Default=True}" />
-        
-        
-
-        
     </TabBar>
 
 
-    <ShellContent 
-Title="Login"
-ContentTemplate="{DataTemplate pages:LoginPage}"
-Route="LoginPage"
-Shell.NavBarIsVisible="False"
-Shell.TabBarIsVisible="False"/>
+    <ShellContent
+        Title="Login"
+        ContentTemplate="{DataTemplate pages:LoginPage}"
+        Route="LoginPage"
+        Shell.NavBarIsVisible="False"
+        Shell.TabBarIsVisible="False" />
 
-    <ShellContent 
-Title="ChatPage"
-ContentTemplate="{DataTemplate pages:ChatPage}"
-Route="ChatPage"
-Shell.NavBarIsVisible="False"
-Shell.TabBarIsVisible="False" />
+    <ShellContent
+        Title="Chat"
+        ContentTemplate="{DataTemplate pages:ChatPage}"
+        Route="ChatPage"
+        Shell.NavBarIsVisible="False"
+        Shell.TabBarIsVisible="False" />
+
+    <ShellContent
+        Title="AddFriend"
+        ContentTemplate="{DataTemplate pages:AddFriendPage}"
+        Route="AddFriendPage"
+        Shell.NavBarIsVisible="False"
+        Shell.TabBarIsVisible="False" />
+
+    <ShellContent
+        Title="PublicProfile"
+        ContentTemplate="{DataTemplate pages:PublicProfilePage}"
+        Route="PublicProfilePage"
+        Shell.NavBarIsVisible="False"
+        Shell.TabBarIsVisible="False" />
 
 </Shell>

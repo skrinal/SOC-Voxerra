@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Voxerra.Pages.PublicProfilePage"
+             xmlns:viewModel="clr-namespace:Voxerra.ViewModels"
+             Title="Profile"
+             BackgroundColor="#0f0f0f">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="15" Spacing="20">
+
+            <StackLayout Orientation="Horizontal">
+
+                <Button Text="&#xe5c4;" FontFamily="GoogleFont" FontSize="24" VerticalOptions="Center"
+                        BackgroundColor="Transparent"
+                        TextColor="White"
+                        CornerRadius="45"
+                        Padding="0"
+                        Command="{Binding GoBackCommand}" />
+
+            </StackLayout>
+
+
+            <!-- Profile Header Section -->
+            <Grid RowDefinitions="Auto" ColumnDefinitions="Auto, *, Auto" VerticalOptions="Start" Padding="20,0,0,0">
+                <!-- Profile Picture -->
+                <Frame HeightRequest="70" WidthRequest="70" CornerRadius="50"
+                       IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                    <Image Source="defaulticon.png" Aspect="AspectFill" />
+                </Frame>
+
+                <!-- User Info Section -->
+                <VerticalStackLayout Grid.Column="1" Margin="20,0" VerticalOptions="Center">
+                    <Label Text="Username" FontSize="22" FontAttributes="Bold" />
+                    <Label Text="Bio goes here. Something fun, short, and descriptive!"
+                           FontSize="14" TextColor="#666" />
+                </VerticalStackLayout>
+
+                <!-- Edit/Profile Action Button -->
+
+            </Grid>
+
+            <!-- Stats Section -->
+            <Grid ColumnDefinitions="*,*,*" HorizontalOptions="FillAndExpand">
+                <VerticalStackLayout Grid.Column="0" HorizontalOptions="Center">
+                    <Label Text="120" FontSize="18" FontAttributes="Bold" />
+                    <Label Text="Posts" FontSize="14" TextColor="#666" />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Grid.Column="1" HorizontalOptions="Center">
+                    <Label Text="450" FontSize="18" FontAttributes="Bold" />
+                    <Label Text="Followers" FontSize="14" TextColor="#666" />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Grid.Column="2" HorizontalOptions="Center">
+                    <Label Text="180" FontSize="18" FontAttributes="Bold" />
+                    <Label Text="Following" FontSize="14" TextColor="#666" />
+                </VerticalStackLayout>
+            </Grid>
+
+            <!-- Post Grid Section -->
+            <!--<Grid RowDefinitions="Auto" ColumnDefinitions="*,*,*" Spacing="2">
+                <Image Source="post1.jpg" Aspect="AspectFill" HeightRequest="120" WidthRequest="120" />
+                <Image Source="post2.jpg" Aspect="AspectFill" HeightRequest="120" WidthRequest="120" />
+                <Image Source="post3.jpg" Aspect="AspectFill" HeightRequest="120" WidthRequest="120" />
+
+                <Image Source="post4.jpg" Aspect="AspectFill" HeightRequest="120" WidthRequest="120" Grid.Row="1" />
+                <Image Source="post5.jpg" Aspect="AspectFill" HeightRequest="120" WidthRequest="120" Grid.Row="1" />
+                <Image Source="post6.jpg" Aspect="AspectFill" HeightRequest="120" WidthRequest="120" Grid.Row="1" />
+            </Grid>-->
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
