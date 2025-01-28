@@ -28,8 +28,14 @@ public class AddFriendViewModel : INotifyPropertyChanged
 
     private async Task GetUsersList(string query)
     {
-        var response = await _serviceProvider.CallWebApi<string, FriendAddInitializeResponse>
-            ("/FriendAdd/Search", HttpMethod.Post, query);
+        var request = new FriendSearchRequest
+        {
+            IdOfUser = 1, //////// ZLE ZLE  ZLE ZLE  ZLE ZLE  ZLE ZLE  ZLE ZLE  ZLE ZLE  ZLE ZLE 
+            Search = query,
+        };
+        
+        var response = await _serviceProvider.CallWebApi<FriendSearchRequest, FriendAddInitializeResponse>
+            ("/FriendAdd/Search", HttpMethod.Post, request);
         
         if (response.StatusCode == 200)
         {

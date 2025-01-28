@@ -23,42 +23,29 @@
 
             <Grid>
                 <StackLayout Orientation="Horizontal">
+                    <Frame VerticalOptions="Center" HeightRequest="40" WidthRequest="40" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" 
+                           Padding="0" Margin="20,0,0,0">
+                        <Image Source="{Binding UserInfo.AvatarSourceName}" Aspect="AspectFill"/>
 
-                    <Button Text="&#xe5c4;" FontFamily="GoogleFont" FontSize="24" VerticalOptions="Center" 
-                            BackgroundColor="Transparent"
-                            TextColor="White"
-                            CornerRadius="45"
-                            Padding="0"
-                            Command="{Binding ResetPassword}" />
-
-                </StackLayout>
-
-
-                <StackLayout HorizontalOptions="Start" Orientation="Horizontal" Margin="70,0,0,0">
+                    </Frame>
 
                     <Label Text="{Binding UserInfo.UserName}" TextColor="White" FontFamily="OpenSansSemibold" FontSize="18" 
-                   VerticalOptions="Center" 
-                   Margin="0,6,0,0"
-                   Padding="0,0,0,5"/>
-
-                    <Button Text="keyboard_arrow_down" FontFamily="GoogleFont" FontSize="24"
-                    WidthRequest="130"
-                    BackgroundColor="Transparent"
-                    TextColor="White"
-                    HorizontalOptions="End"
-                    Padding="100,0,0,0"
-                    Margin="-100,0,0,0"/>
+                            VerticalOptions="Center" Margin="10,0,0,0" />
 
                 </StackLayout>
 
-                <StackLayout>
-                    <Button Text="group_add" FontFamily="GoogleFont" FontSize="24"
-                            BackgroundColor="Transparent" TextColor="White" 
-                            Command="{Binding AddFriendPageCommand}" />
+                <StackLayout HorizontalOptions="Start" Orientation="Horizontal">
+                    
                 </StackLayout>
 
-
+                <!-- Aligning Add Friend button to the right side -->
+                <StackLayout HorizontalOptions="End" VerticalOptions="Center">
+                    <Button Text="person_add" FontFamily="GoogleFont" FontSize="24"
+                BackgroundColor="Transparent" TextColor="White" Padding="0" Margin="0,0,20,0"
+                Command="{Binding AddFriendPageCommand}" />
+                </StackLayout>
             </Grid>
+
 
             <Grid Grid.Row="1">
                 <Border Margin="15,0,15,0" 

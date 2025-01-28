@@ -48,6 +48,8 @@ namespace Voxerra
             builder.Services.AddSingleton<AddFriendViewModel>();
             builder.Services.AddSingleton<PublicProfileViewModel>();
             
+            builder.Services.AddSingleton<DataCenterService>();
+            
             return builder.Build();
         }
     }

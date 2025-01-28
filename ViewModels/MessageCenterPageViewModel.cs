@@ -12,13 +12,20 @@ namespace Voxerra.ViewModels
 
         private ServiceProvider _serviceProvider;
         private ChatHub _chatHub;
+        private DataCenterService _dataCenterService;
 
-        public MessageCenterPageViewModel(ServiceProvider serviceProvider, ChatHub chatHub) 
+        public MessageCenterPageViewModel(
+            ServiceProvider serviceProvider, 
+            ChatHub chatHub,
+            DataCenterService stateService) 
         {
 
-            UserInfo = new User();
-            UserFriends = new ObservableCollection<User>();
-            LastestMessages = new ObservableCollection<LastestMessage>();
+            _dataCenterService = stateService;
+            
+            UserInfo = _dataCenterService.UserInfo;
+            UserFriends = _dataCenterService.UserFriends;
+            LastestMessages = _dataCenterService.LastestMessages;
+
 
             RefreshCommand = new Command(() =>
             {
@@ -182,7 +189,7 @@ namespace Voxerra.ViewModels
         private ObservableCollection<LastestMessage> latestMessages;
         private bool isProcessing;
 
-        public User UserInfo
+        /*public User UserInfo
         {
             get { return userInfo; }
             set { userInfo = value; OnPropertyChanged(); }
@@ -197,7 +204,38 @@ namespace Voxerra.ViewModels
         {
             get { return latestMessages; }
             set { latestMessages = value; OnPropertyChanged(); }
+        }*/
+        
+        public User UserInfo
+        {
+            get => _dataCenterService.UserInfo;
+            set
+            {
+                _dataCenterService.UserInfo = value;
+                OnPropertyChanged();
+            }
         }
+
+        public ObservableCollection<User> UserFriends
+        {
+            get => _dataCenterService.UserFriends;
+            set
+            {
+                _dataCenterService.UserFriends = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public ObservableCollection<LastestMessage> LastestMessages
+        {
+            get => _dataCenterService.LastestMessages;
+            set
+            {
+                _dataCenterService.LastestMessages = value;
+                OnPropertyChanged();
+            }
+        }
+
 
         public bool IsProcessing
         {

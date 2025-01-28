@@ -7,7 +7,7 @@
              Title="AddFriend"
              Background="#0f0f0f">
 
-    <RefreshView Margin="10" IsRefreshing="{Binding IsProcessing}">
+    <RefreshView Margin="20" IsRefreshing="{Binding IsProcessing}">
         <StackLayout Padding="0,10,5,0">
 
             <!-- Row containing Button and Search Bar -->
@@ -38,29 +38,42 @@
                 </Border>
             </Grid>
 
-            <!-- CollectionView for User Search Results -->
             <CollectionView x:Name="UsersCollection" Margin="20"
                             ItemsSource="{Binding UserSearchList}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout Orientation="Vertical">
 
-                            <StackLayout Padding="20,0,0,0" Orientation="Horizontal">
+                            <StackLayout Padding="25,0,0,0" Orientation="Horizontal">
                                 <StackLayout.GestureRecognizers>
                                     <TapGestureRecognizer Command="{Binding Path=UserProfilePageCommand, Source={RelativeSource AncestorType={x:Type viewModel:AddFriendViewModel}}}"
                                                           CommandParameter="{Binding Id}"/>
                                 </StackLayout.GestureRecognizers>
-                                <!-- User Avatar -->
+
                                 <Frame HeightRequest="54" WidthRequest="54" CornerRadius="50"
                                        IsClippedToBounds="True" BorderColor="Black" Padding="0">
                                     <Image Source="{Binding AvatarSourceName}" Aspect="AspectFill" />
                                 </Frame>
 
-                                <!-- User Name -->
+                                
                                 <Label Text="{Binding UserName}"
                                        FontSize="16"
                                        VerticalOptions="Center"
-                                       Padding="15,0,0,0" />
+                                       Margin="15,0,0,0" />
+
+                                
+                                <!-- Button na konci -->
+                                <StackLayout HorizontalOptions="FillAndExpand"></StackLayout>
+
+
+                                <Button Text="person_add" FontFamily="GoogleFont" FontSize="24"
+                                        BackgroundColor="Transparent"
+                                        TextColor="White"
+                                        CornerRadius="45"
+                                        Margin="0,0,20,0"
+                                        CommandParameter="{Binding Id}"
+                                        Command="{Binding AddFriendCommand}" /> <!-- Naprogramovat -->
+
                             </StackLayout>
 
                             <StackLayout Padding="10">
