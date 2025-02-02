@@ -9,121 +9,83 @@
     <ScrollView>
         <VerticalStackLayout Spacing="20" Padding="20">
 
-            <!-- Remake -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
 
-            <Button Text="Go to Home" Command="{Binding NavigateCommand}" CommandParameter="HomePage" />
-            <Button Text="Go to Settings" Command="{Binding NavigateCommand}" CommandParameter="SettingsPage" />
+                <Button Text="&#xe5c4;" FontFamily="GoogleFont" FontSize="24" VerticalOptions="Center"
+BackgroundColor="Transparent"
+TextColor="White"
+CornerRadius="45"
+Padding="0"
+Command="{Binding GoBackCommand}" />
 
-          <!-- Remake -->
+                <Label Text="Notifications" FontSize="28" VerticalOptions="Center"/>
 
-                <Frame BackgroundColor="#1E1E1E" CornerRadius="10" Padding="15">
-                <HorizontalStackLayout VerticalOptions="Center">
-                    <ImageButton 
-                        Source="profile_placeholder.jpg" 
-                        WidthRequest="60" 
-                        HeightRequest="60" 
-                        CornerRadius="30"
-                        BackgroundColor="Transparent"/>
-
-                    <VerticalStackLayout Spacing="5" Margin="15,0,0,0">
-                        <Label Text="Profiles" TextColor="White" FontAttributes="Bold" FontSize="18"/>
-                        <Label Text="skrinjal.jpg" TextColor="#A9A9A9" FontSize="14"/>
-                    </VerticalStackLayout>
-                </HorizontalStackLayout>
-            </Frame>
+            </StackLayout>
 
 
+            <Grid Padding="15">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="45" />
+                    <RowDefinition Height="45" />
+                    <RowDefinition Height="45" />
+                    <RowDefinition Height="45" />
+                    <RowDefinition Height="45" />
+                </Grid.RowDefinitions>
 
-            <Label Text="Account settings" TextColor="White" FontSize="16" FontAttributes="Bold"/>
-            <Border
-                StrokeThickness="2.5"
-                StrokeShape="RoundRectangle 20">
-                <Border.Stroke>
-                    <LinearGradientBrush>
-                        <GradientStop Color="#b414de" Offset="0.0" />
-                        <GradientStop Color="#d127a5" Offset="1.0" />
-                    </LinearGradientBrush>
-                </Border.Stroke>
-                <Frame BackgroundColor="#1E1E1E" CornerRadius="10" Padding="15">
+                <Grid Grid.Row="0" ColumnDefinitions="50,*,*" Padding="15,0,25,0">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding AccountPageCommand}"/>
+                    </Grid.GestureRecognizers>
+                    <Label Grid.Column="0" Text="person" FontFamily="GoogleFont" FontSize="30" VerticalOptions="Center"/>
+                    <Label Grid.Column="1" Text="Name"  FontSize="18" VerticalOptions="Center"/>
+                    <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22" 
+VerticalOptions="Center" HorizontalOptions="End"/>
+                </Grid>
 
-                    <VerticalStackLayout Spacing="10">
+                <Grid Grid.Row="1" ColumnDefinitions="50,*,*" Padding="15,0,25,0">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding AccountPageCommand}"/>
+                    </Grid.GestureRecognizers>
+                    <Label Grid.Column="0" Text="mail" FontFamily="GoogleFont" FontSize="30" VerticalOptions="Center"/>
+                    <Label Grid.Column="1" Text="Email"  FontSize="18" VerticalOptions="Center"/>
+                    <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22" 
+VerticalOptions="Center" HorizontalOptions="End"/>
+                </Grid>
 
+                <Grid Grid.Row="2" ColumnDefinitions="50,*,*" Padding="15,0,25,0">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding AccountPageCommand}"/>
+                    </Grid.GestureRecognizers>
+                    <Label Grid.Column="0" Text="account_circle" FontFamily="GoogleFont" FontSize="30" VerticalOptions="Center"/>
+                    <Label Grid.Column="1" Text="Profile Picture"  FontSize="18" VerticalOptions="Center"/>
+                    <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22" 
+VerticalOptions="Center" HorizontalOptions="End"/>
+                </Grid>
 
-                        <HorizontalStackLayout VerticalOptions="Center">
-                            <Label Text="Password and security" TextColor="White" FontSize="14"/>
-                            <ImageButton Source="chevron_right.png" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand"/>
-                        </HorizontalStackLayout>
+                <Grid Grid.Row="3" ColumnDefinitions="50,*,*" Padding="15,0,25,0">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding AccountPageCommand}"/>
+                    </Grid.GestureRecognizers>
+                    <Label Grid.Column="0" Text="edit" FontFamily="GoogleFont" FontSize="30" VerticalOptions="Center"/>
+                    <Label Grid.Column="1" Text="Bio"  FontSize="18" VerticalOptions="Center"/>
+                    <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22" 
+VerticalOptions="Center" HorizontalOptions="End"/>
+                </Grid>
 
-                        <HorizontalStackLayout VerticalOptions="Center">
-                            <Label Text="Personal details" TextColor="White" FontSize="14"/>
-                            <ImageButton Source="chevron_right.png" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand"/>
-                        </HorizontalStackLayout>
+                <Grid Grid.Row="4" ColumnDefinitions="50,*,*" Padding="15,0,25,0">
+                    <Grid.GestureRecognizers>
+                        <!--<TapGestureRecognizer Command="{Binding Path=AccountPageCommand, Source={RelativeSource AncestorType={x:Type viewModel:MainSettingViewModel}}}" />-->
+                        <TapGestureRecognizer Command="{Binding AccountPageCommand}"/>
+                    </Grid.GestureRecognizers>
+                    <Label Grid.Column="0" Text="lock" FontFamily="GoogleFont" FontSize="30" VerticalOptions="Center"/>
+                    <Label Grid.Column="1" Text="Password"  FontSize="18" VerticalOptions="Center"/>
+                    <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22" 
+VerticalOptions="Center" HorizontalOptions="End"/>
+                </Grid>
 
-                        <HorizontalStackLayout VerticalOptions="Center">
-                            <Label Text="Your information and permissions" TextColor="White" FontSize="14"/>
-                            <ImageButton Source="chevron_right.png" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand"/>
-                        </HorizontalStackLayout>
-
-                        <HorizontalStackLayout VerticalOptions="Center">
-                            <Label Text="Ad preferences" TextColor="White" FontSize="14"/>
-                            <ImageButton Source="chevron_right.png" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand"/>
-                        </HorizontalStackLayout>
-
-                        <HorizontalStackLayout VerticalOptions="Center">
-                            <Label Text="Meta Pay" TextColor="White" FontSize="14"/>
-                            <ImageButton Source="chevron_right.png" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand"/>
-                        </HorizontalStackLayout>
-                    </VerticalStackLayout>
-                </Frame>
-            </Border>
-                
-            
-            <Label Text="App Settings" TextColor="White" FontSize="16" FontAttributes="Bold"/>
-            <Border
-                StrokeThickness="2.5"
-                StrokeShape="RoundRectangle 20">
-                <Border.Stroke>
-                    <LinearGradientBrush>
-                        <GradientStop Color="#b414de" Offset="0.0" />
-                        <GradientStop Color="#d127a5" Offset="1.0" />
-                    </LinearGradientBrush>
-                </Border.Stroke>
-                <Frame BackgroundColor="#1E1E1E" CornerRadius="10" Padding="15">
-                    <VerticalStackLayout Spacing="10">
-
-
-                        <HorizontalStackLayout VerticalOptions="Center">
-                            <Label Text="Notification" TextColor="Red" FontSize="14"/>
-                            <ImageButton Source="chevron_right.png" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand"/>
-                        </HorizontalStackLayout>
-
-                    </VerticalStackLayout>
-                </Frame>
-            </Border>
-
-            
-            <Label Text="Login settings" TextColor="White" FontSize="16" FontAttributes="Bold"/>
-            <Border
-                StrokeThickness="2.5"
-                StrokeShape="RoundRectangle 20">
-                <Border.Stroke>
-                    <LinearGradientBrush>
-                        <GradientStop Color="#b414de" Offset="0.0" />
-                        <GradientStop Color="#d127a5" Offset="1.0" />
-                    </LinearGradientBrush>
-                </Border.Stroke>
-                <Frame BackgroundColor="#1E1E1E" CornerRadius="10" Padding="15">
-                    <VerticalStackLayout Spacing="10">
+            </Grid>
 
 
-                        <HorizontalStackLayout VerticalOptions="Center">
-                            <Label Text="Log out" TextColor="Red" FontSize="14"/>
-                            <ImageButton Source="chevron_right.png" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand"/>
-                        </HorizontalStackLayout>
-
-                    </VerticalStackLayout>
-                </Frame>
-            </Border>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

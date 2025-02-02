@@ -86,6 +86,9 @@
 	  <MauiXaml Update="Pages\ForgotPasswordPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Pages\FriendRequestPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\LoginPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -95,14 +98,16 @@
 	  <MauiXaml Update="Pages\ProfilePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Pages\AddFriendPage.xaml">
+	    <SubType>Designer</SubType>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\RegisterConfirmationPage.xaml">
+	    <SubType>Designer</SubType>
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\RegisterPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Pages\AddFriendPage.xaml">
 	    <SubType>Designer</SubType>
+	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
 
@@ -114,6 +119,20 @@
 	<ItemGroup>
 	  <Compile Update="Pages\AddFriendPage.xaml.cs">
 	    <DependentUpon>AddFriendPage.xaml</DependentUpon>
+	    <SubType>Code</SubType>
+	  </Compile>
+	  <Compile Update="Pages\Settings\AccountDetailsPage.xaml.cs">
+	    <DependentUpon>AccountDetailsPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\Settings\SecurityPage.xaml.cs">
+	    <DependentUpon>SecurityPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\RegisterConfirmationPage.xaml.cs">
+	    <DependentUpon>RegisterConfirmationPage.xaml</DependentUpon>
+	    <SubType>Code</SubType>
+	  </Compile>
+	  <Compile Update="Pages\RegisterPage.xaml.cs">
+	    <DependentUpon>RegisterPage.xaml</DependentUpon>
 	    <SubType>Code</SubType>
 	  </Compile>
 	</ItemGroup>

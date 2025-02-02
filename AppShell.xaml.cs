@@ -1,4 +1,5 @@
-﻿namespace Voxerra
+﻿
+namespace Voxerra
 {
     public partial class AppShell : Shell
     {
@@ -6,20 +7,26 @@
         {
             InitializeComponent();
 
-            Routing.RegisterRoute("MessageCenterPage", typeof(MessageCenterPage));
-            Routing.RegisterRoute("ChatPage", typeof(ChatPage));
             Routing.RegisterRoute("LoginPage", typeof(LoginPage));
             Routing.RegisterRoute("RegisterPage", typeof(RegisterPage));
             Routing.RegisterRoute("RegisterConfirmationPage", typeof(RegisterConfirmationPage));
+            Routing.RegisterRoute("ForgotPasswordPage", typeof(ForgotPasswordPage));
+
+            Routing.RegisterRoute("MessageCenterPage", typeof(MessageCenterPage));
+            Routing.RegisterRoute("ChatPage", typeof(ChatPage));
+            
+            Routing.RegisterRoute("AddFriendPage", typeof(AddFriendPage));  
+            Routing.RegisterRoute("PublicProfilePage", typeof(PublicProfilePage));
+
             Routing.RegisterRoute("ProfilePage", typeof(ProfilePage));
-            Routing.RegisterRoute("ForgotPassword", typeof(ForgotPasswordPage));
-            Routing.RegisterRoute("AddFriend", typeof(AddFriendPage));  
-            Routing.RegisterRoute("PublicProfile", typeof(PublicProfilePage));
+            Routing.RegisterRoute("FriendRequestPage", typeof(FriendRequestPage));
+            Routing.RegisterRoute("MainSettingPage", typeof(MainSettingPage));
 
-            GoToLoginPage();
-            //this.CurrentItem = loginPage;
 
-            // _loginStateService = loginStateService;
+            Routing.RegisterRoute("AccountDetailsPage", typeof(AccountDetailsPage));
+            Routing.RegisterRoute("NotificationsPage", typeof(NotificationsPage));
+            Routing.RegisterRoute("SecurityPage", typeof(SecurityPage));
+
 
             /* pozriet ci SecureStorage ma RefreshToken(dlhodoby)
 
@@ -39,10 +46,29 @@
 
         }
 
-        private async void GoToLoginPage()
+        protected override void OnNavigating(ShellNavigatingEventArgs args)
+        {
+            base.OnNavigating(args);
+
+            // Hide navigation bar for Login, Register, and ForgotPassword pages
+            if (args.Target.Location.OriginalString.Contains("LoginPage") ||
+                args.Target.Location.OriginalString.Contains("RegisterPage") ||
+                args.Target.Location.OriginalString.Contains("ForgotPasswordPage"))
+            {
+                Shell.SetNavBarIsVisible(this, false);
+            }
+            else
+            {
+                // Show navigation bar for all other pages
+                Shell.SetNavBarIsVisible(this, true);
+            }
+        }
+
+        
+        /*private async void GoToLoginPage()
         {
             await GoToAsync("//LoginPage");
-        }
+        }*/
 
     }
 }

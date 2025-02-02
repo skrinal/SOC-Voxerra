@@ -3,12 +3,134 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Voxerra.Pages.ProfilePage"
+             xmlns:viewModels="clr-namespace:Voxerra.ViewModels"
              Title="Profile Settings">
 
-    <ScrollView>
+    <RefreshView IsRefreshing="{Binding IsProcessing}">
+        <VerticalStackLayout Padding="15" Spacing="20">
+
+            
+            <Grid>
+                <Frame HeightRequest="80" WidthRequest="80" CornerRadius="50"
+                   IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                    <Image Source="{Binding AvatarSourceName}" Aspect="AspectFill" />
+                </Frame>
+            </Grid>
+
+
+
+            <VerticalStackLayout VerticalOptions="Center">
+                <Label Text="{Binding UserName}" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" />
+                <Label Text="{Binding CreationYear}" FontSize="12" TextColor="#666" HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+
+            <Grid ColumnDefinitions="*,70,*" HorizontalOptions="FillAndExpand">
+
+                <VerticalStackLayout Grid.Column="0" HorizontalOptions="End">
+                    <Label Text="{Binding FriendsCount}" FontSize="20" Padding="0,0,0,3" FontAttributes="Bold" HorizontalOptions="Center" />
+                    <Label Text="Friends" FontSize="12" TextColor="#666" />
+                </VerticalStackLayout>
+
+                <HorizontalStackLayout Grid.Column="1" HorizontalOptions="Center"  Padding="0,8,0,8">
+                    <Border StrokeThickness="0.5">
+                        <Border.Stroke>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#b414de" Offset="0.0" />
+                                <GradientStop Color="#99207a" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Border.Stroke>
+                    </Border>
+                </HorizontalStackLayout>
+
+                <VerticalStackLayout Grid.Column="2" HorizontalOptions="Start">
+                    <Label Text="Offline" FontSize="20" Padding="0,0,0,3" FontAttributes="Bold" HorizontalOptions="Center" />
+                    <Label Text="Status" FontSize="12" TextColor="#666" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+
+            </Grid>
+
+            <Grid ColumnDefinitions="*,20,*" HorizontalOptions="FillAndExpand" >
+                <VerticalStackLayout Grid.Column="0" HorizontalOptions="End" VerticalOptions="Center">
+                    <Frame
+                    Padding="0"
+                    CornerRadius="12"
+                    IsClippedToBounds="True"
+                    HasShadow="True">
+                        <Frame.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#791f94" Offset="0.0" />
+                                <GradientStop Color="#3e2099" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Frame.Background>
+                        <Button
+                        
+                        WidthRequest="130"
+                        CornerRadius="25"
+                        Text="Friend Requests"
+                        FontSize="12"
+                        TextColor="White"
+                        BackgroundColor="Transparent"
+                        Command="{Binding FriendRequestPageCommand}"/>
+                    </Frame>
+                </VerticalStackLayout>
+
+
+                <VerticalStackLayout Grid.Column="2" HorizontalOptions="Start" VerticalOptions="Center"  >
+                    <Frame
+                    CornerRadius="12"
+                    Padding="0"
+                    IsClippedToBounds="True"
+                    HasShadow="True">
+                        <Frame.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#3e2099" Offset="0.0" />
+                                <GradientStop Color="#d127a5" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Frame.Background>
+                        <Button
+                        Padding="0"
+                        WidthRequest="130"
+                        CornerRadius="25"
+                        Text="Settings"
+                        FontSize="14"
+                        TextColor="White"
+                        BackgroundColor="Transparent"
+                        Command="{Binding EditProfileCommand}"/>
+                    </Frame>
+                </VerticalStackLayout>
+
+            </Grid>
+
+            <Grid HorizontalOptions="FillAndExpand">
+
+                <VerticalStackLayout Padding="15,0,15,0" HorizontalOptions="Start">
+                    <Label Text="About me" FontSize="22" Padding="0,0,0,5" FontAttributes="Bold" HorizontalOptions="Start" />
+                    <Label Text="{Binding Bio}" 
+                       FontSize="12" TextColor="#666" />
+                </VerticalStackLayout>
+
+            </Grid>
+
+
+
+            <!-- Post Grid Section -->
+            <!--<Grid RowDefinitions="Auto" ColumnDefinitions="*,*,*" Spacing="2">
+            <Image Source="post1.jpg" Aspect="AspectFill" HeightRequest="120" WidthRequest="120" />
+            <Image Source="post2.jpg" Aspect="AspectFill" HeightRequest="120" WidthRequest="120" />
+            <Image Source="post3.jpg" Aspect="AspectFill" HeightRequest="120" WidthRequest="120" />
+
+            <Image Source="post4.jpg" Aspect="AspectFill" HeightRequest="120" WidthRequest="120" Grid.Row="1" />
+            <Image Source="post5.jpg" Aspect="AspectFill" HeightRequest="120" WidthRequest="120" Grid.Row="1" />
+            <Image Source="post6.jpg" Aspect="AspectFill" HeightRequest="120" WidthRequest="120" Grid.Row="1" />
+        </Grid>-->
+        </VerticalStackLayout>
+    </RefreshView>
+
+    <!--<ScrollView>
         <VerticalStackLayout Spacing="20" Padding="20">
 
-            <!-- Profile Section -->
+            --><!-- Profile Section --><!--
 
             <Frame BackgroundColor="#1E1E1E" CornerRadius="10" Padding="15">
                 <HorizontalStackLayout VerticalOptions="Center">
@@ -130,5 +252,5 @@
                 </Frame>
             </Border>
         </VerticalStackLayout>
-    </ScrollView>
+    </ScrollView>-->
 </ContentPage>

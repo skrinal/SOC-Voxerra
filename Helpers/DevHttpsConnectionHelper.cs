@@ -81,9 +81,8 @@
 //#endif
 //    }
 //}
-using System.Net.Http;
-using System.Net.Security;
 
+/*using System.Net.Security;
 namespace Voxerra
 {
     public class DevHttpsConnectionHelper
@@ -99,11 +98,11 @@ namespace Voxerra
 
         public string DevServerName =>
 #if WINDOWS
-            //"voxerra.tplinkdns.com"; // Use your router's domain
-            "localhost";
+            "voxerra.tplinkdns.com"; // Use your router's domain
+            //"localhost";
 #elif ANDROID
-            //"voxerra.tplinkdns.com"; // Use your router's domain
-            "10.0.2.2";
+            "voxerra.tplinkdns.com"; // Use your router's domain
+            //"10.0.2.2";
 #else
         throw new PlatformNotSupportedException("Only Windows and Android currently supported.");
 #endif
@@ -165,4 +164,129 @@ namespace Voxerra
         }
 #endif
     }
+}*/
+
+
+using System.Net;
+using System.Net.Security;
+using System.Security.Cryptography.X509Certificates;
+
+#if ANDROID
+using Xamarin.Android.Net;
+using Javax.Net.Ssl;
+using Java.Lang;
+#endif
+
+namespace Voxerra.Helpers
+{
+    public class DevHttpsConnectionHelper
+    {
+        private readonly Lazy<HttpClient> _lazyHttpClient;
+
+        public DevHttpsConnectionHelper(int sslPort)
+        {
+            SslPort = sslPort;
+            DevServerRootUrl = $"https://{DevServerName}:{SslPort}";
+            _lazyHttpClient = new Lazy<HttpClient>(() => new HttpClient(GetPlatformMessageHandler()));
+        }
+
+        public int SslPort { get; }
+        public string DevServerName =>
+#if WINDOWS
+            "ec2-51-20-3-224.eu-north-1.compute.amazonaws.com"; // Use your router's domain
+#elif ANDROID
+            "ec2-51-20-3-224.eu-north-1.compute.amazonaws.com"; // Use your router's domain
+#else
+            throw new PlatformNotSupportedException("Only Windows and Android currently supported.");
+#endif
+
+        public string DevServerRootUrl { get; }
+
+        public HttpClient HttpClient => _lazyHttpClient.Value;
+
+        public HttpMessageHandler? GetPlatformMessageHandler()
+        {
+#if WINDOWS
+            return new HttpClientHandler
+            {
+                ServerCertificateCustomValidationCallback = ValidateServerCertificate,
+                UseProxy = false,
+                AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate
+            };
+#elif ANDROID
+            var handler = new CustomAndroidMessageHandler();
+            handler.ServerCertificateCustomValidationCallback = ValidateServerCertificate;
+            return handler;
+#else
+            throw new PlatformNotSupportedException("Only Windows and Android currently supported.");
+#endif
+        }
+
+        private bool ValidateServerCertificate(
+            HttpRequestMessage message,
+            X509Certificate2? cert,
+            X509Chain? chain,
+            SslPolicyErrors errors)
+        {
+            try
+            {
+                if (cert == null)
+                    return false;
+
+                if (cert.Issuer.Equals("CN=localhost", StringComparison.OrdinalIgnoreCase) ||
+                    cert.Subject.Equals("CN=localhost", StringComparison.OrdinalIgnoreCase) ||
+                    cert.Issuer.Equals("CN=ec2-51-20-3-224.eu-north-1.compute.amazonaws.com", StringComparison.OrdinalIgnoreCase) ||
+                    cert.Subject.Equals("CN=ec2-51-20-3-224.eu-north-1.compute.amazonaws.com", StringComparison.OrdinalIgnoreCase))
+                {
+                    Console.WriteLine("Self-signed certificate accepted.");
+                    return true;
+                }
+
+                if (errors == SslPolicyErrors.None)
+                {
+                    Console.WriteLine("Valid certificate accepted.");
+                    return true;
+                }
+
+                Console.WriteLine($"Certificate validation failed: {errors}");
+                return false;
+            }
+            catch (System.Exception ex)
+            {
+                Console.WriteLine($"Error during certificate validation: {ex.Message}");
+                return false;
+            }
+        }
+
+#if ANDROID
+        internal sealed class CustomAndroidMessageHandler : AndroidMessageHandler
+        {
+            protected override IHostnameVerifier GetSSLHostnameVerifier(HttpsURLConnection connection)
+                => new CustomHostnameVerifier();
+
+            private sealed class CustomHostnameVerifier : Java.Lang.Object, IHostnameVerifier
+            {
+                public bool Verify(string? hostname, ISSLSession? session)
+                {
+                    try
+                    {
+                        if (string.IsNullOrEmpty(hostname) || session == null)
+                            return false;
+
+                        if (hostname == "10.0.2.2" && session.PeerPrincipal?.Name == "CN=localhost")
+                            return true;
+
+                        return HttpsURLConnection.DefaultHostnameVerifier.Verify(hostname, session);
+                    }
+                    catch (System.Exception ex)
+                    {
+                        Console.WriteLine($"Error during hostname verification: {ex.Message}");
+                        return false;
+                    }
+                }
+            }
+        }
+#endif
+    }
 }
+

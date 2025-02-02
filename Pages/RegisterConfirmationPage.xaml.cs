@@ -1,3 +1,4 @@
+
 namespace Voxerra.Pages;
 
 public partial class RegisterConfirmationPage : ContentPage

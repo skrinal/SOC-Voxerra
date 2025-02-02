@@ -29,8 +29,8 @@ namespace Voxerra.ViewModels
                 });
             });
 
+            RegisterPageCommand = new Command(RegisterPage);
             GoBackCommand = new Command(OnGoBack);
-
 
         }
 
@@ -64,7 +64,19 @@ namespace Voxerra.ViewModels
         }
         private async void OnGoBack()
         {
-            await Shell.Current.Navigation.PopAsync();
+            await Shell.Current.GoToAsync($"..");
+        }
+        
+        private async void RegisterPage()
+        {
+            try
+            {
+                await Shell.Current.GoToAsync($"RegisterPage");
+            }
+            catch (Exception ex)
+            {
+                await AppShell.Current.DisplayAlert("Voxerra", ex.Message, "OK");
+            }
         }
 
 
@@ -82,6 +94,7 @@ namespace Voxerra.ViewModels
         }
         
         public ICommand ResetPasswordCommand { get; set; }
+        public ICommand RegisterPageCommand { get; set; }
         public ICommand GoBackCommand { get; set; }
     }
 }

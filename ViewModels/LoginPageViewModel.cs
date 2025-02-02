@@ -108,7 +108,7 @@ namespace Voxerra.ViewModels
         {
             try
             {
-                await Shell.Current.GoToAsync($"ForgotPassword");
+                await Shell.Current.GoToAsync($"ForgotPasswordPage");
             }
             catch (Exception ex)
             {

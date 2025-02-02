@@ -19,6 +19,7 @@ namespace Voxerra.ViewModels
 
         private ServiceProvider _serviceProvider;
         private ChatHub _chatHub;
+        private bool isLoadingOlderMessages = false;
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
@@ -33,10 +34,10 @@ namespace Voxerra.ViewModels
             _chatHub.AddReceivedMessageHandler(OnReceiveMessage);
             _chatHub.Connect();
 
-            BackToHome = new Command(async () =>
-            {
-                await Shell.Current.GoToAsync($"//MainPage");
-            });
+            
+            LoadOlderMessagesCommand = new Command(async () => await GetOlderMessages());
+            
+            BackToHome = new Command(async () => { await Shell.Current.GoToAsync($"//MainPage"); });
 
             SendMessageCommand = new Command(async () =>
             {
@@ -62,12 +63,10 @@ namespace Voxerra.ViewModels
                     await AppShell.Current.DisplayAlert("Voxerra", ex.Message, "OK");
                 }
             });
-
         }
 
-        
 
-        async Task GetMessages()
+        public async Task GetMessages()
         {
             var request = new MessageInitializeRequest
             {
@@ -81,6 +80,13 @@ namespace Voxerra.ViewModels
             {
                 FriendInfo = response.FriendInfo;
                 Messages = new ObservableCollection<Message>(response.Messages);
+                //OnPropertyChanged(nameof(Messages));
+
+                // MainThread.BeginInvokeOnMainThread(() =>
+                // {
+                //     MessagesCollectionView?.ScrollTo(Messages, position: ScrollToPosition.End, animate: false);
+                // });
+                
             }
             else
             {
@@ -88,6 +94,48 @@ namespace Voxerra.ViewModels
             }
         }
 
+        public async Task GetOlderMessages()
+        {
+            if (Messages.Count == 0) return;
+            
+            isLoadingOlderMessages = true;
+            IsRefreshing = true;
+            
+            var olderMessages = Messages.FirstOrDefault();
+            if (olderMessages == null) return;
+
+            var request = new OldMessagesRequest
+            {
+                FromUserId = FromUserId,
+                ToUserId = toUserId,
+                LastMessageId = olderMessages.Id,
+            };
+            
+            var response = await _serviceProvider.CallWebApi<OldMessagesRequest, OldMessagesResponse>
+                ("/Message/OldMessages", HttpMethod.Post, request);
+
+            if (response.StatusCode == 200 && response.Messages.Any())
+            {
+                var firstVisibleMessage = Messages.First();
+                
+                foreach (var msg in response.Messages)
+                {
+                    messages.Insert(0, msg);
+                }
+                
+                OnPropertyChanged(nameof(Messages));
+                
+                MainThread.BeginInvokeOnMainThread(() =>
+                {
+                    MessagesCollectionView?.ScrollTo(firstVisibleMessage, position: ScrollToPosition.Start, animate: false);
+                });
+                
+                
+            }
+            isLoadingOlderMessages = false;
+            IsRefreshing = false;
+        }
+        
         public void Initialize()
         {
             Task.Run(async () =>
@@ -96,15 +144,10 @@ namespace Voxerra.ViewModels
                 await GetMessages();
             }).GetAwaiter().OnCompleted(() =>
             {
-                IsRefreshing = false;
-
+                IsRefreshing = false; 
             });
         }
-
-        public async Task LoadMessagesAsync()
-        {
-            await GetMessages();
-        }
+        
 
         private void OnReceiveMessage(int fromUserId, string message)
         {
@@ -123,42 +166,81 @@ namespace Voxerra.ViewModels
         private ObservableCollection<Message> messages;
         private bool isRefreshing;
         private string message;
+        
+        private CollectionView messagesCollectionView;
+        public CollectionView MessagesCollectionView
+        {
+            get => messagesCollectionView;
+            set
+            {
+                messagesCollectionView = value;
+                OnPropertyChanged();
+            }
+        }
+
+        
         public int FromUserId
         {
             get { return fromUserId; }
-            set { fromUserId = value; OnPropertyChanged(); }
+            set
+            {
+                fromUserId = value;
+                OnPropertyChanged();
+            }
         }
 
         public int ToUserId
         {
             get { return toUserId; }
-            set { toUserId = value; OnPropertyChanged(); }
+            set
+            {
+                toUserId = value;
+                OnPropertyChanged();
+            }
         }
 
         public User FriendInfo
         {
             get { return friendInfo; }
-            set { friendInfo = value; OnPropertyChanged(); }
+            set
+            {
+                friendInfo = value;
+                OnPropertyChanged();
+            }
         }
+
         public ObservableCollection<Message> Messages
         {
             get { return messages; }
-            set { messages = value; OnPropertyChanged(); }
+            set
+            {
+                messages = value;
+                OnPropertyChanged();
+            }
         }
+
         public bool IsRefreshing
         {
             get { return isRefreshing; }
-            set { isRefreshing = value; OnPropertyChanged(); }
+            set
+            {
+                isRefreshing = value;
+                OnPropertyChanged();
+            }
         }
 
         public string Message
         {
             get { return message; }
-            set { message = value; OnPropertyChanged(); }
+            set
+            {
+                message = value;
+                OnPropertyChanged();
+            }
         }
 
-        public ICommand SendMessageCommand {  get; set; }
+        public ICommand SendMessageCommand { get; set; }
+        public ICommand LoadOlderMessagesCommand { get; set; }
         public ICommand BackToHome { get; set; }
     }
-    
 }

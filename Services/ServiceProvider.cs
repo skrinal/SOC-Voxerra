@@ -23,7 +23,7 @@
 
         public ServiceProvider()
         {
-            _devSslHelper = new DevHttpsConnectionHelper(sslPort: 7264);
+            _devSslHelper = new DevHttpsConnectionHelper(sslPort: 42069);
         }
 
         //public async Task <AuthenticateResponse> Authenticate ( AuthenticateRequest request)
@@ -117,7 +117,7 @@
         //        await SecureStorage.SetAsync(RefreshTokenKey, refreshToken);
         //   }
         //   catch { }
-            
+
         //}
 
 
@@ -143,8 +143,8 @@
 
         //        var result = JsonConvert.DeserializeObject<TResponse>(responseContent);
         //        result.StatusCode = (int)response.StatusCode;
-                
-                
+
+
         //        return result;
         //    }
         //    catch (Exception ex)
@@ -155,19 +155,10 @@
         //        return result;
         //    }
         //}
-        public async Task<TResponse> CallWebApi<TRequest, TResponse>(
-   string apiUrl, HttpMethod httpMethod, TRequest request) where TResponse : BaseResponse
-        {
-            // Check for null values
-            if (_devSslHelper == null)
-            {
-                throw new InvalidOperationException("DevSslHelper is not initialized.");
-            }
-            //if (string.IsNullOrEmpty(_accesToken))
-            //{
-            //    throw new InvalidOperationException("Access token is null or empty.");
-            //}
 
+        public async Task<TResponse> CallWebApi<TRequest, TResponse>(
+    string apiUrl, HttpMethod httpMethod, TRequest request) where TResponse : BaseResponse, new()
+        {
             var httpRequestMessage = new HttpRequestMessage
             {
                 Method = httpMethod,
@@ -185,6 +176,7 @@
             try
             {
                 var response = await _devSslHelper.HttpClient.SendAsync(httpRequestMessage);
+
                 if (response == null)
                 {
                     throw new InvalidOperationException("The HTTP response is null.");
@@ -194,33 +186,124 @@
                                       ? await response.Content.ReadAsStringAsync()
                                       : string.Empty;
 
-                var result = Activator.CreateInstance<TResponse>();
-                if (result == null)
+                var result = new TResponse
                 {
-                    throw new InvalidOperationException("Failed to create an instance of TResponse.");
-                }
-
-                result.StatusCode = (int)response.StatusCode;
-                result.StatusMessage = response.IsSuccessStatusCode ? "Success" : "Failure";
+                    StatusCode = (int)response.StatusCode,
+                    StatusMessage = response.IsSuccessStatusCode ? "Success" : "Failure"
+                };
 
                 if (!string.IsNullOrEmpty(responseContent))
                 {
-                    JsonConvert.PopulateObject(responseContent, result); // Populate the result object
+                    // Check if the response content is an array
+                    if (IsArrayResponse(responseContent))
+                    {
+                        var arrayResult = JsonConvert.DeserializeObject<List<object>>(responseContent);
+                        PopulateArrayResult(result, arrayResult);
+                    }
+                    else
+                    {
+                        JsonConvert.PopulateObject(responseContent, result);
+                    }
                 }
 
                 return result;
             }
             catch (Exception ex)
             {
-                var result = Activator.CreateInstance<TResponse>();
-                if (result != null)
+                var result = new TResponse
                 {
-                    result.StatusCode = 500;
-                    result.StatusMessage = ex.Message;
-                }
+                    StatusCode = 500,
+                    StatusMessage = ex.Message
+                };
                 return result;
             }
         }
+
+        private bool IsArrayResponse(string responseContent)
+        {
+            return responseContent.StartsWith("[") && responseContent.EndsWith("]");
+        }
+
+        private void PopulateArrayResult(object result, List<object> arrayResult)
+        {
+            var properties = result.GetType().GetProperties();
+            foreach (var property in properties)
+            {
+                if (property.PropertyType.IsGenericType && property.PropertyType.GetGenericTypeDefinition() == typeof(List<>))
+                {
+                    var itemType = property.PropertyType.GetGenericArguments()[0];
+                    var listType = typeof(List<>).MakeGenericType(itemType);
+                    var listInstance = Activator.CreateInstance(listType);
+
+                    var addMethod = listType.GetMethod("Add");
+                    foreach (var item in arrayResult)
+                    {
+                        var deserializedItem = JsonConvert.DeserializeObject(JsonConvert.SerializeObject(item), itemType);
+                        addMethod.Invoke(listInstance, new[] { deserializedItem });
+                    }
+
+                    property.SetValue(result, listInstance);
+                }
+            }
+        }
+
+
+   //     public async Task<TResponse> CallWebApi<TRequest, TResponse>(
+   //string apiUrl, HttpMethod httpMethod, TRequest request) where TResponse : BaseResponse
+   //     {
+   //         var httpRequestMessage = new HttpRequestMessage
+   //         {
+   //             Method = httpMethod,
+   //             RequestUri = new Uri(_devSslHelper.DevServerRootUrl + apiUrl),
+   //             Headers = { Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", _accesToken) }
+   //         };
+
+   //         if (request != null)
+   //         {
+   //             string jsonContent = JsonConvert.SerializeObject(request);
+   //             var httpContent = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+   //             httpRequestMessage.Content = httpContent;
+   //         }
+
+   //         try
+   //         {
+   //             var response = await _devSslHelper.HttpClient.SendAsync(httpRequestMessage);
+   //             if (response == null)
+   //             {
+   //                 throw new InvalidOperationException("The HTTP response is null.");
+   //             }
+
+   //             var responseContent = response.Content != null
+   //                                   ? await response.Content.ReadAsStringAsync()
+   //                                   : string.Empty;
+
+   //             var result = Activator.CreateInstance<TResponse>();
+   //             if (result == null)
+   //             {
+   //                 throw new InvalidOperationException("Failed to create an instance of TResponse.");
+   //             }
+
+   //             result.StatusCode = (int)response.StatusCode;
+   //             result.StatusMessage = response.IsSuccessStatusCode ? "Success" : "Failure";
+
+   //             if (!string.IsNullOrEmpty(responseContent))
+   //             {
+   //                 JsonConvert.PopulateObject(responseContent, result); // Populate the result object
+   //             }
+
+   //             return result;
+   //         }
+   //         catch (Exception ex)
+   //         {
+   //             var result = Activator.CreateInstance<TResponse>();
+   //             if (result != null)
+   //             {
+   //                 result.StatusCode = 500;
+   //                 result.StatusMessage = ex.Message;
+   //             }
+   //             return result;
+   //         }
+   //     }
 
     }
 }

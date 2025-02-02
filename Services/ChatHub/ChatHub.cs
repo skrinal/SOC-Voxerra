@@ -1,11 +1,4 @@
 ﻿
-using Microsoft.AspNetCore.SignalR.Client;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Voxerra.Services.ChatHub
 {
     public class ChatHub
@@ -17,7 +10,7 @@ namespace Voxerra.Services.ChatHub
         public ChatHub(ServiceProvider serviceProvider)
         {
             _serviceProvider = serviceProvider;
-            var devSslHelper = new DevHttpsConnectionHelper(sslPort: 7264);
+            var devSslHelper = new DevHttpsConnectionHelper(42069);
             hubConnection = new HubConnectionBuilder()
                 .WithUrl(devSslHelper.DevServerRootUrl + "/ChatHub", options =>
                 {

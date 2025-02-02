@@ -8,4 +8,11 @@ public partial class ProfilePage : ContentPage
 
         this.BindingContext = viewModel;
     }
+
+	protected override void OnAppearing()
+    {
+        base.OnAppearing();
+
+        (BindingContext as ProfilePageViewModel)?.Initialize();
+    }
 }

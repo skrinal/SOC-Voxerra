@@ -5,8 +5,10 @@
         public int Id { get; set; }
         public string UserName { get; set; } = null!;
         public string AvatarSourceName { get; set; } = null!;
+        public string Bio { get; set; } = null!;
         public bool IsOnline { get; set; }
         public DateTime LastLogonTime { get; set; }
-        public string AwayDuration { get; set; } = null!;
+        public string CreationYear { get; set; }
+
     }
 }

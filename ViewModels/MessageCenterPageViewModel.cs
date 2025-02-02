@@ -22,9 +22,9 @@ namespace Voxerra.ViewModels
 
             _dataCenterService = stateService;
             
-            UserInfo = _dataCenterService.UserInfo;
-            UserFriends = _dataCenterService.UserFriends;
-            LastestMessages = _dataCenterService.LastestMessages;
+            UserInfo = new User();
+            UserFriends = new ObservableCollection<User>();
+            LatestMessages = new ObservableCollection<LastestMessage>();
 
 
             RefreshCommand = new Command(() =>
@@ -41,7 +41,7 @@ namespace Voxerra.ViewModels
 
             OpenChatPageCommand = new Command<int>(async (param) =>
             {
-                await Shell.Current.GoToAsync($"//ChatPage?fromUserId={UserInfo.Id}&toUserId={param}");
+                await Shell.Current.GoToAsync($"ChatPage?fromUserId={UserInfo.Id}&toUserId={param}");
             });
 
             AddFriendPageCommand = new Command(() =>
@@ -66,7 +66,7 @@ namespace Voxerra.ViewModels
         {
             try
             {
-                await Shell.Current.GoToAsync("//AddFriendPage");
+                await Shell.Current.GoToAsync("AddFriendPage");
             }
             catch (Exception ex)
             {
@@ -80,9 +80,14 @@ namespace Voxerra.ViewModels
            
             if (response.StatusCode == 200)
             {
-                UserInfo = response.User;
-                UserFriends = new ObservableCollection<User>(response.UserFriends);
-                LastestMessages =  new ObservableCollection<LastestMessage>(response.LastestMessages);
+                userInfo = response.User;
+                userFriends = new ObservableCollection<User>(response.UserFriends);
+                latestMessages =  new ObservableCollection<LastestMessage>(response.LastestMessages);
+                
+
+                OnPropertyChanged(nameof(UserInfo));
+                OnPropertyChanged(nameof(UserFriends));
+                OnPropertyChanged(nameof(LatestMessages));
             }
             else
             {
@@ -90,8 +95,6 @@ namespace Voxerra.ViewModels
          
             }
         }
-
-
         public void ApplyQueryAttributes(IDictionary<string, object> query)
         {
             if (query == null || query.Count == 0) return;
@@ -100,17 +103,43 @@ namespace Voxerra.ViewModels
 
             Initialize();
         }
+        
 
+        public async Task SynchronizeWithDataCenterAsync()
+        {
+            // Ensure data exists before synchronization
+            if (UserInfo == null || UserFriends == null || LatestMessages == null)
+            {
+                await AppShell.Current.DisplayAlert("Error", "Data is not initialized for synchronization.", "OK");
+                return;
+            }
+
+            // Perform synchronization on the main thread to avoid threading conflicts
+            MainThread.BeginInvokeOnMainThread(() =>
+            {
+                _dataCenterService.UserInfo = UserInfo;
+                _dataCenterService.UserFriends = new ObservableCollection<User>(UserFriends);
+                _dataCenterService.LastestMessages = new ObservableCollection<LastestMessage>(LatestMessages);
+            });
+
+        }
+        
         public void Initialize()
         {
             Task.Run(async () =>
             {
                 IsProcessing = true;
                 await GetListFriends();
+                await SynchronizeWithDataCenterAsync();
             }).GetAwaiter().OnCompleted(() =>
             {
                 IsProcessing = false;
+                OnPropertyChanged(nameof(UserInfo));
+                OnPropertyChanged(nameof(UserFriends));
+                OnPropertyChanged(nameof(LatestMessages));
             });
+ 
+            IsProcessing = false;
         }
 
         //void OnReceivedMessage(int fromUserId, string message)
@@ -132,64 +161,37 @@ namespace Voxerra.ViewModels
 
         void OnReceivedMessage(int fromUserId, string message)
         {
+
             MainThread.BeginInvokeOnMainThread(() =>
             {
-                var lastestMessage = LastestMessages.FirstOrDefault(x => x.UserFiendInfo.Id == fromUserId);
+                var lastestMessage = LatestMessages.FirstOrDefault(x => x.UserFiendInfo.Id == fromUserId);
                 if (lastestMessage != null)
                 {
-                    //LastestMessages.Remove(lastestMessage);
                     lastestMessage.Content = message;
-                    OnPropertyChanged("LastestMessages");
                 }
                 else
                 {
-                    var newLastestMessage = new LastestMessage
+                    var userFriendInfo = UserFriends.FirstOrDefault(x => x.Id == fromUserId);
+                    if (userFriendInfo != null)
                     {
-                        UserId = userInfo.Id,
-                        Content = message,
-                        UserFiendInfo = UserFriends.Where(x => x.Id == fromUserId).FirstOrDefault()
-                    };
-
-                    LastestMessages.Insert(0, newLastestMessage);
-                    OnPropertyChanged(nameof(LastestMessages));
+                        var newLastestMessage = new LastestMessage
+                        {
+                            UserId = fromUserId,
+                            Content = message,
+                            UserFiendInfo = userFriendInfo
+                        };
+                        LatestMessages.Insert(0, newLastestMessage);
+                    }
                 }
             });
-            
         }
-
-        //void OnReceivedMessage(int fromUserId, string message)
-        //{
-        //    MainThread.BeginInvokeOnMainThread(() =>
-        //    {
-        //        var lastestMessage = LastestMessages.FirstOrDefault(x => x.UserId == fromUserId);
-
-        //        if (lastestMessage != null)
-        //        {
-        //            lastestMessage.Content = message;
-        //            OnPropertyChanged(nameof(LastestMessages));
-        //        }
-        //        else
-        //        {
-        //            var newLastestMessage = new LastestMessage
-        //            {
-        //                UserId = fromUserId,
-        //                Content = message,
-        //                UserFiendInfo = UserFriends.FirstOrDefault(x => x.Id == fromUserId)
-        //            };
-
-        //            LastestMessages.Insert(0, newLastestMessage);
-        //            OnPropertyChanged(nameof(LastestMessages));
-        //        }
-        //    });
-        //}
-
 
         private User userInfo;
         private ObservableCollection<User> userFriends;
         private ObservableCollection<LastestMessage> latestMessages;
         private bool isProcessing;
 
-        /*public User UserInfo
+        public User UserInfo
         {
             get { return userInfo; }
             set { userInfo = value; OnPropertyChanged(); }
@@ -200,41 +202,12 @@ namespace Voxerra.ViewModels
             set { userFriends = value; OnPropertyChanged(); }
         }
 
-        public ObservableCollection<LastestMessage> LastestMessages
+        public ObservableCollection<LastestMessage> LatestMessages
         {
             get { return latestMessages; }
             set { latestMessages = value; OnPropertyChanged(); }
-        }*/
-        
-        public User UserInfo
-        {
-            get => _dataCenterService.UserInfo;
-            set
-            {
-                _dataCenterService.UserInfo = value;
-                OnPropertyChanged();
-            }
         }
 
-        public ObservableCollection<User> UserFriends
-        {
-            get => _dataCenterService.UserFriends;
-            set
-            {
-                _dataCenterService.UserFriends = value;
-                OnPropertyChanged();
-            }
-        }
-
-        public ObservableCollection<LastestMessage> LastestMessages
-        {
-            get => _dataCenterService.LastestMessages;
-            set
-            {
-                _dataCenterService.LastestMessages = value;
-                OnPropertyChanged();
-            }
-        }
 
 
         public bool IsProcessing

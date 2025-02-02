@@ -22,42 +22,108 @@
             </StackLayout>
 
 
-            <!-- Profile Header Section -->
-            <Grid RowDefinitions="Auto" ColumnDefinitions="Auto, *, Auto" VerticalOptions="Start" Padding="20,0,0,0">
-                <!-- Profile Picture -->
-                <Frame HeightRequest="70" WidthRequest="70" CornerRadius="50"
+            <Grid>
+                <Frame HeightRequest="80" WidthRequest="80" CornerRadius="50"
                        IsClippedToBounds="True" BorderColor="Black" Padding="0">
-                    <Image Source="defaulticon.png" Aspect="AspectFill" />
+                    <Image Source="{Binding AvatarSourceName}" Aspect="AspectFill" />
                 </Frame>
+            </Grid>
 
-                <!-- User Info Section -->
-                <VerticalStackLayout Grid.Column="1" Margin="20,0" VerticalOptions="Center">
-                    <Label Text="Username" FontSize="22" FontAttributes="Bold" />
-                    <Label Text="Bio goes here. Something fun, short, and descriptive!"
-                           FontSize="14" TextColor="#666" />
+
+
+            <VerticalStackLayout VerticalOptions="Center">
+                <Label Text="{Binding UserName}" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" />
+                <Label Text="{Binding CreationDate}" FontSize="12" TextColor="#666" HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+            
+            <Grid ColumnDefinitions="*,70,*" HorizontalOptions="FillAndExpand">
+                
+                <VerticalStackLayout Grid.Column="0" HorizontalOptions="End">
+                    <Label Text="{Binding FriendsCount}" FontSize="20" Padding="0,0,0,3" FontAttributes="Bold" HorizontalOptions="Center" />
+                    <Label Text="Friends" FontSize="12" TextColor="#666" />
                 </VerticalStackLayout>
 
-                <!-- Edit/Profile Action Button -->
+                <HorizontalStackLayout Grid.Column="1" HorizontalOptions="Center"  Padding="0,8,0,8">
+                    <Border StrokeThickness="0.5">
+                        <Border.Stroke>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#b414de" Offset="0.0" />
+                                <GradientStop Color="#d127a5" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Border.Stroke>
+                    </Border>
+                </HorizontalStackLayout>
+
+                <VerticalStackLayout Grid.Column="2" HorizontalOptions="Start">
+                    <Label Text="Offline" FontSize="20" Padding="0,0,0,3" FontAttributes="Bold" HorizontalOptions="Center" />
+                    <Label Text="Status" FontSize="12" TextColor="#666" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
 
             </Grid>
 
-            <!-- Stats Section -->
-            <Grid ColumnDefinitions="*,*,*" HorizontalOptions="FillAndExpand">
-                <VerticalStackLayout Grid.Column="0" HorizontalOptions="Center">
-                    <Label Text="120" FontSize="18" FontAttributes="Bold" />
-                    <Label Text="Posts" FontSize="14" TextColor="#666" />
+            <Grid ColumnDefinitions="*,20,*" HorizontalOptions="FillAndExpand" >
+                <VerticalStackLayout Grid.Column="0" HorizontalOptions="End" VerticalOptions="Center">
+                    <Frame
+                        Padding="0"
+                        CornerRadius="12"
+                        IsClippedToBounds="True"
+                        HasShadow="True">
+                        <Frame.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="Gray" Offset="0.0" />
+                                <GradientStop Color="DimGray" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Frame.Background>
+                        <Button
+                            
+                            WidthRequest="130"
+                            CornerRadius="25"
+                            Text="*Nieco*"
+                            FontSize="12"
+                            TextColor="White"
+                            BackgroundColor="Transparent" />
+                    </Frame>
                 </VerticalStackLayout>
 
-                <VerticalStackLayout Grid.Column="1" HorizontalOptions="Center">
-                    <Label Text="450" FontSize="18" FontAttributes="Bold" />
-                    <Label Text="Followers" FontSize="14" TextColor="#666" />
+
+                <VerticalStackLayout Grid.Column="2" HorizontalOptions="Start" VerticalOptions="Center"  >
+                    <Frame
+                        CornerRadius="12"
+                        Padding="0"
+                        IsClippedToBounds="True"
+                        HasShadow="True">
+                        <Frame.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#b414de" Offset="0.0" />
+                                <GradientStop Color="#d127a5" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Frame.Background>
+                        <Button
+                            Padding="0"
+                            WidthRequest="130"
+                            CornerRadius="25"
+                            Text="Add Friend"
+                            FontSize="14"
+                            TextColor="White"
+                            BackgroundColor="Transparent"
+                            Command="{Binding SendFriendRequestCommand}"/>
+                    </Frame>
                 </VerticalStackLayout>
 
-                <VerticalStackLayout Grid.Column="2" HorizontalOptions="Center">
-                    <Label Text="180" FontSize="18" FontAttributes="Bold" />
-                    <Label Text="Following" FontSize="14" TextColor="#666" />
-                </VerticalStackLayout>
             </Grid>
+
+            <Grid HorizontalOptions="FillAndExpand">
+
+                <VerticalStackLayout Padding="15,0,15,0" HorizontalOptions="Start">
+                    <Label Text="About me" FontSize="22" Padding="0,0,0,5" FontAttributes="Bold" HorizontalOptions="Start" />
+                    <Label Text="{Binding Bio}" 
+                           FontSize="12" TextColor="#666" />
+                </VerticalStackLayout>
+
+            </Grid>
+
+
 
             <!-- Post Grid Section -->
             <!--<Grid RowDefinitions="Auto" ColumnDefinitions="*,*,*" Spacing="2">

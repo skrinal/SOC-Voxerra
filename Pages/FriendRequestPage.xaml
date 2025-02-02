@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Voxerra.Pages.FriendRequestPage"
+             xmlns:viewModels="clr-namespace:Voxerra.ViewModels"
+             Title="FriendRequestPage">
+
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="20">
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                <Button Text="&#xe5c4;" FontFamily="GoogleFont" FontSize="24" VerticalOptions="Center"
+                            BackgroundColor="Transparent"
+                            TextColor="White"
+                            CornerRadius="45"
+                            Padding="0"
+                            Command="{Binding GoBackCommand}" />
+
+                <Label Text="Friend Request" FontSize="28" VerticalOptions="Center"/>
+
+            </StackLayout>
+
+            <CollectionView ItemsSource="{Binding FriendRequestList}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="70"/>
+                                <RowDefinition Height="5"/>
+                            </Grid.RowDefinitions>
+
+
+                            <Grid Grid.Row="0" ColumnDefinitions="*,70,70" Padding="15,0,25,0">
+                                
+                                <Grid Grid.Column="0" ColumnDefinitions="65,*">
+                                    <Grid.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding AccountPageCommand}"/>
+                                    </Grid.GestureRecognizers>
+                                    <Frame Grid.Column="0" HeightRequest="54" WidthRequest="54" CornerRadius="50"
+IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                                        <Image Source="{Binding AvatarSourceName}" Aspect="AspectFill" />
+                                    </Frame>
+
+                                    <Label Grid.Column="1" Text="{Binding UserName}"  FontSize="18" Padding="10,0,0,0" VerticalOptions="Center"/>
+                                </Grid>
+                    
+
+                                <Button Grid.Column="1" Text="check" FontFamily="GoogleFont" FontSize="24"
+        BackgroundColor="Transparent"
+        TextColor="White"
+        CornerRadius="45"
+        CommandParameter="{Binding Id}"
+        Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:FriendRequestViewModel}}, Path=AcceptRequestCommand}" />
+
+                                <Button Grid.Column="2" Text="close" FontFamily="GoogleFont" FontSize="24"
+BackgroundColor="Transparent"
+TextColor="White"
+CornerRadius="45"
+CommandParameter="{Binding Id}" 
+Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:FriendRequestViewModel}}, Path=DeclineRequestCommand}" />
+
+
+
+
+                                <!--<Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22" 
+VerticalOptions="Center" HorizontalOptions="End"/>-->
+                            </Grid>
+
+
+                            <Grid Grid.Row="1">
+                                <Border StrokeThickness="2.5" StrokeShape="RoundRectangle 20">
+                                    <Border.Stroke>
+                                        <LinearGradientBrush>
+                                            <GradientStop Color="#b414de" Offset="0.0" />
+                                            <GradientStop Color="#d127a5" Offset="1.0" />
+                                        </LinearGradientBrush>
+                                    </Border.Stroke>
+                                </Border>
+                            </Grid>
+
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+
+    <!--<RefreshView IsRefreshing="{Binding IsProcessing}">
+        <VerticalStackLayout Padding="15" Spacing="20">
+
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                <Button Text="&#xe5c4;" FontFamily="GoogleFont" FontSize="24" VerticalOptions="Center"
+            BackgroundColor="Transparent"
+            TextColor="White"
+            CornerRadius="45"
+            Padding="0"
+            Command="{Binding GoBackCommand}" />
+
+                <Label Text="Friend Request" FontSize="28" VerticalOptions="Center"/>
+
+            </StackLayout>
+
+            <CollectionView x:Name="FriendRequestList" Margin="20" ItemsSource="{Binding FriendRequestList}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Orientation="Vertical">
+
+                            <Grid Padding="25,0,0,0" >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="160" />
+                                </Grid.ColumnDefinitions>
+                                --><!--<StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Path=UserProfilePageCommand, Source={RelativeSource AncestorType={x:Type viewModel:AddFriendViewModel}}}"
+                                              CommandParameter="{Binding Id}"/>
+                                </StackLayout.GestureRecognizers>--><!--
+
+
+                                <Grid Grid.Column="0">
+
+                                    <Frame HeightRequest="54" WidthRequest="54" CornerRadius="50"
+IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                                        <Image Source="{Binding AvatarSourceName}" Aspect="AspectFill" />
+                                    </Frame>
+
+
+                                    <Label Text="{Binding UserName}"
+FontSize="16"
+VerticalOptions="Center"
+Margin="15,0,0,0" />
+
+                                </Grid>
+
+
+                                <Grid Grid.Column="1" ColumnDefinitions="*,*" >
+                                    <Button Grid.Column="0" HorizontalOptions="CenterAndExpand" Text="check" FontFamily="GoogleFont" FontSize="24
+    BackgroundColor="Transparent"
+    TextColor="White"
+    CornerRadius="45"
+    CommandParameter="{Binding Id}" />
+
+                                    <Button Grid.Column="1" HorizontalOptions="CenterAndExpand" Text="close" FontFamily="GoogleFont" FontSize="24"
+    BackgroundColor="Transparent"
+    TextColor="White"
+    CornerRadius="45"
+    CommandParameter="{Binding Id}" />
+                                </Grid>
+
+                                
+
+                            </Grid>
+
+                            <StackLayout Padding="10">
+                                <Border
+                        x:Name="UserNameBorder"
+                        StrokeThickness="1">
+                                    <Border.Stroke>
+                                        <LinearGradientBrush>
+                                            <GradientStop Color="#b414de" Offset="0.0" />
+                                            <GradientStop Color="#d127a5" Offset="1.0" />
+                                        </LinearGradientBrush>
+                                    </Border.Stroke>
+                                </Border>
+                            </StackLayout>
+
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </RefreshView>-->
+</ContentPage>

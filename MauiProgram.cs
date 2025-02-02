@@ -27,29 +27,46 @@ namespace Voxerra
 
             builder.Services.AddSingleton<ChatHub>();
             builder.Services.AddSingleton<AppShell>();
-            builder.Services.AddSingleton<LoginPage>();
-            builder.Services.AddSingleton<MessageCenterPage>();
-            builder.Services.AddSingleton<ChatPage>();
-            builder.Services.AddSingleton<RegisterPage>();
-            builder.Services.AddSingleton<RegisterConfirmationPage>();
-            builder.Services.AddSingleton<ForgotPasswordPage>();
-            builder.Services.AddSingleton<ProfilePage>();
-            builder.Services.AddSingleton<AddFriendPage>();
-            builder.Services.AddSingleton<PublicProfilePage>();
-            
-            builder.Services.AddSingleton<LoginPageViewModel>();
-            builder.Services.AddSingleton<MessageCenterPageViewModel>();
-            builder.Services.AddSingleton<ChatPageViewModel>();
             builder.Services.AddSingleton<ServiceProvider>();
-            builder.Services.AddSingleton<RegisterPageViewModel>();
-            builder.Services.AddSingleton<RegisterConfirmationViewModel>();
-            builder.Services.AddSingleton<ForgotPasswordViewModel>();
-            builder.Services.AddSingleton<ProfilePageViewModel>();
-            builder.Services.AddSingleton<AddFriendViewModel>();
-            builder.Services.AddSingleton<PublicProfileViewModel>();
-            
             builder.Services.AddSingleton<DataCenterService>();
-            
+
+            builder.Services.AddSingleton<LoginPage>();
+            builder.Services.AddSingleton<LoginPageViewModel>();
+            builder.Services.AddSingleton<RegisterPage>();
+            builder.Services.AddSingleton<RegisterPageViewModel>();
+            builder.Services.AddSingleton<RegisterConfirmationPage>();
+            builder.Services.AddSingleton<RegisterConfirmationViewModel>();
+            builder.Services.AddSingleton<ForgotPasswordPage>();
+            builder.Services.AddSingleton<ForgotPasswordViewModel>();
+
+
+            builder.Services.AddSingleton<MessageCenterPage>();
+            builder.Services.AddSingleton<MessageCenterPageViewModel>();
+            builder.Services.AddSingleton<ChatPage>();
+            builder.Services.AddSingleton<ChatPageViewModel>();
+
+            builder.Services.AddSingleton<AddFriendPage>();
+            builder.Services.AddSingleton<AddFriendViewModel>();
+            builder.Services.AddSingleton<PublicProfilePage>();
+            builder.Services.AddSingleton<PublicProfileViewModel>();
+
+
+            builder.Services.AddSingleton<ProfilePage>();
+            builder.Services.AddSingleton<ProfilePageViewModel>();
+            builder.Services.AddSingleton<FriendRequestPage>();
+            builder.Services.AddSingleton<FriendRequestViewModel>();
+            builder.Services.AddSingleton<MainSettingPage>();
+            builder.Services.AddSingleton<MainSettingViewModel>();
+
+
+
+            builder.Services.AddSingleton<AccountDetailsPage>();
+            builder.Services.AddSingleton<AccountDetailsViewModel>();
+            builder.Services.AddSingleton<NotificationsPage>();
+            builder.Services.AddSingleton<NotificationsViewModel>();
+            builder.Services.AddSingleton<SecurityPage>();
+            builder.Services.AddSingleton<SecurityViewModel>();
+
             return builder.Build();
         }
     }

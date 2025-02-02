@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Voxerra.Pages.Settings.SecurityPage"
+             xmlns:viewModel="clr-namespace:Voxerra.ViewModels"
+             Title="Profile Settings"
+             Background="#111011" >
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="20">
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                <Button Text="&#xe5c4;" FontFamily="GoogleFont" FontSize="24" VerticalOptions="Center"
+BackgroundColor="Transparent"
+TextColor="White"
+CornerRadius="45"
+Padding="0"
+Command="{Binding GoBackCommand}" />
+
+                <Label Text="Security" FontSize="28" VerticalOptions="Center"/>
+
+            </StackLayout>
+
+
+            <Border StrokeThickness="2.5" StrokeShape="RoundRectangle 20">
+                <Border.Stroke>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#b414de" Offset="0.0" />
+                        <GradientStop Color="#d127a5" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Border.Stroke>
+
+                <Grid Padding="15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="45" />
+                        <RowDefinition Height="45" />
+                        <RowDefinition Height="45" />
+
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0" ColumnDefinitions="50,*,30" Padding="15,0,25,0">
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding AccountPageCommand}"/>
+                        </Grid.GestureRecognizers>
+                        <Label Grid.Column="0" Text="lock" FontFamily="GoogleFont" FontSize="30" VerticalOptions="Center"/>
+                        <Label Grid.Column="1" Text="Password"  FontSize="18" VerticalOptions="Center"/>
+                        <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22" 
+VerticalOptions="Center" HorizontalOptions="End"/>
+                    </Grid>
+
+                    <Grid Grid.Row="1" ColumnDefinitions="50,*,30" Padding="15,0,25,0">
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding AccountPageCommand}"/>
+                        </Grid.GestureRecognizers>
+                        <Label Grid.Column="0" Text="mail" FontFamily="GoogleFont" FontSize="30" VerticalOptions="Center"/>
+                        <Label Grid.Column="1" Text="Two-factor Auth"  FontSize="18" VerticalOptions="Center"/>
+                        <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22" 
+VerticalOptions="Center" HorizontalOptions="End"/>
+                    </Grid>
+
+                    <Grid Grid.Row="2" ColumnDefinitions="50,*,30" Padding="15,0,25,0">
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding AccountPageCommand}"/>
+                        </Grid.GestureRecognizers>
+                        <Label Grid.Column="0" Text="account_circle" FontFamily="GoogleFont" FontSize="30" VerticalOptions="Center"/>
+                        <Label Grid.Column="1" Text="Saved Login"  FontSize="18" VerticalOptions="Center"/>
+                        <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22" 
+VerticalOptions="Center" HorizontalOptions="End"/>
+                    </Grid>
+                </Grid>
+
+            </Border>
+
+
+            <Label Text="Security checks" TextColor="White" FontSize="16" FontAttributes="Bold"/>
+            <Border StrokeThickness="2.5" StrokeShape="RoundRectangle 20">
+                <Border.Stroke>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#b414de" Offset="0.0" />
+                        <GradientStop Color="#d127a5" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Border.Stroke>
+                <Grid Padding="15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="45" />
+                        <RowDefinition Height="45" />
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0" ColumnDefinitions="50,*,30" Padding="15,0,25,0">
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding AccountPageCommand}"/>
+                        </Grid.GestureRecognizers>
+                        <Label Grid.Column="0" Text="passkey" FontFamily="GoogleFont" FontSize="30" VerticalOptions="Center"/>
+                        <Label Grid.Column="1" Text="Where you're logged in"  FontSize="18" VerticalOptions="Center"/>
+                        <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22" 
+VerticalOptions="Center" HorizontalOptions="End"/>
+                    </Grid>
+
+                    <Grid Grid.Row="1" ColumnDefinitions="50,*,*" Padding="15,0,25,0">
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding AccountPageCommand}"/>
+                        </Grid.GestureRecognizers>
+                        <Label Grid.Column="0" Text="warning" FontFamily="GoogleFont" FontSize="30" VerticalOptions="Center"/>
+                        <Label Grid.Column="1" Text="Login Alerts"  FontSize="18" VerticalOptions="Center"/>
+                        <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22" 
+VerticalOptions="Center" HorizontalOptions="End"/>
+                    </Grid>
+
+                </Grid>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

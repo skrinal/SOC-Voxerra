@@ -37,8 +37,7 @@ namespace Voxerra.ViewModels
 
         private async void OnGoBack()
         {
-            await Shell.Current.Navigation.PopAsync();
-            //await Shell.Current.GoToAsync("//LoginPage");
+            await Shell.Current.GoToAsync("//LoginPage");
         }
         async Task Register()
         {

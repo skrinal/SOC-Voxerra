@@ -5,8 +5,6 @@ VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voxerra", "Voxerra.csproj", "{88FC2E7F-13DC-4F73-B481-66C543C64CA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voxerra_API", "..\SOC-Voxerra-API\Voxerra_API.csproj", "{EC52F4E8-D398-4A20-B6BE-837298F919C9}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,10 +17,6 @@ Global
 		{88FC2E7F-13DC-4F73-B481-66C543C64CA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88FC2E7F-13DC-4F73-B481-66C543C64CA8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{88FC2E7F-13DC-4F73-B481-66C543C64CA8}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{EC52F4E8-D398-4A20-B6BE-837298F919C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC52F4E8-D398-4A20-B6BE-837298F919C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EC52F4E8-D398-4A20-B6BE-837298F919C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EC52F4E8-D398-4A20-B6BE-837298F919C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

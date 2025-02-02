@@ -6,21 +6,23 @@ public class AddFriendViewModel : INotifyPropertyChanged
 {
     public event PropertyChangedEventHandler PropertyChanged;
     private ServiceProvider _serviceProvider;
+    private readonly DataCenterService _dataCenterService;
     
     protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
     {
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
     
-    public AddFriendViewModel(ServiceProvider serviceProvide)
+    public AddFriendViewModel(ServiceProvider serviceProvide, DataCenterService dataCenterService)
     {
         _serviceProvider = serviceProvide;
+        _dataCenterService = dataCenterService;
         
         UserSearchList = new ObservableCollection<UserSearch>();
         
         UserProfilePageCommand = new Command<int>(async (param) =>
         {
-            await Shell.Current.GoToAsync($"//PublicProfilePage?publicUserId={param}");
+            await Shell.Current.GoToAsync($"PublicProfilePage?publicUserId={param}");
         });
 
         GoBackCommand = new Command(OnGoBack);
@@ -30,11 +32,11 @@ public class AddFriendViewModel : INotifyPropertyChanged
     {
         var request = new FriendSearchRequest
         {
-            IdOfUser = 1, //////// ZLE ZLE  ZLE ZLE  ZLE ZLE  ZLE ZLE  ZLE ZLE  ZLE ZLE  ZLE ZLE 
+            IdOfUser = _dataCenterService.UserInfo.Id,
             Search = query,
         };
         
-        var response = await _serviceProvider.CallWebApi<FriendSearchRequest, FriendAddInitializeResponse>
+        var response = await _serviceProvider.CallWebApi<FriendSearchRequest, FriendSearchResponse>
             ("/FriendAdd/Search", HttpMethod.Post, request);
         
         if (response.StatusCode == 200)
@@ -42,15 +44,26 @@ public class AddFriendViewModel : INotifyPropertyChanged
             UserSearchList = new ObservableCollection<UserSearch>(response.Users);
             
             OnPropertyChanged(nameof(UserSearchList));
+
+            await SynchronizeWithDataCenterAsync();
         }
         else
         {
             await AppShell.Current.DisplayAlert("Voxerra", response.StatusMessage, "OK");
         }
     }
+    
+    public async Task SynchronizeWithDataCenterAsync()
+    {
+        await Task.Run(() =>
+        {
+            _dataCenterService.UserSearch = UserSearchList;
+        });
+    }
+    
     private async void OnGoBack()
     {
-        await Shell.Current.GoToAsync($"//MainPage");
+        await Shell.Current.GoToAsync($"..");
         UserSearchList.Clear();
         EntryQueary = "";
     }
