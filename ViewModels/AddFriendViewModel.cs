@@ -70,20 +70,7 @@ public class AddFriendViewModel : INotifyPropertyChanged
     
     private CancellationTokenSource _cts;
     
-    /*private async void DebounceUserSearch(string input)
-    {
-        _cts?.Cancel();
-        _cts = new CancellationTokenSource();
-
-        try
-        {
-            await Task.Delay(500, _cts.Token);
-            GetUsersList(input);
-        }
-        catch (TaskCanceledException) { }
-    }*/
-    
-    public async void DebounceUserSearch(string query)
+    private async void DebounceUserSearch(string query)
     {
         _cts?.Cancel();
         _cts = new CancellationTokenSource();
