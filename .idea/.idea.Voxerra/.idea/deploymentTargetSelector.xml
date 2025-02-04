@@ -4,10 +4,10 @@
     <selectionStates>
       <SelectionState runConfigName="Voxerra">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2025-02-01T14:07:24.542319800Z">
+        <DropdownSelection timestamp="2025-02-04T12:15:35.469986600Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="PhysicalDevice" identifier="serial=63944384" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\Skrinal\.android\avd\pixel_7_-_api_35.avd" />
             </handle>
           </Target>
         </DropdownSelection>

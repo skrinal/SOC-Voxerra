@@ -8,51 +8,6 @@
     Title="RegisterPage"
     Background="#0f0f0f">
 
-    <ContentPage.Resources>
-        <!-- Fixed: Define the missing FocusedEntryStyle -->
-        <Style x:Key="FocusedEntryStyle" TargetType="Entry">
-            <Style.Triggers>
-                <!-- If the Entry is focused -->
-                <DataTrigger TargetType="Entry" Binding="{Binding IsFocused, Source={x:Reference UserNameEntry}}" Value="True">
-                    <Setter Property="BackgroundColor" Value="Black" />
-                    <Setter Property="TextColor" Value="White" />
-                </DataTrigger>
-                <!-- If the Entry is not focused -->
-                <DataTrigger TargetType="Entry" Binding="{Binding IsFocused, Source={x:Reference UserNameEntry}}" Value="False">
-                    <Setter Property="BackgroundColor" Value="Transparent" />
-                    <Setter Property="TextColor" Value="Black" />
-                </DataTrigger>
-            </Style.Triggers>
-        </Style>
-
-        <!-- Existing FocusedBorderStyle (already defined correctly) -->
-        <Style x:Key="FocusedBorderStyle" TargetType="Border">
-            <Style.Triggers>
-                <DataTrigger TargetType="Border" Binding="{Binding IsFocused, Source={x:Reference UserNameEntry}}" Value="True">
-                    <Setter Property="Stroke">
-                        <Setter.Value>
-                            <LinearGradientBrush>
-                                <GradientStop Color="#b414de" Offset="0.0" />
-                                <GradientStop Color="#d127a5" Offset="1.0" />
-                            </LinearGradientBrush>
-                        </Setter.Value>
-                    </Setter>
-                </DataTrigger>
-                <DataTrigger TargetType="Border" Binding="{Binding IsFocused, Source={x:Reference UserNameEntry}}" Value="False">
-                    <Setter Property="Stroke">
-                        <Setter.Value>
-                            <LinearGradientBrush>
-                                <GradientStop Color="#212121" Offset="0.0" />
-                                <GradientStop Color="#212121" Offset="1.0" />
-                            </LinearGradientBrush>
-                        </Setter.Value>
-                    </Setter>
-                </DataTrigger>
-            </Style.Triggers>
-        </Style>
-    </ContentPage.Resources>
-
-
     <RefreshView Margin="10" IsRefreshing="{Binding isProcessing}">
         <Grid>
             <Grid.RowDefinitions>
@@ -60,14 +15,14 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
-            <Button Text="&#xe5c4;" FontFamily="GoogleFont" FontSize="24" VerticalOptions="Start" 
+            <Button Text="&#xe5c4;" FontFamily="GoogleFont" FontSize="24" VerticalOptions="Start"
                     HorizontalOptions="Start"
                     BackgroundColor="Transparent"
                     TextColor="White"
                     CornerRadius="45"
                     Padding="0" Margin="10"
                     Command="{Binding GoBackCommand}" />
-            
+
             <VerticalStackLayout Margin="30" VerticalOptions="Center">
                 <Image
                     HeightRequest="150"
@@ -95,8 +50,7 @@
                         x:Name="UserNameEntry"
                         Margin="8,0,8,0"
                         ReturnType="Go"
-                        Text="{Binding UserName}" 
-                        Style="{StaticResource FocusedEntryStyle}"/>
+                        Text="{Binding UserName}" />
                 </Border>
 
                 <Label
@@ -118,8 +72,7 @@
                         x:Name="EmailEntry"
                         Margin="8,-1,8,-1"
                         ReturnType="Go"
-                        Text="{Binding Email}"
-                        Style="{StaticResource FocusedEntryStyle}"/>
+                        Text="{Binding Email}" />
                 </Border>
 
                 <Label
@@ -142,8 +95,7 @@
                         Margin="8,-1,8,-1"
                         ReturnType="Go"
                         IsPassword="True"
-                        Text="{Binding Password}"
-                        Style="{StaticResource FocusedEntryStyle}" />
+                        Text="{Binding Password}" />
                 </Border>
                 <Label
                     Text="Confirm password"
@@ -165,8 +117,7 @@
                         Margin="8,-1,8,-1"
                         IsPassword="True"
                         ReturnType="Go"
-                        Text="{Binding RePassword}"
-                        Style="{StaticResource FocusedEntryStyle}" />
+                        Text="{Binding RePassword}" />
                 </Border>
 
                 <Frame

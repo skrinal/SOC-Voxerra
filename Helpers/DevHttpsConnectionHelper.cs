@@ -196,7 +196,7 @@ namespace Voxerra.Helpers
             "localhost";
             //"ec2-51-20-3-224.eu-north-1.compute.amazonaws.com"; // Use your router's domain
 #elif ANDROID
-            "localhost";
+            "10.0.2.2";
             //"ec2-51-20-3-224.eu-north-1.compute.amazonaws.com"; // Use your router's domain
 #else
             throw new PlatformNotSupportedException("Only Windows and Android currently supported.");

@@ -168,6 +168,7 @@ namespace Voxerra.ViewModels
                 if (lastestMessage != null)
                 {
                     lastestMessage.Content = message;
+                    
                 }
                 else
                 {
@@ -183,6 +184,7 @@ namespace Voxerra.ViewModels
                         LatestMessages.Insert(0, newLastestMessage);
                     }
                 }
+                OnPropertyChanged(nameof(LatestMessages));
             });
         }
 

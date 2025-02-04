@@ -9,8 +9,7 @@ namespace Voxerra.ViewModels.Settings.Account
             if (query == null || query.Count == 0) return;
 
             UserName = HttpUtility.UrlDecode(query["UserName"].ToString());
-            
-            Initialize();
+            CurrentUserName = UserName;
         }
         public event PropertyChangedEventHandler? PropertyChanged;
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -45,11 +44,7 @@ namespace Voxerra.ViewModels.Settings.Account
             ButtonStatus = false;
             LabelIcon = "";
             LabelColor= "Transparent";
-
-
-            ButtonColor = "Gray";
-            ButtonColorV2 = "Gray";
-
+            
             GoBackCommand = new Command(OnGoBack);
         }
 
@@ -57,26 +52,7 @@ namespace Voxerra.ViewModels.Settings.Account
         {
 
         }
-
-        public void GetUserName()
-        {
-            userName = _dataCenterService.UserInfo.UserName;
-            CurrentUserName = userName;
-        }
-
-        public void Initialize()
-        {
-            Task.Run(async () =>
-            {
-                IsProcessing = true;
-                GetUserName();
-            }).GetAwaiter().OnCompleted(() =>
-            {
-                IsProcessing = false;
-                OnPropertyChanged(nameof(UserName));
-
-            });
-        }
+        
 
         private async Task IsUserNameUniqueCall(string userName)
         {
@@ -89,8 +65,8 @@ namespace Voxerra.ViewModels.Settings.Account
                         UserName = userName
                     };
 
-                    var response = await _serviceProvider.CallWebApi<IsUserNameUniqueRequest, BaseResponse>(
-                        "/Registration/IsUserNameUnique", HttpMethod.Post, request);
+                    var response = await _serviceProvider.CallWebApi<IsUserNameUniqueRequest, BaseResponse>
+                        ("/Registration/IsUserNameUnique", HttpMethod.Post, request);
 
 
                     if (response.StatusCode == 200)
@@ -209,29 +185,13 @@ namespace Voxerra.ViewModels.Settings.Account
         private string userName;
         private bool isUserNameUnique;
 
-        private string buttonColor;
-        private string buttonColorV2;
-
         private string labelIcon;
         private string labelColor;
 
         private string ruleColor1;
         private string ruleColor2;
         private string ruleColor3;
-        private string ruleColor4;
-
-        /*public string EntryQueary
-        {
-            get => entryQueary;
-            set
-            {
-                entryQueary = value;
-                OnPropertyChanged();
-                
-                DebounceUserName(value);
-            }
-        }*/
-
+        
         public bool IsProcessing
         {
             get { return isProcessing; }
@@ -255,17 +215,7 @@ namespace Voxerra.ViewModels.Settings.Account
             get { return buttonStatus; }
             set { buttonStatus = value; OnPropertyChanged(); }
         }
-        public string ButtonColor
-        {
-            get { return buttonColor; }
-            set { buttonColor = value; OnPropertyChanged(); }
-        }
-        public string ButtonColorV2
-        {
-            get { return buttonColorV2; }
-            set { buttonColorV2 = value; OnPropertyChanged(); }
-        }
-
+        
         public string LabelIcon
         {
             get { return labelIcon; }
@@ -292,11 +242,6 @@ namespace Voxerra.ViewModels.Settings.Account
         {
             get { return ruleColor3; }
             set { ruleColor3 = value; OnPropertyChanged(); }
-        }
-        public string RuleColor4
-        {
-            get { return ruleColor4; }
-            set { ruleColor4 = value; OnPropertyChanged(); }
         }
 
         public ICommand UpdateNameCommand { get; set; }

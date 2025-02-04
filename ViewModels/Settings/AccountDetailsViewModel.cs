@@ -35,7 +35,7 @@ namespace Voxerra.ViewModels
                         await Shell.Current.GoToAsync($"NamePage?UserName={_dataCenterService.UserInfo.UserName}");
                         break;
                     case "Email":
-                        await Shell.Current.GoToAsync("EmailPage"); // treba apicall na email
+                        await Shell.Current.GoToAsync($"EmailPage?UserId={_dataCenterService.UserInfo.Id}"); // treba apicall na email
                         break;
                     case "ProfilePicture":
                         await Shell.Current.GoToAsync($"ProfilePicturePage"); // uvidime

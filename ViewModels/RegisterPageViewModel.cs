@@ -2,7 +2,7 @@
 
 namespace Voxerra.ViewModels
 {
-    public class RegisterPageViewModel
+    public class RegisterPageViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         private CancellationTokenSource _debounceTokenSource;
@@ -35,11 +35,24 @@ namespace Voxerra.ViewModels
             _serviceProvider = serviceProvider;
         }
 
+        public void ClearEnteries()
+        {
+            userName = "";
+            email = "";
+            password = "";
+            repassword = "";
+            
+            OnPropertyChanged(nameof(UserName));
+            OnPropertyChanged(nameof(Email));
+            OnPropertyChanged(nameof(Password));
+            OnPropertyChanged(nameof(RePassword));
+        }
+        
         private async void OnGoBack()
         {
             await Shell.Current.GoToAsync("//LoginPage");
         }
-        async Task Register()
+        private async Task Register()
         {
             try
             {
@@ -69,8 +82,6 @@ namespace Voxerra.ViewModels
                 await AppShell.Current.DisplayAlert("Voxerra", ex.Message, "OK");
             }
         }
-
-
         private bool IsValidEmail(string email)
         {
             if (string.IsNullOrWhiteSpace(email)) return false;
@@ -90,7 +101,6 @@ namespace Voxerra.ViewModels
 
             return Regex.IsMatch(username, pattern);
         }
-
         private async Task IsEmailUniqueCall(string email)
         {
             try
@@ -120,7 +130,6 @@ namespace Voxerra.ViewModels
                 await AppShell.Current.DisplayAlert("Voxerra", ex.Message, "OK");
             }
         }
-
         private async Task IsUserNameUniqueCall(string userName)
         {
             try
@@ -150,8 +159,6 @@ namespace Voxerra.ViewModels
                 await AppShell.Current.DisplayAlert("Voxerra", ex.Message, "OK");
             }
         }
-
-
         private async void DebounceValidation(string input, Func<string, Task> validationFunc)
         {
             _debounceTokenSource?.Cancel();

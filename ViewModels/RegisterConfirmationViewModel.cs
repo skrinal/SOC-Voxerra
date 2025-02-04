@@ -6,12 +6,13 @@ namespace Voxerra.ViewModels
         public event PropertyChangedEventHandler PropertyChanged;
         private string Email;
         private ServiceProvider _serviceProvider;
+        private RegisterPageViewModel _registerPageViewModel;
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        public RegisterConfirmationViewModel(ServiceProvider serviceProvider)
+        public RegisterConfirmationViewModel(ServiceProvider serviceProvider, RegisterPageViewModel viewModel)
         {
             IsProcessing = false;
             ConfirmRegistrationCommand = new Command(() =>
@@ -28,6 +29,7 @@ namespace Voxerra.ViewModels
             GoBackCommand = new Command(OnGoBack);
 
             _serviceProvider = serviceProvider;
+            _registerPageViewModel = viewModel;
         }
 
         public async Task RegisterConfirmation()
@@ -44,6 +46,8 @@ namespace Voxerra.ViewModels
                 
                 if (response.StatusCode == 200)
                 {
+                    ResetEntry();
+                    _registerPageViewModel.ClearEnteries();
                     await Shell.Current.GoToAsync($"//LoginPage");
                 }
                 else
@@ -67,9 +71,19 @@ namespace Voxerra.ViewModels
         }
         private async void OnGoBack()
         {
+            ResetEntry();
             await Shell.Current.Navigation.PopAsync();
         }
 
+        private void ResetEntry()
+        {
+            Entry1 = "";
+            Entry2 = "";
+            Entry3 = "";
+            Entry4 = "";
+            Entry5 = "";
+        }
+        
         private int registrationCode;
         private bool isProcessing;
 
