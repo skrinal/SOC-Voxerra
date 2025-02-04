@@ -18,8 +18,14 @@ global using Voxerra.Services.FriendAdd;
 
 global using Voxerra.Pages;
 global using Voxerra.Pages.Settings;
+global using Voxerra.Pages.Settings.Account;
+global using Voxerra.Pages.Settings.Security;
 
 global using Voxerra.ViewModels;
 global using Voxerra.ViewModels.Settings;
+global using Voxerra.ViewModels.Settings.Security;
+global using Voxerra.ViewModels.Settings.Account;
 
 global using Voxerra.Helpers;
+
+

@@ -193,9 +193,11 @@ namespace Voxerra.Helpers
         public int SslPort { get; }
         public string DevServerName =>
 #if WINDOWS
-            "ec2-51-20-3-224.eu-north-1.compute.amazonaws.com"; // Use your router's domain
+            "localhost";
+            //"ec2-51-20-3-224.eu-north-1.compute.amazonaws.com"; // Use your router's domain
 #elif ANDROID
-            "ec2-51-20-3-224.eu-north-1.compute.amazonaws.com"; // Use your router's domain
+            "localhost";
+            //"ec2-51-20-3-224.eu-north-1.compute.amazonaws.com"; // Use your router's domain
 #else
             throw new PlatformNotSupportedException("Only Windows and Android currently supported.");
 #endif

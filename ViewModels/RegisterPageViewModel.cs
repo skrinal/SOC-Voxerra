@@ -79,7 +79,16 @@ namespace Voxerra.ViewModels
         }
         private bool IsValidUsername(string username)
         {
-            return !string.IsNullOrWhiteSpace(username) && username.Length >= 3;
+            if (string.IsNullOrWhiteSpace(username) || username.Length < 3)
+            {
+                return false;
+            }
+            // (a-z or A-Z)
+            // cislo moze byt po pismenku
+            // bez medzier
+            string pattern = @"^[A-Za-z][A-Za-z0-9]{2,}$";
+
+            return Regex.IsMatch(username, pattern);
         }
 
         private async Task IsEmailUniqueCall(string email)
@@ -137,7 +146,7 @@ namespace Voxerra.ViewModels
             }
             catch (Exception ex)
             {
-                IsEmailUnique = false;
+                IsUserNameUnique = false;
                 await AppShell.Current.DisplayAlert("Voxerra", ex.Message, "OK");
             }
         }

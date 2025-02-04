@@ -62,10 +62,35 @@ namespace Voxerra
 
             builder.Services.AddSingleton<AccountDetailsPage>();
             builder.Services.AddSingleton<AccountDetailsViewModel>();
+            
+            builder.Services.AddSingleton<NamePage>();
+            builder.Services.AddSingleton<NameViewModel>();
+            builder.Services.AddSingleton<EmailPage>();
+            builder.Services.AddSingleton<EmailViewModel>();
+            builder.Services.AddSingleton<ProfilePicturePage>();
+            builder.Services.AddSingleton<ProfilePictureViewModel>();
+            builder.Services.AddSingleton<BioPage>();
+            builder.Services.AddSingleton<BioViewModel>();
+            builder.Services.AddSingleton<DeleteAccountPage>();
+            builder.Services.AddSingleton<DeleteAccountViewModel>();
+            
             builder.Services.AddSingleton<NotificationsPage>();
             builder.Services.AddSingleton<NotificationsViewModel>();
+            
+            
             builder.Services.AddSingleton<SecurityPage>();
             builder.Services.AddSingleton<SecurityViewModel>();
+            
+            builder.Services.AddSingleton<PasswordPage>();
+            builder.Services.AddSingleton<PasswordViewModel>();
+            builder.Services.AddSingleton<TwoFactorAuthPage>();
+            builder.Services.AddSingleton<TwoFactorAuthViewModel>();
+            builder.Services.AddSingleton<SavedLoginPage>();
+            builder.Services.AddSingleton<SavedLoginViewModel>();
+            builder.Services.AddSingleton<WhereIsUserLoggedPage>();
+            builder.Services.AddSingleton<WhereIsUserLoggedViewModel>();
+            builder.Services.AddSingleton<LoginAlertsPage>();
+            builder.Services.AddSingleton<LoginAlertsViewModel>();
 
             return builder.Build();
         }

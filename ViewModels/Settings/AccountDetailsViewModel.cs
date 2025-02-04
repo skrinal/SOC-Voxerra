@@ -14,6 +14,44 @@ namespace Voxerra.ViewModels
         {
             _dataCenterService = dataCenterService;
 
+            /*FriendRequestPageCommand = new Command(() =>
+            {
+                if (isProcessing) return;
+
+                isProcessing = true;
+                FriendRequestGTA().GetAwaiter().OnCompleted(() =>
+                {
+                    isProcessing = false;
+                });
+
+            });*/
+            
+            GoToDecisionCommand = new Command<string>(async (decision) =>
+            {
+                IsProcessing = true;
+                switch (decision)
+                {
+                    case "Name":
+                        await Shell.Current.GoToAsync($"NamePage?UserName={_dataCenterService.UserInfo.UserName}");
+                        break;
+                    case "Email":
+                        await Shell.Current.GoToAsync("EmailPage"); // treba apicall na email
+                        break;
+                    case "ProfilePicture":
+                        await Shell.Current.GoToAsync($"ProfilePicturePage"); // uvidime
+                        break;
+                    case "Bio":
+                        await Shell.Current.GoToAsync($"BioPage?Bio={_dataCenterService.UserInfo.Bio}");
+                        break;
+                    case "DeleteAccount":
+                        await Shell.Current.GoToAsync($"DeleteAccountPage?Id={_dataCenterService.UserInfo.Id}");
+                        break;
+                    default:
+                        break;
+                }
+            });
+            
+            
             GoBackCommand = new Command(OnGoBack);
         }
 
@@ -70,6 +108,7 @@ namespace Voxerra.ViewModels
             set { bio = value; OnPropertyChanged(); }
         }
 
+        public ICommand GoToDecisionCommand { get; set;}
         public ICommand GoBackCommand { get; set; }
     }
 }

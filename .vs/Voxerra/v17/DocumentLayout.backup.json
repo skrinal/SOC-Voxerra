@@ -3,40 +3,20 @@
   "WorkspaceRootPath": "C:\\SOC-Voxerra\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\viewmodels\\chatpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:viewmodels\\chatpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\pages\\settings\\account\\namepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:pages\\settings\\account\\namepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\pages\\messagecenterpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:pages\\messagecenterpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\pages\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:pages\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\viewmodels\\messagecenterpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:viewmodels\\messagecenterpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\viewmodels\\settings\\account\\nameviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:viewmodels\\settings\\account\\nameviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\models\\lastestmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:models\\lastestmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\pages\\messagecenterpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:pages\\messagecenterpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\pages\\friendrequestpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:pages\\friendrequestpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\viewmodels\\friendrequestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:viewmodels\\friendrequestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\services\\friendadd\\frienddecisionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:services\\friendadd\\frienddecisionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\pages\\addfriendpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:pages\\addfriendpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\pages\\settings\\accountdetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:pages\\settings\\accountdetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1501,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,115 +38,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ChatPageViewModel.cs",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\ViewModels\\ChatPageViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\ChatPageViewModel.cs",
-              "ToolTip": "C:\\SOC-Voxerra\\ViewModels\\ChatPageViewModel.cs",
-              "RelativeToolTip": "ViewModels\\ChatPageViewModel.cs",
-              "ViewState": "AgIAAIQAAAAAAAAAAAAwwJgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T08:56:22.464Z",
+              "DocumentIndex": 3,
+              "Title": "AccountDetailsPage.xaml",
+              "DocumentMoniker": "C:\\SOC-Voxerra\\Pages\\Settings\\AccountDetailsPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\Settings\\AccountDetailsPage.xaml",
+              "ToolTip": "C:\\SOC-Voxerra\\Pages\\Settings\\AccountDetailsPage.xaml",
+              "RelativeToolTip": "Pages\\Settings\\AccountDetailsPage.xaml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-03T21:50:40.442Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MessageCenterPage.xaml.cs",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\Pages\\MessageCenterPage.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\MessageCenterPage.xaml.cs",
-              "ToolTip": "C:\\SOC-Voxerra\\Pages\\MessageCenterPage.xaml.cs",
-              "RelativeToolTip": "Pages\\MessageCenterPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T22:37:05.805Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MessageCenterPage.xaml",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\Pages\\MessageCenterPage.xaml",
-              "RelativeDocumentMoniker": "Pages\\MessageCenterPage.xaml",
-              "ToolTip": "C:\\SOC-Voxerra\\Pages\\MessageCenterPage.xaml",
-              "RelativeToolTip": "Pages\\MessageCenterPage.xaml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAwCIAAAAAAAAAAAAAAA==",
+              "Title": "RegisterPage.xaml",
+              "DocumentMoniker": "C:\\SOC-Voxerra\\Pages\\RegisterPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\RegisterPage.xaml",
+              "ToolTip": "C:\\SOC-Voxerra\\Pages\\RegisterPage.xaml",
+              "RelativeToolTip": "Pages\\RegisterPage.xaml",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-31T22:20:23.746Z",
+              "WhenOpened": "2025-02-03T21:22:17.033Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MessageCenterPageViewModel.cs",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\ViewModels\\MessageCenterPageViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\MessageCenterPageViewModel.cs",
-              "ToolTip": "C:\\SOC-Voxerra\\ViewModels\\MessageCenterPageViewModel.cs",
-              "RelativeToolTip": "ViewModels\\MessageCenterPageViewModel.cs",
-              "ViewState": "AgIAAIwAAAAAAAAAAAAQwMwAAABCAAAAAAAAAA==",
+              "Title": "NameViewModel.cs",
+              "DocumentMoniker": "C:\\SOC-Voxerra\\ViewModels\\Settings\\Account\\NameViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\Settings\\Account\\NameViewModel.cs",
+              "ToolTip": "C:\\SOC-Voxerra\\ViewModels\\Settings\\Account\\NameViewModel.cs",
+              "RelativeToolTip": "ViewModels\\Settings\\Account\\NameViewModel.cs",
+              "ViewState": "AgIAAAEBAAAAAAAAAADwv6UAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T12:49:09.691Z",
+              "WhenOpened": "2025-02-03T19:10:42.91Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LastestMessage.cs",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\Models\\LastestMessage.cs",
-              "RelativeDocumentMoniker": "Models\\LastestMessage.cs",
-              "ToolTip": "C:\\SOC-Voxerra\\Models\\LastestMessage.cs",
-              "RelativeToolTip": "Models\\LastestMessage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T22:19:02.803Z",
+              "DocumentIndex": 0,
+              "Title": "NamePage.xaml",
+              "DocumentMoniker": "C:\\SOC-Voxerra\\Pages\\Settings\\Account\\NamePage.xaml",
+              "RelativeDocumentMoniker": "Pages\\Settings\\Account\\NamePage.xaml",
+              "ToolTip": "C:\\SOC-Voxerra\\Pages\\Settings\\Account\\NamePage.xaml*",
+              "RelativeToolTip": "Pages\\Settings\\Account\\NamePage.xaml*",
+              "ViewState": "AgIAADYAAAAAAAAAAAD4v08AAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-03T19:08:40.142Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FriendDecisionRequest.cs",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\Services\\FriendAdd\\FriendDecisionRequest.cs",
-              "RelativeDocumentMoniker": "Services\\FriendAdd\\FriendDecisionRequest.cs",
-              "ToolTip": "C:\\SOC-Voxerra\\Services\\FriendAdd\\FriendDecisionRequest.cs",
-              "RelativeToolTip": "Services\\FriendAdd\\FriendDecisionRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T12:46:24.395Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FriendRequestViewModel.cs",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\ViewModels\\FriendRequestViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\FriendRequestViewModel.cs",
-              "ToolTip": "C:\\SOC-Voxerra\\ViewModels\\FriendRequestViewModel.cs",
-              "RelativeToolTip": "ViewModels\\FriendRequestViewModel.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAowIgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T17:58:43.139Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FriendRequestPage.xaml",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\Pages\\FriendRequestPage.xaml",
-              "RelativeDocumentMoniker": "Pages\\FriendRequestPage.xaml",
-              "ToolTip": "C:\\SOC-Voxerra\\Pages\\FriendRequestPage.xaml",
-              "RelativeToolTip": "Pages\\FriendRequestPage.xaml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADkAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-30T17:40:07.996Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AddFriendPage.xaml",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\Pages\\AddFriendPage.xaml",
-              "RelativeDocumentMoniker": "Pages\\AddFriendPage.xaml",
-              "ToolTip": "C:\\SOC-Voxerra\\Pages\\AddFriendPage.xaml",
-              "RelativeToolTip": "Pages\\AddFriendPage.xaml",
-              "ViewState": "AgIAACIAAAAAAAAAAAAwwDoAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-31T00:47:51.167Z"
             }
           ]
         },

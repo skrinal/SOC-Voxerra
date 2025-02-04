@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Voxerra.Pages.Settings.Account.BioPage"
+             xmlns:viewModel="clr-namespace:Voxerra.ViewModels.Settings.Account">
+    <ContentPage.Content>
+        <ScrollView>
+            <VerticalStackLayout Spacing="20" Padding="20">
+
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                    <Button Text="&#xe5c4;" FontFamily="GoogleFont" FontSize="24" VerticalOptions="Center"
+                            BackgroundColor="Transparent"
+                            TextColor="White"
+                            CornerRadius="45"
+                            Padding="0"
+                            Command="{Binding GoBackCommand}" />
+
+                    <Label Text="Bio" FontSize="28" VerticalOptions="Center" />
+
+                </StackLayout>
+
+
+                <Frame BackgroundColor="#1E1E1E" CornerRadius="10" Padding="15">
+                    <HorizontalStackLayout VerticalOptions="Center">
+                        <Grid>
+                            <Frame HeightRequest="65" WidthRequest="65" CornerRadius="50"
+                                   IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                                <Image Source="{Binding AvatarSourceName}" Aspect="AspectFill" />
+                            </Frame>
+                        </Grid>
+
+                        <VerticalStackLayout Spacing="5" Margin="15,0,0,0">
+                            <Label Text="{Binding UserName}" TextColor="White" FontAttributes="Bold" FontSize="18" />
+                            <Label Text="{Binding Bio}" TextColor="#A9A9A9" FontSize="14" />
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <Border
+                    StrokeThickness="2.5"
+                    StrokeShape="RoundRectangle 20">
+                    <Border.Stroke>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#b414de" Offset="0.0" />
+                            <GradientStop Color="#d127a5" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Border.Stroke>
+
+                    <Grid Padding="15">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="45" />
+                            <RowDefinition Height="45" />
+                            <RowDefinition Height="45" />
+                            <RowDefinition Height="45" />
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0" ColumnDefinitions="50,*,30" Padding="15,0,25,0">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding GoToDecisionCommand}"
+                                                      CommandParameter="NamePage" />
+                            </Grid.GestureRecognizers>
+                            <Label Grid.Column="0" Text="person" FontFamily="GoogleFont" FontSize="30"
+                                   VerticalOptions="Center" />
+                            <Label Grid.Column="1" Text="Name" FontSize="18" VerticalOptions="Center" />
+                            <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22"
+                                   VerticalOptions="Center" HorizontalOptions="End" />
+                        </Grid>
+
+                        <Grid Grid.Row="1" ColumnDefinitions="50,*,30" Padding="15,0,25,0">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding GoToDecisionCommand}"
+                                                      CommandParameter="EmailPage" />
+                            </Grid.GestureRecognizers>
+                            <Label Grid.Column="0" Text="mail" FontFamily="GoogleFont" FontSize="30"
+                                   VerticalOptions="Center" />
+                            <Label Grid.Column="1" Text="Email" FontSize="18" VerticalOptions="Center" />
+                            <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22"
+                                   VerticalOptions="Center" HorizontalOptions="End" />
+                        </Grid>
+
+                        <Grid Grid.Row="2" ColumnDefinitions="50,*,30" Padding="15,0,25,0">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding GoToDecisionCommand}"
+                                                      CommandParameter="ProfilePicturePage" />
+                            </Grid.GestureRecognizers>
+                            <Label Grid.Column="0" Text="account_circle" FontFamily="GoogleFont" FontSize="30"
+                                   VerticalOptions="Center" />
+                            <Label Grid.Column="1" Text="Profile Picture" FontSize="18" VerticalOptions="Center" />
+                            <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22"
+                                   VerticalOptions="Center" HorizontalOptions="End" />
+                        </Grid>
+
+                        <Grid Grid.Row="3" ColumnDefinitions="50,*,30" Padding="15,0,25,0">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding GoToDecisionCommand}"
+                                                      CommandParameter="BioPage" />
+                            </Grid.GestureRecognizers>
+                            <Label Grid.Column="0" Text="edit" FontFamily="GoogleFont" FontSize="30"
+                                   VerticalOptions="Center" />
+                            <Label Grid.Column="1" Text="Bio" FontSize="18" VerticalOptions="Center" />
+                            <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22"
+                                   VerticalOptions="Center" HorizontalOptions="End" />
+                        </Grid>
+
+                    </Grid>
+
+                </Border>
+
+
+                <Label Text="Important" TextColor="White" FontSize="16" FontAttributes="Bold" />
+                <Border
+                    StrokeThickness="2.5"
+                    StrokeShape="RoundRectangle 20">
+                    <Border.Stroke>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#b414de" Offset="0.0" />
+                            <GradientStop Color="#d127a5" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Border.Stroke>
+
+                    <Grid Padding="15">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="45" />
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0" ColumnDefinitions="50,*,30" Padding="15,0,25,0">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding GoToDecisionCommand}"
+                                                      CommandParameter="DeleteAccountPage" />
+                            </Grid.GestureRecognizers>
+                            <Label Grid.Column="0" Text="delete" FontFamily="GoogleFont" TextColor="red" FontSize="30"
+                                   VerticalOptions="Center" />
+                            <Label Grid.Column="1" Text="Delete Account" TextColor="red" FontSize="18"
+                                   VerticalOptions="Center" />
+                            <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" TextColor="red"
+                                   FontSize="22"
+                                   VerticalOptions="Center" HorizontalOptions="End" />
+                        </Grid>
+
+                    </Grid>
+
+                </Border>
+
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

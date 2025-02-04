@@ -96,6 +96,36 @@ build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.Settings.Acc
 build_metadata.AdditionalFiles.TargetPath = Pages\Settings\AccountDetailsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\Settings\AccountDetailsPage.xaml
 
+[C:/SOC-Voxerra/Pages/Settings/Account/BioPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.Settings.Account.BioPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Settings\Account\BioPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Settings\Account\BioPage.xaml
+
+[C:/SOC-Voxerra/Pages/Settings/Account/DeleteAccountPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.Settings.Account.DeleteAccountPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Settings\Account\DeleteAccountPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Settings\Account\DeleteAccountPage.xaml
+
+[C:/SOC-Voxerra/Pages/Settings/Account/EmailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.Settings.Account.EmailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Settings\Account\EmailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Settings\Account\EmailPage.xaml
+
+[C:/SOC-Voxerra/Pages/Settings/Account/NamePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.Settings.Account.NamePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Settings\Account\NamePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Settings\Account\NamePage.xaml
+
+[C:/SOC-Voxerra/Pages/Settings/Account/ProfilePicturePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.Settings.Account.ProfilePicturePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Settings\Account\ProfilePicturePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Settings\Account\ProfilePicturePage.xaml
+
 [C:/SOC-Voxerra/Pages/Settings/MainSettingPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.Settings.MainSettingPage.xaml
@@ -113,6 +143,36 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.Settings.SecurityPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\Settings\SecurityPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\Settings\SecurityPage.xaml
+
+[C:/SOC-Voxerra/Pages/Settings/Security/LoginAlertsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.Settings.Security.LoginAlertsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Settings\Security\LoginAlertsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Settings\Security\LoginAlertsPage.xaml
+
+[C:/SOC-Voxerra/Pages/Settings/Security/PasswordPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.Settings.Security.PasswordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Settings\Security\PasswordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Settings\Security\PasswordPage.xaml
+
+[C:/SOC-Voxerra/Pages/Settings/Security/SavedLoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.Settings.Security.SavedLoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Settings\Security\SavedLoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Settings\Security\SavedLoginPage.xaml
+
+[C:/SOC-Voxerra/Pages/Settings/Security/TwoFactorAuthPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.Settings.Security.TwoFactorAuthPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Settings\Security\TwoFactorAuthPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Settings\Security\TwoFactorAuthPage.xaml
+
+[C:/SOC-Voxerra/Pages/Settings/Security/WhereIsUserLoggedPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.Settings.Security.WhereIsUserLoggedPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Settings\Security\WhereIsUserLoggedPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Settings\Security\WhereIsUserLoggedPage.xaml
 
 [C:/SOC-Voxerra/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

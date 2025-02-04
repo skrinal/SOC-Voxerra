@@ -112,6 +112,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Folder Include="Pages\Settings\Notifications\" />
 	  <Folder Include="Services\Background\" />
 	  <Folder Include="Services\Password\" />
 	</ItemGroup>

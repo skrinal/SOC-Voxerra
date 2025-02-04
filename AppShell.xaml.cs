@@ -1,5 +1,4 @@
-﻿
-namespace Voxerra
+﻿namespace Voxerra
 {
     public partial class AppShell : Shell
     {
@@ -24,9 +23,20 @@ namespace Voxerra
 
 
             Routing.RegisterRoute("AccountDetailsPage", typeof(AccountDetailsPage));
+            Routing.RegisterRoute("NamePage", typeof(NamePage));
+            Routing.RegisterRoute("EmailPage", typeof(EmailPage));
+            Routing.RegisterRoute("ProfilePicturePage", typeof(ProfilePicturePage));
+            Routing.RegisterRoute("BioPage", typeof(BioPage));
+            Routing.RegisterRoute("DeleteAccountPage", typeof(DeleteAccountPage));
+            
             Routing.RegisterRoute("NotificationsPage", typeof(NotificationsPage));
+            
             Routing.RegisterRoute("SecurityPage", typeof(SecurityPage));
-
+            Routing.RegisterRoute("PasswordPage", typeof(PasswordPage));
+            Routing.RegisterRoute("TwoFactorAuthPage", typeof(TwoFactorAuthPage));
+            Routing.RegisterRoute("SavedLoginPage", typeof(SavedLoginPage));
+            Routing.RegisterRoute("WhereIsUserLoggedPage", typeof(WhereIsUserLoggedPage));
+            Routing.RegisterRoute("LoginPage", typeof(LoginPage));
 
             /* pozriet ci SecureStorage ma RefreshToken(dlhodoby)
 
