@@ -117,7 +117,7 @@ public class BioViewModel : INotifyPropertyChanged, IQueryAttributable {
                 AnswerText = "Your Bio will be deleted"
                 ButtonStatus = true;
                 isValidBio = true;
-                return true; //set mesage
+                return true;
             }
             if(Bio.Length >= 255)
             {
