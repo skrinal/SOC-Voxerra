@@ -2,18 +2,18 @@ namespace Voxerra.ViewModels
 {
     public class AccountDetailsViewModel : INotifyPropertyChanged
     {
-
         public event PropertyChangedEventHandler? PropertyChanged;
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
+        private int UserId;
         private DataCenterService _dataCenterService;
         public AccountDetailsViewModel(DataCenterService dataCenterService)
         {
             _dataCenterService = dataCenterService;
-
+            
             /*FriendRequestPageCommand = new Command(() =>
             {
                 if (isProcessing) return;
@@ -32,19 +32,19 @@ namespace Voxerra.ViewModels
                 switch (decision)
                 {
                     case "Name":
-                        await Shell.Current.GoToAsync($"NamePage?UserName={_dataCenterService.UserInfo.UserName}");
+                        await Shell.Current.GoToAsync($"NamePage?UserName={userName}");
                         break;
                     case "Email":
-                        await Shell.Current.GoToAsync($"EmailPage?UserId={_dataCenterService.UserInfo.Id}"); // treba apicall na email
+                        await Shell.Current.GoToAsync($"EmailPage?UserId={UserId}"); // treba apicall na email
                         break;
                     case "ProfilePicture":
                         await Shell.Current.GoToAsync($"ProfilePicturePage"); // uvidime
                         break;
                     case "Bio":
-                        await Shell.Current.GoToAsync($"BioPage?Bio={_dataCenterService.UserInfo.Bio}");
+                        await Shell.Current.GoToAsync($"BioPage?UserId={UserId}&Bio={bio}");
                         break;
                     case "DeleteAccount":
-                        await Shell.Current.GoToAsync($"DeleteAccountPage?Id={_dataCenterService.UserInfo.Id}");
+                        await Shell.Current.GoToAsync($"DeleteAccountPage?Id={UserId}");
                         break;
                     default:
                         break;
@@ -58,6 +58,7 @@ namespace Voxerra.ViewModels
 
         public void GetUserData()
         {
+            UserId = _dataCenterService.UserInfo.Id;
             userName = _dataCenterService.UserInfo.UserName;
             avatarSourceName = _dataCenterService.UserInfo.AvatarSourceName;
             bio = string.IsNullOrWhiteSpace(_dataCenterService.UserInfo.Bio) ? "No bio" : _dataCenterService.UserInfo.Bio;

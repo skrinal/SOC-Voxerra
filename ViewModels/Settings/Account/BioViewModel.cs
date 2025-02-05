@@ -5,8 +5,9 @@ public class BioViewModel : INotifyPropertyChanged, IQueryAttributable {
     {
         if (query == null || query.Count == 0) return;
 
+        userId = int.Parse(HttpUtility.UrlDecode(query["UserId"].ToString()));
         Bio = HttpUtility.UrlDecode(query["Bio"].ToString());
-    
+        
 
     }
     public event PropertyChangedEventHandler? PropertyChanged;
@@ -44,8 +45,8 @@ public class BioViewModel : INotifyPropertyChanged, IQueryAttributable {
         {
             var request = new UserBioChangeRequest
             {
-                UserId = UserId,
-                NewBio = bio
+                UserId = userId,
+                NewBio = Bio
             };
             var response = await _serviceProvider.CallWebApi<UserBioChangeRequest, BaseResponse>(
                 "/UserSettings/ChangeBio", HttpMethod.Post, request);
@@ -57,9 +58,9 @@ public class BioViewModel : INotifyPropertyChanged, IQueryAttributable {
                 AnswerText = "Bio changed successfully";
                 AnswerColor = "Green";
                 
-                isEmailUnique = false;
+                isValidBio = false;
                 ButtonStatus = false;
-                CurrentBio = email;
+                CurrentBio = Bio;
             }
             else
             {
@@ -69,7 +70,7 @@ public class BioViewModel : INotifyPropertyChanged, IQueryAttributable {
                 AnswerText = "Bio failed to change";
                 AnswerColor = "Red";
                 
-                isEmailUnique = false;
+                isValidBio = false;
                 ButtonStatus = false;
             }
         }
@@ -91,67 +92,66 @@ public class BioViewModel : INotifyPropertyChanged, IQueryAttributable {
         await Shell.Current.GoToAsync($"AccountDetailsPage");
     }
     
-    private CancellationTokenSource _cts;
+
     private bool IsValidBio(string Bio)
     {
-        cts?.Cancel();
-        _cts = new CancellationTokenSource();
-        try
+        if (Bio == CurrentBio)
         {
-            if(Bio == CurrentBio)
-            {
-                AnswerColor = "Transparent";
-                AnswerText = ""
-                ButtonStatus = false;
-                isValidBio = false;
-                return;
-            } 
-            await Task.Delay(800, _cts.Token);
-
+            AnswerColor = "Transparent";
+            AnswerText = "";
+            CharacterCount = $"Character Count: 255 / {Bio.Length}";
+            RuleColor1 = "White";
+            ButtonStatus = false;
+            isValidBio = false;
+            return false;
+        } 
             
-
-            if (string.IsNullOrWhiteSpace(query))
-            {
-                Bio = "";
-                AnswerColor = "Green";
-                AnswerText = "Your Bio will be deleted"
-                ButtonStatus = true;
-                isValidBio = true;
-                return true;
-            }
-            if(Bio.Length >= 255)
-            {
-                AnswerColor = "Red";
-                AnswerText = "Your Bio is way too long"
-                ButtonStatus = false;
-                isValidBio = false;
-                return false;
-            }
-
-            isValidBio = true;
+        if (string.IsNullOrWhiteSpace(Bio))
+        {
+            Bio = "";
+            CharacterCount = $"Character Count: 255 / {Bio.Length}";
+            RuleColor1 = "White";
             ButtonStatus = true;
+            isValidBio = true;
             return true;
         }
-        catch (TaskCanceledException) { }
+        if (Bio.Length > 255)
+        {
+            RuleColor1 = "Red";
+            CharacterCount = $"Character Count: 255 / {Bio.Length}";
+            ButtonStatus = false;
+            isValidBio = false;
+            return false;
+        }
+        
+        CharacterCount = $"Character Count: 255 / {Bio.Length}";
+        isValidBio = true;
+        ButtonStatus = true;
+        return true;
     }
 
-    private bool isProcessing;
+    private bool isRefreshing;
+    private int userId;
     private string bio;
+    private string CurrentBio;
     private bool isValidBio;
-
+    
     private bool buttonStatus;
 
     private string labelIcon;
     private string labelColor;
     
+    private string ruleColor1;
+    private string characterCount;
+    
     private string answerColor;
     private string answerText;
 
-    public bool IsProcessing
-        {
-            get { return isProcessing; }
-            set { isProcessing = value; OnPropertyChanged(); }
-        }
+    public bool IsRefreshing
+    {
+        get { return isRefreshing; }
+        set { isRefreshing = value; OnPropertyChanged(); }
+    }
     public string Bio
     {
         get { return bio; }
@@ -159,7 +159,7 @@ public class BioViewModel : INotifyPropertyChanged, IQueryAttributable {
         {
             bio = value;
             OnPropertyChanged();
-            IsValidBio(value)
+            IsValidBio(value);
         }
     }
 
@@ -179,7 +179,19 @@ public class BioViewModel : INotifyPropertyChanged, IQueryAttributable {
         set { labelColor = value; OnPropertyChanged(); }
     }
 
+    
+    public string RuleColor1
+    {
+        get { return ruleColor1; }
+        set { ruleColor1 = value; OnPropertyChanged(); }
+    }
+    public string CharacterCount
+    {
+        get { return characterCount; }
+        set { characterCount = value; OnPropertyChanged(); }
+    }
 
+    
     public string AnswerColor
     {
         get { return answerColor; }

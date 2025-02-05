@@ -1,4 +1,4 @@
-namespace Voxerra.Services.Settings
+﻿namespace Voxerra.Services.Settings
 {
     public class UserBioChangeRequest
     {
