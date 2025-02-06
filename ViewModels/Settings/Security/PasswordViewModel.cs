@@ -103,7 +103,7 @@ public class PasswordViewModel : INotifyPropertyChanged, IQueryAttributable
             if (ruleBreak[0])
             {
                 AnswerColor = "Red";
-                AnswerText = "New password is same as your current."
+                AnswerText = "New password is same as your current.";
             } 
             if (ruleBreak[1]) RuleColor1 = "Red";
             if (ruleBreak[2]) RuleColor2 = "Red";
@@ -134,7 +134,7 @@ public class PasswordViewModel : INotifyPropertyChanged, IQueryAttributable
     private string labelIcon;
     private string labelColor;
     
-    private string RuleColor0;
+    private string ruleColor0;
     private string ruleColor1;
     private string ruleColor2;
     private string ruleColor3;
