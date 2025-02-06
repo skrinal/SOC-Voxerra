@@ -61,6 +61,7 @@ public class BioViewModel : INotifyPropertyChanged, IQueryAttributable {
                 isValidBio = false;
                 ButtonStatus = false;
                 CurrentBio = Bio;
+                _dataCenterService.UserInfo.Bio = Bio;
             }
             else
             {
