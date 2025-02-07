@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Voxerra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+0618522ecb840698c3c311a9017d72192e2638ed")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+8f21cab65527d99128997751e61a30e35128d8f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Voxerra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Voxerra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

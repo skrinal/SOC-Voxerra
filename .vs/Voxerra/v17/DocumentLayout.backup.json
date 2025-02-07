@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\SOC-Voxerra\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\pages\\settings\\account\\namepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:pages\\settings\\account\\namepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\pages\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:pages\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\viewmodels\\settings\\account\\nameviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:viewmodels\\settings\\account\\nameviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\pages\\settings\\accountdetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:pages\\settings\\accountdetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\pages\\settings\\account\\namepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:pages\\settings\\account\\namepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\SOC-Voxerra\\Services\\Settings\\UserNameChangeRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Services\\Settings\\UserNameChangeRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1501,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,55 +34,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AccountDetailsPage.xaml",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\Pages\\Settings\\AccountDetailsPage.xaml",
-              "RelativeDocumentMoniker": "Pages\\Settings\\AccountDetailsPage.xaml",
-              "ToolTip": "C:\\SOC-Voxerra\\Pages\\Settings\\AccountDetailsPage.xaml",
-              "RelativeToolTip": "Pages\\Settings\\AccountDetailsPage.xaml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-03T21:50:40.442Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RegisterPage.xaml",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\Pages\\RegisterPage.xaml",
-              "RelativeDocumentMoniker": "Pages\\RegisterPage.xaml",
-              "ToolTip": "C:\\SOC-Voxerra\\Pages\\RegisterPage.xaml",
-              "RelativeToolTip": "Pages\\RegisterPage.xaml",
-              "ViewState": "AgIAAKQAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-03T21:22:17.033Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "UserNameChangeRequest.cs",
+              "DocumentMoniker": "C:\\SOC-Voxerra\\Services\\Settings\\UserNameChangeRequest.cs",
+              "RelativeDocumentMoniker": "Services\\Settings\\UserNameChangeRequest.cs",
+              "ToolTip": "C:\\SOC-Voxerra\\Services\\Settings\\UserNameChangeRequest.cs",
+              "RelativeToolTip": "Services\\Settings\\UserNameChangeRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T22:40:41.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "NameViewModel.cs",
               "DocumentMoniker": "C:\\SOC-Voxerra\\ViewModels\\Settings\\Account\\NameViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\Settings\\Account\\NameViewModel.cs",
               "ToolTip": "C:\\SOC-Voxerra\\ViewModels\\Settings\\Account\\NameViewModel.cs",
               "RelativeToolTip": "ViewModels\\Settings\\Account\\NameViewModel.cs",
-              "ViewState": "AgIAAAEBAAAAAAAAAADwv6UAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-03T19:10:42.91Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "NamePage.xaml",
               "DocumentMoniker": "C:\\SOC-Voxerra\\Pages\\Settings\\Account\\NamePage.xaml",
               "RelativeDocumentMoniker": "Pages\\Settings\\Account\\NamePage.xaml",
-              "ToolTip": "C:\\SOC-Voxerra\\Pages\\Settings\\Account\\NamePage.xaml*",
-              "RelativeToolTip": "Pages\\Settings\\Account\\NamePage.xaml*",
-              "ViewState": "AgIAADYAAAAAAAAAAAD4v08AAABQAAAAAAAAAA==",
+              "ToolTip": "C:\\SOC-Voxerra\\Pages\\Settings\\Account\\NamePage.xaml",
+              "RelativeToolTip": "Pages\\Settings\\Account\\NamePage.xaml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAEcAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-03T19:08:40.142Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T19:08:40.142Z"
             }
           ]
         },

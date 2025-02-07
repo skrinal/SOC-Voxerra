@@ -35,16 +35,16 @@ namespace Voxerra.ViewModels
                         await Shell.Current.GoToAsync($"NamePage?UserName={userName}");
                         break;
                     case "Email":
-                        await Shell.Current.GoToAsync($"EmailPage?UserId={UserId}"); // treba apicall na email
+                        await Shell.Current.GoToAsync($"EmailPage?UserId={UserId}"); 
                         break;
                     case "ProfilePicture":
-                        await Shell.Current.GoToAsync($"ProfilePicturePage"); // uvidime
+                        await Shell.Current.GoToAsync($"ProfilePicturePage"); // NEFUNGUJE
                         break;
                     case "Bio":
                         await Shell.Current.GoToAsync($"BioPage?UserId={UserId}&Bio={bio}");
                         break;
                     case "DeleteAccount":
-                        await Shell.Current.GoToAsync($"DeleteAccountPage?Id={UserId}");
+                        await Shell.Current.GoToAsync($"DeleteAccountPage?UserName={userName}&Bio={bio}&AvatarName={avatarSourceName}");
                         break;
                     default:
                         break;

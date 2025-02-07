@@ -2,7 +2,8 @@
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Voxerra.Pages.Settings.Account.DeleteAccountPage">
+             x:Class="Voxerra.Pages.Settings.Account.DeleteAccountPage"
+             Background="#111011">
     <ContentPage.Content>
         <ScrollView>
             <VerticalStackLayout Spacing="20" Padding="20">
@@ -43,105 +44,90 @@
                     StrokeShape="RoundRectangle 20">
                     <Border.Stroke>
                         <LinearGradientBrush>
-                            <GradientStop Color="#b414de" Offset="0.0" />
-                            <GradientStop Color="#d127a5" Offset="1.0" />
+                            <GradientStop Color="Red" Offset="0.0" />
+                            <GradientStop Color="DarkRed" Offset="1.0" />
                         </LinearGradientBrush>
                     </Border.Stroke>
 
-                    <Grid Padding="15">
+                    <Grid BackgroundColor="#1E1E1E" Padding="0,10,0,10">
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="45" />
-                            <RowDefinition Height="45" />
-                            <RowDefinition Height="45" />
-                            <RowDefinition Height="45" />
+                            <RowDefinition Height="80" />
+                            <RowDefinition Height="80" />
+                            <RowDefinition Height="80" />
+                            <RowDefinition Height="120" />
                         </Grid.RowDefinitions>
 
-                        <Grid Grid.Row="0" ColumnDefinitions="50,*,30" Padding="15,0,25,0">
+                        <Grid Grid.Row="0" ColumnDefinitions="50,*" Padding="15,0,25,0">
                             <Grid.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding GoToDecisionCommand}"
                                                       CommandParameter="NamePage" />
                             </Grid.GestureRecognizers>
-                            <Label Grid.Column="0" Text="person" FontFamily="GoogleFont" FontSize="30"
+                            <Label Grid.Column="0" Text="warning" TextColor="Red" FontFamily="GoogleFont" FontSize="30"
                                    VerticalOptions="Center" />
-                            <Label Grid.Column="1" Text="Name" FontSize="18" VerticalOptions="Center" />
-                            <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22"
-                                   VerticalOptions="Center" HorizontalOptions="End" />
+                            <Label Grid.Column="1" Text="Deleting your account is permanent!" FontSize="18" VerticalOptions="Center" />
+
                         </Grid>
 
-                        <Grid Grid.Row="1" ColumnDefinitions="50,*,30" Padding="15,0,25,0">
+                        <Grid Grid.Row="1" ColumnDefinitions="50,*" Padding="15,0,25,0">
                             <Grid.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding GoToDecisionCommand}"
                                                       CommandParameter="EmailPage" />
                             </Grid.GestureRecognizers>
-                            <Label Grid.Column="0" Text="mail" FontFamily="GoogleFont" FontSize="30"
+                            <Label Grid.Column="0" Text="close" TextColor="Red" FontFamily="GoogleFont" FontSize="30"
                                    VerticalOptions="Center" />
-                            <Label Grid.Column="1" Text="Email" FontSize="18" VerticalOptions="Center" />
-                            <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22"
-                                   VerticalOptions="Center" HorizontalOptions="End" />
+                            <Label Grid.Column="1" Text="You will lose all your messages, contacts, and settings" FontSize="18" VerticalOptions="Center" />
+
                         </Grid>
 
-                        <Grid Grid.Row="2" ColumnDefinitions="50,*,30" Padding="15,0,25,0">
+                        <Grid Grid.Row="2" ColumnDefinitions="50,*" Padding="15,0,25,0">
                             <Grid.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding GoToDecisionCommand}"
                                                       CommandParameter="ProfilePicturePage" />
                             </Grid.GestureRecognizers>
-                            <Label Grid.Column="0" Text="account_circle" FontFamily="GoogleFont" FontSize="30"
+                            <Label Grid.Column="0" Text="account_circle" TextColor="Red" FontFamily="GoogleFont" FontSize="30"
                                    VerticalOptions="Center" />
-                            <Label Grid.Column="1" Text="Profile Picture" FontSize="18" VerticalOptions="Center" />
-                            <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22"
-                                   VerticalOptions="Center" HorizontalOptions="End" />
+                            <Label Grid.Column="1" Text="You will NOT be able to recover your account" FontSize="18" VerticalOptions="Center" />
+
                         </Grid>
 
-                        <Grid Grid.Row="3" ColumnDefinitions="50,*,30" Padding="15,0,25,0">
+                        <Grid Grid.Row="3" ColumnDefinitions="55,*" Padding="15,0,25,0">
                             <Grid.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding GoToDecisionCommand}"
                                                       CommandParameter="BioPage" />
                             </Grid.GestureRecognizers>
-                            <Label Grid.Column="0" Text="edit" FontFamily="GoogleFont" FontSize="30"
-                                   VerticalOptions="Center" />
-                            <Label Grid.Column="1" Text="Bio" FontSize="18" VerticalOptions="Center" />
-                            <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22"
-                                   VerticalOptions="Center" HorizontalOptions="End" />
+                            <CheckBox Grid.Column="0" IsChecked="{Binding IsChecked}" />
+                            <Label Grid.Column="1" Text="Are you really sure you want to continue ?" FontSize="18" VerticalOptions="Center" />
                         </Grid>
 
                     </Grid>
 
                 </Border>
 
-
-                <Label Text="Important" TextColor="White" FontSize="16" FontAttributes="Bold" />
-                <Border
-                    StrokeThickness="2.5"
-                    StrokeShape="RoundRectangle 20">
-                    <Border.Stroke>
-                        <LinearGradientBrush>
-                            <GradientStop Color="#b414de" Offset="0.0" />
-                            <GradientStop Color="#d127a5" Offset="1.0" />
-                        </LinearGradientBrush>
-                    </Border.Stroke>
-
-                    <Grid Padding="15">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="45" />
-                        </Grid.RowDefinitions>
-
-                        <Grid Grid.Row="0" ColumnDefinitions="50,*,30" Padding="15,0,25,0">
-                            <Grid.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding GoToDecisionCommand}"
-                                                      CommandParameter="DeleteAccountPage" />
-                            </Grid.GestureRecognizers>
-                            <Label Grid.Column="0" Text="delete" FontFamily="GoogleFont" TextColor="red" FontSize="30"
-                                   VerticalOptions="Center" />
-                            <Label Grid.Column="1" Text="Delete Account" TextColor="red" FontSize="18"
-                                   VerticalOptions="Center" />
-                            <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" TextColor="red"
-                                   FontSize="22"
-                                   VerticalOptions="Center" HorizontalOptions="End" />
-                        </Grid>
-
-                    </Grid>
-
-                </Border>
+                <Grid>
+                    <Frame
+                        CornerRadius="25"
+                        Padding="0"
+                        Margin="0,20,0,0"
+                        IsClippedToBounds="True"
+                        HasShadow="False">
+                        <Frame.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#b414de" Offset="0.0" />
+                                <GradientStop Color="#3e2099" Offset="1.2" />
+                            </LinearGradientBrush>
+                        </Frame.Background>
+                        
+                        <Button
+                            IsEnabled="{Binding ButtonStatus}"
+                            HeightRequest="55"
+                            Text="Delete Account"
+                            TextColor="White"
+                            BackgroundColor="Transparent"
+                            Command="{Binding DeleteAccountCommand}"
+                            CornerRadius="25" />
+                    </Frame>
+                </Grid>
+                
 
 
             </VerticalStackLayout>

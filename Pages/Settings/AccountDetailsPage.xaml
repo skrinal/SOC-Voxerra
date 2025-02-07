@@ -51,7 +51,7 @@
                     </LinearGradientBrush>
                 </Border.Stroke>
 
-                <Grid Padding="15">
+                <Grid BackgroundColor="#1E1E1E" Padding="15">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="45" />
                         <RowDefinition Height="45" />
@@ -119,7 +119,7 @@
                     </LinearGradientBrush>
                 </Border.Stroke>
 
-                <Grid Padding="15">
+                <Grid BackgroundColor="#1E1E1E" Padding="15">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="45" />
                     </Grid.RowDefinitions>
