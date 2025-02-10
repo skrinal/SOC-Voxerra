@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\SOC-Voxerra\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\viewmodels\\settings\\account\\nameviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:viewmodels\\settings\\account\\nameviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\viewmodels\\registerconfirmationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:viewmodels\\registerconfirmationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\pages\\registerconfirmationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:pages\\registerconfirmationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|c:\\soc-voxerra\\pages\\settings\\account\\namepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{88FC2E7F-13DC-4F73-B481-66C543C64CA8}|Voxerra.csproj|solutionrelative:pages\\settings\\account\\namepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\SOC-Voxerra\\Services\\Settings\\UserNameChangeRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Services\\Settings\\UserNameChangeRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1501,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,40 +34,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserNameChangeRequest.cs",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\Services\\Settings\\UserNameChangeRequest.cs",
-              "RelativeDocumentMoniker": "Services\\Settings\\UserNameChangeRequest.cs",
-              "ToolTip": "C:\\SOC-Voxerra\\Services\\Settings\\UserNameChangeRequest.cs",
-              "RelativeToolTip": "Services\\Settings\\UserNameChangeRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T22:40:41.119Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "NameViewModel.cs",
-              "DocumentMoniker": "C:\\SOC-Voxerra\\ViewModels\\Settings\\Account\\NameViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\Settings\\Account\\NameViewModel.cs",
-              "ToolTip": "C:\\SOC-Voxerra\\ViewModels\\Settings\\Account\\NameViewModel.cs",
-              "RelativeToolTip": "ViewModels\\Settings\\Account\\NameViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Title": "RegisterConfirmationViewModel.cs",
+              "DocumentMoniker": "C:\\SOC-Voxerra\\ViewModels\\RegisterConfirmationViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\RegisterConfirmationViewModel.cs",
+              "ToolTip": "C:\\SOC-Voxerra\\ViewModels\\RegisterConfirmationViewModel.cs",
+              "RelativeToolTip": "ViewModels\\RegisterConfirmationViewModel.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAkwGsAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T19:10:42.91Z",
+              "WhenOpened": "2025-02-09T01:55:39.098Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "RegisterConfirmationPage.xaml",
+              "DocumentMoniker": "C:\\SOC-Voxerra\\Pages\\RegisterConfirmationPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\RegisterConfirmationPage.xaml",
+              "ToolTip": "C:\\SOC-Voxerra\\Pages\\RegisterConfirmationPage.xaml",
+              "RelativeToolTip": "Pages\\RegisterConfirmationPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-08T18:55:46.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "NamePage.xaml",
               "DocumentMoniker": "C:\\SOC-Voxerra\\Pages\\Settings\\Account\\NamePage.xaml",
               "RelativeDocumentMoniker": "Pages\\Settings\\Account\\NamePage.xaml",
               "ToolTip": "C:\\SOC-Voxerra\\Pages\\Settings\\Account\\NamePage.xaml",
               "RelativeToolTip": "Pages\\Settings\\Account\\NamePage.xaml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAEcAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAIBJwFoAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-03T19:08:40.142Z"
+              "WhenOpened": "2025-02-03T19:08:40.142Z",
+              "EditorCaption": ""
             }
           ]
         },

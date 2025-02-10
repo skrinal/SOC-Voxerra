@@ -3,69 +3,142 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Voxerra.Pages.RegisterConfirmationPage"
              xmlns:viewModel="clr-namespace:Voxerra.ViewModels"
-             Title="RegisterConfirmationPage"
-             Background="#0f0f0f">
-    <RefreshView Margin="10" IsRefreshing="{Binding isProcessing}">
-        <Grid>
-            <VerticalStackLayout Margin="30" VerticalOptions="Center">
+             Title="Register Confirmation"
+             BackgroundColor="#111011">
+    
 
-                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                    <Border StrokeThickness="4" StrokeShape="RoundRectangle 10">
-                        <Border.Stroke>
-                            <LinearGradientBrush>
-                                <GradientStop Color="#b414de" Offset="0.0" />
-                                <GradientStop Color="#d127a5" Offset="1.0" />
-                            </LinearGradientBrush>
-                        </Border.Stroke>
-                        <Entry Text="{Binding Entry1}" WidthRequest="50" MaxLength="1" Keyboard="Numeric" />
-                    </Border>
+    <Grid Padding="20" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="75"/>
+        </Grid.RowDefinitions>
+        
+        <StackLayout Grid.Row="0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
 
-                    <Border StrokeThickness="4" StrokeShape="RoundRectangle 10">
-                        <Border.Stroke>
-                            <LinearGradientBrush>
-                                <GradientStop Color="#b414de" Offset="0.0" />
-                                <GradientStop Color="#d127a5" Offset="1.0" />
-                            </LinearGradientBrush>
-                        </Border.Stroke>
-                        <Entry Text="{Binding Entry2}" WidthRequest="50" MaxLength="1" Keyboard="Numeric" />
-                    </Border>
+            <Button Text="&#xe5c4;" FontFamily="GoogleFont" FontSize="24" VerticalOptions="Center"
+                BackgroundColor="Transparent"
+                TextColor="White"
+                CornerRadius="45"
+                Padding="0"
+                Command="{Binding GoBackCommand}" />
 
-                    <Border StrokeThickness="4" StrokeShape="RoundRectangle 10">
-                        <Border.Stroke>
-                            <LinearGradientBrush>
-                                <GradientStop Color="#b414de" Offset="0.0" />
-                                <GradientStop Color="#d127a5" Offset="1.0" />
-                            </LinearGradientBrush>
-                        </Border.Stroke>
-                        <Entry Text="{Binding Entry3}" WidthRequest="50" HeightRequest="55" MaxLength="1" Keyboard="Numeric" />
-                    </Border>
+        </StackLayout>
 
-                    <Border StrokeThickness="4" StrokeShape="RoundRectangle 10">
-                        <Border.Stroke>
-                            <LinearGradientBrush>
-                                <GradientStop Color="#b414de" Offset="0.0" />
-                                <GradientStop Color="#d127a5" Offset="1.0" />
-                            </LinearGradientBrush>
-                        </Border.Stroke>
-                        <Entry Text="{Binding Entry4}" WidthRequest="50" MaxLength="1" Keyboard="Numeric" />
-                    </Border>
+        <Grid Grid.Row="1" Padding="3,0,0,0" VerticalOptions="End">
 
-                    <Border StrokeThickness="4" StrokeShape="RoundRectangle 10">
-                        <Border.Stroke>
-                            <LinearGradientBrush>
-                                <GradientStop Color="#b414de" Offset="0.0" />
-                                <GradientStop Color="#d127a5" Offset="1.0" />
-                            </LinearGradientBrush>
-                        </Border.Stroke>
-                        <Entry Text="{Binding Entry5}" WidthRequest="50" MaxLength="1" Keyboard="Numeric" />
-                    </Border>
-
-                </StackLayout>
-
-                <Button Text="Confirm" Command="{Binding ConfirmRegistrationCommand}" />
-                <Button Text="Go Back" Command="{Binding GoBackCommand}" />
-
-            </VerticalStackLayout>
+            <Label Text="Enter Code" FontSize="28" VerticalOptions="Center" />
+            
         </Grid>
-    </RefreshView>
+        
+        <Grid Grid.Row="2" RowDefinitions="25,25" VerticalOptions="Start" >
+
+            <Label Grid.Row="0" Text="We've sent an email with an activation code to"
+                   FontSize="16"
+                   TextColor="Gray"
+                   HorizontalTextAlignment="Center"/>
+
+            <Label Grid.Row="1" Text="+33 2 94 27 84 11"
+                   FontSize="16"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold" />
+        </Grid> 
+
+        <HorizontalStackLayout Grid.Row="3" Spacing="10" VerticalOptions="End" HorizontalOptions="Center">
+            <Frame CornerRadius="10" WidthRequest="50" HeightRequest="60" BorderColor="#b414de" Padding="0">
+                <Entry Text="{Binding Entry1}"
+                       Margin="0,5,0,0"
+                       FontSize="20"
+                       MaxLength="1"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       Keyboard="Numeric" />
+            </Frame>
+
+            <Frame CornerRadius="10" WidthRequest="50" HeightRequest="60" BorderColor="#8314de" Padding="0">
+                <Entry Text="{Binding Entry2}"
+                       Margin="0,5,0,0"
+                       FontSize="20"
+                       MaxLength="1"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       Keyboard="Numeric" />
+            </Frame>
+
+            <Frame CornerRadius="10" WidthRequest="50" HeightRequest="60" BorderColor="#6114de" Padding="0">
+                <Entry Text="{Binding Entry3}"
+                       Margin="0,5,0,0"
+                       FontSize="20"
+                       MaxLength="1"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       Keyboard="Numeric" />
+            </Frame>
+
+            <Frame CornerRadius="10" WidthRequest="50" HeightRequest="60" BorderColor="#4714de" Padding="0">
+                <Entry Text="{Binding Entry4}"
+                       Margin="0,5,0,0"
+                       FontSize="20"
+                       MaxLength="1"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       Keyboard="Numeric" />
+            </Frame>
+
+            <Frame CornerRadius="10" WidthRequest="50" HeightRequest="60" BorderColor="#3214de" Padding="0">
+                <Entry Text="{Binding Entry5}"
+                       Margin="0,5,0,0"
+                       FontSize="20"
+                       MaxLength="1"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       Keyboard="Numeric" />
+            </Frame>
+        </HorizontalStackLayout>
+
+
+        <Grid Grid.Row="4" VerticalOptions="End">
+            <Label Text="Send code again"
+FontSize="14"
+TextColor="#1D4ED8"
+HorizontalOptions="Center"
+Margin="0,20,0,0" />
+
+            <Label Text="00:20"
+FontSize="14"
+TextColor="Gray"
+HorizontalOptions="Center" />
+
+        </Grid>
+
+        <Grid Grid.Row="5">
+            <Frame
+    CornerRadius="25"
+    Padding="0"
+    Margin="0,20,0,0"
+    IsClippedToBounds="True"
+    HasShadow="False">
+                <Frame.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#b414de" Offset="0.0" />
+                        <GradientStop Color="#d127a5" Offset="1.2" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+                <Button
+        IsEnabled="{Binding ButtonStatus}"
+        HeightRequest="55"
+        Text="Send"
+        TextColor="White"
+        BackgroundColor="Transparent"
+        Command="{Binding UpdateNameCommand}"
+        CornerRadius="25" />
+            </Frame>
+        </Grid>
+        
+
+    </Grid>
 </ContentPage>

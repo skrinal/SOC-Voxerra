@@ -88,15 +88,13 @@
                 var result = JsonConvert.DeserializeObject<AuthenticateResponse>(responseContent);
                 result.StatusCode = (int)response.StatusCode;
 
+                if (result.StatusCode == 222)
+                {
+                    return result;
+                }
                 if (result.StatusCode == 200)
                 {
                     _accesToken = result.Token;
-                    //_refreshToken = result.RefreshToken;
-
-                    //Task.Run(async () =>
-                    //{
-                    //    await SaveRefreshToken(_refreshToken)
-                    //});
                 }
                 return result;
             }

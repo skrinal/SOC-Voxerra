@@ -4,7 +4,6 @@ namespace Voxerra.ViewModels
     public class RegisterConfirmationViewModel : INotifyPropertyChanged, IQueryAttributable
     {
         public event PropertyChangedEventHandler PropertyChanged;
-        private string Email;
         private ServiceProvider _serviceProvider;
         private RegisterPageViewModel _registerPageViewModel;
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -94,6 +93,7 @@ namespace Voxerra.ViewModels
         private string entry3;
         private string entry4;
         private string entry5;
+        private string email;
 
         public string Entry1
         {
@@ -143,6 +143,11 @@ namespace Voxerra.ViewModels
                 entry5 = value;
                 OnPropertyChanged();
             }
+        }
+        public string Email
+        {
+            get { return email; }
+            set { email = value; OnPropertyChanged(); }
         }
         public int RegistrationCode
         {

@@ -1085,3 +1085,7 @@ C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\arm64-v8a\System.Private.
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\armeabi-v7a\System.Private.CoreLib.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\x86\System.Private.CoreLib.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\x86_64\System.Private.CoreLib.dll
+C:\SOC-Voxerra\bin\Debug\net8.0-android\Microsoft.Maui.Controls.HotReload.Forms.dll
+C:\SOC-Voxerra\bin\Debug\net8.0-android\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
+C:\SOC-Voxerra\bin\Debug\net8.0-android\Microsoft.VisualStudio.DesignTools.TapContract.dll
+C:\SOC-Voxerra\obj\Debug\net8.0-android\Voxerra.csproj.Up2Date

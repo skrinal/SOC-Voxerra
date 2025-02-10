@@ -76,6 +76,10 @@ namespace Voxerra.ViewModels
                     Password = Password,
                 };
                 var response = await _serviceProvider.Authenticate(request);
+                if (response.StatusCode == 222)
+                {
+                    await Shell.Current.GoToAsync($"//MainPage?userId={response.Id}");
+                }
                 if (response.StatusCode == 200)
                 {
                     //await Shell.Current.GoToAsync($"MessageCenterPage?userId={response.Id}");
@@ -97,7 +101,8 @@ namespace Voxerra.ViewModels
         {
             try
             {
-                await Shell.Current.GoToAsync($"RegisterPage");
+                //await Shell.Current.GoToAsync($"RegisterPage");
+                await Shell.Current.GoToAsync($"RegisterConfirmationPage");
             }
             catch (Exception ex)
             {
