@@ -101,8 +101,8 @@ namespace Voxerra.ViewModels
         {
             try
             {
-                //await Shell.Current.GoToAsync($"RegisterPage");
-                await Shell.Current.GoToAsync($"RegisterConfirmationPage");
+                await Shell.Current.GoToAsync($"RegisterPage");
+                //await Shell.Current.GoToAsync($"RegisterConfirmationPage");
             }
             catch (Exception ex)
             {
