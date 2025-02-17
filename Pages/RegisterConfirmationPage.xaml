@@ -129,12 +129,11 @@ HorizontalOptions="Center" />
                     </LinearGradientBrush>
                 </Frame.Background>
                 <Button
-        IsEnabled="{Binding ButtonStatus}"
         HeightRequest="55"
         Text="Send"
         TextColor="White"
         BackgroundColor="Transparent"
-        Command="{Binding UpdateNameCommand}"
+        Command="{Binding ConfirmRegistrationCommand}"
         CornerRadius="25" />
             </Frame>
         </Grid>

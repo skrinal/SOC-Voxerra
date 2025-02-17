@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Voxerra.Pages.LoginPage"
@@ -9,18 +10,18 @@
     <RefreshView Margin="10" IsRefreshing="{Binding IsProcessing}">
         <Grid>
             <VerticalStackLayout Margin="30" VerticalOptions="Center">
-                <Image 
-            HeightRequest="150"
-            Source="logo_voxerra_whitev2.png"
-            WidthRequest="300" />
+                <Image
+                    HeightRequest="150"
+                    Source="logo_voxerra_whitev2.png"
+                    WidthRequest="300" />
 
                 <Label
-            Text="Username"
-            Margin="5,0,0,0"
-            Padding="0,10,0,5" />
-                <Border 
-            StrokeThickness="2.5"
-            StrokeShape="RoundRectangle 15">
+                    Text="Username"
+                    Margin="5,0,0,0"
+                    Padding="0,10,0,5" />
+                <Border
+                    StrokeThickness="2.5"
+                    StrokeShape="RoundRectangle 15">
                     <Border.Stroke>
                         <LinearGradientBrush>
                             <GradientStop Color="#b414de" Offset="0.0" />
@@ -28,19 +29,19 @@
                         </LinearGradientBrush>
                     </Border.Stroke>
                     <Entry
-                x:Name="UserNameEntry"
-                Margin="8,0,8,0" 
-                ReturnType="Go"
-                Text="{Binding UserName}"/>
+                        x:Name="UserNameEntry"
+                        Margin="8,0,8,0"
+                        ReturnType="Go"
+                        Text="{Binding UserName}" />
                 </Border>
 
                 <Label
-            Text="Password"
-            Margin="5,0,0,0"
-            Padding="0,10,0,5"/>
-                <Border 
-            StrokeThickness="2.5" 
-            StrokeShape="RoundRectangle 15">
+                    Text="Password"
+                    Margin="5,0,0,0"
+                    Padding="0,10,0,5" />
+                <Border
+                    StrokeThickness="2.5"
+                    StrokeShape="RoundRectangle 15">
                     <Border.Stroke>
                         <LinearGradientBrush>
                             <GradientStop Color="#b414de" Offset="0.0" />
@@ -48,15 +49,15 @@
                         </LinearGradientBrush>
                     </Border.Stroke>
                     <Entry
-                Margin="8,-1,8,-1"
-                IsPassword="True"
-                ReturnType="Go"
-                Text="{Binding Password}" />
+                        Margin="8,-1,8,-1"
+                        IsPassword="True"
+                        ReturnType="Go"
+                        Text="{Binding Password}" />
                 </Border>
 
                 <Label
-            Margin="0,20,0,0"
-            Text="Forgot password">
+                    Margin="0,20,0,0"
+                    Text="Forgot password">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding ForgotPassword}" />
                     </Label.GestureRecognizers>
@@ -70,11 +71,11 @@
             Command="{Binding LoginCommand}"/>-->
 
                 <Frame
-            CornerRadius="20"
-            Padding="0"
-            Margin="0,20,0,0"
-            IsClippedToBounds="True"
-            HasShadow="False">
+                    CornerRadius="20"
+                    Padding="0"
+                    Margin="0,20,0,0"
+                    IsClippedToBounds="True"
+                    HasShadow="False">
                     <Frame.Background>
                         <LinearGradientBrush>
                             <GradientStop Color="#b414de" Offset="0.0" />
@@ -82,21 +83,21 @@
                         </LinearGradientBrush>
                     </Frame.Background>
                     <Button
-                            HeightRequest="55"
-                            Text="Log in"
-                            TextColor="White"
-                            BackgroundColor="Transparent"
-                            Command="{Binding LoginCommand}"
-                            CornerRadius="25" />
+                        HeightRequest="55"
+                        Text="Log in"
+                        TextColor="White"
+                        BackgroundColor="Transparent"
+                        Command="{Binding LoginCommand}"
+                        CornerRadius="25" />
                 </Frame>
 
                 <HorizontalStackLayout Margin="0,25,0,0" HorizontalOptions="Center">
                     <Label Text="Dont have an account?"
-                   TextColor="#9d9d9d"/>
+                           TextColor="#9d9d9d" />
                     <Label
-                 Margin="5,0,0,0"
-                 Text="Sign up" 
-                 TextColor="#fbfafa">
+                        Margin="5,0,0,0"
+                        Text="Sign up"
+                        TextColor="#fbfafa">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding RegisterCommand}" />
                         </Label.GestureRecognizers>
@@ -108,7 +109,7 @@
 
         </Grid>
     </RefreshView>
-    
+
 
     <!--<Grid>
         <VerticalStackLayout Margin="30" VerticalOptions="Center">
