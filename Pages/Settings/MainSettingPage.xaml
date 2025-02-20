@@ -60,7 +60,7 @@ VerticalOptions="Center" HorizontalOptions="End"/>
                         </Border>
                     </Grid>
 
-                    <Grid Grid.Row="2" ColumnDefinitions="50,*,*" Padding="15,0,25,0">
+                    <!--<Grid Grid.Row="2" ColumnDefinitions="50,*,*" Padding="15,0,25,0">
                         <Grid.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding NotificationsPageCommand}"/>
                         </Grid.GestureRecognizers>
@@ -80,9 +80,9 @@ VerticalOptions="Center" HorizontalOptions="End"/>
                                 </LinearGradientBrush>
                             </Border.Stroke>
                         </Border>
-                    </Grid>
+                    </Grid>-->
 
-                    <Grid Grid.Row="4" ColumnDefinitions="50,*,*" Padding="15,0,25,0">
+                    <Grid Grid.Row="2" ColumnDefinitions="50,*,*" Padding="15,0,25,0">
                         <Grid.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding SecurityPageCommand}"/>
                         </Grid.GestureRecognizers>
@@ -93,7 +93,7 @@ VerticalOptions="Center" HorizontalOptions="End"/>
                     </Grid>
 
 
-                    <Grid Grid.Row="5">
+                    <Grid Grid.Row="3">
                         <Border StrokeThickness="2.5" StrokeShape="RoundRectangle 20">
                             <Border.Stroke>
                                 <LinearGradientBrush>

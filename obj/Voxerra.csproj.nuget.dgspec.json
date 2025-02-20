@@ -69,15 +69,15 @@
           "dependencies": {
             "Microsoft.AspNetCore.Http.Connections.Client": {
               "target": "Package",
-              "version": "[8.0.11, )"
+              "version": "[8.0.13, )"
             },
             "Microsoft.AspNetCore.SignalR.Client": {
               "target": "Package",
-              "version": "[8.0.11, )"
+              "version": "[8.0.13, )"
             },
             "Microsoft.AspNetCore.SignalR.Client.Core": {
               "target": "Package",
-              "version": "[8.0.11, )"
+              "version": "[8.0.13, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
@@ -150,15 +150,15 @@
           "dependencies": {
             "Microsoft.AspNetCore.Http.Connections.Client": {
               "target": "Package",
-              "version": "[8.0.11, )"
+              "version": "[8.0.13, )"
             },
             "Microsoft.AspNetCore.SignalR.Client": {
               "target": "Package",
-              "version": "[8.0.11, )"
+              "version": "[8.0.13, )"
             },
             "Microsoft.AspNetCore.SignalR.Client.Core": {
               "target": "Package",
-              "version": "[8.0.11, )"
+              "version": "[8.0.13, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
@@ -219,15 +219,15 @@
           "dependencies": {
             "Microsoft.AspNetCore.Http.Connections.Client": {
               "target": "Package",
-              "version": "[8.0.11, )"
+              "version": "[8.0.13, )"
             },
             "Microsoft.AspNetCore.SignalR.Client": {
               "target": "Package",
-              "version": "[8.0.11, )"
+              "version": "[8.0.13, )"
             },
             "Microsoft.AspNetCore.SignalR.Client.Core": {
               "target": "Package",
-              "version": "[8.0.11, )"
+              "version": "[8.0.13, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
@@ -289,15 +289,15 @@
           "dependencies": {
             "Microsoft.AspNetCore.Http.Connections.Client": {
               "target": "Package",
-              "version": "[8.0.11, )"
+              "version": "[8.0.13, )"
             },
             "Microsoft.AspNetCore.SignalR.Client": {
               "target": "Package",
-              "version": "[8.0.11, )"
+              "version": "[8.0.13, )"
             },
             "Microsoft.AspNetCore.SignalR.Client.Core": {
               "target": "Package",
-              "version": "[8.0.11, )"
+              "version": "[8.0.13, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",

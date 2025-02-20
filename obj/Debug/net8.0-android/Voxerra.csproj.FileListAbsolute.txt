@@ -157,6 +157,8 @@ C:\SOC-Voxerra\obj\Debug\net8.0-android\res\drawable\androidlargeicon.png
 C:\SOC-Voxerra\obj\Debug\net8.0-android\res\drawable\androidsmallicon.png
 C:\SOC-Voxerra\obj\Debug\net8.0-android\uploadflags.txt
 C:\SOC-Voxerra\obj\Debug\net8.0-android\resolvedassemblies.hash
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\arm64-v8a\System.Private.CoreLib.dll
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\armeabi-v7a\System.Private.CoreLib.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\ar\Microsoft.Maui.Controls.resources.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\ca\Microsoft.Maui.Controls.resources.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\cs\Microsoft.Maui.Controls.resources.dll
@@ -198,7 +200,6 @@ C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Microsoft.Extensions.Opti
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Microsoft.Extensions.Primitives.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.Compatibility.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.dll
-C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.HotReload.Forms.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.pdb
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.Xaml.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Controls.Xaml.pdb
@@ -210,8 +211,6 @@ C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.Graphics.p
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Microsoft.Maui.pdb
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Microsoft.VisualBasic.Core.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Microsoft.VisualBasic.dll
-C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
-C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Microsoft.VisualStudio.DesignTools.TapContract.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Microsoft.Win32.Primitives.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Microsoft.Win32.Registry.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Mono.Android.dll
@@ -314,7 +313,6 @@ C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\System.Net.WebSockets.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\System.Numerics.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\System.Numerics.Vectors.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\System.ObjectModel.dll
-C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\System.Private.DataContractSerialization.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\System.Private.Uri.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\System.Private.Xml.dll
@@ -401,6 +399,8 @@ C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\vi\Microsoft.Maui.Control
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Voxerra.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Voxerra.pdb
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\WindowsBase.dll
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\x86\System.Private.CoreLib.dll
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\x86_64\System.Private.CoreLib.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Xamarin.Android.Glide.Annotations.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Xamarin.Android.Glide.DiskLruCache.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\Xamarin.Android.Glide.dll
@@ -554,7 +554,6 @@ C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\zh-Hans\Microsoft.Maui.Co
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\zh-Hant\Microsoft.Maui.Controls.resources.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\zh-HK\Microsoft.Maui.Controls.resources.dll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\_Microsoft.Android.Resource.Designer.dll
-C:\SOC-Voxerra\obj\Debug\net8.0-android\android\typemaps.x86_64.ll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\AndroidManifest.xml
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\AndroidManifest.xml
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\src\mono\MonoRuntimeProvider.java
@@ -564,7 +563,6 @@ C:\SOC-Voxerra\obj\Debug\net8.0-android\android\bin\mono.android.jar
 C:\SOC-Voxerra\obj\Debug\net8.0-android\static.flag
 C:\SOC-Voxerra\obj\Debug\net8.0-android\__environment__.txt
 C:\SOC-Voxerra\obj\Debug\net8.0-android\buildid.txt
-C:\SOC-Voxerra\obj\Debug\net8.0-android\android\environment.x86_64.ll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\src\androidx\activity\ktx\R.java
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\src\androidx\activity\R.java
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\src\androidx\annotation\experimental\R.java
@@ -1064,13 +1062,6 @@ C:\SOC-Voxerra\obj\Debug\net8.0-android\android\src\mono\MonoPackageManager_Reso
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\bin\packaged_resources
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\src\com\companyname\voxerra\R.java
 C:\SOC-Voxerra\obj\Debug\net8.0-android\_CompileJava.FileList.txt
-C:\SOC-Voxerra\obj\Debug\net8.0-android\android\compressed_assemblies.x86_64.ll
-C:\SOC-Voxerra\obj\Debug\net8.0-android\android\typemaps.x86_64.o
-C:\SOC-Voxerra\obj\Debug\net8.0-android\android\environment.x86_64.o
-C:\SOC-Voxerra\obj\Debug\net8.0-android\android\compressed_assemblies.x86_64.o
-C:\SOC-Voxerra\obj\Debug\net8.0-android\android\marshal_methods.x86_64.o
-C:\SOC-Voxerra\obj\Debug\net8.0-android\android\jni_remap.x86_64.o
-C:\SOC-Voxerra\obj\Debug\net8.0-android\app_shared_libraries\x86_64\libxamarin-app.so
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\bin\classes.dex
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\bin\classes2.dex
 C:\SOC-Voxerra\obj\Debug\net8.0-android\stamp\_CleanIntermediateIfNeeded.stamp
@@ -1081,10 +1072,17 @@ C:\SOC-Voxerra\obj\Debug\net8.0-android\stamp\_ConvertResourcesCases.stamp
 C:\SOC-Voxerra\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 C:\SOC-Voxerra\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\SOC-Voxerra\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
-C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\arm64-v8a\System.Private.CoreLib.dll
-C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\armeabi-v7a\System.Private.CoreLib.dll
-C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\x86\System.Private.CoreLib.dll
-C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\x86_64\System.Private.CoreLib.dll
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
+C:\SOC-Voxerra\obj\Debug\net8.0-android\res\xml\network_security_config.xml
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\typemaps.x86_64.ll
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\environment.x86_64.ll
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\compressed_assemblies.x86_64.ll
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\typemaps.x86_64.o
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\environment.x86_64.o
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\compressed_assemblies.x86_64.o
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\marshal_methods.x86_64.o
+C:\SOC-Voxerra\obj\Debug\net8.0-android\android\jni_remap.x86_64.o
+C:\SOC-Voxerra\obj\Debug\net8.0-android\app_shared_libraries\x86_64\libxamarin-app.so
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\typemaps.armeabi-v7a.ll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\typemaps.arm64-v8a.ll
 C:\SOC-Voxerra\obj\Debug\net8.0-android\android\typemaps.x86.ll

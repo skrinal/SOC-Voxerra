@@ -55,13 +55,13 @@
                         Text="{Binding Password}" />
                 </Border>
 
-                <Label
+                <!--<Label
                     Margin="0,20,0,0"
                     Text="Forgot password">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding ForgotPassword}" />
                     </Label.GestureRecognizers>
-                </Label>
+                </Label>-->
 
                 <!--<Button
             Margin="0,30,0,0"

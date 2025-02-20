@@ -41,7 +41,7 @@
                    TextColor="Gray"
                    HorizontalTextAlignment="Center"/>
 
-            <Label Grid.Row="1" Text="+33 2 94 27 84 11"
+            <Label Grid.Row="1" Text="{Binding Email}"
                    FontSize="16"
                    TextColor="White"
                    HorizontalTextAlignment="Center"

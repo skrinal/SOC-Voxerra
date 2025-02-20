@@ -1,4 +1,5 @@
 ﻿
+
 namespace Voxerra
 {
     public static class MauiProgram
@@ -8,6 +9,7 @@ namespace Voxerra
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -19,7 +21,6 @@ namespace Voxerra
 
                 });
 
-            
 
 #if DEBUG
             builder.Logging.AddDebug();
@@ -36,8 +37,10 @@ namespace Voxerra
             builder.Services.AddSingleton<RegisterPageViewModel>();
             builder.Services.AddSingleton<RegisterConfirmationPage>();
             builder.Services.AddSingleton<RegisterConfirmationViewModel>();
-            builder.Services.AddSingleton<ForgotPasswordPage>();
-            builder.Services.AddSingleton<ForgotPasswordViewModel>();
+            //builder.Services.AddSingleton<ForgotPasswordPage>();
+            //builder.Services.AddSingleton<ForgotPasswordViewModel>();
+            //builder.Services.AddSingleton<PasswordConfirmationPage>();
+            //builder.Services.AddSingleton<PasswordConfirmationViewModel>();
 
 
             builder.Services.AddSingleton<MessageCenterPage>();

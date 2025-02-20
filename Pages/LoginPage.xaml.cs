@@ -8,7 +8,15 @@ namespace Voxerra.Pages
 
             this.BindingContext = viewModel;
         }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+#if WINDOWS
+        this.Window.Width = 450;
+        this.Window.Height = 800;
 
+#endif
+        }
     }
 }
 

@@ -10,7 +10,8 @@
             Routing.RegisterRoute("RegisterPage", typeof(RegisterPage));
             Routing.RegisterRoute("RegisterConfirmationPage", typeof(RegisterConfirmationPage));
             Routing.RegisterRoute("ForgotPasswordPage", typeof(ForgotPasswordPage));
-
+            Routing.RegisterRoute("PasswordConfirmationPage", typeof(PasswordConfirmationPage));
+            
             Routing.RegisterRoute("MessageCenterPage", typeof(MessageCenterPage));
             Routing.RegisterRoute("ChatPage", typeof(ChatPage));
             

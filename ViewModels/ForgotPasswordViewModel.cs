@@ -38,12 +38,9 @@ namespace Voxerra.ViewModels
         {
             try
             {
-                var request = new PasswordResetRequest
-                {
-                    Email = Email
-                };
-                var response = await _serviceProvider.CallWebApi<PasswordResetRequest, BaseResponse>
-                ("/Password/ResetPassword", HttpMethod.Post, request);
+
+                var response = await _serviceProvider.CallWebApi<string, BaseResponse>
+                ("/Password/ResetPassword", HttpMethod.Post, Email);
 
 
                 if (response.StatusCode == 200)

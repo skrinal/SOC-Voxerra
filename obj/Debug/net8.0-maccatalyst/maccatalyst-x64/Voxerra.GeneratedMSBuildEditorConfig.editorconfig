@@ -66,6 +66,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.MessageCente
 build_metadata.AdditionalFiles.TargetPath = Pages\MessageCenterPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\MessageCenterPage.xaml
 
+[C:/SOC-Voxerra/Pages/PasswordConfirmationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.PasswordConfirmationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\PasswordConfirmationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\PasswordConfirmationPage.xaml
+
 [C:/SOC-Voxerra/Pages/ProfilePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Voxerra.Pages.ProfilePage.xaml

@@ -196,7 +196,9 @@ namespace Voxerra.Helpers
             "localhost";
             //"ec2-51-20-3-224.eu-north-1.compute.amazonaws.com"; // Use your router's domain
 #elif ANDROID
-            "10.0.2.2";
+            //"10.0.2.2";
+            "192.168.68.110";
+            //"192.168.68.114";
             //"ec2-51-20-3-224.eu-north-1.compute.amazonaws.com"; // Use your router's domain
 #else
             throw new PlatformNotSupportedException("Only Windows and Android currently supported.");
@@ -233,12 +235,14 @@ namespace Voxerra.Helpers
             try
             {
                 if (cert == null)
-                    return false;
+                    return true;
 
                 if (cert.Issuer.Equals("CN=localhost", StringComparison.OrdinalIgnoreCase) ||
                     cert.Subject.Equals("CN=localhost", StringComparison.OrdinalIgnoreCase) ||
                     cert.Issuer.Equals("CN=ec2-51-20-3-224.eu-north-1.compute.amazonaws.com", StringComparison.OrdinalIgnoreCase) ||
-                    cert.Subject.Equals("CN=ec2-51-20-3-224.eu-north-1.compute.amazonaws.com", StringComparison.OrdinalIgnoreCase))
+                    cert.Subject.Equals("CN=ec2-51-20-3-224.eu-north-1.compute.amazonaws.com", StringComparison.OrdinalIgnoreCase) ||
+                    cert.Issuer.Equals("CN=192.168.68.110", StringComparison.OrdinalIgnoreCase) ||
+                    cert.Subject.Equals("CN=192.168.68.110", StringComparison.OrdinalIgnoreCase))
                 {
                     Console.WriteLine("Self-signed certificate accepted.");
                     return true;
@@ -272,10 +276,7 @@ namespace Voxerra.Helpers
                 {
                     try
                     {
-                        if (string.IsNullOrEmpty(hostname) || session == null)
-                            return false;
-
-                        if (hostname == "10.0.2.2" && session.PeerPrincipal?.Name == "CN=localhost")
+                        if (hostname == "192.168.68.110") // && session.PeerPrincipal?.Name == "CN=localhost
                             return true;
 
                         return HttpsURLConnection.DefaultHostnameVerifier.Verify(hostname, session);

@@ -15,10 +15,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -32,11 +32,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -50,10 +50,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -66,11 +66,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -83,11 +83,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -103,10 +103,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -120,10 +120,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -210,7 +210,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -244,7 +244,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -2401,10 +2401,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -2418,11 +2418,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -2436,10 +2436,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -2452,11 +2452,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -2469,11 +2469,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -2489,10 +2489,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -2506,10 +2506,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -2596,7 +2596,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -2630,7 +2630,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -4787,10 +4787,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -4804,11 +4804,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -4822,10 +4822,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -4838,11 +4838,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -4855,11 +4855,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -4875,10 +4875,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -4892,10 +4892,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -4982,7 +4982,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -5016,7 +5016,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -7173,10 +7173,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -7190,11 +7190,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -7208,10 +7208,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -7224,11 +7224,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -7241,11 +7241,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -7261,10 +7261,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -7278,10 +7278,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -7368,7 +7368,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -7402,7 +7402,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -9559,10 +9559,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -9576,11 +9576,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -9594,10 +9594,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -9610,11 +9610,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -9627,11 +9627,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -9647,10 +9647,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -9664,10 +9664,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -9754,7 +9754,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -9788,7 +9788,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -11945,10 +11945,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -11962,11 +11962,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -11980,10 +11980,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -11996,11 +11996,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -12013,11 +12013,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -12033,10 +12033,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -12050,10 +12050,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -12140,7 +12140,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -12174,7 +12174,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -14331,10 +14331,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -14348,11 +14348,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -14366,10 +14366,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -14382,11 +14382,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -14399,11 +14399,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -14419,10 +14419,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -14436,10 +14436,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -14526,7 +14526,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -14560,7 +14560,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -16717,10 +16717,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -16734,11 +16734,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -16752,10 +16752,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -16768,11 +16768,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -16785,11 +16785,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -16805,10 +16805,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -16822,10 +16822,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -16912,7 +16912,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -16946,7 +16946,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -19090,10 +19090,10 @@
       }
     },
     "net8.0-ios18.0": {
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -19107,11 +19107,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -19125,10 +19125,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -19141,11 +19141,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -19158,11 +19158,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -19178,10 +19178,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -19195,10 +19195,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -19285,7 +19285,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -19319,7 +19319,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -19690,10 +19690,10 @@
       }
     },
     "net8.0-ios18.0/android-arm": {
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -19707,11 +19707,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -19725,10 +19725,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -19741,11 +19741,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -19758,11 +19758,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -19778,10 +19778,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -19795,10 +19795,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -19885,7 +19885,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -19919,7 +19919,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -20290,10 +20290,10 @@
       }
     },
     "net8.0-ios18.0/android-arm64": {
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -20307,11 +20307,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -20325,10 +20325,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -20341,11 +20341,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -20358,11 +20358,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -20378,10 +20378,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -20395,10 +20395,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -20485,7 +20485,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -20519,7 +20519,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -20890,10 +20890,10 @@
       }
     },
     "net8.0-ios18.0/android-x64": {
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -20907,11 +20907,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -20925,10 +20925,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -20941,11 +20941,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -20958,11 +20958,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -20978,10 +20978,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -20995,10 +20995,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -21085,7 +21085,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -21119,7 +21119,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -21490,10 +21490,10 @@
       }
     },
     "net8.0-ios18.0/android-x86": {
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -21507,11 +21507,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -21525,10 +21525,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -21541,11 +21541,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -21558,11 +21558,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -21578,10 +21578,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -21595,10 +21595,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -21685,7 +21685,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -21719,7 +21719,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -22090,10 +22090,10 @@
       }
     },
     "net8.0-ios18.0/iossimulator-x64": {
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -22107,11 +22107,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -22125,10 +22125,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -22141,11 +22141,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -22158,11 +22158,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -22178,10 +22178,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -22195,10 +22195,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -22285,7 +22285,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -22319,7 +22319,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -22690,10 +22690,10 @@
       }
     },
     "net8.0-ios18.0/maccatalyst-x64": {
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -22707,11 +22707,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -22725,10 +22725,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -22741,11 +22741,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -22758,11 +22758,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -22778,10 +22778,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -22795,10 +22795,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -22885,7 +22885,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -22919,7 +22919,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -23290,10 +23290,10 @@
       }
     },
     "net8.0-ios18.0/win10-x64": {
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -23307,11 +23307,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -23325,10 +23325,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -23341,11 +23341,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -23358,11 +23358,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -23378,10 +23378,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -23395,10 +23395,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -23485,7 +23485,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -23519,7 +23519,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -23890,10 +23890,10 @@
       }
     },
     "net8.0-maccatalyst18.0": {
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -23907,11 +23907,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -23925,10 +23925,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -23941,11 +23941,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -23958,11 +23958,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -23978,10 +23978,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -23995,10 +23995,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -24085,7 +24085,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -24119,7 +24119,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -24490,10 +24490,10 @@
       }
     },
     "net8.0-maccatalyst18.0/android-arm": {
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -24507,11 +24507,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -24525,10 +24525,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -24541,11 +24541,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -24558,11 +24558,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -24578,10 +24578,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -24595,10 +24595,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -24685,7 +24685,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -24719,7 +24719,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -25090,10 +25090,10 @@
       }
     },
     "net8.0-maccatalyst18.0/android-arm64": {
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -25107,11 +25107,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -25125,10 +25125,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -25141,11 +25141,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -25158,11 +25158,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -25178,10 +25178,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -25195,10 +25195,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -25285,7 +25285,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -25319,7 +25319,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -25690,10 +25690,10 @@
       }
     },
     "net8.0-maccatalyst18.0/android-x64": {
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -25707,11 +25707,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -25725,10 +25725,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -25741,11 +25741,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -25758,11 +25758,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -25778,10 +25778,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -25795,10 +25795,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -25885,7 +25885,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -25919,7 +25919,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -26290,10 +26290,10 @@
       }
     },
     "net8.0-maccatalyst18.0/android-x86": {
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -26307,11 +26307,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -26325,10 +26325,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -26341,11 +26341,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -26358,11 +26358,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -26378,10 +26378,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -26395,10 +26395,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -26485,7 +26485,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -26519,7 +26519,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -26890,10 +26890,10 @@
       }
     },
     "net8.0-maccatalyst18.0/iossimulator-x64": {
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -26907,11 +26907,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -26925,10 +26925,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -26941,11 +26941,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -26958,11 +26958,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -26978,10 +26978,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -26995,10 +26995,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -27085,7 +27085,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -27119,7 +27119,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -27490,10 +27490,10 @@
       }
     },
     "net8.0-maccatalyst18.0/maccatalyst-x64": {
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -27507,11 +27507,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -27525,10 +27525,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -27541,11 +27541,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -27558,11 +27558,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -27578,10 +27578,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -27595,10 +27595,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -27685,7 +27685,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -27719,7 +27719,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -28090,10 +28090,10 @@
       }
     },
     "net8.0-maccatalyst18.0/win10-x64": {
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -28107,11 +28107,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -28125,10 +28125,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -28141,11 +28141,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -28158,11 +28158,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -28178,10 +28178,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -28195,10 +28195,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -28285,7 +28285,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -28319,7 +28319,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -28690,10 +28690,10 @@
       }
     },
     "net8.0-windows10.0.19041": {
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -28707,11 +28707,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -28725,10 +28725,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -28741,11 +28741,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -28758,11 +28758,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -28778,10 +28778,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -28795,10 +28795,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -28885,7 +28885,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -28919,7 +28919,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -29459,10 +29459,10 @@
       }
     },
     "net8.0-windows10.0.19041/android-arm": {
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -29476,11 +29476,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -29494,10 +29494,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -29510,11 +29510,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -29527,11 +29527,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -29547,10 +29547,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -29564,10 +29564,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -29654,7 +29654,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -29688,7 +29688,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -30188,10 +30188,10 @@
       }
     },
     "net8.0-windows10.0.19041/android-arm64": {
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -30205,11 +30205,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -30223,10 +30223,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -30239,11 +30239,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -30256,11 +30256,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -30276,10 +30276,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -30293,10 +30293,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -30383,7 +30383,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -30417,7 +30417,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -30917,10 +30917,10 @@
       }
     },
     "net8.0-windows10.0.19041/android-x64": {
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -30934,11 +30934,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -30952,10 +30952,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -30968,11 +30968,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -30985,11 +30985,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -31005,10 +31005,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -31022,10 +31022,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -31112,7 +31112,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -31146,7 +31146,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -31646,10 +31646,10 @@
       }
     },
     "net8.0-windows10.0.19041/android-x86": {
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -31663,11 +31663,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -31681,10 +31681,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -31697,11 +31697,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -31714,11 +31714,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -31734,10 +31734,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -31751,10 +31751,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -31841,7 +31841,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -31875,7 +31875,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -32375,10 +32375,10 @@
       }
     },
     "net8.0-windows10.0.19041/iossimulator-x64": {
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -32392,11 +32392,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -32410,10 +32410,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -32426,11 +32426,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -32443,11 +32443,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -32463,10 +32463,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -32480,10 +32480,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -32570,7 +32570,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -32604,7 +32604,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -33104,10 +33104,10 @@
       }
     },
     "net8.0-windows10.0.19041/maccatalyst-x64": {
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -33121,11 +33121,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -33139,10 +33139,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -33155,11 +33155,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -33172,11 +33172,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -33192,10 +33192,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -33209,10 +33209,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -33299,7 +33299,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -33333,7 +33333,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -33833,10 +33833,10 @@
       }
     },
     "net8.0-windows10.0.19041/win10-x64": {
-      "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Features": "8.0.11",
+          "Microsoft.Extensions.Features": "8.0.13",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -33850,11 +33850,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.13",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -33868,10 +33868,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11"
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
@@ -33884,11 +33884,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.11"
+          "Microsoft.AspNetCore.Http.Connections.Client": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.dll": {
@@ -33901,11 +33901,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.13",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "Microsoft.Extensions.Logging": "8.0.1",
           "System.Threading.Channels": "8.0.0"
@@ -33921,10 +33921,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.13",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "compile": {
@@ -33938,10 +33938,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "8.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.13"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -34028,7 +34028,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/8.0.11": {
+      "Microsoft.Extensions.Features/8.0.13": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Features.dll": {
@@ -34062,7 +34062,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
@@ -34587,10 +34587,10 @@
         "lib/net6.0-android31.0/GoogleGson.xml"
       ]
     },
-    "Microsoft.AspNetCore.Connections.Abstractions/8.0.11": {
-      "sha512": "3AdZ+1eTsHgdsLS3n64yBTCDZumuN0zpTKNyIy7VTKJpiYgMVYa3XafOJ521oxdo/B3Ww5C0vUNzPCiY5tX3Qw==",
+    "Microsoft.AspNetCore.Connections.Abstractions/8.0.13": {
+      "sha512": "Ov8UviDb51fNXL7oQXaKPygQ3lSr0SflDGG5A2H63b98cLdfKNi7xSD0GtfCj4LIhctUZKBx7ViSVgDn3YFlTQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.connections.abstractions/8.0.11",
+      "path": "microsoft.aspnetcore.connections.abstractions/8.0.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -34604,14 +34604,14 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Connections.Abstractions.xml",
         "lib/netstandard2.1/Microsoft.AspNetCore.Connections.Abstractions.dll",
         "lib/netstandard2.1/Microsoft.AspNetCore.Connections.Abstractions.xml",
-        "microsoft.aspnetcore.connections.abstractions.8.0.11.nupkg.sha512",
+        "microsoft.aspnetcore.connections.abstractions.8.0.13.nupkg.sha512",
         "microsoft.aspnetcore.connections.abstractions.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Http.Connections.Client/8.0.11": {
-      "sha512": "xZYK9qmJ/Zm10FId7hzDaI+2j+g4O+b5SLeCEET40MtDXxiu6+0PsBePBOiu90yNeWAWLbjnEGrzBxsZ6pY4SQ==",
+    "Microsoft.AspNetCore.Http.Connections.Client/8.0.13": {
+      "sha512": "zqoaCWmXrsNT1LcnGtovN2+dYv4jNSxTuefff1MZKmVFcJVHBALS7FEwITwcxVYpaQrOoKW4X/UGDVqlnOwrQA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.http.connections.client/8.0.11",
+      "path": "microsoft.aspnetcore.http.connections.client/8.0.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -34625,14 +34625,14 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Http.Connections.Client.xml",
         "lib/netstandard2.1/Microsoft.AspNetCore.Http.Connections.Client.dll",
         "lib/netstandard2.1/Microsoft.AspNetCore.Http.Connections.Client.xml",
-        "microsoft.aspnetcore.http.connections.client.8.0.11.nupkg.sha512",
+        "microsoft.aspnetcore.http.connections.client.8.0.13.nupkg.sha512",
         "microsoft.aspnetcore.http.connections.client.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Http.Connections.Common/8.0.11": {
-      "sha512": "zbC/b3eOSli86NVRMbsW4xkan6jiRTHz67ET4yOCihNIrFJRQAzhh4EHH/CrZp+AffVQ6gwokQEhZpjihmESGg==",
+    "Microsoft.AspNetCore.Http.Connections.Common/8.0.13": {
+      "sha512": "MS968HjdhR8j3kt0mYs1BErGIx8rHHN1kzDfcdKv4GDph0TyHZrOZPrZDzZ70lPUkWoW1Xb7vQu09RuEpowa6w==",
       "type": "package",
-      "path": "microsoft.aspnetcore.http.connections.common/8.0.11",
+      "path": "microsoft.aspnetcore.http.connections.common/8.0.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -34644,14 +34644,14 @@
         "lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.Http.Connections.Common.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Http.Connections.Common.xml",
-        "microsoft.aspnetcore.http.connections.common.8.0.11.nupkg.sha512",
+        "microsoft.aspnetcore.http.connections.common.8.0.13.nupkg.sha512",
         "microsoft.aspnetcore.http.connections.common.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.SignalR.Client/8.0.11": {
-      "sha512": "Dvt8ys1cjCr6QcjquoxvGfTvgiJHVa9HjX7GFSbr1axhQMMHWj0k6HLBvr/t9De+EriJZQGeALJNavWTwF8aHA==",
+    "Microsoft.AspNetCore.SignalR.Client/8.0.13": {
+      "sha512": "DSOyT/ccsvAt3VFMgedaBWlo8G2A2BnY+zLWksED2onwYxk4JTla17GcLKQCDyPXnYKKuIRcgpUSSfqBP9VdEw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.signalr.client/8.0.11",
+      "path": "microsoft.aspnetcore.signalr.client/8.0.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -34663,14 +34663,14 @@
         "lib/net8.0/Microsoft.AspNetCore.SignalR.Client.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Client.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Client.xml",
-        "microsoft.aspnetcore.signalr.client.8.0.11.nupkg.sha512",
+        "microsoft.aspnetcore.signalr.client.8.0.13.nupkg.sha512",
         "microsoft.aspnetcore.signalr.client.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.SignalR.Client.Core/8.0.11": {
-      "sha512": "ISNuLuJRKfowJ39YXdFv3LT+K2vAf4sqIbGWpFE0Tom1tr2EZaPijZKHLjpyTf7J9eWRUkRZEr05ZHuIhhvKjg==",
+    "Microsoft.AspNetCore.SignalR.Client.Core/8.0.13": {
+      "sha512": "7kYdMlXT8Hn0Crsh699MikhEzS5O0AtLFMDsvxNMcJaD34agheBtnwbF703OI7ZuPkR0DL3/AfO2sV/oy+gpnA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.signalr.client.core/8.0.11",
+      "path": "microsoft.aspnetcore.signalr.client.core/8.0.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -34684,14 +34684,14 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Client.Core.xml",
         "lib/netstandard2.1/Microsoft.AspNetCore.SignalR.Client.Core.dll",
         "lib/netstandard2.1/Microsoft.AspNetCore.SignalR.Client.Core.xml",
-        "microsoft.aspnetcore.signalr.client.core.8.0.11.nupkg.sha512",
+        "microsoft.aspnetcore.signalr.client.core.8.0.13.nupkg.sha512",
         "microsoft.aspnetcore.signalr.client.core.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.SignalR.Common/8.0.11": {
-      "sha512": "qUI0lN8Q0loKMF0e+46/yoYE3nRAhAzJyx6Els9aIkZJ8kjhLVvlAW/0E99donhbe5+quyyE4gVqYmx8wAP5qQ==",
+    "Microsoft.AspNetCore.SignalR.Common/8.0.13": {
+      "sha512": "PR7/EHwtXZPjR9MHnfqj5/pMs9Ja5YSyn6epXagjP4r8coOog9BtWaZfLF+XgezqDIDy9m1D4LK7pW6VjunR0Q==",
       "type": "package",
-      "path": "microsoft.aspnetcore.signalr.common/8.0.11",
+      "path": "microsoft.aspnetcore.signalr.common/8.0.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -34703,14 +34703,14 @@
         "lib/net8.0/Microsoft.AspNetCore.SignalR.Common.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Common.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Common.xml",
-        "microsoft.aspnetcore.signalr.common.8.0.11.nupkg.sha512",
+        "microsoft.aspnetcore.signalr.common.8.0.13.nupkg.sha512",
         "microsoft.aspnetcore.signalr.common.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.11": {
-      "sha512": "Ac6xrk6KSlgh5eI3gSfUgaEgv0gEjyr4kB5DkJ43rpQb1K0TBmuUKyXxVr8CG6ywHy0rD1iLti3PGp1fhJMygw==",
+    "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.13": {
+      "sha512": "QfvhwlSyMxN/6xi+NEjLQgtizlYgsKouZF2O5ecp78vyEZJIEQKNuQsoegJBlqd5mWAoQE42Wse6MMBu/J4gUg==",
       "type": "package",
-      "path": "microsoft.aspnetcore.signalr.protocols.json/8.0.11",
+      "path": "microsoft.aspnetcore.signalr.protocols.json/8.0.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -34722,7 +34722,7 @@
         "lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Protocols.Json.xml",
-        "microsoft.aspnetcore.signalr.protocols.json.8.0.11.nupkg.sha512",
+        "microsoft.aspnetcore.signalr.protocols.json.8.0.13.nupkg.sha512",
         "microsoft.aspnetcore.signalr.protocols.json.nuspec"
       ]
     },
@@ -34850,10 +34850,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Features/8.0.11": {
-      "sha512": "xL0WcA9bRu49QSUmGZEYY5dslR/x52fl+XY9GWOP2h5ibOJY7hF8Tz/raXVP+GPJ2S2piNPlfL4GkJK794PjFA==",
+    "Microsoft.Extensions.Features/8.0.13": {
+      "sha512": "tsfmy1JfRhbKT/uYWxWcR1yhFQXgVAxtvQDou2NkY6UhqkFFxjO7fkd0CWc6YsX/qqbW3VxhabhDRnMKKA72lQ==",
       "type": "package",
-      "path": "microsoft.extensions.features/8.0.11",
+      "path": "microsoft.extensions.features/8.0.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -34865,7 +34865,7 @@
         "lib/net8.0/Microsoft.Extensions.Features.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Features.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Features.xml",
-        "microsoft.extensions.features.8.0.11.nupkg.sha512",
+        "microsoft.extensions.features.8.0.13.nupkg.sha512",
         "microsoft.extensions.features.nuspec"
       ]
     },
@@ -34901,10 +34901,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
-      "sha512": "nroMDjS7hNBPtkZqVBbSiQaQjWRDxITI8Y7XnDs97rqG3EbzVTNLZQf7bIeUJcaHOV8bca47s1Uxq94+2oGdxA==",
+    "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
+      "sha512": "dL0QGToTxggRLMYY4ZYX5AMwBb+byQBd/5dMiZE07Nv73o6I5Are3C7eQTh7K2+A4ct0PVISSr7TZANbiNb2yQ==",
       "type": "package",
-      "path": "microsoft.extensions.logging.abstractions/8.0.2",
+      "path": "microsoft.extensions.logging.abstractions/8.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -34969,7 +34969,7 @@
         "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
-        "microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.8.0.3.nupkg.sha512",
         "microsoft.extensions.logging.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -39114,9 +39114,9 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-android34.0": [
-      "Microsoft.AspNetCore.Http.Connections.Client >= 8.0.11",
-      "Microsoft.AspNetCore.SignalR.Client >= 8.0.11",
-      "Microsoft.AspNetCore.SignalR.Client.Core >= 8.0.11",
+      "Microsoft.AspNetCore.Http.Connections.Client >= 8.0.13",
+      "Microsoft.AspNetCore.SignalR.Client >= 8.0.13",
+      "Microsoft.AspNetCore.SignalR.Client.Core >= 8.0.13",
       "Microsoft.Extensions.Logging.Debug >= 8.0.1",
       "Microsoft.Maui.Controls >= 8.0.100",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.100",
@@ -39124,9 +39124,9 @@
       "Newtonsoft.Json >= 13.0.3"
     ],
     "net8.0-ios18.0": [
-      "Microsoft.AspNetCore.Http.Connections.Client >= 8.0.11",
-      "Microsoft.AspNetCore.SignalR.Client >= 8.0.11",
-      "Microsoft.AspNetCore.SignalR.Client.Core >= 8.0.11",
+      "Microsoft.AspNetCore.Http.Connections.Client >= 8.0.13",
+      "Microsoft.AspNetCore.SignalR.Client >= 8.0.13",
+      "Microsoft.AspNetCore.SignalR.Client.Core >= 8.0.13",
       "Microsoft.Extensions.Logging.Debug >= 8.0.1",
       "Microsoft.Maui.Controls >= 8.0.100",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.100",
@@ -39134,9 +39134,9 @@
       "Newtonsoft.Json >= 13.0.3"
     ],
     "net8.0-maccatalyst18.0": [
-      "Microsoft.AspNetCore.Http.Connections.Client >= 8.0.11",
-      "Microsoft.AspNetCore.SignalR.Client >= 8.0.11",
-      "Microsoft.AspNetCore.SignalR.Client.Core >= 8.0.11",
+      "Microsoft.AspNetCore.Http.Connections.Client >= 8.0.13",
+      "Microsoft.AspNetCore.SignalR.Client >= 8.0.13",
+      "Microsoft.AspNetCore.SignalR.Client.Core >= 8.0.13",
       "Microsoft.Extensions.Logging.Debug >= 8.0.1",
       "Microsoft.Maui.Controls >= 8.0.100",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.100",
@@ -39144,9 +39144,9 @@
       "Newtonsoft.Json >= 13.0.3"
     ],
     "net8.0-windows10.0.19041": [
-      "Microsoft.AspNetCore.Http.Connections.Client >= 8.0.11",
-      "Microsoft.AspNetCore.SignalR.Client >= 8.0.11",
-      "Microsoft.AspNetCore.SignalR.Client.Core >= 8.0.11",
+      "Microsoft.AspNetCore.Http.Connections.Client >= 8.0.13",
+      "Microsoft.AspNetCore.SignalR.Client >= 8.0.13",
+      "Microsoft.AspNetCore.SignalR.Client.Core >= 8.0.13",
       "Microsoft.Extensions.Logging.Debug >= 8.0.1",
       "Microsoft.Maui.Controls >= 8.0.100",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.100",
@@ -39222,15 +39222,15 @@
         "dependencies": {
           "Microsoft.AspNetCore.Http.Connections.Client": {
             "target": "Package",
-            "version": "[8.0.11, )"
+            "version": "[8.0.13, )"
           },
           "Microsoft.AspNetCore.SignalR.Client": {
             "target": "Package",
-            "version": "[8.0.11, )"
+            "version": "[8.0.13, )"
           },
           "Microsoft.AspNetCore.SignalR.Client.Core": {
             "target": "Package",
-            "version": "[8.0.11, )"
+            "version": "[8.0.13, )"
           },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
@@ -39303,15 +39303,15 @@
         "dependencies": {
           "Microsoft.AspNetCore.Http.Connections.Client": {
             "target": "Package",
-            "version": "[8.0.11, )"
+            "version": "[8.0.13, )"
           },
           "Microsoft.AspNetCore.SignalR.Client": {
             "target": "Package",
-            "version": "[8.0.11, )"
+            "version": "[8.0.13, )"
           },
           "Microsoft.AspNetCore.SignalR.Client.Core": {
             "target": "Package",
-            "version": "[8.0.11, )"
+            "version": "[8.0.13, )"
           },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
@@ -39372,15 +39372,15 @@
         "dependencies": {
           "Microsoft.AspNetCore.Http.Connections.Client": {
             "target": "Package",
-            "version": "[8.0.11, )"
+            "version": "[8.0.13, )"
           },
           "Microsoft.AspNetCore.SignalR.Client": {
             "target": "Package",
-            "version": "[8.0.11, )"
+            "version": "[8.0.13, )"
           },
           "Microsoft.AspNetCore.SignalR.Client.Core": {
             "target": "Package",
-            "version": "[8.0.11, )"
+            "version": "[8.0.13, )"
           },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
@@ -39442,15 +39442,15 @@
         "dependencies": {
           "Microsoft.AspNetCore.Http.Connections.Client": {
             "target": "Package",
-            "version": "[8.0.11, )"
+            "version": "[8.0.13, )"
           },
           "Microsoft.AspNetCore.SignalR.Client": {
             "target": "Package",
-            "version": "[8.0.11, )"
+            "version": "[8.0.13, )"
           },
           "Microsoft.AspNetCore.SignalR.Client.Core": {
             "target": "Package",
-            "version": "[8.0.11, )"
+            "version": "[8.0.13, )"
           },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",

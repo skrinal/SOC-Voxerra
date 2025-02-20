@@ -12,7 +12,7 @@
   <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
   <permission android:name="com.companyname.voxerra.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature" />
   <uses-permission android:name="com.companyname.voxerra.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-  <application android:name="crc64dff8ed377220bd47.MainApplication" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@mipmap/appicon" android:label="Voxerra" android:supportsRtl="true">
+  <application android:name="crc64dff8ed377220bd47.MainApplication" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@mipmap/appicon" android:label="Voxerra" android:networkSecurityConfig="@xml/network_security_config" android:supportsRtl="true">
     <activity android:name="crc641e9043ac1a718797.MainActivity" android:configChanges="density|orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:exported="true" android:launchMode="singleTop" android:theme="@style/Maui.SplashTheme">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
