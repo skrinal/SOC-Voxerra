@@ -49,13 +49,15 @@
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-android|AnyCPU'">
-	  <AndroidKeyStore>True</AndroidKeyStore>
+	  <AndroidKeyStore>False</AndroidKeyStore>
 	  <AndroidSigningStorePass>Voxerra2025</AndroidSigningStorePass>
+	  <AndroidSigningKeyPass></AndroidSigningKeyPass>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0-android|AnyCPU'">
-	  <AndroidKeyStore>True</AndroidKeyStore>
+	  <AndroidKeyStore>False</AndroidKeyStore>
 	  <AndroidSigningStorePass>Voxerra2025</AndroidSigningStorePass>
+	  <AndroidSigningKeyPass></AndroidSigningKeyPass>
 	</PropertyGroup>
 
 	<ItemGroup>

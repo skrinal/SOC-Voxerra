@@ -197,7 +197,7 @@ namespace Voxerra.Helpers
             //"ec2-51-20-3-224.eu-north-1.compute.amazonaws.com"; // Use your router's domain
 #elif ANDROID
             //"10.0.2.2";
-            "192.168.68.110";
+            "192.168.68.114";
             //"192.168.68.114";
             //"ec2-51-20-3-224.eu-north-1.compute.amazonaws.com"; // Use your router's domain
 #else

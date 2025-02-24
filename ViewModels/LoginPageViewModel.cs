@@ -16,11 +16,6 @@ namespace Voxerra.ViewModels
 
         public LoginPageViewModel(ServiceProvider serviceProvider)
         {
-            //UserName = "wanda";
-            //Password = "Abc12345";
-
-            //UserName = "skrinal";
-            //Password = "lucka123";
 
             UserName = "skrinal";
             Password = "risko";
