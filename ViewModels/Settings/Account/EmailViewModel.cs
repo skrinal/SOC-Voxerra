@@ -87,24 +87,22 @@ public class EmailViewModel : INotifyPropertyChanged, IQueryAttributable
     {
         try
         {
-            var request = new UserEmailChangeRequest
-            {
-                UserId = UserId,
-                NewEmail = email
-            };
-            var response = await _serviceProvider.CallWebApi<UserEmailChangeRequest, BaseResponse>(
-                "/UserSettings/ChangeEmail", HttpMethod.Post, request);
+            NewEmail = email
+
+            var response = await _serviceProvider.CallWebApi<string, BaseResponse>(
+                "/UserSettings/ChangeEmail", HttpMethod.Post, NewEmail);
             if (response.StatusCode == 200)
             {
-                LabelIcon = "check";
-                LabelColor = "Green";
+                LabelIcon = "";
+                LabelColor = "transparent";
                 
-                AnswerText = "Email changed successfully";
-                AnswerColor = "Green";
+                AnswerText = "";
+                AnswerColor = "transparent";
                 
                 isEmailUnique = false;
                 ButtonStatus = false;
-                CurrentEmail = email;
+
+                await Shell.Current.GoToAsync($"MainPage?userId={response.Id}");
             }
             else
             {
@@ -128,13 +126,10 @@ public class EmailViewModel : INotifyPropertyChanged, IQueryAttributable
     {
         try
         {
-            var request = new IsEmailUniqueRequest
-            {
-                Email = emailQueary
-            };
+            Email = emailQueary
 
-            var response = await _serviceProvider.CallWebApi<IsEmailUniqueRequest, BaseResponse>(
-                "/Registration/IsEmailUnique", HttpMethod.Post, request);
+            var response = await _serviceProvider.CallWebApi<string, BaseResponse>(
+                "/Registration/IsEmailUnique", HttpMethod.Post, Email);
 
 
             if (response.StatusCode == 200)
