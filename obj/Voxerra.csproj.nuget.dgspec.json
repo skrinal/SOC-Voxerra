@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/home/skrinal/Desktop/SOC-Voxerra/Voxerra.csproj": {}
+    "/home/skrinal/SOC-Voxerra/Voxerra.csproj": {}
   },
   "projects": {
-    "/home/skrinal/Desktop/SOC-Voxerra/Voxerra.csproj": {
+    "/home/skrinal/SOC-Voxerra/Voxerra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/skrinal/Desktop/SOC-Voxerra/Voxerra.csproj",
+        "projectUniqueName": "/home/skrinal/SOC-Voxerra/Voxerra.csproj",
         "projectName": "Voxerra",
-        "projectPath": "/home/skrinal/Desktop/SOC-Voxerra/Voxerra.csproj",
+        "projectPath": "/home/skrinal/SOC-Voxerra/Voxerra.csproj",
         "packagesPath": "/home/skrinal/.nuget/packages/",
-        "outputPath": "/home/skrinal/Desktop/SOC-Voxerra/obj/",
+        "outputPath": "/home/skrinal/SOC-Voxerra/obj/",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
           "/home/skrinal/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0-android"
+          "net8.0-android34.0"
         ],
         "sources": {
-          "/usr/local/dotnet/library-packs": {},
+          "/var/run/host/usr/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-android34.0": {
-            "targetAlias": "net8.0-android",
+            "targetAlias": "net8.0-android34.0",
             "projectReferences": {}
           }
         },
@@ -43,7 +43,7 @@
       },
       "frameworks": {
         "net8.0-android34.0": {
-          "targetAlias": "net8.0-android",
+          "targetAlias": "net8.0-android34.0",
           "dependencies": {
             "Microsoft.AspNetCore.Http.Connections.Client": {
               "target": "Package",
@@ -72,7 +72,7 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.13, )",
+              "version": "[8.0.14, )",
               "autoReferenced": true
             },
             "Newtonsoft.Json": {
@@ -99,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/var/run/host/usr/share/dotnet/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

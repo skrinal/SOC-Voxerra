@@ -18,7 +18,7 @@ namespace Voxerra.ViewModels
         {
 
             UserName = "skrinal";
-            Password = "risko";
+            Password = "risko123";
 
             IsProcessing = false;
 

@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-	<!-- net8.0-ios;net8.0-maccatalyst -->
-		<TargetFrameworks>net8.0-android;</TargetFrameworks>
+	<!-- net8.0-ios;net8.0-maccatalyst net8.0-android;--> 
+		<TargetFrameworks>net8.0-android34.0;</TargetFrameworks>
 		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.19041.0</TargetFrameworks>
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net8.0-tizen</TargetFrameworks> -->
@@ -14,6 +14,8 @@
 		either BOTH runtimes must be indicated or ONLY macatalyst-x64. -->
 		<!-- For example: <RuntimeIdentifiers>maccatalyst-x64;maccatalyst-arm64</RuntimeIdentifiers> -->
 
+		
+		
 		<OutputType>Exe</OutputType>
 		<RootNamespace>Voxerra</RootNamespace>
 		<UseMaui>true</UseMaui>
@@ -46,20 +48,12 @@
 		<HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
 		<PackageCertificateThumbprint>4697070A78F5DA8EA1F6354B6EC4C09247CC759A</PackageCertificateThumbprint>
 		<AndroidSigningKeyStore>myapp.pfx</AndroidSigningKeyStore>
+
+		<JavaSdkDirectory>$(JAVA_HOME)</JavaSdkDirectory>
+		<AndroidJdkPath>$(JAVA_HOME)</AndroidJdkPath>
 	</PropertyGroup>
 
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-android|AnyCPU'">
-	  <AndroidKeyStore>False</AndroidKeyStore>
-	  <AndroidSigningStorePass>Voxerra2025</AndroidSigningStorePass>
-	  <AndroidSigningKeyPass></AndroidSigningKeyPass>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0-android|AnyCPU'">
-	  <AndroidKeyStore>False</AndroidKeyStore>
-	  <AndroidSigningStorePass>Voxerra2025</AndroidSigningStorePass>
-	  <AndroidSigningKeyPass></AndroidSigningKeyPass>
-	</PropertyGroup>
-
+	
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
