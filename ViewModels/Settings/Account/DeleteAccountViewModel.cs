@@ -64,7 +64,7 @@ public class DeleteAccountViewModel : INotifyPropertyChanged, IQueryAttributable
     
     private async void OnGoBack()
     {
-        await Shell.Current.GoToAsync($"AccountDetailsPage");
+        await Shell.Current.GoToAsync("MainSettingPage");
     }
     
     private bool isRefreshing;

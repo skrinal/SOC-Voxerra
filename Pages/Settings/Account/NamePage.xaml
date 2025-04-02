@@ -86,6 +86,12 @@
                     </Grid>
 
                 </Grid>
+                
+                <Grid HeightRequest="50">
+                    <Label TextColor="{Binding ResultColor}" HorizontalTextAlignment="Center" Text="{Binding ResultText}" FontSize="18"
+                           VerticalOptions="Center" />
+                </Grid>
+                
 
                 <Grid>
                     <Frame

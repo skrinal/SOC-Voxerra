@@ -14,18 +14,6 @@ namespace Voxerra.ViewModels
         {
             _dataCenterService = dataCenterService;
             
-            /*FriendRequestPageCommand = new Command(() =>
-            {
-                if (isProcessing) return;
-
-                isProcessing = true;
-                FriendRequestGTA().GetAwaiter().OnCompleted(() =>
-                {
-                    isProcessing = false;
-                });
-
-            });*/
-            
             GoToDecisionCommand = new Command<string>(async (decision) =>
             {
                 IsProcessing = true;

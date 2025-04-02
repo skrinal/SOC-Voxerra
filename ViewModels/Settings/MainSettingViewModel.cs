@@ -9,103 +9,84 @@ public class MainSettingViewModel : INotifyPropertyChanged
     }
 
     private DataCenterService _dataCenterService;
-
+    private int UserId;
     public MainSettingViewModel(DataCenterService dataCenterService)
     {
         _dataCenterService = dataCenterService;
-
-        AccountPageCommand = new Command(() =>
-        {
-            if (isProcessing) return;
-
-            isProcessing = true;
-            AccountDetailsPageGTA().GetAwaiter().OnCompleted(() =>
+        
+        AccountGoToCommand = new Command<string>(async (decision) =>
             {
-                isProcessing = false;
+                IsRefreshing = true;
+                switch (decision)
+                {
+                    case "Name":
+                        await Shell.Current.GoToAsync($"NamePage?UserName={userName}");
+                        break;
+                    case "Email":
+                        await Shell.Current.GoToAsync($"EmailPage?UserId={UserId}"); 
+                        break;
+                    case "ProfilePicture":
+                        await Shell.Current.GoToAsync($"ProfilePicturePage"); // NEFUNGUJE
+                        break;
+                    case "Bio":
+                        await Shell.Current.GoToAsync($"BioPage?UserId={UserId}&Bio={bio}");
+                        break;
+                    case "DeleteAccount":
+                        await Shell.Current.GoToAsync($"DeleteAccountPage?UserName={userName}&Bio={bio}&AvatarName={avatarSourceName}");
+                        break;
+                    default:
+                        break;
+                }
             });
-        });
-
-        NotificationsPageCommand = new Command(() =>
-        {
-            if (isProcessing) return;
-
-
-            isProcessing = true;
-            NotificationsPageGTA().GetAwaiter().OnCompleted(() =>
+            
+            SecurityGoToCommand = new Command<string>(async (decision) =>
             {
-                isProcessing = false;
+                IsRefreshing = true;
+                switch (decision)
+                {
+                    case "Password":
+                        await Shell.Current.GoToAsync($"PasswordPage?UserId={_dataCenterService.UserInfo.Id}");
+                        break;
+                    case "TwoFactor":
+                        await Shell.Current.GoToAsync($"TwoFactorAuthPage?UserId={_dataCenterService.UserInfo.Id}"); // treba apicall na email
+                        break;
+                    case "WhereLogged":
+                        //await Shell.Current.GoToAsync($"WhereIsUserLoggedPage?UserId={UserId}&Bio={bio}");
+                        break;
+                    case "LoginAlerts":
+                        //await Shell.Current.GoToAsync($"LoginAlertsPage?Id={UserId}");
+                        break;
+                    default:
+                        break;
+                }
             });
-        });
-
-        SecurityPageCommand = new Command(() =>
-        {
-            if (IsProcessing) return;
-
-
-            IsProcessing = true;
-            SecurityPageGTA().GetAwaiter().OnCompleted(() =>
+        
+            SignOutCommand = new Command(() =>
             {
-                IsProcessing = false;
-            });
-        });
+                if (IsRefreshing) return;
+                
+                IsRefreshing = true;
 
+                /*UpdateBio().GetAwaiter().OnCompleted(() =>
+                {
+                    IsRefreshing = false;
+                });*/
+            });
+
+            
         GoBackCommand = new Command(OnGoBack);
     }
 
-
-
-    async Task AccountDetailsPageGTA()
-    {
-        try
-        {
-            await Shell.Current.GoToAsync("AccountDetailsPage");
-        }
-        catch (Exception ex)
-        {
-            await AppShell.Current.DisplayAlert("Voxerra", ex.Message, "OK");
-        }
-    }
-    async Task NotificationsPageGTA()
-    {
-        try
-        {
-            await Shell.Current.GoToAsync("NotificationsPage");
-        }
-        catch (Exception ex)
-        {
-            await AppShell.Current.DisplayAlert("Voxerra", ex.Message, "OK");
-        }
-    }
-    async Task SecurityPageGTA()
-    {
-        try
-        {
-            await Shell.Current.GoToAsync("SecurityPage");
-        }
-        catch (Exception ex)
-        {
-            await AppShell.Current.DisplayAlert("Voxerra", ex.Message, "OK");
-        }
-    }
-    /*async Task AddFriendPageGTA()
-    {
-        try
-        {
-            await Shell.Current.GoToAsync("AddFriendPage");
-        }
-        catch (Exception ex)
-        {
-            await AppShell.Current.DisplayAlert("Voxerra", ex.Message, "OK");
-        }
-    }*/
-
+ 
     public void Initialize()
     {
         userName = _dataCenterService.UserInfo.UserName;
         avatarSourceName = _dataCenterService.UserInfo.AvatarSourceName;
-
+        bio = string.IsNullOrWhiteSpace(_dataCenterService.UserInfo.Bio) ? "No bio" : _dataCenterService.UserInfo.Bio;
+        
         OnPropertyChanged(nameof(UserName));
         OnPropertyChanged(nameof(AvatarSourceName));
+        OnPropertyChanged(nameof(Bio));
     }
 
     private async void OnGoBack()
@@ -113,14 +94,15 @@ public class MainSettingViewModel : INotifyPropertyChanged
         await Shell.Current.GoToAsync("//ProfilePage");
     }
 
-    private bool isProcessing;
+    private bool isRefreshing;
     private string userName;
     private string avatarSourceName;
-
-    public bool IsProcessing
+    private string bio;
+    
+    public bool IsRefreshing
     {
-        get { return isProcessing; }
-        set { isProcessing = value; OnPropertyChanged(); }
+        get { return isRefreshing; }
+        set { isRefreshing = value; OnPropertyChanged(); }
     }
     public string UserName
     {
@@ -132,9 +114,14 @@ public class MainSettingViewModel : INotifyPropertyChanged
         get { return avatarSourceName; }
         set { avatarSourceName = value; OnPropertyChanged(); }
     }
+    public string Bio
+    {
+        get { return bio; }
+        set { bio = value; OnPropertyChanged(); }
+    }
+    
     public ICommand GoBackCommand { get; set; }
-    public ICommand AccountPageCommand { get; set; }
-    public ICommand NotificationsPageCommand { get; set; }
-    public ICommand SecurityPageCommand { get; set; }
-
+    public ICommand AccountGoToCommand  { get; set; }
+    public ICommand SecurityGoToCommand  { get; set; }
+    public ICommand SignOutCommand  { get; set; }
 }

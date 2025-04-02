@@ -51,7 +51,7 @@ public class EmailViewModel : INotifyPropertyChanged, IQueryAttributable
         AnswerColor = "Transparent";
         isEmailUnique = false;
         ButtonStatus = false;
-        await Shell.Current.GoToAsync($"AccountDetailsPage");
+        await Shell.Current.GoToAsync("MainSettingPage");
     }
     
     private async void Initialize()

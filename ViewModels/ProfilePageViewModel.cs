@@ -10,6 +10,8 @@ namespace Voxerra.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
         private readonly DataCenterService _dataCenterService;
+
+
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
@@ -41,6 +43,8 @@ namespace Voxerra.ViewModels
                 });
 
             });
+            
+            
 
         }
 
@@ -134,7 +138,6 @@ namespace Voxerra.ViewModels
         public ICommand FriendRequestPageCommand { get; set; }
         public ICommand GoBackCommand { get; set; }
 
-        
 
     }
 }

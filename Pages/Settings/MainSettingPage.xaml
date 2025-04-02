@@ -7,7 +7,7 @@
              Title="Main Settings">
     <ContentPage.Content>
 
-       
+
         <ScrollView>
             <VerticalStackLayout Spacing="20" Padding="20">
 
@@ -20,14 +20,188 @@
                             Padding="0"
                             Command="{Binding GoBackCommand}" />
 
-                    <Label Text="Settings" FontSize="28" VerticalOptions="Center"/>
+                    <Label Text="Settings" FontSize="28" VerticalOptions="Center" />
 
                 </StackLayout>
-                
 
-                <Label Text="GENERAL" TextColor="White" FontSize="14" FontAttributes="Bold" />
+                <!--prof bunka + fotka-->
+                <Frame BackgroundColor="#1E1E1E" CornerRadius="10" Padding="15">
+                    <HorizontalStackLayout VerticalOptions="Center">
+                        <Grid>
+                            <Frame HeightRequest="65" WidthRequest="65" CornerRadius="50"
+                                   IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                                <Image Source="{Binding AvatarSourceName}" Aspect="AspectFill" />
+                            </Frame>
+                        </Grid>
 
-                <Grid>
+                        <VerticalStackLayout Spacing="5" Margin="15,0,0,0">
+                            <Label Text="{Binding UserName}" TextColor="White" FontAttributes="Bold" FontSize="18" />
+                            <Label Text="{Binding Bio}" TextColor="#A9A9A9" FontSize="14" />
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <Label Text="ACCOUNT" TextColor="White" FontSize="14" FontAttributes="Bold" />
+                <Border
+                    StrokeThickness="2.5"
+                    StrokeShape="RoundRectangle 20">
+                    <Border.Stroke>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#b414de" Offset="0.0" />
+                            <GradientStop Color="#d127a5" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Border.Stroke>
+
+                    <Grid BackgroundColor="#1E1E1E" Padding="15">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="45" />
+                            <RowDefinition Height="45" />
+                            <RowDefinition Height="45" />
+                            <RowDefinition Height="45" />
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0" ColumnDefinitions="50,*,30" Padding="15,0,25,0">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding AccountGoToCommand}" CommandParameter="Name" />
+                            </Grid.GestureRecognizers>
+                            <Label Grid.Column="0" Text="person" FontFamily="GoogleFont" FontSize="30"
+                                   VerticalOptions="Center" />
+                            <Label Grid.Column="1" Text="Name" FontSize="18" VerticalOptions="Center" />
+                            <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22"
+                                   VerticalOptions="Center" HorizontalOptions="End" />
+                        </Grid>
+
+                        <Grid Grid.Row="1" ColumnDefinitions="50,*,30" Padding="15,0,25,0">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding AccountGoToCommand}" CommandParameter="Email" />
+                            </Grid.GestureRecognizers>
+                            <Label Grid.Column="0" Text="mail" FontFamily="GoogleFont" FontSize="30"
+                                   VerticalOptions="Center" />
+                            <Label Grid.Column="1" Text="Email" FontSize="18" VerticalOptions="Center" />
+                            <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22"
+                                   VerticalOptions="Center" HorizontalOptions="End" />
+                        </Grid>
+
+                        <Grid Grid.Row="2" ColumnDefinitions="50,*,30" Padding="15,0,25,0">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding AccountGoToCommand}"
+                                                      CommandParameter="ProfilePicture" />
+                            </Grid.GestureRecognizers>
+                            <Label Grid.Column="0" Text="account_circle" FontFamily="GoogleFont" FontSize="30"
+                                   VerticalOptions="Center" />
+                            <Label Grid.Column="1" Text="Profile Picture" FontSize="18" VerticalOptions="Center" />
+                            <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22"
+                                   VerticalOptions="Center" HorizontalOptions="End" />
+                        </Grid>
+
+                        <Grid Grid.Row="3" ColumnDefinitions="50,*,30" Padding="15,0,25,0">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding AccountGoToCommand}" CommandParameter="Bio" />
+                            </Grid.GestureRecognizers>
+                            <Label Grid.Column="0" Text="edit" FontFamily="GoogleFont" FontSize="30"
+                                   VerticalOptions="Center" />
+                            <Label Grid.Column="1" Text="Bio" FontSize="18" VerticalOptions="Center" />
+                            <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22"
+                                   VerticalOptions="Center" HorizontalOptions="End" />
+                        </Grid>
+
+                    </Grid>
+
+                </Border>
+
+                <Label Text="SECURITY" TextColor="White" FontSize="14" FontAttributes="Bold" />
+                <Border StrokeThickness="2.5" StrokeShape="RoundRectangle 20">
+                    <Border.Stroke>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#b414de" Offset="0.0" />
+                            <GradientStop Color="#d127a5" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Border.Stroke>
+
+                    <Grid Padding="15">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="45" />
+                            <RowDefinition Height="45" />
+
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0" ColumnDefinitions="50,*,30" Padding="15,0,25,0">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding AccountPageCommand}" />
+                            </Grid.GestureRecognizers>
+                            <Label Grid.Column="0" Text="lock" FontFamily="GoogleFont" FontSize="30"
+                                   VerticalOptions="Center" />
+                            <Label Grid.Column="1" Text="Password" FontSize="18" VerticalOptions="Center" />
+                            <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22"
+                                   VerticalOptions="Center" HorizontalOptions="End" />
+                        </Grid>
+
+                        <Grid Grid.Row="1" ColumnDefinitions="50,*,30" Padding="15,0,25,0">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding AccountPageCommand}" />
+                            </Grid.GestureRecognizers>
+                            <Label Grid.Column="0" Text="mail" FontFamily="GoogleFont" FontSize="30"
+                                   VerticalOptions="Center" />
+                            <Label Grid.Column="1" Text="Two-factor Auth" FontSize="18" VerticalOptions="Center" />
+                            <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22"
+                                   VerticalOptions="Center" HorizontalOptions="End" />
+                        </Grid>
+
+                    </Grid>
+
+                </Border>
+
+
+                <Label Text="IMPORTANT" TextColor="White" FontSize="14" FontAttributes="Bold" />
+                <Border
+                    StrokeThickness="2.5"
+                    StrokeShape="RoundRectangle 20">
+                    <Border.Stroke>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#b414de" Offset="0.0" />
+                            <GradientStop Color="#d127a5" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Border.Stroke>
+
+                    <Grid BackgroundColor="#1E1E1E" Padding="15">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="45" />
+                            <RowDefinition Height="45" />
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0" ColumnDefinitions="50,*,30" Padding="15,0,25,0">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding AccountGoToCommand}"
+                                                      CommandParameter="DeleteAccount" />
+                            </Grid.GestureRecognizers>
+                            <Label Grid.Column="0" Text="logout" FontFamily="GoogleFont" TextColor="red" FontSize="30"
+                                   VerticalOptions="Center" />
+                            <Label Grid.Column="1" Text="Sign Out" TextColor="red" FontSize="18"
+                                   VerticalOptions="Center" />
+                            <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" TextColor="red"
+                                   FontSize="22"
+                                   VerticalOptions="Center" HorizontalOptions="End" />
+                        </Grid>
+                        
+                        <Grid Grid.Row="1" ColumnDefinitions="50,*,30" Padding="15,0,25,0">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding AccountGoToCommand}"
+                                                      CommandParameter="DeleteAccount" />
+                            </Grid.GestureRecognizers>
+                            <Label Grid.Column="0" Text="delete" FontFamily="GoogleFont" TextColor="red" FontSize="30"
+                                   VerticalOptions="Center" />
+                            <Label Grid.Column="1" Text="Delete Account" TextColor="red" FontSize="18"
+                                   VerticalOptions="Center" />
+                            <Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" TextColor="red"
+                                   FontSize="22"
+                                   VerticalOptions="Center" HorizontalOptions="End" />
+                        </Grid>
+
+                    </Grid>
+
+                </Border>
+
+                <!--<Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="50"/>
                         <RowDefinition Height="5"/>
@@ -60,7 +234,7 @@ VerticalOptions="Center" HorizontalOptions="End"/>
                         </Border>
                     </Grid>
 
-                    <!--<Grid Grid.Row="2" ColumnDefinitions="50,*,*" Padding="15,0,25,0">
+                    ~1~<Grid Grid.Row="2" ColumnDefinitions="50,*,*" Padding="15,0,25,0">
                         <Grid.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding NotificationsPageCommand}"/>
                         </Grid.GestureRecognizers>
@@ -80,7 +254,7 @@ VerticalOptions="Center" HorizontalOptions="End"/>
                                 </LinearGradientBrush>
                             </Border.Stroke>
                         </Border>
-                    </Grid>-->
+                    </Grid>@1@
 
                     <Grid Grid.Row="2" ColumnDefinitions="50,*,*" Padding="15,0,25,0">
                         <Grid.GestureRecognizers>
@@ -105,8 +279,8 @@ VerticalOptions="Center" HorizontalOptions="End"/>
                     </Grid>
 
 
-                </Grid>
-                
+                </Grid>-->
+
             </VerticalStackLayout>
         </ScrollView>
 

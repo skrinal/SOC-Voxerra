@@ -8,7 +8,7 @@ public class ProfilePictureViewModel
     }
     private async void OnGoBack()
     {
-        await Shell.Current.GoToAsync($"AccountDetailsPage");
+        await Shell.Current.GoToAsync("MainSettingPage");
     }
     public ICommand GoBackCommand { get; set; }
 }

@@ -90,7 +90,7 @@ public class BioViewModel : INotifyPropertyChanged, IQueryAttributable {
         isValidBio = false;
         ButtonStatus = false;
 
-        await Shell.Current.GoToAsync($"AccountDetailsPage");
+        await Shell.Current.GoToAsync("MainSettingPage");
     }
     
 

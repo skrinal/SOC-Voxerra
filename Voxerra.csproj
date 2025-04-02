@@ -70,6 +70,8 @@
 
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+		<None Remove="Resources\AppIcon\accountcircle.svg" />
+		<MauiImage Include="Resources\AppIcon\accountcircle.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
