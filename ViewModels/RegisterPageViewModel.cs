@@ -105,7 +105,7 @@ namespace Voxerra.ViewModels
         {
             try
             {
-                Email = email
+                Email = email;
 
                 var response = await _serviceProvider.CallWebApi<string, BaseResponse>(
                     "/Registration/IsEmailUnique", HttpMethod.Post, Email);

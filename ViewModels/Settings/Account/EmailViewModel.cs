@@ -87,10 +87,8 @@ public class EmailViewModel : INotifyPropertyChanged, IQueryAttributable
     {
         try
         {
-            NewEmail = email
-
             var response = await _serviceProvider.CallWebApi<string, BaseResponse>(
-                "/UserSettings/ChangeEmail", HttpMethod.Post, NewEmail);
+                "/UserSettings/ChangeEmail", HttpMethod.Post, Email);
             if (response.StatusCode == 200)
             {
                 LabelIcon = "";
@@ -102,7 +100,7 @@ public class EmailViewModel : INotifyPropertyChanged, IQueryAttributable
                 isEmailUnique = false;
                 ButtonStatus = false;
 
-                await Shell.Current.GoToAsync($"MainPage?userId={response.Id}");
+                //await Shell.Current.GoToAsync($"MainPage?userId={response.Id}");
             }
             else
             {
@@ -126,10 +124,8 @@ public class EmailViewModel : INotifyPropertyChanged, IQueryAttributable
     {
         try
         {
-            Email = emailQueary
-
             var response = await _serviceProvider.CallWebApi<string, BaseResponse>(
-                "/Registration/IsEmailUnique", HttpMethod.Post, Email);
+                "/Registration/IsEmailUnique", HttpMethod.Post, emailQueary);
 
 
             if (response.StatusCode == 200)

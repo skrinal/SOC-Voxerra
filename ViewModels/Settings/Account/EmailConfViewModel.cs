@@ -14,9 +14,10 @@ public class EmailConfViewModel : INotifyPropertyChanged, IQueryAttributable
     {
         if (query == null || query.Count == 0) return;
 
-        Email = int.Parse(HttpUtility.UrlDecode(query["Email"].ToString()));
+        Email = HttpUtility.UrlDecode(query["Email"].ToString());
         
     }
+    private ServiceProvider _serviceProvider;
 
     public EmailConfViewModel(ServiceProvider serviceProvider)
     {
