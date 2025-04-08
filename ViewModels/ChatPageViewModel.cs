@@ -91,12 +91,6 @@ namespace Voxerra.ViewModels
             {
                 FriendInfo = response.FriendInfo;
                 Messages = new ObservableCollection<Message>(response.Messages);
-                //OnPropertyChanged(nameof(Messages));
-
-                // MainThread.BeginInvokeOnMainThread(() =>
-                // {
-                //     MessagesCollectionView?.ScrollTo(Messages, position: ScrollToPosition.End, animate: false);
-                // });
                 
             }
             else

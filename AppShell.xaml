@@ -12,7 +12,7 @@
     <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate pages:LoginPage}" />
     <ShellContent Route="RegisterPage" ContentTemplate="{DataTemplate pages:RegisterPage}" />
     <ShellContent Route="ForgotPasswordPage" ContentTemplate="{DataTemplate pages:ForgotPasswordPage}" />
-    
+    <ShellContent Route="TwoAuthPage" ContentTemplate="{DataTemplate pages:TwoAuthPage}" />
 
     <TabBar>
         <Tab Title="Chats" Icon="AppIcon/homeicon.svg">

@@ -87,13 +87,6 @@ public class GroupViewModel : INotifyPropertyChanged, IQueryAttributable
         {
             FriendsInfo = new ObservableCollection<User>(response.FriendsInfo);
             Messages = new ObservableCollection<GroupMessages>(response.Messages);
-            
-            //OnPropertyChanged(nameof(Messages));
-
-            // MainThread.BeginInvokeOnMainThread(() =>
-            // {
-            //     MessagesCollectionView?.ScrollTo(Messages, position: ScrollToPosition.End, animate: false);
-            // });
                 
         }
         else

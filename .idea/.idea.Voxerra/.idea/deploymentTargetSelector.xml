@@ -4,7 +4,7 @@
     <selectionStates>
       <SelectionState runConfigName="Voxerra">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2025-04-08T10:41:30.479885160Z">
+        <DropdownSelection timestamp="2025-04-08T21:56:44.228690595Z">
           <Target type="DEFAULT_BOOT">
             <handle>
               <DeviceId pluginId="LocalEmulator" identifier="path=/home/skrinal/.android/avd/MyAndroidEmulator.avd" />

@@ -41,7 +41,8 @@ namespace Voxerra
             builder.Services.AddSingleton<ForgotPasswordViewModel>();
             builder.Services.AddSingleton<PasswordConfirmationPage>();
             builder.Services.AddSingleton<PasswordConfirmationViewModel>();
-
+            builder.Services.AddSingleton<TwoAuthPage>();
+            builder.Services.AddSingleton<TwoAuthViewModel>();
 
             builder.Services.AddSingleton<MessageCenterPage>();
             builder.Services.AddSingleton<MessageCenterPageViewModel>();

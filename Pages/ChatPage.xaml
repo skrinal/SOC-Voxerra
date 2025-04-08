@@ -190,7 +190,7 @@ Margin="5,10,5,10">
                         BackgroundColor="gray"
                         CornerRadius="40"/>
 
-                        <Entry Grid.Column="1" TextColor="White" Placeholder="Message..." Text="{Binding Message}" />
+                        <Entry Grid.Column="1" TextColor="White" PlaceholderColor="White" Placeholder="Message..." Text="{Binding Message}" />
 
                         <Button Grid.Column="2"
                                 Padding="0" Margin="0,0,10,0" VerticalOptions="Center" HorizontalOptions="End"

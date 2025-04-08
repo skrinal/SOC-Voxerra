@@ -99,16 +99,7 @@ namespace Voxerra.Services
             }
         }
 
-        //public async Task SaveRefreshToken(string refreshToken) {
-        //    try 
-        //   {
-        //        await SecureStorage.SetAsync(RefreshTokenKey, refreshToken);
-        //   }
-        //   catch { }
-
-        //}
-
-
+        
         public async Task<TResponse> CallWebApi<TRequest, TResponse>(
             string apiUrl, HttpMethod httpMethod, TRequest request) where TResponse : BaseResponse, new()
         {
@@ -130,12 +121,14 @@ namespace Voxerra.Services
                 using var response = await _devSslHelper.HttpClient.SendAsync(httpRequest);
                 var responseContent = await response.Content.ReadAsStringAsync();
 
+                
                 var result = new TResponse
                 {
                     StatusCode = (int)response.StatusCode,
                     StatusMessage = response.IsSuccessStatusCode ? "Success" : "Failure"
                 };
-
+                
+                
                 if (string.IsNullOrEmpty(responseContent)) return result;
 
                 var targetProperty = typeof(TResponse).GetProperties()
@@ -161,6 +154,8 @@ namespace Voxerra.Services
                     /* Handle deserialization errors if needed */
                 }
 
+                
+                
                 return result;
             }
             catch (Exception ex)

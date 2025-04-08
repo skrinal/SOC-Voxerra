@@ -197,9 +197,9 @@ namespace Voxerra.Helpers
             //"ec2-51-20-3-224.eu-north-1.compute.amazonaws.com"; // Use your router's domain
 #elif ANDROID
             //"10.0.2.2";
-            "192.168.68.110";
+            //"192.168.68.110";
             //"192.168.68.114";
-            //"ec2-13-61-105-44.eu-north-1.compute.amazonaws.com";
+            "ec2-13-61-105-44.eu-north-1.compute.amazonaws.com";
 #else
             throw new PlatformNotSupportedException("Only Windows and Android currently supported.");
 #endif

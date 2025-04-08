@@ -73,7 +73,7 @@ namespace Voxerra.ViewModels
                 var response = await _serviceProvider.Authenticate(request);
                 if (response.StatusCode == 222)
                 {
-                    await Shell.Current.GoToAsync($"//MainPage?userId={response.Id}");
+                    await Shell.Current.GoToAsync($"//TwoAuthPage?userId={response.Id}");
                 }
                 if (response.StatusCode == 200)
                 {

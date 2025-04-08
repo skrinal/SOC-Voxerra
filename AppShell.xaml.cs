@@ -11,6 +11,8 @@
             Routing.RegisterRoute("RegisterConfirmationPage", typeof(RegisterConfirmationPage));
             Routing.RegisterRoute("ForgotPasswordPage", typeof(ForgotPasswordPage));
             Routing.RegisterRoute("PasswordConfirmationPage", typeof(PasswordConfirmationPage));
+            Routing.RegisterRoute("TwoAuthPage", typeof(TwoAuthPage));
+
             
             Routing.RegisterRoute("MessageCenterPage", typeof(MessageCenterPage));
             Routing.RegisterRoute("ChatPage", typeof(ChatPage));
@@ -70,7 +72,8 @@
             // Hide navigation bar for Login, Register, and ForgotPassword pages
             if (args.Target.Location.OriginalString.Contains("LoginPage") ||
                 args.Target.Location.OriginalString.Contains("RegisterPage") ||
-                args.Target.Location.OriginalString.Contains("ForgotPasswordPage"))
+                args.Target.Location.OriginalString.Contains("ForgotPasswordPage")||
+                args.Target.Location.OriginalString.Contains("TwoAuthPage"))
             {
                 Shell.SetNavBarIsVisible(this, false);
             }
