@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-
+<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Voxerra.Pages.Settings.Account.NamePage"
-             xmlns:viewModel="clr-namespace:Voxerra.ViewModels.Settings.Account"
-             Background="#111011">
+             x:Class="Voxerra.Pages.CreateGroupPage"
+             xmlns:viewModels="clr-namespace:Voxerra.ViewModels"
+             Title="CreateGroupPage"
+             Background="#0f0f0f">
     <ContentPage.Content>
         <ScrollView>
             <VerticalStackLayout Spacing="20" Padding="20">
@@ -19,10 +19,11 @@
                             Padding="0"
                             Command="{Binding GoBackCommand}" />
 
-                    <Label Text="Name" FontSize="28" VerticalOptions="Center" />
+                    <Label Text="Group" FontSize="28" VerticalOptions="Center" />
 
                 </StackLayout>
 
+                <Label Text="Name" TextColor="White" FontSize="16" FontAttributes="Bold" />
                 <Border
                     StrokeThickness="2.5"
                     StrokeShape="RoundRectangle 15">
@@ -45,7 +46,7 @@
                             Grid.Column="0"
                             Margin="8,0,8,0"
                             ReturnType="Go"
-                            Text="{Binding UserName}" />
+                            Text="{Binding GroupName}" />
 
                         <Label Grid.Column="1" Text="{Binding LabelIcon}" TextColor="{Binding LabelColor}"
                                FontFamily="GoogleFont" FontSize="30"
@@ -65,7 +66,7 @@
                     <Grid Grid.Row="0" ColumnDefinitions="*" Padding="15,0,25,0">
 
                         <Label Grid.Column="1" TextColor="{Binding RuleColor1}"
-                               Text="- Minimum 3 characters, maximum 15 characters" FontSize="13"
+                               Text="- Minimum 3 characters, maximum 18 characters" FontSize="13"
                                VerticalOptions="Center" />
 
                     </Grid>
@@ -80,7 +81,7 @@
 
                     <Grid Grid.Row="2" ColumnDefinitions="*" Padding="15,0,25,0">
 
-                        <Label Grid.Column="1" TextColor="{Binding RuleColor3}" Text="- No Spaces" FontSize="13"
+                        <Label Grid.Column="1" TextColor="{Binding RuleColor3}" Text="- No Spaces (start - end)" FontSize="13"
                                VerticalOptions="Center" />
 
                     </Grid>
@@ -109,10 +110,10 @@
                         <Button
                             IsEnabled="{Binding ButtonStatus}"
                             HeightRequest="55"
-                            Text="Update"
+                            Text="Create Group"
                             TextColor="White"
                             BackgroundColor="Transparent"
-                            Command="{Binding UpdateNameCommand}"
+                            Command="{Binding CreateGroupCommand}"
                             CornerRadius="25" />
                     </Frame>
                 </Grid>

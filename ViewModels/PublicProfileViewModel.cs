@@ -13,57 +13,6 @@ public class PublicProfileViewModel : INotifyPropertyChanged, IQueryAttributable
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 
-    public PublicProfileViewModel(DataCenterService dataCenterService, ServiceProvider serviceProvider)
-    {
-        _dataCenterService = dataCenterService;
-        _serviceProvider = serviceProvider;
-        
-        
-        SendFriendRequestCommand = new Command(() =>
-        {
-            if (IsProcessing) return;
-
-            isProcessing = true;
-            SendFriendRequest().GetAwaiter().OnCompleted(() =>
-            {
-                isProcessing = false;
-            });
-
-        });
-        
-        GoBackCommand = new Command(OnGoBack);
-    }
-
-    public async Task SendFriendRequest()
-    {
-        var request = new FriendRequest
-        {
-            FromUserId = _dataCenterService.UserInfo.Id,
-            ToUserId = PublicUserId
-        };
-
-        try
-        {
-            var response = await _serviceProvider.CallWebApi<FriendRequest, BaseResponse>
-                ("/FriendAdd/FriendRequest", HttpMethod.Post, request);
-
-            if (response.StatusCode == 200)
-            {
-                // Friend request poslany
-            
-                // Zmenit button na "Requset sent"
-            }
-        }
-        catch (Exception e)
-        {
-            await AppShell.Current.DisplayAlert("Voxerra", e.Message, "OK");
-        }
-    }
-    
-    private async void OnGoBack()
-    {
-        await Shell.Current.GoToAsync("..");
-    }
     public async void ApplyQueryAttributes(IDictionary<string, object> query)
     {
         if (query == null || query.Count == 0) return;
@@ -83,7 +32,22 @@ public class PublicProfileViewModel : INotifyPropertyChanged, IQueryAttributable
             friendsCount = userProfile.FriendsCount;
             isOnline = userProfile.IsOnline ? "Online" : "Offline";
             creationYear = $"Member since {userProfile.CreationDate}";
-
+            if (userProfile.IsFriend)
+            {
+                AddFButtonT = "Friends";
+                AddButtonS = false;
+            }
+            else if (userProfile.IsFriendRequest)
+            {
+                AddFButtonT = "Request sent";
+                AddButtonS = false;
+            }
+            else
+            {
+                AddFButtonT = "Add Friend";
+                AddButtonS = true;
+            }
+            
             OnPropertyChanged(nameof(UserName));
             OnPropertyChanged(nameof(AvatarSourceName));
             OnPropertyChanged(nameof(Bio));
@@ -97,10 +61,60 @@ public class PublicProfileViewModel : INotifyPropertyChanged, IQueryAttributable
             UserProfilePublic = new ObservableCollection<UserPublicProfile>();
         }
     }
+    
+    public PublicProfileViewModel(DataCenterService dataCenterService, ServiceProvider serviceProvider)
+    {
+        _dataCenterService = dataCenterService;
+        _serviceProvider = serviceProvider;
+        AddFButtonT = "Add Friend";
+        AddButtonS = true;
+        
+        SendFriendRequestCommand = new Command(() =>
+        {
+            if (IsProcessing) return;
+
+            isProcessing = true;
+            SendFriendRequest().GetAwaiter().OnCompleted(() =>
+            {
+                isProcessing = false;
+            });
+
+        });
+        
+        GoBackCommand = new Command(OnGoBack);
+    }
+
+    private async Task SendFriendRequest()
+    {
+        try
+        {
+            var response = await _serviceProvider.CallWebApi<int, BaseResponse>
+                ("/FriendAdd/FriendRequest", HttpMethod.Post, PublicUserId);
+
+            if (response.StatusCode == 200)
+            {
+                AddFButtonT = "Request sent";
+                AddButtonS = false;
+                
+                // TODO: Verify other user about request
+                
+            }
+        }
+        catch (Exception e)
+        {
+            await AppShell.Current.DisplayAlert("Voxerra", e.Message, "OK");
+        }
+    }
+    
+    private async void OnGoBack()
+    {
+        await Shell.Current.GoToAsync("..");
+    }
+    
 
     
     private ObservableCollection<UserPublicProfile> userProfilePublic;
-    public int publicUserId;
+    private int publicUserId;
     private bool isProcessing;
     private string userName;
     private string avatarSourceName;
@@ -108,7 +122,8 @@ public class PublicProfileViewModel : INotifyPropertyChanged, IQueryAttributable
     private int friendsCount;
     private string isOnline;
     private string creationYear;
-    
+    private string addFButtonT;
+    private bool addButtonS;
     
     public ObservableCollection<UserPublicProfile> UserProfilePublic
     {
@@ -157,6 +172,17 @@ public class PublicProfileViewModel : INotifyPropertyChanged, IQueryAttributable
         get { return creationYear; }
         set { creationYear = value; OnPropertyChanged(); }
     }
+    public string AddFButtonT
+    {
+        get { return addFButtonT; }
+        set { addFButtonT = value; OnPropertyChanged(); }
+    }
+    public bool AddButtonS
+    {
+        get { return addButtonS; }
+        set { addButtonS = value; OnPropertyChanged(); }
+    }
+    
     
     public ICommand SendFriendRequestCommand { get; set; }
     public ICommand GoBackCommand { get; set; }

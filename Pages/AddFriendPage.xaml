@@ -10,18 +10,18 @@
     <RefreshView Margin="20" IsRefreshing="{Binding IsProcessing}">
         <StackLayout Padding="0,10,5,0">
 
-            <!-- Row containing Button and Search Bar -->
             <Grid ColumnDefinitions="Auto, *" VerticalOptions="Start">
-                <!-- Back Button -->
-                <Button Grid.Column="0" Text="&#xe5c4;" FontFamily="GoogleFont" FontSize="24" 
+
+                <Button Grid.Column="0" Text="&#xe5c4;" FontFamily="GoogleFont" FontSize="24"
                         BackgroundColor="Transparent"
                         TextColor="White"
                         CornerRadius="45"
                         Padding="0" Margin="0,0,0,0"
                         Command="{Binding GoBackCommand}" />
 
-                <!-- Search Bar -->
-                <Border Grid.Column="1" StrokeThickness="2" StrokeShape="RoundRectangle 10" HeightRequest="40" BackgroundColor="#1D1D1D">
+
+                <Border Grid.Column="1" StrokeThickness="2" StrokeShape="RoundRectangle 10" HeightRequest="40"
+                        BackgroundColor="#1D1D1D">
                     <Border.Stroke>
                         <LinearGradientBrush>
                             <GradientStop Color="#b414de" Offset="0.0" />
@@ -46,8 +46,9 @@
 
                             <StackLayout Padding="25,0,0,0" Orientation="Horizontal">
                                 <StackLayout.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding Path=UserProfilePageCommand, Source={RelativeSource AncestorType={x:Type viewModel:AddFriendViewModel}}}"
-                                                          CommandParameter="{Binding Id}"/>
+                                    <TapGestureRecognizer
+                                        Command="{Binding Path=UserProfilePageCommand, Source={RelativeSource AncestorType={x:Type viewModel:AddFriendViewModel}}}"
+                                        CommandParameter="{Binding Id}" />
                                 </StackLayout.GestureRecognizers>
 
                                 <Frame HeightRequest="54" WidthRequest="54" CornerRadius="50"
@@ -55,24 +56,20 @@
                                     <Image Source="{Binding AvatarSourceName}" Aspect="AspectFill" />
                                 </Frame>
 
-                                
+
                                 <Label Text="{Binding UserName}"
                                        FontSize="16"
                                        VerticalOptions="Center"
                                        Margin="15,0,0,0" />
 
-                                
+
                                 <!-- Button na konci -->
                                 <StackLayout HorizontalOptions="FillAndExpand"></StackLayout>
 
 
-                                <Button Text="person_add" FontFamily="GoogleFont" FontSize="24"
-                                        BackgroundColor="Transparent"
-                                        TextColor="White"
-                                        CornerRadius="45"
-                                        Margin="0,0,20,0"
-                                        CommandParameter="{Binding Id}"
-                                        Command="{Binding AddFriendCommand}" /> <!-- Naprogramovat -->
+
+                                
+
 
                             </StackLayout>
 

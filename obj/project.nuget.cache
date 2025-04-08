@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4ooZD6+n5I8=",
+  "dgSpecHash": "0otcgEtKAQI=",
   "success": true,
   "projectFilePath": "/home/skrinal/SOC-Voxerra/Voxerra.csproj",
   "expectedPackageFiles": [
+    "/home/skrinal/.nuget/packages/communitytoolkit.mvvm/8.4.0/communitytoolkit.mvvm.8.4.0.nupkg.sha512",
     "/home/skrinal/.nuget/packages/googlegson/2.10.1.4/googlegson.2.10.1.4.nupkg.sha512",
     "/home/skrinal/.nuget/packages/microsoft.aspnetcore.connections.abstractions/8.0.13/microsoft.aspnetcore.connections.abstractions.8.0.13.nupkg.sha512",
     "/home/skrinal/.nuget/packages/microsoft.aspnetcore.http.connections.client/8.0.13/microsoft.aspnetcore.http.connections.client.8.0.13.nupkg.sha512",

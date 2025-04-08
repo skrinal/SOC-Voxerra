@@ -47,7 +47,14 @@ namespace Voxerra
             builder.Services.AddSingleton<MessageCenterPageViewModel>();
             builder.Services.AddSingleton<ChatPage>();
             builder.Services.AddSingleton<ChatPageViewModel>();
-
+            
+            builder.Services.AddSingleton<GroupCenterPage>();
+            builder.Services.AddSingleton<GroupCenterViewModel>();
+            
+            
+            builder.Services.AddSingleton<CreateGroupPage>();
+            builder.Services.AddSingleton<CreateGroupViewModel>();
+            
             builder.Services.AddSingleton<AddFriendPage>();
             builder.Services.AddSingleton<AddFriendViewModel>();
             builder.Services.AddSingleton<PublicProfilePage>();

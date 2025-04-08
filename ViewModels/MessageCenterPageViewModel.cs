@@ -55,6 +55,7 @@ namespace Voxerra.ViewModels
                 });
             });
             
+            
             _serviceProvider = serviceProvider;
             _chatHub = chatHub;
             _chatHub.Connect();
@@ -62,7 +63,8 @@ namespace Voxerra.ViewModels
            
         }
 
-        async Task AddFriendPageGTA()
+      
+        private async Task AddFriendPageGTA()
         {
             try
             {
@@ -73,7 +75,7 @@ namespace Voxerra.ViewModels
                 await AppShell.Current.DisplayAlert("Voxerra", ex.Message, "OK");
             }
         }
-        async Task GetListFriends()
+        private async Task GetListFriends()
         {
             var response = await _serviceProvider.CallWebApi<int, MessageCenterInitializeResponse>
                 ("/MessageCenter/Initialize", HttpMethod.Post, UserInfo.Id);
@@ -97,6 +99,7 @@ namespace Voxerra.ViewModels
         }
         public void ApplyQueryAttributes(IDictionary<string, object> query)
         {
+            
             if (query == null || query.Count == 0) return;
 
             UserInfo.Id = int.Parse(HttpUtility.UrlDecode(query["userId"].ToString()));
@@ -105,7 +108,7 @@ namespace Voxerra.ViewModels
         }
         
 
-        public async Task SynchronizeWithDataCenterAsync()
+        private async Task SynchronizeWithDataCenterAsync()
         {
             // Ensure data exists before synchronization
             if (UserInfo == null || UserFriends == null || LatestMessages == null)
@@ -124,7 +127,7 @@ namespace Voxerra.ViewModels
 
         }
         
-        public void Initialize()
+        private void Initialize()
         {
             Task.Run(async () =>
             {
@@ -159,7 +162,7 @@ namespace Voxerra.ViewModels
         //    OnPropertyChanged("LastestMessages");
         //}
 
-        void OnReceivedMessage(int fromUserId, string message)
+        private void OnReceivedMessage(int fromUserId, string message)
         {
 
             MainThread.BeginInvokeOnMainThread(() =>
@@ -221,5 +224,6 @@ namespace Voxerra.ViewModels
         public ICommand RefreshCommand { get; set; }
         public ICommand OpenChatPageCommand { get; set; }
         public ICommand AddFriendPageCommand { get; set; }
+
     }
 }

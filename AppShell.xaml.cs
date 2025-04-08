@@ -14,14 +14,20 @@
             
             Routing.RegisterRoute("MessageCenterPage", typeof(MessageCenterPage));
             Routing.RegisterRoute("ChatPage", typeof(ChatPage));
-            
             Routing.RegisterRoute("AddFriendPage", typeof(AddFriendPage));  
             Routing.RegisterRoute("PublicProfilePage", typeof(PublicProfilePage));
 
+            
+            Routing.RegisterRoute("GroupCenterPage", typeof(GroupCenterPage));  
+            Routing.RegisterRoute("GroupCenterViewModel", typeof(GroupCenterViewModel));
+            Routing.RegisterRoute("CreateGroupPage", typeof(CreateGroupPage));  
+            Routing.RegisterRoute("CreateGroupViewModel", typeof(CreateGroupViewModel));
+            
+            
             Routing.RegisterRoute("ProfilePage", typeof(ProfilePage));
             Routing.RegisterRoute("FriendRequestPage", typeof(FriendRequestPage));
             Routing.RegisterRoute("MainSettingPage", typeof(MainSettingPage));
-
+            
 
             Routing.RegisterRoute("AccountDetailsPage", typeof(AccountDetailsPage));
             Routing.RegisterRoute("NamePage", typeof(NamePage));
@@ -74,12 +80,7 @@
                 Shell.SetNavBarIsVisible(this, true);
             }
         }
-
         
-        /*private async void GoToLoginPage()
-        {
-            await GoToAsync("//LoginPage");
-        }*/
 
     }
 }

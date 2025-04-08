@@ -119,7 +119,7 @@ namespace Voxerra.ViewModels.Settings.Account
 
         private CancellationTokenSource _cts;
 
-        public async void DebounceUserName(string query)
+        private async void DebounceUserName(string query)
         {
             _cts?.Cancel();
             _cts = new CancellationTokenSource();

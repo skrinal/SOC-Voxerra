@@ -8,7 +8,7 @@
         public string Bio { get; set; } = null!;
         public bool IsOnline { get; set; }
         public DateTime LastLogonTime { get; set; }
-        public string CreationYear { get; set; }
+        public string CreationYear { get; set; } = null!;
 
     }
 }

@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Voxerra.Pages.FriendRequestPage"
@@ -12,13 +13,13 @@
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
 
                 <Button Text="&#xe5c4;" FontFamily="GoogleFont" FontSize="24" VerticalOptions="Center"
-                            BackgroundColor="Transparent"
-                            TextColor="White"
-                            CornerRadius="45"
-                            Padding="0"
-                            Command="{Binding GoBackCommand}" />
+                        BackgroundColor="Transparent"
+                        TextColor="White"
+                        CornerRadius="45"
+                        Padding="0"
+                        Command="{Binding GoBackCommand}" />
 
-                <Label Text="Friend Request" FontSize="28" VerticalOptions="Center"/>
+                <Label Text="Friend Request" FontSize="28" VerticalOptions="Center" />
 
             </StackLayout>
 
@@ -27,41 +28,40 @@
                     <DataTemplate>
                         <Grid>
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="70"/>
-                                <RowDefinition Height="5"/>
+                                <RowDefinition Height="70" />
+                                <RowDefinition Height="5" />
                             </Grid.RowDefinitions>
 
 
                             <Grid Grid.Row="0" ColumnDefinitions="*,70,70" Padding="15,0,25,0">
-                                
+
                                 <Grid Grid.Column="0" ColumnDefinitions="65,*">
                                     <Grid.GestureRecognizers>
-                                        <TapGestureRecognizer Command="{Binding AccountPageCommand}"/>
+                                        <TapGestureRecognizer Command="{Binding AccountPageCommand}" />
                                     </Grid.GestureRecognizers>
                                     <Frame Grid.Column="0" HeightRequest="54" WidthRequest="54" CornerRadius="50"
-IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                                           IsClippedToBounds="True" BorderColor="Black" Padding="0">
                                         <Image Source="{Binding AvatarSourceName}" Aspect="AspectFill" />
                                     </Frame>
 
-                                    <Label Grid.Column="1" Text="{Binding UserName}"  FontSize="18" Padding="10,0,0,0" VerticalOptions="Center"/>
+                                    <Label Grid.Column="1" Text="{Binding UserName}" FontSize="18" Padding="10,0,0,0"
+                                           VerticalOptions="Center" />
                                 </Grid>
-                    
+
 
                                 <Button Grid.Column="1" Text="check" FontFamily="GoogleFont" FontSize="24"
-        BackgroundColor="Transparent"
-        TextColor="White"
-        CornerRadius="45"
-        CommandParameter="{Binding Id}"
-        Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:FriendRequestViewModel}}, Path=AcceptRequestCommand}" />
+                                        BackgroundColor="Transparent"
+                                        TextColor="Green"
+                                        CornerRadius="45"
+                                        CommandParameter="{Binding Id}"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:FriendRequestViewModel}}, Path=AcceptRequestCommand}" />
 
                                 <Button Grid.Column="2" Text="close" FontFamily="GoogleFont" FontSize="24"
-BackgroundColor="Transparent"
-TextColor="White"
-CornerRadius="45"
-CommandParameter="{Binding Id}" 
-Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:FriendRequestViewModel}}, Path=DeclineRequestCommand}" />
-
-
+                                        BackgroundColor="Transparent"
+                                        TextColor="Red"
+                                        CornerRadius="45"
+                                        CommandParameter="{Binding Id}"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:FriendRequestViewModel}}, Path=DeclineRequestCommand}" />
 
 
                                 <!--<Label Grid.Column="2" Text="arrow_forward_ios" FontFamily="GoogleFont" FontSize="22" 

@@ -46,11 +46,26 @@
                     </Border.Stroke>
 
 
-                    <Entry
-                        x:Name="UserNameEntry"
-                        Margin="8,0,8,0"
-                        ReturnType="Go"
-                        Text="{Binding UserName}" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="60" />
+                        </Grid.ColumnDefinitions>
+
+
+                        <Entry
+                            x:Name="UserNameEntry"
+                            Grid.Column="0"
+                            Margin="8,0,8,0"
+                            ReturnType="Go"
+                            Text="{Binding UserName}" />
+
+                        <Label Grid.Column="1" Text="{Binding LabelIconN}" TextColor="{Binding LabelColorN}"
+                               FontFamily="GoogleFont" FontSize="30"
+                               HorizontalOptions="Center" VerticalOptions="Center" />
+
+                    </Grid>
+
                 </Border>
 
                 <Label
@@ -68,11 +83,27 @@
                         </LinearGradientBrush>
                     </Border.Stroke>
 
-                    <Entry
-                        x:Name="EmailEntry"
-                        Margin="8,-1,8,-1"
-                        ReturnType="Go"
-                        Text="{Binding Email}" />
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="60" />
+                        </Grid.ColumnDefinitions>
+
+
+                        <Entry
+                            x:Name="EmailEntry"
+                            Grid.Column="0"
+                            Margin="8,0,8,0"
+                            ReturnType="Go"
+                            Text="{Binding Email}" />
+
+                        <Label Grid.Column="1" Text="{Binding LabelIconE}" TextColor="{Binding LabelColorE}"
+                               FontFamily="GoogleFont" FontSize="30"
+                               HorizontalOptions="Center" VerticalOptions="Center" />
+
+                    </Grid>
+
                 </Border>
 
                 <Label
@@ -90,12 +121,27 @@
                         </LinearGradientBrush>
                     </Border.Stroke>
 
-                    <Entry
-                        x:Name="PasswordEntry"
-                        Margin="8,-1,8,-1"
-                        ReturnType="Go"
-                        IsPassword="True"
-                        Text="{Binding Password}" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="60" />
+                        </Grid.ColumnDefinitions>
+
+
+                        <Entry
+                            x:Name="PasswordEntry"
+                            Grid.Column="0"
+                            Margin="8,0,8,0"
+                            ReturnType="Go"
+                            IsPassword="True"
+                            Text="{Binding Password}" />
+
+                        <Label Grid.Column="1" Text="{Binding LabelIconP}" TextColor="{Binding LabelColorP}"
+                               FontFamily="GoogleFont" FontSize="30"
+                               HorizontalOptions="Center" VerticalOptions="Center" />
+
+                    </Grid>
+                    
                 </Border>
                 <Label
                     Text="Confirm password"
@@ -111,28 +157,38 @@
                             <GradientStop Color="#d127a5" Offset="1.0" />
                         </LinearGradientBrush>
                     </Border.Stroke>
+                    
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="60" />
+                        </Grid.ColumnDefinitions>
 
-                    <Entry
-                        x:Name="RePasswordEntry"
-                        Margin="8,-1,8,-1"
-                        IsPassword="True"
-                        ReturnType="Go"
-                        Text="{Binding RePassword}" />
+
+                        <Entry
+                            x:Name="RePasswordEntry"
+                            Grid.Column="0"
+                            Margin="8,0,8,0"
+                            ReturnType="Go"
+                            IsPassword="True"
+                            Text="{Binding RePassword}" />
+
+                        <Label Grid.Column="1" Text="{Binding LabelIconRp}" TextColor="{Binding LabelColorRp}"
+                               FontFamily="GoogleFont" FontSize="30"
+                               HorizontalOptions="Center" VerticalOptions="Center" />
+                    </Grid>
                 </Border>
 
                 <Frame
+                    Background="{Binding FrameBackground}"
                     CornerRadius="20"
                     Padding="0"
                     Margin="0,20,0,0"
                     IsClippedToBounds="True"
                     HasShadow="False">
-                    <Frame.Background>
-                        <LinearGradientBrush>
-                            <GradientStop Color="#b414de" Offset="0.0" />
-                            <GradientStop Color="#d127a5" Offset="1.0" />
-                        </LinearGradientBrush>
-                    </Frame.Background>
+                    
                     <Button
+                        IsEnabled="{Binding ButtonStatus}"
                         HeightRequest="55"
                         Text="Register"
                         TextColor="White"

@@ -199,7 +199,7 @@ namespace Voxerra.Helpers
             //"10.0.2.2";
             "192.168.68.110";
             //"192.168.68.114";
-            //"ec2-51-20-3-224.eu-north-1.compute.amazonaws.com"; // Use your router's domain
+            //"ec2-13-61-105-44.eu-north-1.compute.amazonaws.com";
 #else
             throw new PlatformNotSupportedException("Only Windows and Android currently supported.");
 #endif
@@ -239,8 +239,8 @@ namespace Voxerra.Helpers
 
                 if (cert.Issuer.Equals("CN=localhost", StringComparison.OrdinalIgnoreCase) ||
                     cert.Subject.Equals("CN=localhost", StringComparison.OrdinalIgnoreCase) ||
-                    cert.Issuer.Equals("CN=ec2-51-20-3-224.eu-north-1.compute.amazonaws.com", StringComparison.OrdinalIgnoreCase) ||
-                    cert.Subject.Equals("CN=ec2-51-20-3-224.eu-north-1.compute.amazonaws.com", StringComparison.OrdinalIgnoreCase) ||
+                    cert.Issuer.Equals("CN=ec2-13-61-105-44.eu-north-1.compute.amazonaws.com", StringComparison.OrdinalIgnoreCase) ||
+                    cert.Subject.Equals("CN=ec2-13-61-105-44.eu-north-1.compute.amazonaws.com", StringComparison.OrdinalIgnoreCase) ||
                     cert.Issuer.Equals("CN=192.168.68.110", StringComparison.OrdinalIgnoreCase) ||
                     cert.Subject.Equals("CN=192.168.68.110", StringComparison.OrdinalIgnoreCase))
                 {
@@ -276,7 +276,7 @@ namespace Voxerra.Helpers
                 {
                     try
                     {
-                        if (hostname == "192.168.68.110") // && session.PeerPrincipal?.Name == "CN=localhost
+                        if (hostname == "192.168.68.110" || hostname == "ec2-13-61-105-44.eu-north-1.compute.amazonaws.com") // && session.PeerPrincipal?.Name == "CN=localhost
                             return true;
 
                         return HttpsURLConnection.DefaultHostnameVerifier.Verify(hostname, session);

@@ -45,6 +45,10 @@
         "net8.0-android34.0": {
           "targetAlias": "net8.0-android34.0",
           "dependencies": {
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
             "Microsoft.AspNetCore.Http.Connections.Client": {
               "target": "Package",
               "version": "[8.0.13, )"

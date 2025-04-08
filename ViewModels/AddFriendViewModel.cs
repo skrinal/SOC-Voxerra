@@ -30,14 +30,8 @@ public class AddFriendViewModel : INotifyPropertyChanged
 
     private async Task GetUsersList(string query)
     {
-        var request = new FriendSearchRequest
-        {
-            IdOfUser = _dataCenterService.UserInfo.Id,
-            Search = query,
-        };
-        
-        var response = await _serviceProvider.CallWebApi<FriendSearchRequest, FriendSearchResponse>
-            ("/FriendAdd/Search", HttpMethod.Post, request);
+        var response = await _serviceProvider.CallWebApi<string, FriendSearchResponse>
+            ("/FriendAdd/Search", HttpMethod.Post, query);
         
         if (response.StatusCode == 200)
         {

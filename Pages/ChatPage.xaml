@@ -65,7 +65,7 @@
                 ItemsSource="{Binding Messages}"
                 Margin="0,10,0,10" 
                 VerticalScrollBarVisibility="Never" 
-                ItemsUpdatingScrollMode="KeepLastItemInView" >
+                ItemsUpdatingScrollMode="{Binding ScrollUpdating}" >
 
                 <CollectionView.ItemsLayout>
                     <LinearItemsLayout ItemSpacing="10" Orientation="Vertical" />

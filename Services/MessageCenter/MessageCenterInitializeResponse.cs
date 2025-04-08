@@ -9,9 +9,10 @@ namespace Voxerra.Services.MessageCenter
 {
     public class MessageCenterInitializeResponse:BaseResponse
     {
-        public User User { get; set; }
-        public IEnumerable<User> UserFriends { get; set; }
-        public IEnumerable<LastestMessage> LastestMessages { get; set; }
+        public User User { get; set; } = null!;
+        public IEnumerable<User> UserFriends { get; set; } = null!;
+        public IEnumerable<LastestMessage> LastestMessages { get; set; } = null!;
+
     }
 }
 

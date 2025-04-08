@@ -33,7 +33,7 @@
 
             <VerticalStackLayout VerticalOptions="Center">
                 <Label Text="{Binding UserName}" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" />
-                <Label Text="{Binding CreationDate}" FontSize="12" TextColor="#666" HorizontalOptions="Center" />
+                <Label Text="{Binding CreationYear}" FontSize="12" TextColor="#666" HorizontalOptions="Center" />
             </VerticalStackLayout>
 
             
@@ -65,7 +65,7 @@
             <Grid ColumnDefinitions="*,20,*" HorizontalOptions="FillAndExpand" >
                 <VerticalStackLayout Grid.Column="0" HorizontalOptions="End" VerticalOptions="Center">
                     <Frame
-                        Padding="0"
+                        Padding="-1"
                         CornerRadius="12"
                         IsClippedToBounds="True"
                         HasShadow="True">
@@ -90,7 +90,7 @@
                 <VerticalStackLayout Grid.Column="2" HorizontalOptions="Start" VerticalOptions="Center"  >
                     <Frame
                         CornerRadius="12"
-                        Padding="0"
+                        Padding="-1"
                         IsClippedToBounds="True"
                         HasShadow="True">
                         <Frame.Background>
@@ -100,10 +100,11 @@
                             </LinearGradientBrush>
                         </Frame.Background>
                         <Button
+                            IsEnabled="{Binding AddButtonS}"
                             Padding="0"
                             WidthRequest="130"
-                            CornerRadius="25"
-                            Text="Add Friend"
+                            CornerRadius="12"
+                            Text="{Binding AddFButtonT}"
                             FontSize="14"
                             TextColor="White"
                             BackgroundColor="Transparent"

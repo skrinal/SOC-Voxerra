@@ -72,6 +72,8 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 		<None Remove="Resources\AppIcon\accountcircle.svg" />
 		<MauiImage Include="Resources\AppIcon\accountcircle.svg" />
+		<None Remove="Resources\AppIcon\groupsicon.svg" />
+		<MauiImage Include="Resources\AppIcon\groupsicon.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -88,6 +90,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
 		<PackageReference Include="Microsoft.AspNetCore.Http.Connections.Client" Version="8.0.13" />
 		<PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="8.0.13" />
 		<PackageReference Include="Microsoft.AspNetCore.SignalR.Client.Core" Version="8.0.13" />

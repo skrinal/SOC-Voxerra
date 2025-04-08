@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Voxerra.Pages.GroupCenterPage"
+             xmlns:viewModels="clr-namespace:Voxerra.ViewModels"
+             Title="GroupCenterPage"
+             Background="#0f0f0f">
+    <ContentPage.Content>
+        <RefreshView Margin="10" IsRefreshing="{Binding IsProcessing}">
+            <Grid Margin="0,15,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="85" />
+                    <RowDefinition Height="45" />
+                    <RowDefinition />
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="15" />
+                        <ColumnDefinition Width="65" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="70" />
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Grid.Column="1" Orientation="Horizontal" HorizontalOptions="Start">
+                        <Frame VerticalOptions="Center" HeightRequest="40" WidthRequest="40" CornerRadius="50"
+                               IsClippedToBounds="True" BorderColor="Black"
+                               Padding="0" Margin="20,0,0,0">
+                            <Image Source="{Binding UserInfo.AvatarSourceName}" Aspect="AspectFill" />
+
+                        </Frame>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="2" VerticalOptions="Center">
+                        <Label Text="{Binding UserInfo.UserName}" TextColor="White" FontFamily="OpenSansSemibold"
+                               FontSize="18"
+                               VerticalOptions="Center" Margin="10,0,0,0" />
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="3" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Button Text="group_add" FontFamily="GoogleFont" FontSize="24"
+                                BackgroundColor="Transparent" TextColor="White" Padding="0" Margin="0,0,0,0"
+                                Command="{Binding CreateGroupPageCommand}" />
+                    </StackLayout>
+
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <Border Margin="15,0,15,0"
+                            StrokeThickness="2"
+                            StrokeShape="RoundRectangle 10"
+                            HeightRequest="40"
+                            BackgroundColor="#1D1D1D">
+                        <Border.Stroke>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#b414de" Offset="0.0" />
+                                <GradientStop Color="#d127a5" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Border.Stroke>
+
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+
+                            <Label Text="search" TextColor="gray" FontFamily="GoogleFont" FontSize="18"
+                                   Margin="10,0,0,0"
+                                   VerticalOptions="Center" />
+
+                            <Label Text="Search" TextColor="Gray" FontFamily="OpenSansSemibold" Margin="10,0,0,0"
+                                   VerticalOptions="Center" />
+
+                        </StackLayout>
+
+                    </Border>
+                </Grid>
+
+                <Grid Grid.Row="2">
+                    <StackLayout Orientation="Horizontal" Padding="20,0,0,0">
+
+                        <Label Text="Groups" TextColor="White" FontFamily="OpenSansSemibold" FontSize="18"
+                               VerticalOptions="Center" />
+
+                    </StackLayout>
+                </Grid>
+
+                <ListView Grid.Row="3" ItemsSource="{Binding GroupsDetails}"
+                          RowHeight="70"
+                          SeparatorVisibility="None"
+                          VerticalScrollBarVisibility="Never">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <HorizontalStackLayout Padding="25,10,0,10">
+                                    <HorizontalStackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer
+                                            Command="{Binding Path=OpenGroupPageCommand, Source={RelativeSource AncestorType={x:Type viewModels:MessageCenterPageViewModel}}}"
+                                            CommandParameter="{Binding GroupId}" />
+                                    </HorizontalStackLayout.GestureRecognizers>
+
+                                    <Frame HeightRequest="54" WidthRequest="54" CornerRadius="50"
+                                           IsClippedToBounds="True"
+                                           BorderColor="Black" Padding="0">
+                                        <Image Source="{Binding AvatarSourceName}" Aspect="AspectFill" />
+                                    </Frame>
+
+                                    <StackLayout Margin="20,5,0,0" HorizontalOptions="Start">
+
+                                        <Label Text="{Binding GroupName}" FontFamily="OpenSansSemibold"
+                                               FontSize="15" />
+                                        <Label Text="{Binding LastMessage}" />
+
+                                    </StackLayout>
+                                </HorizontalStackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </RefreshView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,54 +1,61 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Voxerra.Pages.MessageCenterPage"
              xmlns:icon="clr-namespace:Voxerra.Helpers"
              xmlns:viewModels="clr-namespace:Voxerra.ViewModels"
              Title="MessageCenterPage"
-             Background="#0f0f0f" >
-   
+             Background="#0f0f0f">
+
     <RefreshView Margin="10" IsRefreshing="{Binding IsProcessing}">
         <Grid Margin="0,15,0,0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="40"/>
-                <RowDefinition Height="85"/>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="45"/>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="85" />
+                <RowDefinition Height="100" />
+                <RowDefinition Height="45" />
                 <RowDefinition />
-                <RowDefinition Height="40"/>
+                <RowDefinition Height="40" />
             </Grid.RowDefinitions>
 
             <Grid>
-                <StackLayout Orientation="Horizontal">
-                    <Frame VerticalOptions="Center" HeightRequest="40" WidthRequest="40" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" 
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="15" />
+                    <ColumnDefinition Width="65" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="70" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Column="1" Orientation="Horizontal" HorizontalOptions="Start">
+                    <Frame VerticalOptions="Center" HeightRequest="40" WidthRequest="40" CornerRadius="50"
+                           IsClippedToBounds="True" BorderColor="Black"
                            Padding="0" Margin="20,0,0,0">
-                        <Image Source="{Binding UserInfo.AvatarSourceName}" Aspect="AspectFill"/>
+                        <Image Source="{Binding UserInfo.AvatarSourceName}" Aspect="AspectFill" />
 
                     </Frame>
-
-                    <Label Text="{Binding UserInfo.UserName}" TextColor="White" FontFamily="OpenSansSemibold" FontSize="18" 
-                            VerticalOptions="Center" Margin="10,0,0,0" />
-
                 </StackLayout>
 
-                <StackLayout HorizontalOptions="Start" Orientation="Horizontal">
-
+                <StackLayout Grid.Column="2" VerticalOptions="Center">
+                    <Label Text="{Binding UserInfo.UserName}" TextColor="White" FontFamily="OpenSansSemibold"
+                           FontSize="18"
+                           VerticalOptions="Center" Margin="10,0,0,0" />
                 </StackLayout>
-
-                <!-- Aligning Add Friend button to the right side -->
-                <StackLayout HorizontalOptions="End" VerticalOptions="Center">
+                
+                
+                <StackLayout Grid.Column="3" HorizontalOptions="Start" VerticalOptions="Center">
                     <Button Text="person_add" FontFamily="GoogleFont" FontSize="24"
-                BackgroundColor="Transparent" TextColor="White" Padding="0" Margin="0,0,20,0"
-                Command="{Binding AddFriendPageCommand}" />
+                            BackgroundColor="Transparent" TextColor="White" Padding="0" Margin="0,0,0,0"
+                            Command="{Binding AddFriendPageCommand}" />
                 </StackLayout>
             </Grid>
-            
+
             <Grid Grid.Row="1">
-                <Border Margin="15,0,15,0" 
-                StrokeThickness="2"
-                StrokeShape="RoundRectangle 10"
-                HeightRequest="40"
-                BackgroundColor="#1D1D1D">
+                <Border Margin="15,0,15,0"
+                        StrokeThickness="2"
+                        StrokeShape="RoundRectangle 10"
+                        HeightRequest="40"
+                        BackgroundColor="#1D1D1D">
                     <Border.Stroke>
                         <LinearGradientBrush>
                             <GradientStop Color="#b414de" Offset="0.0" />
@@ -56,11 +63,13 @@
                         </LinearGradientBrush>
                     </Border.Stroke>
 
-                    <StackLayout Orientation="Horizontal" VerticalOptions="Center" >
+                    <StackLayout Orientation="Horizontal" VerticalOptions="Center">
 
-                        <Label Text="search" TextColor="gray" FontFamily="GoogleFont" FontSize="18" Margin="10,0,0,0" VerticalOptions="Center"/>
+                        <Label Text="search" TextColor="gray" FontFamily="GoogleFont" FontSize="18" Margin="10,0,0,0"
+                               VerticalOptions="Center" />
 
-                        <Label Text="Search" TextColor="Gray" FontFamily="OpenSansSemibold" Margin="10,0,0,0" VerticalOptions="Center"/>
+                        <Label Text="Search" TextColor="Gray" FontFamily="OpenSansSemibold" Margin="10,0,0,0"
+                               VerticalOptions="Center" />
 
                     </StackLayout>
 
@@ -69,73 +78,78 @@
 
             <Grid Grid.Row="2">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100" />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
 
                 <StackLayout WidthRequest="100" Margin="10,0,0,0">
                     <Grid HeightRequest="100">
 
-                        <Frame VerticalOptions="Center" HeightRequest="65" WidthRequest="65" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
-                            <Image Source="defaulticon.png" Aspect="AspectFill"/>
+                        <Frame VerticalOptions="Center" HeightRequest="65" WidthRequest="65" CornerRadius="50"
+                               IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                            <Image Source="defaulticon.png" Aspect="AspectFill" />
 
                         </Frame>
 
-                        <Label Text="Your note" FontSize="12" 
-                       Margin="0,3,0,0"
-                       HorizontalOptions="Center"
-                       VerticalOptions="End"/>
+                        <Label Text="Your note" FontSize="12"
+                               Margin="0,3,0,0"
+                               HorizontalOptions="Center"
+                               VerticalOptions="End" />
 
                         <Border Margin="12,0,35,0"
-                        Stroke="Black"  
-                        StrokeThickness="0"
-                        StrokeShape="RoundRectangle 12"
-                        BackgroundColor="LightSlateGray"
-                        VerticalOptions="Start">
+                                Stroke="Black"
+                                StrokeThickness="0"
+                                StrokeShape="RoundRectangle 12"
+                                BackgroundColor="LightSlateGray"
+                                VerticalOptions="Start">
 
-                            <StackLayout HeightRequest="30" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                            <StackLayout HeightRequest="30" Orientation="Horizontal" HorizontalOptions="Center"
+                                         VerticalOptions="Center">
 
-                                <Label Text="Note..." TextColor="White" FontFamily="OpenSansSemibold" FontSize="13" 
-                                HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
-                                Padding="0"/>
+                                <Label Text="Note..." TextColor="White" FontFamily="OpenSansSemibold" FontSize="13"
+                                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                                       Padding="0" />
 
                             </StackLayout>
                         </Border>
                     </Grid>
                 </StackLayout>
 
-                <CollectionView Grid.Column="1" ItemsSource="{Binding UserFriends}" >
+                <CollectionView Grid.Column="1" ItemsSource="{Binding UserFriends}">
                     <CollectionView.ItemsLayout>
                         <LinearItemsLayout Orientation="Horizontal" />
                     </CollectionView.ItemsLayout>
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <StackLayout WidthRequest="100" >
+                            <StackLayout WidthRequest="100">
                                 <Grid HeightRequest="100">
 
-                                    <Frame VerticalOptions="Center" HeightRequest="65" WidthRequest="65" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
-                                        <Image Source="{Binding AvatarSourceName}" Aspect="AspectFill"/>
+                                    <Frame VerticalOptions="Center" HeightRequest="65" WidthRequest="65"
+                                           CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
+                                        <Image Source="{Binding AvatarSourceName}" Aspect="AspectFill" />
                                     </Frame>
 
-                                    <Label Text="{Binding UserName}" FontSize="12" 
-                                    Margin="0,3,0,0"
-                                    HorizontalOptions="Center"
-                                    VerticalOptions="End"/>
+                                    <Label Text="{Binding UserName}" FontSize="12"
+                                           Margin="0,3,0,0"
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="End" />
 
                                     <Border Margin="12,0,12,0"
-                                     Stroke="Black"  
-                                     StrokeThickness="0"
-                                     StrokeShape="RoundRectangle 12"
-                                     BackgroundColor="LightSlateGray"
-                                     VerticalOptions="Start">
+                                            Stroke="Black"
+                                            StrokeThickness="0"
+                                            StrokeShape="RoundRectangle 12"
+                                            BackgroundColor="LightSlateGray"
+                                            VerticalOptions="Start">
 
-                                        <StackLayout Padding="0,0,0,4" HorizontalOptions="Start" VerticalOptions="Start" >
+                                        <StackLayout Padding="0,0,0,4" HorizontalOptions="Start"
+                                                     VerticalOptions="Start">
 
-                                            <Label Text="Something" TextColor="White" FontFamily="OpenSansSemibold" FontSize="10" 
-                                            HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
-                                            Padding="8,4,0,0"/>
+                                            <Label Text="Something" TextColor="White" FontFamily="OpenSansSemibold"
+                                                   FontSize="10"
+                                                   HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                                                   Padding="8,4,0,0" />
                                             <Label Text="Future,Seper" FontSize="9" FontFamily="OpenSansSemibold"
-                                                    Padding="8,0,5,0" LineBreakMode="NoWrap"/>
+                                                   Padding="8,0,5,0" LineBreakMode="NoWrap" />
 
                                         </StackLayout>
                                     </Border>
@@ -149,32 +163,36 @@
             <Grid Grid.Row="3">
                 <StackLayout Orientation="Horizontal" Padding="20,0,0,0">
 
-                    <Label Text="Messages" TextColor="White" FontFamily="OpenSansSemibold" FontSize="18" 
-                   VerticalOptions="Center"/>
+                    <Label Text="Messages" TextColor="White" FontFamily="OpenSansSemibold" FontSize="18"
+                           VerticalOptions="Center" />
 
                 </StackLayout>
             </Grid>
-            <ListView Grid.Row="4" ItemsSource="{Binding LatestMessages}" 
-              RowHeight="70"
-              SeparatorVisibility="None"
-              VerticalScrollBarVisibility="Never">
+            
+            <ListView Grid.Row="4" ItemsSource="{Binding LatestMessages}"
+                      RowHeight="70"
+                      SeparatorVisibility="None"
+                      VerticalScrollBarVisibility="Never">
                 <ListView.ItemTemplate>
-                    <DataTemplate >
+                    <DataTemplate>
                         <ViewCell>
-                            <HorizontalStackLayout  Padding="25,10,0,10">
+                            <HorizontalStackLayout Padding="25,10,0,10">
                                 <HorizontalStackLayout.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding Path=OpenChatPageCommand, Source={RelativeSource AncestorType={x:Type viewModels:MessageCenterPageViewModel}}}"
-                                                          CommandParameter="{Binding UserFiendInfo.Id}"/>
+                                    <TapGestureRecognizer
+                                        Command="{Binding Path=OpenChatPageCommand, Source={RelativeSource AncestorType={x:Type viewModels:MessageCenterPageViewModel}}}"
+                                        CommandParameter="{Binding UserFiendInfo.Id}" />
                                 </HorizontalStackLayout.GestureRecognizers>
 
-                                <Frame HeightRequest="54" WidthRequest="54" CornerRadius="50" IsClippedToBounds="True" BorderColor="Black" Padding="0">
-                                    <Image Source="{Binding UserFiendInfo.AvatarSourceName}" Aspect="AspectFill"/>
+                                <Frame HeightRequest="54" WidthRequest="54" CornerRadius="50" IsClippedToBounds="True"
+                                       BorderColor="Black" Padding="0">
+                                    <Image Source="{Binding UserFiendInfo.AvatarSourceName}" Aspect="AspectFill" />
                                 </Frame>
 
                                 <StackLayout Margin="20,5,0,0" HorizontalOptions="Start">
 
-                                    <Label Text="{Binding UserFiendInfo.UserName}" FontFamily="OpenSansSemibold" FontSize="15"/>
-                                    <Label Text="{Binding Content}"/>
+                                    <Label Text="{Binding UserFiendInfo.UserName}" FontFamily="OpenSansSemibold"
+                                           FontSize="15" />
+                                    <Label Text="{Binding Content}" />
 
                                 </StackLayout>
                             </HorizontalStackLayout>

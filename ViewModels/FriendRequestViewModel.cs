@@ -46,7 +46,6 @@ namespace Voxerra.ViewModels
                 });
             });
             
-
             GoBackCommand = new Command(OnGoBack);
         }
 
@@ -55,15 +54,34 @@ namespace Voxerra.ViewModels
             var request = new FriendDecisionRequest
             {
                 UserRequestFromId = UserRequestFromId,
-                UserRequestToId = _dataCenterService.UserInfo.Id,
                 Decision = decision
             };
+            try
+            {
+                var response = await _serviceProvider.CallWebApi<FriendDecisionRequest, BaseResponse>
+                    ("/FriendAdd/FriendRequestDecision", HttpMethod.Post, request);
+                
+                if (response.StatusCode == 200 && decision)
+                    await AppShell.Current.DisplayAlert("Voxerra", "Friend has been added", "OK");
+    
+                else if (response.StatusCode == 200 && decision)
+                    await AppShell.Current.DisplayAlert("Voxerra", "Friend request denied", "OK");
+                
+                else
+                    await AppShell.Current.DisplayAlert("Voxerra", "Failed to process", "OK");
 
-            var response = await _serviceProvider.CallWebApi<FriendDecisionRequest, BaseResponse>
-                ("/FriendAdd/FriendRequestDecision", HttpMethod.Post, request);
+                
+                var itemToRemove = FriendRequestList.FirstOrDefault(x => x.Id == UserRequestFromId);
+                
+                if (itemToRemove != null) FriendRequestList.Remove(itemToRemove);
+            }
+            catch (Exception e)
+            {
+                await AppShell.Current.DisplayAlert("Request Failed", e.Message, "OK");
+                throw;
+            }
         }
-
-
+        
         public async void Initialize()
         {
             IsProcessing = true;
@@ -76,7 +94,6 @@ namespace Voxerra.ViewModels
 
         private async Task GetFriendsRequestList()
         {
-
             try
             {
                 var userId = _dataCenterService.UserInfo.Id;
@@ -101,18 +118,13 @@ namespace Voxerra.ViewModels
                 Console.WriteLine(e.Message);
                 await AppShell.Current.DisplayAlert("Exception Friend Request", e.Message, "OK");
             }
-
-            
         }
-
-
+        
         public async void OnGoBack()
         {
             await Shell.Current.GoToAsync($"//ProfilePage");
         }
-
-
-
+        
         private bool isProcessing;
         private ObservableCollection<UserSearch> friendRequestList;
 

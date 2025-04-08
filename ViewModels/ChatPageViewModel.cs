@@ -1,5 +1,8 @@
 ﻿using System.Collections.ObjectModel;
 using Voxerra.Services.Message;
+using CommunityToolkit.Mvvm;
+using CommunityToolkit.Mvvm.Messaging;
+using CommunityToolkit.Mvvm.Messaging.Messages;
 
 namespace Voxerra.ViewModels
 {
@@ -19,6 +22,7 @@ namespace Voxerra.ViewModels
 
         private ServiceProvider _serviceProvider;
         private ChatHub _chatHub;
+
         private bool isLoadingOlderMessages = false;
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -28,6 +32,8 @@ namespace Voxerra.ViewModels
 
         public ChatPageViewModel(ServiceProvider serviceProvider, ChatHub chatHub)
         {
+            ScrollUpdating = "KeepLastItemInView";
+            
             Messages = new ObservableCollection<Message>();
             _serviceProvider = serviceProvider;
             _chatHub = chatHub;
@@ -45,8 +51,11 @@ namespace Voxerra.ViewModels
                 {
                     if (Message.Trim() != "")
                     {
+                        /*ScrollUpdating = "KeepLastItemInView";
+                        OnPropertyChanged(nameof(ScrollUpdating));*/
+                        
                         await _chatHub.SendMessageToUser(FromUserId, ToUserId, Message);
-
+                        
                         Messages.Add(new Message
                         {
                             Content = Message,
@@ -54,7 +63,9 @@ namespace Voxerra.ViewModels
                             ToUserId = toUserId,
                             SendDateTime = DateTime.Now,
                         });
-
+                        
+                        WeakReferenceMessenger.Default.Send(new ScrollToBottomMessage(true));
+                        
                         Message = "";
                     }
                 }
@@ -106,7 +117,6 @@ namespace Voxerra.ViewModels
 
             var request = new OldMessagesRequest
             {
-                FromUserId = FromUserId,
                 ToUserId = toUserId,
                 LastMessageId = olderMessages.Id,
             };
@@ -116,6 +126,8 @@ namespace Voxerra.ViewModels
 
             if (response.StatusCode == 200 && response.Messages.Any())
             {
+                ScrollUpdating = "KeepScrollOffset";
+                OnPropertyChanged(nameof(ScrollUpdating));
                 var firstVisibleMessage = Messages.First();
                 
                 foreach (var msg in response.Messages)
@@ -129,7 +141,6 @@ namespace Voxerra.ViewModels
                 {
                     MessagesCollectionView?.ScrollTo(firstVisibleMessage, position: ScrollToPosition.Start, animate: false);
                 });
-                
                 
             }
             isLoadingOlderMessages = false;
@@ -166,6 +177,7 @@ namespace Voxerra.ViewModels
         private ObservableCollection<Message> messages;
         private bool isRefreshing;
         private string message;
+        private string scrollUpdating;
         
         private CollectionView messagesCollectionView;
         public CollectionView MessagesCollectionView
@@ -239,8 +251,19 @@ namespace Voxerra.ViewModels
             }
         }
 
+        public string ScrollUpdating
+        {
+            get { return scrollUpdating; }
+            set { scrollUpdating = value; OnPropertyChanged(); }
+        }
+
         public ICommand SendMessageCommand { get; set; }
         public ICommand LoadOlderMessagesCommand { get; set; }
         public ICommand BackToHome { get; set; }
     }
+}
+
+public class ScrollToBottomMessage : ValueChangedMessage<bool>
+{
+    public ScrollToBottomMessage(bool value) : base(value) { }
 }

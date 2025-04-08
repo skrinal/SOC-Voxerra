@@ -71,7 +71,7 @@ namespace Voxerra.ViewModels
         private async void OnGoBack()
         {
             ResetEntry();
-            await Shell.Current.Navigation.PopAsync(); // zle
+            await Shell.Current.GoToAsync("RegisterPage");
         }
 
         private void ResetEntry()
